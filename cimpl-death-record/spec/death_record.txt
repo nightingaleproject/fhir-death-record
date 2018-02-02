@@ -1,0 +1,24 @@
+Grammar: DataElement 5.0
+Namespace: sdr.deathRecord
+Description: "Defines the structure and content of a death record document."
+Uses: shr.base, shr.core, sdr.causeOfDeath
+
+CodeSystem: LNC = http://loinc.org
+
+EntryElement: DeathRecordContents
+Concept: MTH#C0011069
+Description: "Defines the contents of a death record document."
+1..1 TypeCode is LNC#64297-5
+1..1 CauseOfDeathSection
+
+Element: CauseOfDeathSection
+Concept: TBD
+Description: "A section that details the cause of death"
+1..1 TypeCode is LNC#69453-9
+1..1 ref(MannerOfDeath)
+1..1 ref(AutopsyPerformed)
+
+Element: TypeCode
+Concept: MTH#C0011069
+Description: "A code that represents the type of a record."
+Value: 1..1 CodeableConcept

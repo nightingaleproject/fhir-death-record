@@ -1,0 +1,13 @@
+Grammar: Map 5.0
+Namespace: shr.base
+Target: FHIR_STU_3
+
+Entry maps to DomainResource:
+EntryId maps to id
+constrain meta to 1..1
+EntryType maps to meta.profile
+
+Observation maps to Observation:
+Value maps to value[x]
+ObservationCode maps to code
+constrain code.coding to 1..*

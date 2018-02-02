@@ -1,0 +1,21 @@
+Grammar: DataElement 5.0
+Namespace: sdr.causeOfDeath
+Description: "Observations related to the cause of death."
+Uses: shr.base, shr.core
+
+CodeSystem: LNC = http://loinc.org
+CodeSystem: MTH = http://ncimeta.nci.nih.gov
+
+EntryElement: MannerOfDeath
+Based on: Observation
+Concept: MTH#C3263280 "Manner of Death"
+Description: "The manner of the decendents demise."
+Value: CodeableConcept from MannerOfDeathVS
+ObservationCode is LNC#69449-7 "Manner of Death"
+
+EntryElement: AutopsyPerformed
+Based on: Observation
+Concept: MTH#C4274690 "Autopsy was performed"
+Description: "Whether an autopsy was performed (true) or not (false)."
+Value: 1..1 boolean
+ObservationCode is LNC#85699-7 "Autopsy was performed"

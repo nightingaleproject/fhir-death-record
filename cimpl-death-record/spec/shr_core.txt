@@ -1,0 +1,34 @@
+Grammar: DataElement 5.0
+Namespace: shr.core
+Description: "The SHR Core domain contains definitions for a variety of general-purpose elements that are used widely in SHR. These include definitions for coding, expressions of time, quantities, addresses, names, and more."
+
+CodeSystem: MTH = http://ncimeta.nci.nih.gov
+
+Element: Coding
+Concept: MTH#C0805701
+Description: "Coding of a concept, drawn from a controlled vocabulary. Includes the vocabulary and version, if applicable. May include a display text, and a descriptor expressing the intended interpretation of the code."
+Value: 0..1 code
+0..1 CodeSystem
+0..1 CodeSystemVersion
+0..1 DisplayText
+
+Element: CodeSystem
+Concept: TBD
+Description: "A formal terminology system."
+Value: uri
+
+Element: CodeSystemVersion
+Concept: TBD
+Description: "The version of the vocabulary being used, if applicable."
+Value: string // Should be id type in FHIR, but it is a string (no issue recorded yet)
+ 
+Element: DisplayText
+Concept: MTH#C1548311
+Description: "A string meant for reading by a person, for example, accompanying a code."
+Value: string
+
+Element: CodeableConcept
+Concept: TBD
+Description: "A set of codes drawn from different coding systems, representing the same concept."
+0..* Coding
+0..1 DisplayText

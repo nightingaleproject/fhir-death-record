@@ -1,0 +1,13 @@
+Grammar: ValueSet 5.0
+Namespace: sdr.causeOfDeath
+
+CodeSystem: SCT = http://snomed.info/sct
+
+ValueSet: MannerOfDeathVS
+Description: "Manner of death"
+SCT#38605008 "Natural"
+SCT#7878000 "Accident"
+SCT#44301001 "Suicide"
+SCT#27935005 "Homicide"
+SCT#185973002 "Pending Investigation"
+SCT#65037004 "Could not be determined"

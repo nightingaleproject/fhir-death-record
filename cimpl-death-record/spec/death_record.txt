@@ -17,6 +17,7 @@ Description: "A section that details the cause of death"
 1..1 TypeCode is LNC#69453-9
 1..1 ref(MannerOfDeath)
 1..1 ref(AutopsyPerformed)
+1..1 ref(ActualOrPresumedDateOfDeath)
 
 Element: TypeCode
 Concept: MTH#C0011069

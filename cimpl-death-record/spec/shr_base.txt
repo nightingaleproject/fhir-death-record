@@ -30,5 +30,5 @@ Value: CodeableConcept
 EntryElement: Observation
 Concept: MTH#C1554188
 Description: "Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments."
-Value: 0..1 (CodeableConcept or boolean)
+Value: 0..1 (CodeableConcept or boolean or dateTime)
 1..1 ObservationCode

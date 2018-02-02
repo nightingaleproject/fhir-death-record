@@ -19,3 +19,10 @@ Concept: MTH#C4274690 "Autopsy was performed"
 Description: "Whether an autopsy was performed (true) or not (false)."
 Value: 1..1 boolean
 ObservationCode is LNC#85699-7 "Autopsy was performed"
+
+EntryElement: ActualOrPresumedDateOfDeath
+Based on: Observation
+Concept: MTH#C1148348]  "Date of Death"
+Description: "Actual or presumed date of death."
+Value: 1..1 dateTime
+ObservationCode is LNC#81956-5 "Date and time of death"

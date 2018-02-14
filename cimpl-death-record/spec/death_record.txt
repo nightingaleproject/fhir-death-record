@@ -15,9 +15,13 @@ Element: CauseOfDeathSection
 Concept: TBD
 Description: "A section that details the cause of death"
 1..1 TypeCode is LNC#69453-9
-1..1 ref(MannerOfDeath)
-1..1 ref(AutopsyPerformed)
 1..1 ref(ActualOrPresumedDateOfDeath)
+1..1 ref(AutopsyPerformed)
+1..1 ref(AutopsyResultsAvailable)
+1..1 ref(DatePronouncedDead)
+1..1 ref(DeathFromWorkInjury)
+1..1 ref(DeathFromTransportInjury)
+1..1 ref(MannerOfDeath)
 
 Element: TypeCode
 Concept: MTH#C0011069

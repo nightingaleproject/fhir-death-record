@@ -2,6 +2,7 @@ Grammar: ValueSet 5.0
 Namespace: sdr.causeOfDeath
 
 CodeSystem: SCT = http://snomed.info/sct
+CodeSystem: NF = http://hl7.org/fhir/v3/NullFlavor
 
 ValueSet: MannerOfDeathVS
 Description: "Manner of death"
@@ -11,3 +12,10 @@ SCT#44301001 "Suicide"
 SCT#27935005 "Homicide"
 SCT#185973002 "Pending Investigation"
 SCT#65037004 "Could not be determined"
+
+ValueSet: TransportRelationshipsVS
+Description: "Transportation Relationships (NCHS)"
+SCT#236320001 "Vehicle driver"
+SCT#257500003 "Passenger"
+SCT#257518000 "Pedestrian"
+NF#OTH "Other"

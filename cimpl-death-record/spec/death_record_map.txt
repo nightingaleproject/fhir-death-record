@@ -8,6 +8,10 @@ constrain type.coding to 1..*
 CauseOfDeathSection maps to section (slice on = section.code; slice strategy = includes)
 CauseOfDeathSection.TypeCode maps to section.code
 constrain section.code.coding to 1..*
-CauseOfDeathSection.MannerOfDeath maps to section.entry (slice at = section.entry; slice on = reference.resolve(); slice on type = profile)
+CauseOfDeathSection.ActualOrPresumedDateOfDeath maps to section.entry (slice at = section.entry; slice on = reference.resolve(); slice on type = profile)
 CauseOfDeathSection.AutopsyPerformed maps to section.entry
-CauseOfDeathSection.ActualOrPresumedDateOfDeath maps to section.entry
+CauseOfDeathSection.AutopsyResultsAvailable maps to section.entry
+CauseOfDeathSection.DatePronouncedDead maps to section.entry
+CauseOfDeathSection.DeathFromWorkInjury maps to section.entry
+CauseOfDeathSection.DeathFromTransportInjury maps to section.entry
+CauseOfDeathSection.MannerOfDeath maps to section.entry

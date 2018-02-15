@@ -54,3 +54,24 @@ Concept: MTH#C3263280 "Manner of Death"
 Description: "The manner of the decendents demise."
 Value: CodeableConcept from MannerOfDeathVS
 ObservationCode is LNC#69449-7 "Manner of Death"
+
+EntryElement: MedicalExaminerContacted
+Based on: Observation
+Concept: MTH#C3840494 "Medical examiner or coroner was contacted"
+Description: "The manner of the decendents demise."
+Value: 1..1 boolean
+ObservationCode is LNC#74497-9 "Medical examiner or coroner was contacted"
+
+EntryElement: TimingOfRecentPregnancyInRelationToDeath
+Based on: Observation
+Concept: MTH#C3258243 "Timing of recent pregnancy related to death"
+Description: "Timing of recent pregnancy in relation to death."
+Value: CodeableConcept from PregnancyStatusVS
+ObservationCode is LNC#69442-2 "Timing of recent pregnancy in relation to death"
+
+EntryElement: TobaccoUseContributedToDeath
+Based on: Observation
+Concept: MTH#C3263269 "Did tobacco use contribute to death"
+Description: "Did tobacco use contribute to death."
+Value: CodeableConcept from ContributoryTobaccoUseVS
+ObservationCode is LNC#69443-0 "Did tobacco use contribute to death"

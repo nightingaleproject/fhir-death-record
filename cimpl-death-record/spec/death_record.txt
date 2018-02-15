@@ -22,6 +22,9 @@ Description: "A section that details the cause of death"
 1..1 ref(DeathFromWorkInjury)
 1..1 ref(DeathFromTransportInjury)
 1..1 ref(MannerOfDeath)
+1..1 ref(MedicalExaminerContacted)
+1..1 ref(TimingOfRecentPregnancyInRelationToDeath)
+1..1 ref(TobaccoUseContributedToDeath)
 
 Element: TypeCode
 Concept: MTH#C0011069

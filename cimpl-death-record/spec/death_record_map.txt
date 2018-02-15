@@ -15,3 +15,6 @@ CauseOfDeathSection.DatePronouncedDead maps to section.entry
 CauseOfDeathSection.DeathFromWorkInjury maps to section.entry
 CauseOfDeathSection.DeathFromTransportInjury maps to section.entry
 CauseOfDeathSection.MannerOfDeath maps to section.entry
+CauseOfDeathSection.MedicalExaminerContacted maps to section.entry
+CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry
+CauseOfDeathSection.TobaccoUseContributedToDeath maps to section.entry

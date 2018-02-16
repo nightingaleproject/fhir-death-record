@@ -11,3 +11,10 @@ Observation maps to Observation:
 Value maps to value[x]
 ObservationCode maps to code
 constrain code.coding to 1..*
+Subject maps to subject
+
+Condition maps to Condition:
+Value maps to code
+Onset maps to onset[x]
+Subject maps to subject
+constrain text to 1..1

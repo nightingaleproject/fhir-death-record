@@ -1,7 +1,7 @@
 Grammar: DataElement 5.0
 Namespace: sdr.deathRecord
 Description: "Defines the structure and content of a death record document."
-Uses: shr.base, shr.core, sdr.causeOfDeath
+Uses: shr.base, shr.core, shr.entity, sdr.causeOfDeath
 
 CodeSystem: LNC = http://loinc.org
 
@@ -10,6 +10,7 @@ Concept: MTH#C0011069
 Description: "Defines the contents of a death record document."
 1..1 TypeCode is LNC#64297-5
 1..1 CauseOfDeathSection
+1..1 Subject
 
 Element: CauseOfDeathSection
 Concept: TBD
@@ -18,6 +19,7 @@ Description: "A section that details the cause of death"
 1..1 ref(ActualOrPresumedDateOfDeath)
 1..1 ref(AutopsyPerformed)
 1..1 ref(AutopsyResultsAvailable)
+1..* ref(CauseOfDeathCondition)
 1..1 ref(DatePronouncedDead)
 1..1 ref(DeathFromWorkInjury)
 1..1 ref(DeathFromTransportInjury)

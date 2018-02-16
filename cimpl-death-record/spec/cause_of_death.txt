@@ -12,6 +12,7 @@ Concept: MTH#C1148348  "Date of Death"
 Description: "Actual or presumed date of death."
 Value: 1..1 dateTime
 ObservationCode is LNC#81956-5 "Date and time of death"
+1..1 Subject
 
 EntryElement: AutopsyPerformed
 Based on: Observation
@@ -19,6 +20,7 @@ Concept: MTH#C4274690 "Autopsy was performed"
 Description: "Whether an autopsy was performed (true) or not (false)."
 Value: 1..1 boolean
 ObservationCode is LNC#85699-7 "Autopsy was performed"
+1..1 Subject
 
 EntryElement: AutopsyResultsAvailable
 Based on: Observation
@@ -26,6 +28,7 @@ Concept: MTH#C3263258 "Autopsy results available"
 Description: "Were autopsy findings available to complete the cause of death?"
 Value: 1..1 boolean
 ObservationCode is LNC#69436-4 "Autopsy results available"
+1..1 Subject
 
 EntryElement: DatePronouncedDead
 Based on: Observation
@@ -33,6 +36,7 @@ Concept: MTH#C4263722  "Date and time pronounced dead"
 Description: "Date pronounced dead."
 Value: 1..1 dateTime
 ObservationCode is LNC#80616-6 "Date pronounced dead"
+1..1 Subject
 
 EntryElement: DeathFromWorkInjury
 Based on: Observation
@@ -40,6 +44,7 @@ Concept: MTH#C3263271 "Did death result from injury at work"
 Description: "Did death result from injury at work?"
 Value: 1..1 boolean
 ObservationCode is LNC#69444-8 "Death resulted from injury at work"
+1..1 Subject
 
 EntryElement: DeathFromTransportInjury
 Based on: Observation
@@ -47,6 +52,7 @@ Concept: MTH#C3263278 "Injury leading to death associated with transportation ev
 Description: "Injury leading to death associated with transportation event"
 Value: CodeableConcept from TransportRelationshipsVS
 ObservationCode is LNC#69448-9 "Injury leading to death associated with transportation event"
+1..1 Subject
 
 EntryElement: MannerOfDeath
 Based on: Observation
@@ -54,6 +60,7 @@ Concept: MTH#C3263280 "Manner of Death"
 Description: "The manner of the decendents demise."
 Value: CodeableConcept from MannerOfDeathVS
 ObservationCode is LNC#69449-7 "Manner of Death"
+1..1 Subject
 
 EntryElement: MedicalExaminerContacted
 Based on: Observation
@@ -61,6 +68,7 @@ Concept: MTH#C3840494 "Medical examiner or coroner was contacted"
 Description: "The manner of the decendents demise."
 Value: 1..1 boolean
 ObservationCode is LNC#74497-9 "Medical examiner or coroner was contacted"
+1..1 Subject
 
 EntryElement: TimingOfRecentPregnancyInRelationToDeath
 Based on: Observation
@@ -68,6 +76,7 @@ Concept: MTH#C3258243 "Timing of recent pregnancy related to death"
 Description: "Timing of recent pregnancy in relation to death."
 Value: CodeableConcept from PregnancyStatusVS
 ObservationCode is LNC#69442-2 "Timing of recent pregnancy in relation to death"
+1..1 Subject
 
 EntryElement: TobaccoUseContributedToDeath
 Based on: Observation
@@ -75,3 +84,11 @@ Concept: MTH#C3263269 "Did tobacco use contribute to death"
 Description: "Did tobacco use contribute to death."
 Value: CodeableConcept from ContributoryTobaccoUseVS
 ObservationCode is LNC#69443-0 "Did tobacco use contribute to death"
+1..1 Subject
+
+EntryElement: CauseOfDeathCondition
+Based on: Condition
+Concept: TBD
+Description: "A condition that lead to death either directly or indirectly"
+1..1 Subject
+1..1 Onset

@@ -1,7 +1,7 @@
 Grammar: DataElement 5.0
 Namespace: shr.base
 Description: "The SHR Base domain contains definitions for basic classes in SHR, including the base Entry and Any. The classes below Any are are Finding, Action, and Entity."
-Uses: shr.core
+Uses: shr.core, shr.entity
 
 CodeSystem: MTH = http://ncimeta.nci.nih.gov
 
@@ -32,3 +32,21 @@ Concept: MTH#C1554188
 Description: "Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments."
 Value: 0..1 (CodeableConcept or boolean or dateTime)
 1..1 ObservationCode
+0..1 Subject
+
+Element: Subject
+Concept: TBD
+Description: "The person or thing that this entry relates to, usually the Person of Record. However, not all entries have health information specifically about the patient, but in different contexts, could refer to a fetus, family member (living or dead), device, location, organization, finding, condition, or intervention."
+Value: ref(Patient)
+
+Element: Onset
+Concept: MTH#C0277793
+Description: "The beginning or first appearance of a mental or physical disorder."
+Value: dateTime or TimePeriod
+
+EntryElement: Condition
+Concept: MTH#C0348080
+Description:	"A disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. 'Condition' is interpreted broadly to cover states of existence - things the patient is or has."
+Value: 0..1 CodeableConcept
+0..1 Onset
+0..1 Subject

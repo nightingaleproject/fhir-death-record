@@ -11,3 +11,8 @@ DisplayText maps to display
 CodeableConcept maps to CodeableConcept:
 Coding maps to coding
 DisplayText maps to text
+
+TimePeriod maps to Period:
+TimePeriodStart maps to start
+TimePeriodEnd maps to end
+

@@ -1,0 +1,42 @@
+Grammar:		DataElement 5.0
+Namespace:		shr.entity
+Description:	"The SHR Entity domain contains definitions for objects, people and organizations that are involved with the person of record, in some capacity. Entities are things that have separate and distinct existence and objective or conceptual reality. Includes information items, physical objects, health states, and parties."
+Uses:			shr.core, shr.base
+
+/* 
+Abstract Element:	Party
+Concept:			TBD
+Description:		"A person, organization, or object that be involved in a healthcare activity. A party has a separate and distinct existence, and objective or conceptual reality. Includes information, physical objects, and roles."
+0..1				Type
+
+Element:		Type
+Concept:		MTH#C0332307
+Description:	"The most specific code (lowest level term) describing the kind or sort of thing being represented." 
+Value:			CodeableConcept
+
+Abstract Element:	Entity
+Based on:			Party
+Concept:			TBD
+Description:		"Base class for material and non-material things. A non-material thing might be a goal or information relevant to health care, such as an image, consent form, or report. A material thing can be seen and touched, such as a device."
+	
+Abstract Element:	Role
+Based on:			Party
+Concept:			TBD
+Description:		"Abstract parent class for human parties, such as practitioners, patients, research subjects, and related persons. Role can also represent an object playing a specific role, such as a room playing the role of operating theater. The value contains the entity (party) playing the role."
+Value:				ref(Party)  
+
+EntryElement:	Person  // Not the same as FHIR person, which is a linkage element only
+Based on:		Entity
+Concept:		MTH#C0027361
+Description:	"A person relevant to the health or social situation of the subject (including the person of record him or herself)."
+
+EntryElement:	Patient
+Based on:		Role
+Concept: 		MTH#C1299487
+Description:	"A person in the role of a patient, including extended demographic information about the subject of this health record."
+Value is type ref(Person)
+*/
+
+Element:	Patient
+Concept: 		MTH#C1299487
+Description:	"A person in the role of a patient, including extended demographic information about the subject of this health record."

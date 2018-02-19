@@ -4,7 +4,8 @@ Target: FHIR_STU_3
 
 DeathRecordContents maps to Composition:
 TypeCode maps to type
-Subject maps to subject
+Decedent maps to subject
+Certifier maps to author
 constrain type.coding to 1..*
 CauseOfDeathSection maps to section (slice on = section.code; slice strategy = includes)
 CauseOfDeathSection.TypeCode maps to section.code
@@ -20,3 +21,26 @@ CauseOfDeathSection.MannerOfDeath maps to section.entry
 CauseOfDeathSection.MedicalExaminerContacted maps to section.entry
 CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry
 CauseOfDeathSection.TobaccoUseContributedToDeath maps to section.entry
+
+Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
+constrain deceased[x] to 1..1
+fix deceased[x] to true
+
+Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
+
+DeathRecord maps to Bundle:
+fix type to http://hl7.org/fhir/bundle-type#document
+DeathRecordContents maps to entry (slice at = entry; slice on = resource; slice on type = profile)
+ActualOrPresumedDateOfDeath maps to entry
+AutopsyPerformed maps to entry
+AutopsyResultsAvailable maps to entry
+CauseOfDeathCondition maps to entry
+Certifier maps to entry
+DatePronouncedDead maps to entry
+DeathFromWorkInjury maps to entry
+DeathFromTransportInjury maps to entry
+Decedent maps to entry
+MannerOfDeath maps to entry
+MedicalExaminerContacted maps to entry
+TimingOfRecentPregnancyInRelationToDeath maps to entry
+TobaccoUseContributedToDeath maps to entry

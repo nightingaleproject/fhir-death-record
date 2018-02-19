@@ -30,6 +30,13 @@ Value: 1..1 boolean
 ObservationCode is LNC#69436-4 "Autopsy results available"
 1..1 Subject
 
+EntryElement: CauseOfDeathCondition
+Based on: Condition
+Concept: MTH#C3869516
+Description: "A condition that lead to death either directly or indirectly"
+1..1 Subject
+1..1 Onset
+
 EntryElement: DatePronouncedDead
 Based on: Observation
 Concept: MTH#C4263722  "Date and time pronounced dead"
@@ -85,10 +92,3 @@ Description: "Did tobacco use contribute to death."
 Value: CodeableConcept from ContributoryTobaccoUseVS
 ObservationCode is LNC#69443-0 "Did tobacco use contribute to death"
 1..1 Subject
-
-EntryElement: CauseOfDeathCondition
-Based on: Condition
-Concept: TBD
-Description: "A condition that lead to death either directly or indirectly"
-1..1 Subject
-1..1 Onset

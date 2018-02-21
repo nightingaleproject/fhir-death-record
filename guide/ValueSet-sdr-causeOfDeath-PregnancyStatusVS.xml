@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sdr-causeOfDeath-PregnancyStatusVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>SDR PregnancyStatusVS ValueSet</b></p>
+<p>Whether the decedent was pregnant at or around the time of death</p>
+</div>
+  </text>
+  <url value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PregnancyStatusVS"/>
+  <identifier>
+    <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    <value value="sdr.causeOfDeath.PregnancyStatusVS"/>
+  </identifier>
+  <version value="0.0.1"/>
+  <name value="SDR PregnancyStatusVS ValueSet"/>
+  <title value="SDR PregnancyStatusVS ValueSet"/>
+  <status value="draft"/>
+  <date value="2018-02-20"/>
+  <publisher value="The MITRE Corporation: Nightingale Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    </telecom>
+  </contact>
+  <description value="Whether the decedent was pregnant at or around the time of death"/>
+  <compose>
+    <include>
+      <system value="http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274"/>
+      <concept>
+        <code value="PHC1260"/>
+        <display value="Not pregnant within past year"/>
+      </concept>
+      <concept>
+        <code value="PHC1261"/>
+        <display value="Pregnant at time of death"/>
+      </concept>
+      <concept>
+        <code value="PHC1262"/>
+        <display value="Not pregnant, but pregnant within 42 days of death"/>
+      </concept>
+      <concept>
+        <code value="PHC1263"/>
+        <display value="Not pregnant, but pregnant 43 days to 1 year before death"/>
+      </concept>
+      <concept>
+        <code value="PHC1264"/>
+        <display value="Unknown if pregnant within the past year"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="NA"/>
+        <display value="Not applicable"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

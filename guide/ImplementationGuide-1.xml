@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Standard Death Record FHIR Profiles</h2><p>The official URL for this implementation guide is: </p><pre>http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1</pre></div>
+  </text>
+  <url value="http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1"/>
+  <name value="Standard Death Record FHIR Profiles"/>
+  <status value="draft"/>
+  <fhirVersion value="3.0.1"/>
+  <package>
+    <name value="Profiles in this Implementation Guide"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
+        <display value="SDR ActualOrPresumedDateOfDeath Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-AutopsyPerformed"/>
+        <display value="SDR AutopsyPerformed Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-AutopsyResultsAvailable.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable"/>
+        <display value="SDR AutopsyResultsAvailable Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-CauseOfDeathCondition.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition"/>
+        <display value="SDR CauseOfDeathCondition Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-DatePronouncedDead.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-DatePronouncedDead"/>
+        <display value="SDR DatePronouncedDead Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-DeathFromTransportInjury.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury"/>
+        <display value="SDR DeathFromTransportInjury Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-DeathFromWorkInjury.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury"/>
+        <display value="SDR DeathFromWorkInjury Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-MannerOfDeath"/>
+        <display value="SDR MannerOfDeath Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted"/>
+        <display value="SDR MedicalExaminerContacted Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
+        <display value="SDR TimingOfRecentPregnancyInRelationToDeath Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
+        <display value="SDR TobaccoUseContributedToDeath Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Certifier.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Certifier"/>
+        <display value="SDR Certifier Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-DeathRecord.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-DeathRecord"/>
+        <display value="SDR DeathRecord Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-DeathRecordContents.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-DeathRecordContents"/>
+        <display value="SDR DeathRecordContents Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Decedent.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Decedent"/>
+        <display value="SDR Decedent Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-shr-base-Condition.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/shr-base-Condition"/>
+        <display value="SDR Condition Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-shr-base-Entry.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/shr-base-Entry"/>
+        <display value="SDR Entry Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-shr-base-Observation.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/shr-base-Observation"/>
+        <display value="SDR Observation Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-base64Binary-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-base64Binary-extension"/>
+        <display value="SDR base64Binary Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-boolean-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-boolean-extension"/>
+        <display value="SDR boolean Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-code-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-code-extension"/>
+        <display value="SDR code Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-date-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-date-extension"/>
+        <display value="SDR date Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-dateTime-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-dateTime-extension"/>
+        <display value="SDR dateTime Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-decimal-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-decimal-extension"/>
+        <display value="SDR decimal Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-id-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-id-extension"/>
+        <display value="SDR id Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-instant-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-instant-extension"/>
+        <display value="SDR instant Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-integer-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-integer-extension"/>
+        <display value="SDR integer Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-markdown-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-markdown-extension"/>
+        <display value="SDR markdown Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-oid-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-oid-extension"/>
+        <display value="SDR oid Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-positiveInt-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-positiveInt-extension"/>
+        <display value="SDR positiveInt Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-string-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-string-extension"/>
+        <display value="SDR string Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-time-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-time-extension"/>
+        <display value="SDR time Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-unsignedInt-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-unsignedInt-extension"/>
+        <display value="SDR unsignedInt Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-uri-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-uri-extension"/>
+        <display value="SDR uri Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-primitive-xhtml-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/primitive-xhtml-extension"/>
+        <display value="SDR xhtml Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-CertifierType-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-CertifierType-extension"/>
+        <display value="SDR CertifierType Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-causeOfDeath-CertifierTypeVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-causeOfDeath-CertifierTypeVS"/>
+        <display value="SDR CertifierTypeVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-causeOfDeath-ContributoryTobaccoUseVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS"/>
+        <display value="SDR ContributoryTobaccoUseVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-causeOfDeath-MannerOfDeathVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-causeOfDeath-MannerOfDeathVS"/>
+        <display value="SDR MannerOfDeathVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-causeOfDeath-PregnancyStatusVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-causeOfDeath-PregnancyStatusVS"/>
+        <display value="SDR PregnancyStatusVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-causeOfDeath-TransportRelationshipsVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-causeOfDeath-TransportRelationshipsVS"/>
+        <display value="SDR TransportRelationshipsVS ValueSet"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Standard Death Record"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>

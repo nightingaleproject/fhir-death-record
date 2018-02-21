@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-TransportRelationshipsVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sdr-causeOfDeath-TransportRelationshipsVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR TransportRelationshipsVS ValueSet</b></p>\n<p>Transportation Relationships (NCHS)</p>\n</div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/TransportRelationshipsVS"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
+     fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.TransportRelationshipsVS" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "0.0.1"];
+  fhir:ValueSet.name [ fhir:value "SDR TransportRelationshipsVS ValueSet"];
+  fhir:ValueSet.title [ fhir:value "SDR TransportRelationshipsVS ValueSet"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Transportation Relationships (NCHS)"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "236320001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vehicle driver" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "257500003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Passenger" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "257518000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pedestrian" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/NullFlavor" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "OTH" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-TransportRelationshipsVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sdr-causeOfDeath-ContributoryTobaccoUseVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>SDR ContributoryTobaccoUseVS ValueSet</b></p>
+<p>The extent to which tobacco use contributed to the person's death.</p>
+</div>
+  </text>
+  <url value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS"/>
+  <identifier>
+    <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    <value value="sdr.causeOfDeath.ContributoryTobaccoUseVS"/>
+  </identifier>
+  <version value="0.0.1"/>
+  <name value="SDR ContributoryTobaccoUseVS ValueSet"/>
+  <title value="SDR ContributoryTobaccoUseVS ValueSet"/>
+  <status value="draft"/>
+  <date value="2018-02-20"/>
+  <publisher value="The MITRE Corporation: Nightingale Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    </telecom>
+  </contact>
+  <description value="The extent to which tobacco use contributed to the person&#39;s death."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="373066001"/>
+        <display value="Yes"/>
+      </concept>
+      <concept>
+        <code value="373067005"/>
+        <display value="No"/>
+      </concept>
+      <concept>
+        <code value="2931005"/>
+        <display value="Probably"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="Unknown"/>
+      </concept>
+      <concept>
+        <code value="NASK"/>
+        <display value="Not asked"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

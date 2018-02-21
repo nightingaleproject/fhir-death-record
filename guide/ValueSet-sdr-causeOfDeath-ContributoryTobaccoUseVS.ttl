@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sdr-causeOfDeath-ContributoryTobaccoUseVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR ContributoryTobaccoUseVS ValueSet</b></p>\n<p>The extent to which tobacco use contributed to the person's death.</p>\n</div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
+     fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.ContributoryTobaccoUseVS" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "0.0.1"];
+  fhir:ValueSet.name [ fhir:value "SDR ContributoryTobaccoUseVS ValueSet"];
+  fhir:ValueSet.title [ fhir:value "SDR ContributoryTobaccoUseVS ValueSet"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "The extent to which tobacco use contributed to the person's death."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373066001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yes" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "373067005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2931005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Probably" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/NullFlavor" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "UNK" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "NASK" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not asked" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

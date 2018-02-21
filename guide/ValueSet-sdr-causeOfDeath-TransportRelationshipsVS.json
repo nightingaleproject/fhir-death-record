@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sdr-causeOfDeath-TransportRelationshipsVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR TransportRelationshipsVS ValueSet</b></p>\n<p>Transportation Relationships (NCHS)</p>\n</div>"
+  },
+  "url": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/TransportRelationshipsVS",
+  "identifier": [
+    {
+      "system": "http://github.com/nightingaleproject/fhirDeathRecord",
+      "value": "sdr.causeOfDeath.TransportRelationshipsVS"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "SDR TransportRelationshipsVS ValueSet",
+  "title": "SDR TransportRelationshipsVS ValueSet",
+  "status": "draft",
+  "date": "2018-02-20",
+  "publisher": "The MITRE Corporation: Nightingale Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://github.com/nightingaleproject/fhirDeathRecord"
+        }
+      ]
+    }
+  ],
+  "description": "Transportation Relationships (NCHS)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "236320001",
+            "display": "Vehicle driver"
+          },
+          {
+            "code": "257500003",
+            "display": "Passenger"
+          },
+          {
+            "code": "257518000",
+            "display": "Pedestrian"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "concept": [
+          {
+            "code": "OTH",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

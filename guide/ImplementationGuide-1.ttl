@@ -1,0 +1,569 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Standard Death Record FHIR Profiles</h2><p>The official URL for this implementation guide is: </p><pre>http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1"];
+  fhir:ImplementationGuide.name [ fhir:value "Standard Death Record FHIR Profiles"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.1"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:ImplementationGuide.package.name [ fhir:value "Profiles in this Implementation Guide" ];
+     fhir:ImplementationGuide.package.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
+         fhir:Reference.display [ fhir:value "SDR ActualOrPresumedDateOfDeath Profile" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-AutopsyPerformed" ];
+         fhir:Reference.display [ fhir:value "SDR AutopsyPerformed Profile" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-AutopsyResultsAvailable.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable" ];
+         fhir:Reference.display [ fhir:value "SDR AutopsyResultsAvailable Profile" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-CauseOfDeathCondition.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition" ];
+         fhir:Reference.display [ fhir:value "SDR CauseOfDeathCondition Profile" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-DatePronouncedDead.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-DatePronouncedDead" ];
+         fhir:Reference.display [ fhir:value "SDR DatePronouncedDead Profile" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-DeathFromTransportInjury.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury" ];
+         fhir:Reference.display [ fhir:value "SDR DeathFromTransportInjury Profile" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-DeathFromWorkInjury.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury" ];
+         fhir:Reference.display [ fhir:value "SDR DeathFromWorkInjury Profile" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-MannerOfDeath" ];
+         fhir:Reference.display [ fhir:value "SDR MannerOfDeath Profile" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted" ];
+         fhir:Reference.display [ fhir:value "SDR MedicalExaminerContacted Profile" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
+         fhir:Reference.display [ fhir:value "SDR TimingOfRecentPregnancyInRelationToDeath Profile" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
+         fhir:Reference.display [ fhir:value "SDR TobaccoUseContributedToDeath Profile" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-Certifier.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-Certifier" ];
+         fhir:Reference.display [ fhir:value "SDR Certifier Profile" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-DeathRecord.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecord>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-DeathRecord" ];
+         fhir:Reference.display [ fhir:value "SDR DeathRecord Profile" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-DeathRecordContents.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-DeathRecordContents" ];
+         fhir:Reference.display [ fhir:value "SDR DeathRecordContents Profile" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-Decedent.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-Decedent" ];
+         fhir:Reference.display [ fhir:value "SDR Decedent Profile" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-shr-base-Condition.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-base-Condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/shr-base-Condition" ];
+         fhir:Reference.display [ fhir:value "SDR Condition Profile" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-shr-base-Entry.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-base-Entry>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/shr-base-Entry" ];
+         fhir:Reference.display [ fhir:value "SDR Entry Profile" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-shr-base-Observation.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-base-Observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/shr-base-Observation" ];
+         fhir:Reference.display [ fhir:value "SDR Observation Profile" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-base64Binary-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-base64Binary-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-base64Binary-extension" ];
+         fhir:Reference.display [ fhir:value "SDR base64Binary Extension" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-boolean-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-boolean-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-boolean-extension" ];
+         fhir:Reference.display [ fhir:value "SDR boolean Extension" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-code-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-code-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-code-extension" ];
+         fhir:Reference.display [ fhir:value "SDR code Extension" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-date-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-date-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-date-extension" ];
+         fhir:Reference.display [ fhir:value "SDR date Extension" ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-dateTime-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-dateTime-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-dateTime-extension" ];
+         fhir:Reference.display [ fhir:value "SDR dateTime Extension" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-decimal-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-decimal-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-decimal-extension" ];
+         fhir:Reference.display [ fhir:value "SDR decimal Extension" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-id-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-id-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-id-extension" ];
+         fhir:Reference.display [ fhir:value "SDR id Extension" ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-instant-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-instant-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-instant-extension" ];
+         fhir:Reference.display [ fhir:value "SDR instant Extension" ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-integer-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-integer-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-integer-extension" ];
+         fhir:Reference.display [ fhir:value "SDR integer Extension" ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-markdown-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-markdown-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-markdown-extension" ];
+         fhir:Reference.display [ fhir:value "SDR markdown Extension" ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-oid-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-oid-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-oid-extension" ];
+         fhir:Reference.display [ fhir:value "SDR oid Extension" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-positiveInt-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-positiveInt-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-positiveInt-extension" ];
+         fhir:Reference.display [ fhir:value "SDR positiveInt Extension" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-string-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-string-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-string-extension" ];
+         fhir:Reference.display [ fhir:value "SDR string Extension" ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-time-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-time-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-time-extension" ];
+         fhir:Reference.display [ fhir:value "SDR time Extension" ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-unsignedInt-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-unsignedInt-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-unsignedInt-extension" ];
+         fhir:Reference.display [ fhir:value "SDR unsignedInt Extension" ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-uri-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-uri-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-uri-extension" ];
+         fhir:Reference.display [ fhir:value "SDR uri Extension" ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-primitive-xhtml-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/primitive-xhtml-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/primitive-xhtml-extension" ];
+         fhir:Reference.display [ fhir:value "SDR xhtml Extension" ]
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-CertifierType-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-CertifierType-extension" ];
+         fhir:Reference.display [ fhir:value "SDR CertifierType Extension" ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-sdr-causeOfDeath-CertifierTypeVS.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-CertifierTypeVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sdr-causeOfDeath-CertifierTypeVS" ];
+         fhir:Reference.display [ fhir:value "SDR CertifierTypeVS ValueSet" ]
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-sdr-causeOfDeath-ContributoryTobaccoUseVS.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS" ];
+         fhir:Reference.display [ fhir:value "SDR ContributoryTobaccoUseVS ValueSet" ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-sdr-causeOfDeath-MannerOfDeathVS.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-MannerOfDeathVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sdr-causeOfDeath-MannerOfDeathVS" ];
+         fhir:Reference.display [ fhir:value "SDR MannerOfDeathVS ValueSet" ]
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-sdr-causeOfDeath-PregnancyStatusVS.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-PregnancyStatusVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sdr-causeOfDeath-PregnancyStatusVS" ];
+         fhir:Reference.display [ fhir:value "SDR PregnancyStatusVS ValueSet" ]
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-sdr-causeOfDeath-TransportRelationshipsVS.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-TransportRelationshipsVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sdr-causeOfDeath-TransportRelationshipsVS" ];
+         fhir:Reference.display [ fhir:value "SDR TransportRelationshipsVS ValueSet" ]
+       ]
+     ]
+  ];
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "Standard Death Record" ];
+     fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

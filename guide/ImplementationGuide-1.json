@@ -1,0 +1,557 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Standard Death Record FHIR Profiles</h2><p>The official URL for this implementation guide is: </p><pre>http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1</pre></div>"
+  },
+  "url": "http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1",
+  "name": "Standard Death Record FHIR Profiles",
+  "status": "draft",
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "name": "Profiles in this Implementation Guide",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
+            "display": "SDR ActualOrPresumedDateOfDeath Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-AutopsyPerformed",
+            "display": "SDR AutopsyPerformed Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-AutopsyResultsAvailable.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable",
+            "display": "SDR AutopsyResultsAvailable Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-CauseOfDeathCondition.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition",
+            "display": "SDR CauseOfDeathCondition Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-DatePronouncedDead.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-DatePronouncedDead",
+            "display": "SDR DatePronouncedDead Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-DeathFromTransportInjury.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury",
+            "display": "SDR DeathFromTransportInjury Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-DeathFromWorkInjury.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury",
+            "display": "SDR DeathFromWorkInjury Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-MannerOfDeath",
+            "display": "SDR MannerOfDeath Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted",
+            "display": "SDR MedicalExaminerContacted Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
+            "display": "SDR TimingOfRecentPregnancyInRelationToDeath Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath",
+            "display": "SDR TobaccoUseContributedToDeath Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Certifier.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Certifier",
+            "display": "SDR Certifier Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-DeathRecord.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-DeathRecord",
+            "display": "SDR DeathRecord Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-DeathRecordContents.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-DeathRecordContents",
+            "display": "SDR DeathRecordContents Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Decedent.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Decedent",
+            "display": "SDR Decedent Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-shr-base-Condition.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/shr-base-Condition",
+            "display": "SDR Condition Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-shr-base-Entry.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/shr-base-Entry",
+            "display": "SDR Entry Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-shr-base-Observation.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/shr-base-Observation",
+            "display": "SDR Observation Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-base64Binary-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-base64Binary-extension",
+            "display": "SDR base64Binary Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-boolean-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-boolean-extension",
+            "display": "SDR boolean Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-code-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-code-extension",
+            "display": "SDR code Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-date-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-date-extension",
+            "display": "SDR date Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-dateTime-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-dateTime-extension",
+            "display": "SDR dateTime Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-decimal-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-decimal-extension",
+            "display": "SDR decimal Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-id-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-id-extension",
+            "display": "SDR id Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-instant-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-instant-extension",
+            "display": "SDR instant Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-integer-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-integer-extension",
+            "display": "SDR integer Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-markdown-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-markdown-extension",
+            "display": "SDR markdown Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-oid-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-oid-extension",
+            "display": "SDR oid Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-positiveInt-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-positiveInt-extension",
+            "display": "SDR positiveInt Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-string-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-string-extension",
+            "display": "SDR string Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-time-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-time-extension",
+            "display": "SDR time Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-unsignedInt-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-unsignedInt-extension",
+            "display": "SDR unsignedInt Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-uri-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-uri-extension",
+            "display": "SDR uri Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-primitive-xhtml-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/primitive-xhtml-extension",
+            "display": "SDR xhtml Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-CertifierType-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-CertifierType-extension",
+            "display": "SDR CertifierType Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-causeOfDeath-CertifierTypeVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-causeOfDeath-CertifierTypeVS",
+            "display": "SDR CertifierTypeVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-causeOfDeath-ContributoryTobaccoUseVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS",
+            "display": "SDR ContributoryTobaccoUseVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-causeOfDeath-MannerOfDeathVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-causeOfDeath-MannerOfDeathVS",
+            "display": "SDR MannerOfDeathVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-causeOfDeath-PregnancyStatusVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-causeOfDeath-PregnancyStatusVS",
+            "display": "SDR PregnancyStatusVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-causeOfDeath-TransportRelationshipsVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-causeOfDeath-TransportRelationshipsVS",
+            "display": "SDR TransportRelationshipsVS ValueSet"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "index.html",
+    "title": "Standard Death Record",
+    "kind": "page"
+  }
+}

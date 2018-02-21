@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sdr-causeOfDeath-PregnancyStatusVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR PregnancyStatusVS ValueSet</b></p>\n<p>Whether the decedent was pregnant at or around the time of death</p>\n</div>"
+  },
+  "url": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PregnancyStatusVS",
+  "identifier": [
+    {
+      "system": "http://github.com/nightingaleproject/fhirDeathRecord",
+      "value": "sdr.causeOfDeath.PregnancyStatusVS"
+    }
+  ],
+  "version": "0.0.1",
+  "name": "SDR PregnancyStatusVS ValueSet",
+  "title": "SDR PregnancyStatusVS ValueSet",
+  "status": "draft",
+  "date": "2018-02-20",
+  "publisher": "The MITRE Corporation: Nightingale Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://github.com/nightingaleproject/fhirDeathRecord"
+        }
+      ]
+    }
+  ],
+  "description": "Whether the decedent was pregnant at or around the time of death",
+  "compose": {
+    "include": [
+      {
+        "system": "http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274",
+        "concept": [
+          {
+            "code": "PHC1260",
+            "display": "Not pregnant within past year"
+          },
+          {
+            "code": "PHC1261",
+            "display": "Pregnant at time of death"
+          },
+          {
+            "code": "PHC1262",
+            "display": "Not pregnant, but pregnant within 42 days of death"
+          },
+          {
+            "code": "PHC1263",
+            "display": "Not pregnant, but pregnant 43 days to 1 year before death"
+          },
+          {
+            "code": "PHC1264",
+            "display": "Unknown if pregnant within the past year"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "concept": [
+          {
+            "code": "NA",
+            "display": "Not applicable"
+          }
+        ]
+      }
+    ]
+  }
+}

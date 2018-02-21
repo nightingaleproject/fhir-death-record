@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sdr-causeOfDeath-CertifierTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>SDR CertifierTypeVS ValueSet</b></p>
+<p>Type of certifier for a death record</p>
+</div>
+  </text>
+  <url value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS"/>
+  <identifier>
+    <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    <value value="sdr.causeOfDeath.CertifierTypeVS"/>
+  </identifier>
+  <version value="0.0.1"/>
+  <name value="SDR CertifierTypeVS ValueSet"/>
+  <title value="SDR CertifierTypeVS ValueSet"/>
+  <status value="draft"/>
+  <date value="2018-02-20"/>
+  <publisher value="The MITRE Corporation: Nightingale Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    </telecom>
+  </contact>
+  <description value="Type of certifier for a death record"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="434641000124105"/>
+        <display value="Physician (Certifier)"/>
+      </concept>
+      <concept>
+        <code value="434651000124107"/>
+        <display value="Physician (Pronouncer and Certifier)"/>
+      </concept>
+      <concept>
+        <code value="310193003"/>
+        <display value="Coroner"/>
+      </concept>
+      <concept>
+        <code value="440051000124108"/>
+        <display value="Medical Examiner"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

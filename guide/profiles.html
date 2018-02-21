@@ -1,0 +1,268 @@
+﻿<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>Standard Death Record FHIR Profiles</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Standard Death Record FHIR Implemenation Guide"/>
+  <meta name="author" content="http://standardhealthrecord.org"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="assets/css/project.css"/>
+  <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+  <link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+  <body>
+
+    <div id="segment-header" class="segment">
+    <!-- segment-header -->
+  <div class="container">
+      <!-- container -->
+    <a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+    <div id="hl7-status">
+      <b>Standard Death Record FHIR Implementation Guide</b>
+    </div>
+
+    <div id="hl7-nav">
+      <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+        <img src="assets/images/hl7-logo.png" alt="visit the hl7 website" width="42" height="50"/>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+      <!-- container -->
+  </div>
+</div>
+  <!-- /segment-header -->
+
+<div id="segment-navbar" class="segment">
+    <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">
+      <!-- container -->
+      <!-- HEADER CONTENT -->
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+        <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="extensions.html">Extensions</a></li>
+            <li><a href="valuesets.html">Value Sets</a></li>
+            <li><a href="codesystems.html">Code Systems</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+          </ul>
+
+        </div>
+          <!-- /.nav-collapse -->
+      </div>
+        <!-- /.container -->
+    </nav>
+      <!-- /.navbar -->
+
+      <!-- /HEADER CONTENT -->
+  </div>
+    <!-- /container -->
+</div>
+  <!-- /segment-navbar -->
+
+  <!-- ============BreadCrumb=============== -->
+
+      <!-- /container -->
+     <!-- /segment-breadcrumb -->
+
+ <div id="segment-content" class="segment">    <!-- segment-content -->
+ <div class="container">    <!-- container -->
+   <div class="row">
+     <div class="inner-wrapper">
+       <div class="col-9">
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<h2>
+  Profiles defined as part of this Guide
+</h2>
+<table class="codes">
+  <thead>
+    <tr>
+      <td>
+        <b>SDR Namespace</b>
+      </td>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Based On</b>
+      </td>
+      <td>
+        <b>Definition</b>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.html">ActualOrPresumedDateOfDeath</a></td>
+      <td><a name="988358e2-161f-4d3b-a913-0a029c9cd141"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Actual or presumed date of death.</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html">AutopsyPerformed</a></td>
+      <td><a name="1f16c275-319b-412f-a1de-13bcd271f12c"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Whether an autopsy was performed (true) or not (false).</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-AutopsyResultsAvailable.html">AutopsyResultsAvailable</a></td>
+      <td><a name="fac12def-51d1-404f-93fd-3511c88646db"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Were autopsy findings available to complete the cause of death?</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-CauseOfDeathCondition.html">CauseOfDeathCondition</a></td>
+      <td><a name="874a5ac4-8587-427c-b2c6-b1698998ac22"> </a><a href="http://hl7.org/fhir/STU3/Condition.html">Condition</a></td>
+      <td>A condition that lead to death either directly or indirectly</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-DatePronouncedDead.html">DatePronouncedDead</a></td>
+      <td><a name="b7186c09-2d09-4b0c-8fa4-9cdf7669437f"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Date pronounced dead.</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-DeathFromTransportInjury.html">DeathFromTransportInjury</a></td>
+      <td><a name="4ec1e19d-d7a2-4b9c-b09d-17d823f5d8c1"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Injury leading to death associated with transportation event</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-DeathFromWorkInjury.html">DeathFromWorkInjury</a></td>
+      <td><a name="85917d5f-d031-4181-b014-7100b6a283ae"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Did death result from injury at work?</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html">MannerOfDeath</a></td>
+      <td><a name="a8aa2c78-a779-421f-9581-20cfbb3fd0c8"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>The manner of the decendents demise.</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html">MedicalExaminerContacted</a></td>
+      <td><a name="04d2e015-9dc1-4b24-bc2b-fcf11b7f75e0"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>The manner of the decendents demise.</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.html">TimingOfRecentPregnancyInRelationToDeath</a></td>
+      <td><a name="f4214e6e-8acc-4f69-a1b7-4bd121313749"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Timing of recent pregnancy in relation to death.</td>
+    </tr>
+    <tr>
+      <td>CauseOfDeath</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.html">TobaccoUseContributedToDeath</a></td>
+      <td><a name="6235fba8-549e-4e54-9fad-45079103a2ac"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Did tobacco use contribute to death.</td>
+    </tr>
+    <tr>
+      <td>DeathRecord</td>
+      <td><a href="StructureDefinition-sdr-deathRecord-Certifier.html">Certifier</a></td>
+      <td><a name="6f4185f0-13e4-4816-ad5e-54fc1019f953"> </a><a href="http://hl7.org/fhir/STU3/Practitioner.html">Practitioner</a></td>
+      <td>The certifier of the death record</td>
+    </tr>
+    <tr>
+      <td>DeathRecord</td>
+      <td><a href="StructureDefinition-sdr-deathRecord-DeathRecord.html">DeathRecord</a></td>
+      <td><a name="a57dfbd7-a7c0-4b0d-a852-88455e47aa96"> </a><a href="http://hl7.org/fhir/STU3/Bundle.html">Bundle</a></td>
+      <td>A record that details information about the death of an individual</td>
+    </tr>
+    <tr>
+      <td>DeathRecord</td>
+      <td><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.html">DeathRecordContents</a></td>
+      <td><a name="73bd8fc1-a3a3-423b-a313-8646d48fa9be"> </a><a href="http://hl7.org/fhir/STU3/Composition.html">Composition</a></td>
+      <td>Defines the contents of a death record document.</td>
+    </tr>
+    <tr>
+      <td>DeathRecord</td>
+      <td><a href="StructureDefinition-sdr-deathRecord-Decedent.html">Decedent</a></td>
+      <td><a name="bbc54a0e-2b6e-49b1-87fe-13c4989d5ab9"> </a><a href="http://hl7.org/fhir/STU3/Patient.html">Patient</a></td>
+      <td>The subject of the death record</td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td><a href="StructureDefinition-shr-base-Condition.html">Condition</a></td>
+      <td><a name="a54d64b7-647c-4bfd-a63c-30372ff7baa3"> </a><a href="http://hl7.org/fhir/STU3/Condition.html">Condition</a></td>
+      <td>A disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. 'Condition' is interpreted broadly to cover states of existence - things the patient is or has.</td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td><a href="StructureDefinition-shr-base-Entry.html">Entry</a></td>
+      <td><a name="10003a3a-c454-4781-9289-9bba3435f74a"> </a><a href="http://hl7.org/fhir/STU3/DomainResource.html">DomainResource</a></td>
+      <td>Metadata attributes that apply to any item represented in the standard health record. An Entry may not belong exclusively to a single person's health record, but could represent an entity that surfaces in multiple records, such as organizations or practitioners. If the entry belongs to a single person's record, then the identity of the person of record must be recorded.</td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td><a href="StructureDefinition-shr-base-Observation.html">Observation</a></td>
+      <td><a name="6fb618ae-d374-4336-8979-4ec9c183c6f0"> </a><a href="http://hl7.org/fhir/STU3/Observation.html">Observation</a></td>
+      <td>Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+        </div>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /row -->
+  </div>    <!-- /container -->
+</div>    <!-- /segment-content -->
+
+        
+          <!-- /inner-wrapper -->
+        <!-- /row -->
+      <!-- /container -->
+    <!-- /segment-content -->
+
+<div id="segment-footer" class="segment">    <!-- segment-footer -->
+  <div class="container">    <!-- container -->
+   <div class="inner-wrapper">
+    <p>Implementation guide generated by the Standard Health Record Collaborative &copy; FHIR STU3 (IG Publisher v3.0.1-11916) generated
+        on Tue, Feb 20, 2018 09:49-0500.</p>
+   </div>    <!-- /inner-wrapper -->
+  </div>    <!-- /container -->
+</div>    <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+  <div class="container">    <!-- container -->
+  </div>    <!-- /container -->
+</div>    <!-- /segment-post-footer -->
+
+</body>
+
+</head></html>

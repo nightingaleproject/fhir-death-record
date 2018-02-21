@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-PregnancyStatusVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sdr-causeOfDeath-PregnancyStatusVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR PregnancyStatusVS ValueSet</b></p>\n<p>Whether the decedent was pregnant at or around the time of death</p>\n</div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PregnancyStatusVS"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
+     fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.PregnancyStatusVS" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "0.0.1"];
+  fhir:ValueSet.name [ fhir:value "SDR PregnancyStatusVS ValueSet"];
+  fhir:ValueSet.title [ fhir:value "SDR PregnancyStatusVS ValueSet"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Whether the decedent was pregnant at or around the time of death"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PHC1260" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not pregnant within past year" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PHC1261" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pregnant at time of death" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PHC1262" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not pregnant, but pregnant within 42 days of death" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PHC1263" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not pregnant, but pregnant 43 days to 1 year before death" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PHC1264" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown if pregnant within the past year" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/v3/NullFlavor" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "NA" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not applicable" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-PregnancyStatusVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

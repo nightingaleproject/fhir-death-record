@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-MannerOfDeathVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sdr-causeOfDeath-MannerOfDeathVS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR MannerOfDeathVS ValueSet</b></p>\n<p>Manner of death</p>\n</div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/MannerOfDeathVS"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
+     fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.MannerOfDeathVS" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "0.0.1"];
+  fhir:ValueSet.name [ fhir:value "SDR MannerOfDeathVS ValueSet"];
+  fhir:ValueSet.title [ fhir:value "SDR MannerOfDeathVS ValueSet"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Manner of death"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38605008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natural" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7878000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Accident" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44301001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suicide" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "27935005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Homicide" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "185973002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pending Investigation" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "65037004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Could not be determined" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/ValueSet/sdr-causeOfDeath-MannerOfDeathVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -23,7 +23,7 @@
   <version value="0.0.1"/>
   <name value="SDR MannerOfDeath Profile"/>
   <status value="draft"/>
-  <date value="2018-02-20"/>
+  <date value="2018-03-12"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -587,7 +587,7 @@
       <slicing id="1">
         <discriminator>
           <type value="value"/>
-          <path value="path"/>
+          <path value="code"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -1923,7 +1923,7 @@
       <slicing id="1">
         <discriminator>
           <type value="value"/>
-          <path value="path"/>
+          <path value="code"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>

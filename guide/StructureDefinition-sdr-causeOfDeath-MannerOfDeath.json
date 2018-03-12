@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR MannerOfDeath Profile",
   "status": "draft",
-  "date": "2018-02-20",
+  "date": "2018-03-12",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -700,7 +700,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "path"
+              "path": "code"
             }
           ],
           "ordered": false,
@@ -2359,7 +2359,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "path"
+              "path": "code"
             }
           ],
           "ordered": false,

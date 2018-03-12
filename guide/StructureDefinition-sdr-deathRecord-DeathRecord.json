@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR DeathRecord Profile",
   "status": "draft",
-  "date": "2018-02-20",
+  "date": "2018-03-12",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -493,697 +493,11 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.id",
-        "path": "Bundle.entry.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.extension",
-        "path": "Bundle.entry.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.modifierExtension",
-        "path": "Bundle.entry.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "BackboneElement.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.link",
-        "path": "Bundle.entry.link",
-        "short": "Links related to this entry",
-        "definition": "A series of links that provide context to this entry.",
-        "min": 0,
-        "max": "*",
-        "contentReference": "#Bundle.link",
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.fullUrl",
-        "path": "Bundle.entry.fullUrl",
-        "short": "Absolute URL for resource (server address, or UUID/OID)",
-        "definition": "The Absolute URL for the resource.  The fullUrl SHALL not disagree with the id in the resource. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that: \n* fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)\n* Results from operations might involve resources that are not identified.",
-        "comment": "fullUrl may not be [unique in the context of a resource](bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](references.html), the absolute URL may not end with the logical id of the resource (Resource.id), but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](references.html#regex), then it SHALL end with the Resource.id.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.resource",
-        "path": "Bundle.entry.resource",
-        "short": "A resource in the bundle",
-        "definition": "The Resources for the entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.search",
-        "path": "Bundle.entry.search",
-        "short": "Search related information",
-        "definition": "Information about the search process that lead to the creation of this entry.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "condition": [
-          "bdl-2"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() | (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "Element"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.search.id",
-        "path": "Bundle.entry.search.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.search.extension",
-        "path": "Bundle.entry.search.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.search.modifierExtension",
-        "path": "Bundle.entry.search.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "BackboneElement.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.search.mode",
-        "path": "Bundle.entry.search.mode",
-        "short": "match | include | outcome - why this is in the result set",
-        "definition": "Why this entry is in the result set - whether it's included as a match or because of an _include requirement.",
-        "comment": "There is only one mode. In some corner cases, a resource may be included because it is both a match and an include. In these circumstances, 'match' takes precedence.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "SearchEntryMode"
-            }
-          ],
-          "strength": "required",
-          "description": "Why an entry is in the result set - whether it's included as a match or because of an _include requirement.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/search-entry-mode"
-          }
-        }
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.search.score",
-        "path": "Bundle.entry.search.score",
-        "short": "Search ranking (between 0 and 1)",
-        "definition": "When searching, the server's search ranking score for the entry.",
-        "comment": "Servers are not required to return a ranking score. 1 is most relevant, and 0 is least relevant. Often, search results are sorted by score, but the client may specify a different sort order.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "decimal"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request",
-        "path": "Bundle.entry.request",
-        "short": "Transaction Related Information",
-        "definition": "Additional information about how this entry should be processed as part of a transaction.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "condition": [
-          "bdl-3"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() | (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "Element"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.id",
-        "path": "Bundle.entry.request.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.extension",
-        "path": "Bundle.entry.request.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.modifierExtension",
-        "path": "Bundle.entry.request.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "BackboneElement.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.method",
-        "path": "Bundle.entry.request.method",
-        "short": "GET | POST | PUT | DELETE",
-        "definition": "The HTTP verb for this entry in either a change history, or a transaction/ transaction response.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "HTTPVerb"
-            }
-          ],
-          "strength": "required",
-          "description": "HTTP verbs (in the HTTP command line).",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/http-verb"
-          }
-        }
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.url",
-        "path": "Bundle.entry.request.url",
-        "short": "URL for HTTP equivalent of this entry",
-        "definition": "The URL for this entry, relative to the root (the address to which the request is posted).",
-        "comment": "E.g. for a Patient Create, the method would be \"POST\" and the URL would be \"Patient\". For a Patient Update, the method would be PUT, and the URL would be \"Patient/[id]\".",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.ifNoneMatch",
-        "path": "Bundle.entry.request.ifNoneMatch",
-        "short": "For managing cache currency",
-        "definition": "If the ETag values match, return a 304 Not Modified status. See the API documentation for [\"Conditional Read\"](http.html#cread).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.ifModifiedSince",
-        "path": "Bundle.entry.request.ifModifiedSince",
-        "short": "For managing update contention",
-        "definition": "Only perform the operation if the last updated date matches. See the API documentation for [\"Conditional Read\"](http.html#cread).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "instant"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.ifMatch",
-        "path": "Bundle.entry.request.ifMatch",
-        "short": "For managing update contention",
-        "definition": "Only perform the operation if the Etag value matches. For more information, see the API section [\"Managing Resource Contention\"](http.html#concurrency).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.request.ifNoneExist",
-        "path": "Bundle.entry.request.ifNoneExist",
-        "short": "For conditional creates",
-        "definition": "Instruct the server not to perform the create if a specified resource already exists. For further information, see the API documentation for [\"Conditional Create\"](http.html#ccreate). This is just the query portion of the URL - what follows the \"?\" (not including the \"?\").",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response",
-        "path": "Bundle.entry.response",
-        "short": "Transaction Related Information",
-        "definition": "Additional information about how this entry should be processed as part of a transaction.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "condition": [
-          "bdl-4"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() | (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "Element"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.id",
-        "path": "Bundle.entry.response.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.extension",
-        "path": "Bundle.entry.response.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.modifierExtension",
-        "path": "Bundle.entry.response.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "BackboneElement.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.status",
-        "path": "Bundle.entry.response.status",
-        "short": "Status response code (text optional)",
-        "definition": "The status code returned by processing this entry. The status SHALL start with a 3 digit HTTP code (e.g. 404) and may contain the standard HTTP description associated with the status code.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.location",
-        "path": "Bundle.entry.response.location",
-        "short": "The location, if the operation returns a location",
-        "definition": "The location header created by processing this operation.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.etag",
-        "path": "Bundle.entry.response.etag",
-        "short": "The etag for the resource (if relevant)",
-        "definition": "The etag for the resource, it the operation for the entry produced a versioned resource (see [Resource Metadata and Versioning](http.html#versioning) and [Managing Resource Contention](http.html#concurrency)).",
-        "comment": "Etags match the Resource.meta.versionId. The ETag has to match the version id in the header if a resource is included.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.lastModified",
-        "path": "Bundle.entry.response.lastModified",
-        "short": "Server's date time modified",
-        "definition": "The date/time that the resource was modified on the server.",
-        "comment": "This has to match the same time in the meta header if a resource is included.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "instant"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry.response.outcome",
-        "path": "Bundle.entry.response.outcome",
-        "short": "OperationOutcome with hints and warnings (for batch/transaction)",
-        "definition": "An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.",
-        "comment": "For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Resource"
-          }
-        ],
-        "isSummary": true
-      },
-      {
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents",
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-DeathRecordContents",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "DeathRecordContents",
+        "definition": "Defines the contents of a death record document.",
         "min": 1,
         "max": "1",
         "type": [
@@ -1907,8 +1221,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "ActualOrPresumedDateOfDeath",
+        "definition": "Actual or presumed date of death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2632,8 +1946,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-AutopsyPerformed",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyPerformed",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "AutopsyPerformed",
+        "definition": "Whether an autopsy was performed (true) or not (false).",
         "min": 1,
         "max": "1",
         "type": [
@@ -3357,8 +2671,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-AutopsyResultsAvailable",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyResultsAvailable",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "AutopsyResultsAvailable",
+        "definition": "Were autopsy findings available to complete the cause of death?",
         "min": 1,
         "max": "1",
         "type": [
@@ -4082,8 +3396,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-CauseOfDeathCondition",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-CauseOfDeathCondition",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "CauseOfDeathCondition",
+        "definition": "A condition that lead to death either directly or indirectly",
         "min": 1,
         "max": "1",
         "type": [
@@ -4807,8 +4121,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Certifier",
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-Certifier",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "Certifier",
+        "definition": "The certifier of the death record",
         "min": 1,
         "max": "1",
         "type": [
@@ -5532,8 +4846,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-DatePronouncedDead",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-DatePronouncedDead",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "DatePronouncedDead",
+        "definition": "Date pronounced dead.",
         "min": 1,
         "max": "1",
         "type": [
@@ -6257,8 +5571,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-DeathFromWorkInjury",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromWorkInjury",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "DeathFromWorkInjury",
+        "definition": "Did death result from injury at work?",
         "min": 1,
         "max": "1",
         "type": [
@@ -6982,8 +6296,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-DeathFromTransportInjury",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromTransportInjury",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "DeathFromTransportInjury",
+        "definition": "Injury leading to death associated with transportation event",
         "min": 1,
         "max": "1",
         "type": [
@@ -7707,8 +7021,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent",
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-Decedent",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "Decedent",
+        "definition": "The subject of the death record",
         "min": 1,
         "max": "1",
         "type": [
@@ -8432,8 +7746,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-MannerOfDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-MannerOfDeath",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "MannerOfDeath",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1",
         "type": [
@@ -9157,8 +8471,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-MedicalExaminerContacted",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-MedicalExaminerContacted",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "MedicalExaminerContacted",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1",
         "type": [
@@ -9882,8 +9196,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "TimingOfRecentPregnancyInRelationToDeath",
+        "definition": "Timing of recent pregnancy in relation to death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -10607,8 +9921,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-TobaccoUseContributedToDeath",
-        "short": "Entry in the bundle - will have a resource, or information",
-        "definition": "An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).",
+        "short": "TobaccoUseContributedToDeath",
+        "definition": "Did tobacco use contribute to death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -11382,6 +10696,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents",
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-DeathRecordContents",
+        "short": "DeathRecordContents",
+        "definition": "Defines the contents of a death record document.",
         "min": 1,
         "max": "1"
       },
@@ -11389,6 +10705,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
+        "short": "ActualOrPresumedDateOfDeath",
+        "definition": "Actual or presumed date of death.",
         "min": 1,
         "max": "1"
       },
@@ -11396,6 +10714,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-AutopsyPerformed",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyPerformed",
+        "short": "AutopsyPerformed",
+        "definition": "Whether an autopsy was performed (true) or not (false).",
         "min": 1,
         "max": "1"
       },
@@ -11403,6 +10723,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-AutopsyResultsAvailable",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyResultsAvailable",
+        "short": "AutopsyResultsAvailable",
+        "definition": "Were autopsy findings available to complete the cause of death?",
         "min": 1,
         "max": "1"
       },
@@ -11410,6 +10732,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-CauseOfDeathCondition",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-CauseOfDeathCondition",
+        "short": "CauseOfDeathCondition",
+        "definition": "A condition that lead to death either directly or indirectly",
         "min": 1,
         "max": "1"
       },
@@ -11417,6 +10741,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Certifier",
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-Certifier",
+        "short": "Certifier",
+        "definition": "The certifier of the death record",
         "min": 1,
         "max": "1"
       },
@@ -11424,6 +10750,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-DatePronouncedDead",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-DatePronouncedDead",
+        "short": "DatePronouncedDead",
+        "definition": "Date pronounced dead.",
         "min": 1,
         "max": "1"
       },
@@ -11431,6 +10759,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-DeathFromWorkInjury",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromWorkInjury",
+        "short": "DeathFromWorkInjury",
+        "definition": "Did death result from injury at work?",
         "min": 1,
         "max": "1"
       },
@@ -11438,6 +10768,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-DeathFromTransportInjury",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromTransportInjury",
+        "short": "DeathFromTransportInjury",
+        "definition": "Injury leading to death associated with transportation event",
         "min": 1,
         "max": "1"
       },
@@ -11445,6 +10777,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent",
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-Decedent",
+        "short": "Decedent",
+        "definition": "The subject of the death record",
         "min": 1,
         "max": "1"
       },
@@ -11452,6 +10786,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-MannerOfDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-MannerOfDeath",
+        "short": "MannerOfDeath",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1"
       },
@@ -11459,6 +10795,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-MedicalExaminerContacted",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-MedicalExaminerContacted",
+        "short": "MedicalExaminerContacted",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1"
       },
@@ -11466,6 +10804,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
+        "short": "TimingOfRecentPregnancyInRelationToDeath",
+        "definition": "Timing of recent pregnancy in relation to death.",
         "min": 1,
         "max": "1"
       },
@@ -11473,6 +10813,8 @@
         "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath",
         "path": "Bundle.entry",
         "sliceName": "sdr-causeOfDeath-TobaccoUseContributedToDeath",
+        "short": "TobaccoUseContributedToDeath",
+        "definition": "Did tobacco use contribute to death.",
         "min": 1,
         "max": "1"
       }

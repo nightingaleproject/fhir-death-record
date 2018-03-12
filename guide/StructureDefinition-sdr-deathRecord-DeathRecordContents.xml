@@ -37,7 +37,7 @@
   <version value="0.0.1"/>
   <name value="SDR DeathRecordContents Profile"/>
   <status value="draft"/>
-  <date value="2018-02-20"/>
+  <date value="2018-03-12"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -453,7 +453,7 @@
       <slicing id="3">
         <discriminator>
           <type value="value"/>
-          <path value="path"/>
+          <path value="code"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -1617,7 +1617,7 @@
       <slicing id="1">
         <discriminator>
           <type value="value"/>
-          <path value="path"/>
+          <path value="code"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -1983,9 +1983,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="ActualOrPresumedDateOfDeath"/>
+      <definition value="Actual or presumed date of death."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2005,9 +2004,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyPerformed"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="AutopsyPerformed"/>
+      <definition value="Whether an autopsy was performed (true) or not (false)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2027,9 +2025,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyResultsAvailable"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="AutopsyResultsAvailable"/>
+      <definition value="Were autopsy findings available to complete the cause of death?"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2049,9 +2046,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-CauseOfDeathCondition"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="CauseOfDeathCondition"/>
+      <definition value="A condition that lead to death either directly or indirectly"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -2071,9 +2067,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="DatePronouncedDead"/>
+      <definition value="Date pronounced dead."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2093,9 +2088,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromWorkInjury"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="DeathFromWorkInjury"/>
+      <definition value="Did death result from injury at work?"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2115,9 +2109,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromTransportInjury"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="DeathFromTransportInjury"/>
+      <definition value="Injury leading to death associated with transportation event"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2137,9 +2130,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="MannerOfDeath"/>
+      <definition value="The manner of the decendents demise."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2159,9 +2151,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="MedicalExaminerContacted"/>
+      <definition value="The manner of the decendents demise."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2181,9 +2172,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="TimingOfRecentPregnancyInRelationToDeath"/>
+      <definition value="Timing of recent pregnancy in relation to death."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2203,9 +2193,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
-      <short value="A reference to data that supports this section"/>
-      <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
-      <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
+      <short value="TobaccoUseContributedToDeath"/>
+      <definition value="Did tobacco use contribute to death."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2286,7 +2275,7 @@
       <slicing id="3">
         <discriminator>
           <type value="value"/>
-          <path value="path"/>
+          <path value="code"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -2344,7 +2333,7 @@
       <slicing id="1">
         <discriminator>
           <type value="value"/>
-          <path value="path"/>
+          <path value="code"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -2389,6 +2378,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
+      <short value="ActualOrPresumedDateOfDeath"/>
+      <definition value="Actual or presumed date of death."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2399,6 +2390,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyPerformed"/>
+      <short value="AutopsyPerformed"/>
+      <definition value="Whether an autopsy was performed (true) or not (false)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2409,6 +2402,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyResultsAvailable"/>
+      <short value="AutopsyResultsAvailable"/>
+      <definition value="Were autopsy findings available to complete the cause of death?"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2419,6 +2414,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-CauseOfDeathCondition"/>
+      <short value="CauseOfDeathCondition"/>
+      <definition value="A condition that lead to death either directly or indirectly"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -2429,6 +2426,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
+      <short value="DatePronouncedDead"/>
+      <definition value="Date pronounced dead."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2439,6 +2438,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromWorkInjury"/>
+      <short value="DeathFromWorkInjury"/>
+      <definition value="Did death result from injury at work?"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2449,6 +2450,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromTransportInjury"/>
+      <short value="DeathFromTransportInjury"/>
+      <definition value="Injury leading to death associated with transportation event"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2459,6 +2462,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
+      <short value="MannerOfDeath"/>
+      <definition value="The manner of the decendents demise."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2469,6 +2474,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
+      <short value="MedicalExaminerContacted"/>
+      <definition value="The manner of the decendents demise."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2479,6 +2486,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
+      <short value="TimingOfRecentPregnancyInRelationToDeath"/>
+      <definition value="Timing of recent pregnancy in relation to death."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2489,6 +2498,8 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
+      <short value="TobaccoUseContributedToDeath"/>
+      <definition value="Did tobacco use contribute to death."/>
       <min value="1"/>
       <max value="1"/>
       <type>

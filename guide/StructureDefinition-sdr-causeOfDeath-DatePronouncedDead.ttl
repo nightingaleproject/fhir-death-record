@@ -21,7 +21,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "SDR DatePronouncedDead Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-12"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -706,7 +706,7 @@
          fhir:ElementDefinition.slicing.discriminator [
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "path" ]
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "code" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
@@ -1178,7 +1178,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DatePronouncedDead.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Actual result" ];
-       fhir:ElementDefinition.definition [ fhir:value "The information determined as a result of making the observation, if the information has a simple value." ];
+       fhir:ElementDefinition.definition [ fhir:value "DateTime representing date pronounced dead." ];
        fhir:ElementDefinition.comment [ fhir:value "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below." ];
        fhir:ElementDefinition.requirements [ fhir:value "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -2319,7 +2319,7 @@
          fhir:ElementDefinition.slicing.discriminator [
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "path" ]
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "code" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
@@ -2364,6 +2364,7 @@
        fhir:index 7;
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DatePronouncedDead.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
+       fhir:ElementDefinition.definition [ fhir:value "DateTime representing date pronounced dead." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [

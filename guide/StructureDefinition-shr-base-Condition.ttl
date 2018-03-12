@@ -21,7 +21,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "SDR Condition Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-12"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -598,7 +598,7 @@
        fhir:Element.id [ fhir:value "Condition:shr-base-Condition.code" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
        fhir:ElementDefinition.short [ fhir:value "Identification of the condition, problem or diagnosis" ];
-       fhir:ElementDefinition.definition [ fhir:value "Identification of the condition, problem or diagnosis." ];
+       fhir:ElementDefinition.definition [ fhir:value "Code representing a disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. 'Condition' is interpreted broadly to cover states of existence - things the patient is or has." ];
        fhir:ElementDefinition.requirements [ fhir:value "0..1 to account for primarily narrative only resources." ];
        fhir:ElementDefinition.alias [
          fhir:value "type";
@@ -1315,6 +1315,11 @@
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "Condition:shr-base-Condition.code" ];
+       fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
+       fhir:ElementDefinition.definition [ fhir:value "Code representing a disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. 'Condition' is interpreted broadly to cover states of existence - things the patient is or has." ]
+     ], [
+       fhir:index 3;
        fhir:Element.id [ fhir:value "Condition:shr-base-Condition.subject" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.subject" ];
        fhir:ElementDefinition.type [
@@ -1323,7 +1328,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Condition:shr-base-Condition.onset[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x]" ];
        fhir:ElementDefinition.type [

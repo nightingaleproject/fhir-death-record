@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR Condition Profile",
   "status": "draft",
-  "date": "2018-02-20",
+  "date": "2018-03-12",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -595,7 +595,7 @@
         "id": "Condition:shr-base-Condition.code",
         "path": "Condition.code",
         "short": "Identification of the condition, problem or diagnosis",
-        "definition": "Identification of the condition, problem or diagnosis.",
+        "definition": "Code representing a disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. 'Condition' is interpreted broadly to cover states of existence - things the patient is or has.",
         "requirements": "0..1 to account for primarily narrative only resources.",
         "alias": [
           "type"
@@ -1329,6 +1329,11 @@
         "path": "Condition.text",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Condition:shr-base-Condition.code",
+        "path": "Condition.code",
+        "definition": "Code representing a disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. 'Condition' is interpreted broadly to cover states of existence - things the patient is or has."
       },
       {
         "id": "Condition:shr-base-Condition.subject",

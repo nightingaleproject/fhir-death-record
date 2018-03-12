@@ -21,7 +21,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "SDR DeathRecordContents Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-02-20"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-12"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -532,7 +532,7 @@
          fhir:ElementDefinition.slicing.discriminator [
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "path" ]
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "code" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
@@ -1948,7 +1948,7 @@
          fhir:ElementDefinition.slicing.discriminator [
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "path" ]
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "code" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
@@ -2382,9 +2382,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "ActualOrPresumedDateOfDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "Actual or presumed date of death." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2410,9 +2409,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyPerformed" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "AutopsyPerformed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether an autopsy was performed (true) or not (false)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2438,9 +2436,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyResultsAvailable" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "AutopsyResultsAvailable" ];
+       fhir:ElementDefinition.definition [ fhir:value "Were autopsy findings available to complete the cause of death?" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2466,9 +2463,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-CauseOfDeathCondition" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "CauseOfDeathCondition" ];
+       fhir:ElementDefinition.definition [ fhir:value "A condition that lead to death either directly or indirectly" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
@@ -2494,9 +2490,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DatePronouncedDead" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "DatePronouncedDead" ];
+       fhir:ElementDefinition.definition [ fhir:value "Date pronounced dead." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2522,9 +2517,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "DeathFromWorkInjury" ];
+       fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work?" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2550,9 +2544,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "DeathFromTransportInjury" ];
+       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2578,9 +2571,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MannerOfDeath" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "MannerOfDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "The manner of the decendents demise." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2606,9 +2598,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MedicalExaminerContacted" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "MedicalExaminerContacted" ];
+       fhir:ElementDefinition.definition [ fhir:value "The manner of the decendents demise." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2634,9 +2625,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "TimingOfRecentPregnancyInRelationToDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "Timing of recent pregnancy in relation to death." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2662,9 +2652,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
-       fhir:ElementDefinition.short [ fhir:value "A reference to data that supports this section" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to the actual resource from which the narrative in the section is derived." ];
-       fhir:ElementDefinition.comment [ fhir:value "If there are no entries in the list, an emptyReason SHOULD be provided." ];
+       fhir:ElementDefinition.short [ fhir:value "TobaccoUseContributedToDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "Did tobacco use contribute to death." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2770,7 +2759,7 @@
          fhir:ElementDefinition.slicing.discriminator [
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "path" ]
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "code" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
@@ -2841,7 +2830,7 @@
          fhir:ElementDefinition.slicing.discriminator [
            fhir:index 0;
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "path" ]
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "code" ]
          ];
          fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
@@ -2894,6 +2883,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
+       fhir:ElementDefinition.short [ fhir:value "ActualOrPresumedDateOfDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "Actual or presumed date of death." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2906,6 +2897,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyPerformed" ];
+       fhir:ElementDefinition.short [ fhir:value "AutopsyPerformed" ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether an autopsy was performed (true) or not (false)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2918,6 +2911,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyResultsAvailable" ];
+       fhir:ElementDefinition.short [ fhir:value "AutopsyResultsAvailable" ];
+       fhir:ElementDefinition.definition [ fhir:value "Were autopsy findings available to complete the cause of death?" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2930,6 +2925,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-CauseOfDeathCondition" ];
+       fhir:ElementDefinition.short [ fhir:value "CauseOfDeathCondition" ];
+       fhir:ElementDefinition.definition [ fhir:value "A condition that lead to death either directly or indirectly" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
@@ -2942,6 +2939,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DatePronouncedDead" ];
+       fhir:ElementDefinition.short [ fhir:value "DatePronouncedDead" ];
+       fhir:ElementDefinition.definition [ fhir:value "Date pronounced dead." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2954,6 +2953,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury" ];
+       fhir:ElementDefinition.short [ fhir:value "DeathFromWorkInjury" ];
+       fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work?" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2966,6 +2967,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury" ];
+       fhir:ElementDefinition.short [ fhir:value "DeathFromTransportInjury" ];
+       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2978,6 +2981,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MannerOfDeath" ];
+       fhir:ElementDefinition.short [ fhir:value "MannerOfDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "The manner of the decendents demise." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2990,6 +2995,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MedicalExaminerContacted" ];
+       fhir:ElementDefinition.short [ fhir:value "MedicalExaminerContacted" ];
+       fhir:ElementDefinition.definition [ fhir:value "The manner of the decendents demise." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -3002,6 +3009,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
+       fhir:ElementDefinition.short [ fhir:value "TimingOfRecentPregnancyInRelationToDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "Timing of recent pregnancy in relation to death." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -3014,6 +3023,8 @@
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
+       fhir:ElementDefinition.short [ fhir:value "TobaccoUseContributedToDeath" ];
+       fhir:ElementDefinition.definition [ fhir:value "Did tobacco use contribute to death." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [

@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR DeathRecordContents Profile",
   "status": "draft",
-  "date": "2018-02-20",
+  "date": "2018-03-12",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -530,7 +530,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "path"
+              "path": "code"
             }
           ],
           "ordered": false,
@@ -1998,7 +1998,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "path"
+              "path": "code"
             }
           ],
           "ordered": false,
@@ -2458,9 +2458,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "ActualOrPresumedDateOfDeath",
+        "definition": "Actual or presumed date of death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2487,9 +2486,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyPerformed",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "AutopsyPerformed",
+        "definition": "Whether an autopsy was performed (true) or not (false).",
         "min": 1,
         "max": "1",
         "type": [
@@ -2516,9 +2514,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyResultsAvailable",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "AutopsyResultsAvailable",
+        "definition": "Were autopsy findings available to complete the cause of death?",
         "min": 1,
         "max": "1",
         "type": [
@@ -2545,9 +2542,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-CauseOfDeathCondition",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "CauseOfDeathCondition",
+        "definition": "A condition that lead to death either directly or indirectly",
         "min": 1,
         "max": "*",
         "type": [
@@ -2574,9 +2570,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-DatePronouncedDead",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "DatePronouncedDead",
+        "definition": "Date pronounced dead.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2603,9 +2598,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromWorkInjury",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "DeathFromWorkInjury",
+        "definition": "Did death result from injury at work?",
         "min": 1,
         "max": "1",
         "type": [
@@ -2632,9 +2626,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromTransportInjury",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "DeathFromTransportInjury",
+        "definition": "Injury leading to death associated with transportation event",
         "min": 1,
         "max": "1",
         "type": [
@@ -2661,9 +2654,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-MannerOfDeath",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "MannerOfDeath",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2690,9 +2682,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-MedicalExaminerContacted",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "MedicalExaminerContacted",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2719,9 +2710,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "TimingOfRecentPregnancyInRelationToDeath",
+        "definition": "Timing of recent pregnancy in relation to death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2748,9 +2738,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-TobaccoUseContributedToDeath",
-        "short": "A reference to data that supports this section",
-        "definition": "A reference to the actual resource from which the narrative in the section is derived.",
-        "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
+        "short": "TobaccoUseContributedToDeath",
+        "definition": "Did tobacco use contribute to death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -2859,7 +2848,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "path"
+              "path": "code"
             }
           ],
           "ordered": false,
@@ -2934,7 +2923,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "path"
+              "path": "code"
             }
           ],
           "ordered": false,
@@ -2990,6 +2979,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
+        "short": "ActualOrPresumedDateOfDeath",
+        "definition": "Actual or presumed date of death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3003,6 +2994,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyPerformed",
+        "short": "AutopsyPerformed",
+        "definition": "Whether an autopsy was performed (true) or not (false).",
         "min": 1,
         "max": "1",
         "type": [
@@ -3016,6 +3009,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-AutopsyResultsAvailable",
+        "short": "AutopsyResultsAvailable",
+        "definition": "Were autopsy findings available to complete the cause of death?",
         "min": 1,
         "max": "1",
         "type": [
@@ -3029,6 +3024,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-CauseOfDeathCondition",
+        "short": "CauseOfDeathCondition",
+        "definition": "A condition that lead to death either directly or indirectly",
         "min": 1,
         "max": "*",
         "type": [
@@ -3042,6 +3039,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-DatePronouncedDead",
+        "short": "DatePronouncedDead",
+        "definition": "Date pronounced dead.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3055,6 +3054,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromWorkInjury",
+        "short": "DeathFromWorkInjury",
+        "definition": "Did death result from injury at work?",
         "min": 1,
         "max": "1",
         "type": [
@@ -3068,6 +3069,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-DeathFromTransportInjury",
+        "short": "DeathFromTransportInjury",
+        "definition": "Injury leading to death associated with transportation event",
         "min": 1,
         "max": "1",
         "type": [
@@ -3081,6 +3084,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-MannerOfDeath",
+        "short": "MannerOfDeath",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3094,6 +3099,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-MedicalExaminerContacted",
+        "short": "MedicalExaminerContacted",
+        "definition": "The manner of the decendents demise.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3107,6 +3114,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
+        "short": "TimingOfRecentPregnancyInRelationToDeath",
+        "definition": "Timing of recent pregnancy in relation to death.",
         "min": 1,
         "max": "1",
         "type": [
@@ -3120,6 +3129,8 @@
         "id": "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath",
         "path": "Composition.section.entry",
         "sliceName": "sdr-causeOfDeath-TobaccoUseContributedToDeath",
+        "short": "TobaccoUseContributedToDeath",
+        "definition": "Did tobacco use contribute to death.",
         "min": 1,
         "max": "1",
         "type": [

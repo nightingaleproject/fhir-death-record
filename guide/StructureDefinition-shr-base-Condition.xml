@@ -23,7 +23,7 @@
   <version value="0.0.1"/>
   <name value="SDR Condition Profile"/>
   <status value="draft"/>
-  <date value="2018-02-20"/>
+  <date value="2018-03-12"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -502,7 +502,7 @@
     <element id="Condition:shr-base-Condition.code">
       <path value="Condition.code"/>
       <short value="Identification of the condition, problem or diagnosis"/>
-      <definition value="Identification of the condition, problem or diagnosis."/>
+      <definition value="Code representing a disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. &#39;Condition&#39; is interpreted broadly to cover states of existence - things the patient is or has."/>
       <requirements value="0..1 to account for primarily narrative only resources."/>
       <alias value="type"/>
       <min value="0"/>
@@ -1084,6 +1084,10 @@
       <path value="Condition.text"/>
       <min value="1"/>
       <max value="1"/>
+    </element>
+    <element id="Condition:shr-base-Condition.code">
+      <path value="Condition.code"/>
+      <definition value="Code representing a disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. &#39;Condition&#39; is interpreted broadly to cover states of existence - things the patient is or has."/>
     </element>
     <element id="Condition:shr-base-Condition.subject">
       <path value="Condition.subject"/>

@@ -472,6 +472,19 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Age-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Age-extension",
+            "display": "SDR Age Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-CertifierType-extension.html"
             }
           ],
@@ -479,6 +492,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/sdr-deathRecord-CertifierType-extension",
             "display": "SDR CertifierType Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-SocialSecurityNumber-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension",
+            "display": "SDR SocialSecurityNumber Extension"
           }
         },
         {

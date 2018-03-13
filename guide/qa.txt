@@ -1,7 +1,7 @@
 ﻿Standard Death Record FHIR Profiles : Validation Results
 =========================================
 
-Generated Tue Mar 13 08:55:38 EDT 2018. FHIR version 3.0.1
+Generated Tue Mar 13 17:30:28 EDT 2018. FHIR version 3.0.1
 
  Build Errors : 19 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ImplementationGuide/data : 0 / 0
@@ -33,11 +33,13 @@ Generated Tue Mar 13 08:55:38 EDT 2018. FHIR version 3.0.1
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-MedicalExaminerContacted : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath : 2 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath : 2 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-Age-extension : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-Certifier : 2 / 1
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-CertifierType-extension : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-DeathRecord : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-DeathRecordContents : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-Decedent : 0 / 1
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-SocialSecurityNumber-extension : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-base-Condition : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-base-Entry : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-base-Observation : 0 / 0
@@ -104,6 +106,7 @@ Generated Tue Mar 13 08:55:38 EDT 2018. FHIR version 3.0.1
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath.json ==
  * error : StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath: StructureDefinition.snapshot.element[32].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS'
  * error : StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath: StructureDefinition.differential.element[8].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-Age-extension.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-Certifier.json ==
  * warning : StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.jurisdiction ==> Display Name for US must be 'United States of America'
  * error : StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.snapshot.element[13].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS'
@@ -113,6 +116,7 @@ Generated Tue Mar 13 08:55:38 EDT 2018. FHIR version 3.0.1
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-DeathRecordContents.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-Decedent.json ==
  * warning : StructureDefinition/sdr-deathRecord-Decedent: StructureDefinition.jurisdiction ==> Display Name for US must be 'United States of America'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-base-Condition.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-base-Entry.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-base-Observation.json ==

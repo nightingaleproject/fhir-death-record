@@ -26,8 +26,14 @@ anonymous resourcescontained resources","",0,*,"","","","Resource
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
 "Patient.extension","ethnicity","","",0,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
-"Patient.extension","birthsex","","",0,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
+"Patient.extension","birthsex","","",1,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex}
+","","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
+"Patient.extension","socialsecuritynumber","","",0,1,"","","","Extension {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension}
+","","The decedent's social security number. Maps to item 3 on the U.S. Standard Certificate of Death","","","","","","","","","",,,,,"","value:url}
+","",,"open","",0,null,"",""
+"Patient.extension","age","","",0,1,"","","","Extension {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension}
+","","The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death","","","","","","","","","",,,,,"","value:url}
+","",,"open","",0,null,"",""
 "Patient.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","","N/A"
@@ -57,7 +63,7 @@ Where the system is known, a type is unnecessary because the type is always part
 ","Whether this patient's record is in active use","Whether this patient record is in active use.","Default is true. If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient
 
 This element is labeled as a modifier because when the patient record is marked as not active it is not expected to be used/referenced without being changed back to active.","Need to be able to mark a patient record as not to be used because it was created in error.","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"Patient.active",0,1,"","","statusCode","n/a","status"
-"Patient.name","","","",1,*,"Y","","Y","HumanName
+"Patient.name","","","",1,1,"Y","","Y","HumanName
 ","A name associated with the patient","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","","Patient.name","name",".patient.name","PID-5, PID-9"
 "Patient.name.id","","","",0,1,"","","","string
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -66,8 +72,8 @@ user content","",0,*,"","","","Extension
 ","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
 "Patient.name.use","","","",0,1,"","Y","Y","code
-","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name","http://hl7.org/fhir/ValueSet/name-use","",,,,"HumanName.use",0,1,"","","unique(./use)","XPN.7, but often indicated by which field contains the name"
-"Patient.name.text","","","",0,1,"","","Y","string
+","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","","",,"required","The use of a human name","http://hl7.org/fhir/ValueSet/name-use","",,,,"HumanName.use",0,1,"","","unique(./use)","XPN.7, but often indicated by which field contains the name"
+"Patient.name.text","","","",1,1,"","","Y","string
 ","Text representation of the full name","A full text representation of the name.","Can provide both a text representation and structured parts.","A renderable, unencoded form.","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","","./formatted","implied by XPN.11"
 "Patient.name.family","","surname
 ","",1,1,"Y","","Y","string

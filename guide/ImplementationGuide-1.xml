@@ -363,12 +363,32 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Age-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Age-extension"/>
+        <display value="SDR Age Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-CertifierType-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/sdr-deathRecord-CertifierType-extension"/>
         <display value="SDR CertifierType Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-SocialSecurityNumber-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"/>
+        <display value="SDR SocialSecurityNumber Extension"/>
       </sourceReference>
     </resource>
     <resource>

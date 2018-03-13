@@ -25,6 +25,10 @@ CauseOfDeathSection.TobaccoUseContributedToDeath maps to section.entry
 Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
 constrain deceased[x] to 1..1
 fix deceased[x] to true
+constrain name to 1..1
+LegalName maps to name.text
+fix name.use to http://hl7.org/fhir/codesystem-name-use#official
+Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 
 Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
 

@@ -39,6 +39,30 @@ Element: Decedent
 Based on: Patient
 Concept: MTH#C3274946
 Description: "The subject of the death record"
+1..1 LegalName
+1..1 Sex
+0..1 SocialSecurityNumber
+0..1 Age
+
+Element: LegalName
+Concept: TBD
+Description: "The decedent's legal name plus any akas. Maps to item 1 on the U.S. Standard Certificate of Death"
+Value: 1..1 string
+
+Element: Sex
+Concept: TBD
+Description: "The birth sex of the decedent. Maps to item 2 on the U.S. Standard Certificate of Death"
+Value: 1..1 CodeableConcept from http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex
+
+Element: Age
+Concept: TBD
+Description: "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death"
+Value: 1..1 positiveInt
+
+Element: SocialSecurityNumber
+Concept: TBD
+Description: "The decedent's social security number. Maps to item 3 on the U.S. Standard Certificate of Death"
+Value: 1..1 string
 
 Element: CertifierType
 Concept: MTH#C3715076
@@ -58,7 +82,7 @@ Description: "A record that details information about the death of an individual
 1..1 ActualOrPresumedDateOfDeath
 1..1 AutopsyPerformed
 1..1 AutopsyResultsAvailable
-1..1 CauseOfDeathCondition
+1..* CauseOfDeathCondition
 1..1 Certifier
 1..1 DatePronouncedDead
 1..1 DeathFromWorkInjury

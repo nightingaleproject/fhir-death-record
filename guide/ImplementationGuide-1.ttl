@@ -479,6 +479,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-Age-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-Age-extension" ];
+         fhir:Reference.display [ fhir:value "SDR Age Extension" ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-CertifierType-extension.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -488,7 +501,20 @@
          fhir:Reference.display [ fhir:value "SDR CertifierType Extension" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-deathRecord-SocialSecurityNumber-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension" ];
+         fhir:Reference.display [ fhir:value "SDR SocialSecurityNumber Extension" ]
+       ]
+     ], [
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -501,7 +527,7 @@
          fhir:Reference.display [ fhir:value "SDR CertifierTypeVS ValueSet" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -514,7 +540,7 @@
          fhir:Reference.display [ fhir:value "SDR ContributoryTobaccoUseVS ValueSet" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -527,7 +553,7 @@
          fhir:Reference.display [ fhir:value "SDR MannerOfDeathVS ValueSet" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -540,7 +566,7 @@
          fhir:Reference.display [ fhir:value "SDR PregnancyStatusVS ValueSet" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];

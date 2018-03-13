@@ -2682,7 +2682,7 @@
       <short value="CauseOfDeathCondition"/>
       <definition value="A condition that lead to death either directly or indirectly"/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="BackboneElement"/>
       </type>
@@ -8383,7 +8383,7 @@
       <short value="CauseOfDeathCondition"/>
       <definition value="A condition that lead to death either directly or indirectly"/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Certifier">
       <path value="Bundle.entry"/>

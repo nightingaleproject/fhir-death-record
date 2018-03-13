@@ -3,7 +3,7 @@
   "id": "sdr-deathRecord-Decedent",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent",
   "identifier": [
@@ -404,12 +404,11 @@
         ]
       },
       {
-        "id": "Patient:sdr-deathRecord-Decedent.extension:birthsex",
+        "id": "Patient:sdr-deathRecord-Decedent.extension:sex",
         "path": "Patient.extension",
         "sliceName": "birthsex",
-        "short": "Extension",
         "definition": "An Extension",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "DomainResource.extension",
@@ -428,6 +427,56 @@
           {
             "identity": "argonaut-dq-dstu2",
             "map": "Patient.extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:socialsecuritynumber",
+        "path": "Patient.extension",
+        "sliceName": "socialsecuritynumber",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "definition": "The decedent's social security number. Maps to item 3 on the U.S. Standard Certificate of Death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:age",
+        "path": "Patient.extension",
+        "sliceName": "age",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "definition": "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"
           }
         ]
       },
@@ -866,7 +915,7 @@
         "comment": "A patient may have multiple names with different uses or applicable periods. For animals, the name is a \"HumanName\" in the sense that is assigned and used by humans and has the same patterns.",
         "requirements": "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Patient.name",
           "min": 0,
@@ -983,6 +1032,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "official",
         "isModifier": true,
         "isSummary": true,
         "binding": {
@@ -1020,7 +1070,7 @@
         "definition": "A full text representation of the name.",
         "comment": "Can provide both a text representation and structured parts.",
         "requirements": "A renderable, unencoded form.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "HumanName.text",
@@ -2745,6 +2795,79 @@
         "short": "SDR Decedent Profile",
         "definition": "The subject of the death record",
         "mustSupport": false
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:sex",
+        "path": "Patient.extension",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:socialsecuritynumber",
+        "path": "Patient.extension",
+        "sliceName": "socialsecuritynumber",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "definition": "The decedent's social security number. Maps to item 3 on the U.S. Standard Certificate of Death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:age",
+        "path": "Patient.extension",
+        "sliceName": "age",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "definition": "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.name",
+        "path": "Patient.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.name.use",
+        "path": "Patient.name.use",
+        "fixedCode": "official"
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.name.text",
+        "path": "Patient.name.text",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient:sdr-deathRecord-Decedent.deceased[x]",

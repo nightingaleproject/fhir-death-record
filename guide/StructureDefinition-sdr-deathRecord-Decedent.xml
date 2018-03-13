@@ -10,6 +10,10 @@
   <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
   constrain deceased[x] to 1..1
   fix deceased[x] to true
+  constrain name to 1..1
+  LegalName maps to name.text
+  fix name.use to http://hl7.org/fhir/codesystem-name-use#official
+  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 </pre></p>
 </div>
   </text>
@@ -342,12 +346,11 @@
         <map value="Patient.extension"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.extension:birthsex">
+    <element id="Patient:sdr-deathRecord-Decedent.extension:sex">
       <path value="Patient.extension"/>
       <sliceName value="birthsex"/>
-      <short value="Extension"/>
       <definition value="An Extension"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DomainResource.extension"/>
@@ -364,6 +367,44 @@
         <identity value="argonaut-dq-dstu2"/>
         <map value="Patient.extension"/>
       </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:socialsecuritynumber">
+      <path value="Patient.extension"/>
+      <sliceName value="socialsecuritynumber"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The decedent&#39;s social security number. Maps to item 3 on the U.S. Standard Certificate of Death"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:age">
+      <path value="Patient.extension"/>
+      <sliceName value="age"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The decedent&#39;s age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"/>
+      </type>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.modifierExtension">
       <path value="Patient.modifierExtension"/>
@@ -725,7 +766,7 @@
       <comment value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns."/>
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="Patient.name"/>
         <min value="0"/>
@@ -819,6 +860,7 @@
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="official"/>
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
@@ -850,7 +892,7 @@
       <definition value="A full text representation of the name."/>
       <comment value="Can provide both a text representation and structured parts."/>
       <requirements value="A renderable, unencoded form."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="HumanName.text"/>
@@ -2271,6 +2313,63 @@
       <short value="SDR Decedent Profile"/>
       <definition value="The subject of the death record"/>
       <mustSupport value="false"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:sex">
+      <path value="Patient.extension"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:socialsecuritynumber">
+      <path value="Patient.extension"/>
+      <sliceName value="socialsecuritynumber"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The decedent&#39;s social security number. Maps to item 3 on the U.S. Standard Certificate of Death"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:age">
+      <path value="Patient.extension"/>
+      <sliceName value="age"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The decedent&#39;s age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.name">
+      <path value="Patient.name"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.name.use">
+      <path value="Patient.name.use"/>
+      <fixedCode value="official"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.name.text">
+      <path value="Patient.name.text"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.deceased[x]">
       <path value="Patient.deceased[x]"/>

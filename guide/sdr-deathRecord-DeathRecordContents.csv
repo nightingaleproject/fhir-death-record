@@ -209,7 +209,7 @@ value:reference.resolve()}","",,"open","",0,null,"cmp-2
 ","MannerOfDeath","The manner of the decendents demise.","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
 ","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","sdr-causeOfDeath-MedicalExaminerContacted","","",1,1,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted}
-","MedicalExaminerContacted","The manner of the decendents demise.","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
+","MedicalExaminerContacted","Whether a medical examiner or coroner was contacted.","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
 ","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath","","",1,1,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath}
 ","TimingOfRecentPregnancyInRelationToDeath","Timing of recent pregnancy in relation to death.","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2

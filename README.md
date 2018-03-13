@@ -13,7 +13,7 @@ Install the [`shr-cli`](https://github.com/standardhealth/shr-cli) tool.
 Compile the CIMPL definitions
 
     cd /path/to/shr-cli
-    node . /path/to/cimple-death-record/spec -o /path/to/output/dir
+    node . /path/to/fhir-death-record/spec -o /path/to/output/dir
 
 Configure Java proxies (if needed)
 

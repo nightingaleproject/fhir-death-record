@@ -72,7 +72,7 @@ ObservationCode is LNC#69449-7 "Manner of Death"
 EntryElement: MedicalExaminerContacted
 Based on: Observation
 Concept: MTH#C3840494 "Medical examiner or coroner was contacted"
-Description: "The manner of the decendents demise."
+Description: "Whether a medical examiner or coroner was contacted."
 Value: 1..1 boolean
 ObservationCode is LNC#74497-9 "Medical examiner or coroner was contacted"
 1..1 Subject

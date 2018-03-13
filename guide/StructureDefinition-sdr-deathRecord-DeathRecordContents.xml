@@ -37,7 +37,7 @@
   <version value="0.0.1"/>
   <name value="SDR DeathRecordContents Profile"/>
   <status value="draft"/>
-  <date value="2018-03-12"/>
+  <date value="2018-03-13"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -2152,7 +2152,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
       <short value="MedicalExaminerContacted"/>
-      <definition value="The manner of the decendents demise."/>
+      <definition value="Whether a medical examiner or coroner was contacted."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2475,7 +2475,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
       <short value="MedicalExaminerContacted"/>
-      <definition value="The manner of the decendents demise."/>
+      <definition value="Whether a medical examiner or coroner was contacted."/>
       <min value="1"/>
       <max value="1"/>
       <type>

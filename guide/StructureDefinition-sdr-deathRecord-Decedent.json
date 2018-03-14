@@ -3,7 +3,7 @@
   "id": "sdr-deathRecord-Decedent",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent",
   "identifier": [
@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR Decedent Profile",
   "status": "draft",
-  "date": "2018-03-13",
+  "date": "2018-03-14",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -477,6 +477,31 @@
           {
             "code": "Extension",
             "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:birthplace",
+        "path": "Patient.extension",
+        "sliceName": "birthplace",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "definition": "Decedents place of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension"
           }
         ]
       },
@@ -2849,6 +2874,31 @@
           {
             "code": "Extension",
             "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"
+          }
+        ]
+      },
+      {
+        "id": "Patient:sdr-deathRecord-Decedent.extension:birthplace",
+        "path": "Patient.extension",
+        "sliceName": "birthplace",
+        "slicing": {
+          "id": "1",
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "definition": "Decedents place of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension"
           }
         ]
       },

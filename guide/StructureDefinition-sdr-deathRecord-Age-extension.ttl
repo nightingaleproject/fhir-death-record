@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "SDR Age Extension"];
   fhir:StructureDefinition.title [ fhir:value "SDR Age Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-13"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-14"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -153,8 +153,8 @@
        ]
      ], [
        fhir:index 4;
-       fhir:Element.id [ fhir:value "Extension:age.valuePositiveInt" ];
-       fhir:ElementDefinition.path [ fhir:value "Extension.valuePositiveInt" ];
+       fhir:Element.id [ fhir:value "Extension:age.valueUnsignedInt" ];
+       fhir:ElementDefinition.path [ fhir:value "Extension.valueUnsignedInt" ];
        fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
        fhir:ElementDefinition.definition [ fhir:value "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -166,7 +166,7 @@
        ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "positiveInt" ]
+         fhir:ElementDefinition.type.code [ fhir:value "unsignedInt" ]
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -201,12 +201,12 @@
        fhir:ElementDefinition.fixedUri [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension" ]
      ], [
        fhir:index 3;
-       fhir:Element.id [ fhir:value "Extension:age.valuePositiveInt" ];
-       fhir:ElementDefinition.path [ fhir:value "Extension.valuePositiveInt" ];
+       fhir:Element.id [ fhir:value "Extension:age.valueUnsignedInt" ];
+       fhir:ElementDefinition.path [ fhir:value "Extension.valueUnsignedInt" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "positiveInt" ]
+         fhir:ElementDefinition.type.code [ fhir:value "unsignedInt" ]
        ]
      ]
   ] .

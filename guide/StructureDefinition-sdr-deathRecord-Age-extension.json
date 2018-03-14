@@ -16,7 +16,7 @@
   "name": "SDR Age Extension",
   "title": "SDR Age Extension",
   "status": "draft",
-  "date": "2018-03-13",
+  "date": "2018-03-14",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -151,8 +151,8 @@
         ]
       },
       {
-        "id": "Extension:age.valuePositiveInt",
-        "path": "Extension.valuePositiveInt",
+        "id": "Extension:age.valueUnsignedInt",
+        "path": "Extension.valueUnsignedInt",
         "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
         "min": 1,
@@ -164,7 +164,7 @@
         },
         "type": [
           {
-            "code": "positiveInt"
+            "code": "unsignedInt"
           }
         ],
         "mapping": [
@@ -203,12 +203,12 @@
         "fixedUri": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"
       },
       {
-        "id": "Extension:age.valuePositiveInt",
-        "path": "Extension.valuePositiveInt",
+        "id": "Extension:age.valueUnsignedInt",
+        "path": "Extension.valueUnsignedInt",
         "min": 1,
         "type": [
           {
-            "code": "positiveInt"
+            "code": "unsignedInt"
           }
         ]
       }

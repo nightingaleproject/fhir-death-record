@@ -3,16 +3,27 @@ Namespace: shr.core
 Target: FHIR_STU_3
 
 Coding maps to Coding:
-Value maps to code
-CodeSystem maps to system
-CodeSystemVersion maps to version
-DisplayText maps to display
+  Value maps to code
+  CodeSystem maps to system
+  CodeSystemVersion maps to version
+  DisplayText maps to display
 
 CodeableConcept maps to CodeableConcept:
-Coding maps to coding
-DisplayText maps to text
+  Coding maps to coding
+  DisplayText maps to text
 
 TimePeriod maps to Period:
-TimePeriodStart maps to start
-TimePeriodEnd maps to end
+  TimePeriodStart maps to start
+  TimePeriodEnd maps to end
+
+Address maps to Address:
+	Purpose maps to use
+	Type maps to type
+	DisplayText maps to text
+	AddressLine maps to line
+	City maps to city
+	District maps to district
+	State maps to state
+	PostalCode maps to postalCode
+	Country maps to country
 

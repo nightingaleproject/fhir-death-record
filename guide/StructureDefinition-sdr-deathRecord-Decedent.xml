@@ -14,6 +14,7 @@
   LegalName maps to name.text
   fix name.use to http://hl7.org/fhir/codesystem-name-use#official
   Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
+  DateOfBirth maps to birthDate
 </pre></p>
 </div>
   </text>
@@ -25,7 +26,7 @@
   <version value="0.0.1"/>
   <name value="SDR Decedent Profile"/>
   <status value="draft"/>
-  <date value="2018-03-13"/>
+  <date value="2018-03-14"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -404,6 +405,25 @@
       <type>
         <code value="Extension"/>
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:birthplace">
+      <path value="Patient.extension"/>
+      <sliceName value="birthplace"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Decedents place of birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension"/>
       </type>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.modifierExtension">
@@ -2355,6 +2375,25 @@
       <type>
         <code value="Extension"/>
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:birthplace">
+      <path value="Patient.extension"/>
+      <sliceName value="birthplace"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Decedents place of birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension"/>
       </type>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.name">

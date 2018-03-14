@@ -17,7 +17,7 @@
   <name value="SDR Age Extension"/>
   <title value="SDR Age Extension"/>
   <status value="draft"/>
-  <date value="2018-03-13"/>
+  <date value="2018-03-14"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -122,8 +122,8 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Extension:age.valuePositiveInt">
-      <path value="Extension.valuePositiveInt"/>
+    <element id="Extension:age.valueUnsignedInt">
+      <path value="Extension.valueUnsignedInt"/>
       <short value="Value of extension"/>
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
       <min value="1"/>
@@ -134,7 +134,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="positiveInt"/>
+        <code value="unsignedInt"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -162,11 +162,11 @@
       </type>
       <fixedUri value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"/>
     </element>
-    <element id="Extension:age.valuePositiveInt">
-      <path value="Extension.valuePositiveInt"/>
+    <element id="Extension:age.valueUnsignedInt">
+      <path value="Extension.valueUnsignedInt"/>
       <min value="1"/>
       <type>
-        <code value="positiveInt"/>
+        <code value="unsignedInt"/>
       </type>
     </element>
   </differential>

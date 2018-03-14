@@ -160,6 +160,19 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Birthplace.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Birthplace",
+            "display": "SDR Birthplace Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-Certifier.html"
             }
           ],
@@ -245,6 +258,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/shr-base-Observation",
             "display": "SDR Observation Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-shr-core-Address.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/shr-core-Address",
+            "display": "SDR Address Profile"
           }
         },
         {
@@ -479,6 +505,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/sdr-deathRecord-Age-extension",
             "display": "SDR Age Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Birthplace-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Birthplace-extension",
+            "display": "SDR Birthplace Extension"
           }
         },
         {

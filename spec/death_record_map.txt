@@ -29,6 +29,8 @@ constrain name to 1..1
 LegalName maps to name.text
 fix name.use to http://hl7.org/fhir/codesystem-name-use#official
 Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
+DateOfBirth maps to birthDate
+Residency maps to address
 
 Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
 

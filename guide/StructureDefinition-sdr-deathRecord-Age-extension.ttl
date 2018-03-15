@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-deathRecord-Age-extension"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Age Extension</b></p>\n  <p>The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death</p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Age Extension</b></p>\n  <p>The decedent's age in years at last birthday.</p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension"];
   fhir:StructureDefinition.identifier [
@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "SDR Age Extension"];
   fhir:StructureDefinition.title [ fhir:value "SDR Age Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-14"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-15"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death"];
+  fhir:StructureDefinition.description [ fhir:value "The decedent's age in years at last birthday."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.kind [ fhir:value "complex-type"];
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
@@ -50,7 +50,7 @@
        fhir:Element.id [ fhir:value "Extension:age" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Age Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death" ];
+       fhir:ElementDefinition.definition [ fhir:value "The decedent's age in years at last birthday." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -181,7 +181,7 @@
        fhir:Element.id [ fhir:value "Extension:age" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Age Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death" ];
+       fhir:ElementDefinition.definition [ fhir:value "The decedent's age in years at last birthday." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [

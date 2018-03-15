@@ -15,6 +15,10 @@
   fix name.use to http://hl7.org/fhir/codesystem-name-use#official
   Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
   DateOfBirth maps to birthDate
+  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)
+  fix identifier.use to http://hl7.org/fhir/identifier-use#official
+  fix identifier.type to http://hl7.org/fhir/identifier-type#SB
+  Residency maps to address
 </pre></p>
 </div>
   </text>
@@ -26,7 +30,7 @@
   <version value="0.0.1"/>
   <name value="SDR Decedent Profile"/>
   <status value="draft"/>
-  <date value="2018-03-14"/>
+  <date value="2018-03-15"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -369,25 +373,6 @@
         <map value="Patient.extension"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.extension:socialsecuritynumber">
-      <path value="Patient.extension"/>
-      <sliceName value="socialsecuritynumber"/>
-      <slicing id="1">
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <ordered value="false"/>
-        <rules value="open"/>
-      </slicing>
-      <definition value="The decedent&#39;s social security number. Maps to item 3 on the U.S. Standard Certificate of Death"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"/>
-      </type>
-    </element>
     <element id="Patient:sdr-deathRecord-Decedent.extension:age">
       <path value="Patient.extension"/>
       <sliceName value="age"/>
@@ -399,7 +384,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The decedent&#39;s age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death"/>
+      <definition value="The decedent&#39;s age in years at last birthday."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -424,6 +409,120 @@
       <type>
         <code value="Extension"/>
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:servedinarmedforces">
+      <path value="Patient.extension"/>
+      <sliceName value="servedinarmedforces"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Whether the decedent ever served in the US armed forces"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-ServedInArmedForces-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:maritalstatusatdeath">
+      <path value="Patient.extension"/>
+      <sliceName value="maritalstatusatdeath"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The marital status of the decedent at the time of death."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:survivingspouse">
+      <path value="Patient.extension"/>
+      <sliceName value="survivingspouse"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The surviving spouse of the decedent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SurvivingSpouse-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:father">
+      <path value="Patient.extension"/>
+      <sliceName value="father"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The father of the decedent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Father-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:mother">
+      <path value="Patient.extension"/>
+      <sliceName value="mother"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The mother of the decedent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Mother-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:informant">
+      <path value="Patient.extension"/>
+      <sliceName value="informant"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The decedent&#39;s informant"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Informant-extension"/>
       </type>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.modifierExtension">
@@ -451,6 +550,14 @@
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.identifier">
       <path value="Patient.identifier"/>
+      <slicing id="2">
+        <discriminator>
+          <type value="value"/>
+          <path value="identifier.value"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
       <short value="An identifier for this patient"/>
       <definition value="An identifier for this patient."/>
       <requirements value="Patients are almost always assigned specific numerical identifiers."/>
@@ -485,26 +592,6 @@
       <mapping>
         <identity value="argonaut-dq-dstu2"/>
         <map value="Patient.identifier"/>
-      </mapping>
-    </element>
-    <element id="Patient:sdr-deathRecord-Decedent.identifier.id">
-      <path value="Patient.identifier.id"/>
-      <representation value="xmlAttr"/>
-      <short value="xml:id (or equivalent in JSON)"/>
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.id"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
       </mapping>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.identifier.extension">
@@ -553,6 +640,7 @@
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="official"/>
       <isModifier value="true"/>
       <isSummary value="true"/>
       <binding>
@@ -574,43 +662,283 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.identifier.type">
-      <path value="Patient.identifier.type"/>
-      <short value="Description of identifier"/>
-      <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
-      <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. &#xA;&#xA;Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."/>
-      <requirements value="Allows users to make use of identifiers when the identifier system is not known."/>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.extension">
+      <path value="Patient.identifier.type.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding">
+      <path value="Patient.identifier.type.coding"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="code"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB">
+      <path value="Patient.identifier.type.coding"/>
+      <sliceName value="Fixed_SB"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.id">
+      <path value="Patient.identifier.type.coding.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="Identifier.type"/>
+        <path value="Element.id"/>
         <min value="0"/>
         <max value="1"/>
       </base>
       <type>
-        <code value="CodeableConcept"/>
+        <code value="string"/>
       </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.extension">
+      <path value="Patient.identifier.type.coding.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.system">
+      <path value="Patient.identifier.type.coding.system"/>
+      <short value="Identity of the terminology system"/>
+      <definition value="The identification of the code system that defines the meaning of the symbol in the code."/>
+      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7&#39;s list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously."/>
+      <requirements value="Need to be unambiguous about the source of the definition of the symbol."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/identifier-type"/>
       <isSummary value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierType"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
-        <strength value="extensible"/>
-        <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="v2"/>
-        <map value="CX.5"/>
+        <map value="C*E.3"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
-        <map value="Role.code or implied by context"/>
+        <map value="./codeSystem"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.version">
+      <path value="Patient.identifier.type.coding.version"/>
+      <short value="Version of the system - if relevant"/>
+      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged."/>
+      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.7"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./codeSystemVersion"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.code">
+      <path value="Patient.identifier.type.coding.code"/>
+      <short value="Symbol in syntax defined by the system"/>
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
+      <requirements value="Need to refer to a particular code in the system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="SB"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./code"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="Patient.identifier.type.coding.display"/>
+      <short value="Representation defined by the system"/>
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system."/>
+      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.2 - but note this is not well followed"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CV.displayName"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.userSelected">
+      <path value="Patient.identifier.type.coding.userSelected"/>
+      <short value="If this coding was chosen directly by the user"/>
+      <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)."/>
+      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly &#39;directly chosen&#39; implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely."/>
+      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="Sometimes implied by being first"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CD.codingRationale"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="Patient.identifier.type.text"/>
+      <short value="Plain text representation of the concept"/>
+      <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user."/>
+      <comment value="Very often the text is the same as a displayName of one of the codings."/>
+      <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.9. But note many systems use C*E.2 for this"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./originalText[mediaType/code=&quot;text/plain&quot;]/data"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"/>
       </mapping>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.identifier.system">
@@ -651,7 +979,509 @@
         <map value="Patient.identifier.system"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.identifier.value">
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber">
+      <path value="Patient.identifier"/>
+      <sliceName value="sdr-deathRecord-SocialSecurityNumber"/>
+      <short value="SocialSecurityNumber"/>
+      <definition value="The decedent&#39;s social security number."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="Patient.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <mustSupport value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PID-3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="id"/>
+      </mapping>
+      <mapping>
+        <identity value="cda"/>
+        <map value=".id"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="id"/>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.identifier"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.id">
+      <path value="Patient.identifier.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.extension">
+      <path value="Patient.identifier.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.use">
+      <path value="Patient.identifier.use"/>
+      <short value="usual | official | temp | secondary (If known)"/>
+      <definition value="The purpose of this identifier."/>
+      <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."/>
+      <requirements value="Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.use"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="official"/>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierUse"/>
+        </extension>
+        <strength value="required"/>
+        <description value="Identifies the purpose for this identifier, if known ."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-use"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Role.code or implied by context"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type">
+      <path value="Patient.identifier.type"/>
+      <short value="Description of identifier"/>
+      <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
+      <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage. &#xA;&#xA;Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."/>
+      <requirements value="Allows users to make use of identifiers when the identifier system is not known."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="IdentifierType"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/identifier-type"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Role.code or implied by context"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.id">
+      <path value="Patient.identifier.type.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.extension">
+      <path value="Patient.identifier.type.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding">
+      <path value="Patient.identifier.type.coding"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="code"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB">
+      <path value="Patient.identifier.type.coding"/>
+      <sliceName value="Fixed_SB"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.id">
+      <path value="Patient.identifier.type.coding.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.extension">
+      <path value="Patient.identifier.type.coding.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.system">
+      <path value="Patient.identifier.type.coding.system"/>
+      <short value="Identity of the terminology system"/>
+      <definition value="The identification of the code system that defines the meaning of the symbol in the code."/>
+      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7&#39;s list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously."/>
+      <requirements value="Need to be unambiguous about the source of the definition of the symbol."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/identifier-type"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./codeSystem"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.version">
+      <path value="Patient.identifier.type.coding.version"/>
+      <short value="Version of the system - if relevant"/>
+      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged."/>
+      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.7"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./codeSystemVersion"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.code">
+      <path value="Patient.identifier.type.coding.code"/>
+      <short value="Symbol in syntax defined by the system"/>
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
+      <requirements value="Need to refer to a particular code in the system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="SB"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./code"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="Patient.identifier.type.coding.display"/>
+      <short value="Representation defined by the system"/>
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system."/>
+      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.2 - but note this is not well followed"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CV.displayName"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.userSelected">
+      <path value="Patient.identifier.type.coding.userSelected"/>
+      <short value="If this coding was chosen directly by the user"/>
+      <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)."/>
+      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly &#39;directly chosen&#39; implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely."/>
+      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="Sometimes implied by being first"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CD.codingRationale"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="Patient.identifier.type.text"/>
+      <short value="Plain text representation of the concept"/>
+      <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user."/>
+      <comment value="Very often the text is the same as a displayName of one of the codings."/>
+      <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.9. But note many systems use C*E.2 for this"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./originalText[mediaType/code=&quot;text/plain&quot;]/data"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.system">
+      <path value="Patient.identifier.system"/>
+      <short value="The namespace for the identifier value"/>
+      <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique."/>
+      <requirements value="There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we&#39;re dealing with. The system identifies a particular set of unique identifiers."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Identifier.system"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <example>
+        <label value="General"/>
+        <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri"/>
+      </example>
+      <mustSupport value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="CX.4 / EI-2-4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="II.root or Role.id.root"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./IdentifierType"/>
+      </mapping>
+      <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Patient.identifier.system"/>
+      </mapping>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.value">
       <path value="Patient.identifier.value"/>
       <short value="The value that is unique within the system."/>
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."/>
@@ -689,7 +1519,7 @@
         <map value="Patient.identifier.value"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.identifier.period">
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.period">
       <path value="Patient.identifier.period"/>
       <short value="Time period when id is/was valid for use"/>
       <definition value="Time period during which identifier is/was valid for use."/>
@@ -717,7 +1547,7 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.identifier.assigner">
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.assigner">
       <path value="Patient.identifier.assigner"/>
       <short value="Organization that issued id (may be just text)"/>
       <definition value="Organization that issued/manages the identifier."/>
@@ -1236,7 +2066,7 @@
       <comment value="Patient may have multiple addresses with different uses or applicable periods."/>
       <requirements value="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="Patient.address"/>
         <min value="0"/>
@@ -1244,6 +2074,7 @@
       </base>
       <type>
         <code value="Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Residency"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -2339,25 +3170,6 @@
       <min value="1"/>
       <max value="1"/>
     </element>
-    <element id="Patient:sdr-deathRecord-Decedent.extension:socialsecuritynumber">
-      <path value="Patient.extension"/>
-      <sliceName value="socialsecuritynumber"/>
-      <slicing id="1">
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <ordered value="false"/>
-        <rules value="open"/>
-      </slicing>
-      <definition value="The decedent&#39;s social security number. Maps to item 3 on the U.S. Standard Certificate of Death"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension"/>
-      </type>
-    </element>
     <element id="Patient:sdr-deathRecord-Decedent.extension:age">
       <path value="Patient.extension"/>
       <sliceName value="age"/>
@@ -2369,7 +3181,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The decedent&#39;s age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death"/>
+      <definition value="The decedent&#39;s age in years at last birthday."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -2396,6 +3208,211 @@
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension"/>
       </type>
     </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:servedinarmedforces">
+      <path value="Patient.extension"/>
+      <sliceName value="servedinarmedforces"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Whether the decedent ever served in the US armed forces"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-ServedInArmedForces-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:maritalstatusatdeath">
+      <path value="Patient.extension"/>
+      <sliceName value="maritalstatusatdeath"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The marital status of the decedent at the time of death."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:survivingspouse">
+      <path value="Patient.extension"/>
+      <sliceName value="survivingspouse"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The surviving spouse of the decedent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-SurvivingSpouse-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:father">
+      <path value="Patient.extension"/>
+      <sliceName value="father"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The father of the decedent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Father-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:mother">
+      <path value="Patient.extension"/>
+      <sliceName value="mother"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The mother of the decedent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Mother-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:informant">
+      <path value="Patient.extension"/>
+      <sliceName value="informant"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="The decedent&#39;s informant"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Informant-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier">
+      <path value="Patient.identifier"/>
+      <slicing id="2">
+        <discriminator>
+          <type value="value"/>
+          <path value="identifier.value"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.use">
+      <path value="Patient.identifier.use"/>
+      <fixedCode value="official"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type">
+      <path value="Patient.identifier.type"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding">
+      <path value="Patient.identifier.type.coding"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="code"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB">
+      <path value="Patient.identifier.type.coding"/>
+      <sliceName value="Fixed_SB"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.system">
+      <path value="Patient.identifier.type.coding.system"/>
+      <fixedUri value="http://hl7.org/fhir/identifier-type"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.code">
+      <path value="Patient.identifier.type.coding.code"/>
+      <fixedCode value="SB"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber">
+      <path value="Patient.identifier"/>
+      <sliceName value="sdr-deathRecord-SocialSecurityNumber"/>
+      <short value="SocialSecurityNumber"/>
+      <definition value="The decedent&#39;s social security number."/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.use">
+      <path value="Patient.identifier.use"/>
+      <fixedCode value="official"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type">
+      <path value="Patient.identifier.type"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding">
+      <path value="Patient.identifier.type.coding"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="code"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB">
+      <path value="Patient.identifier.type.coding"/>
+      <sliceName value="Fixed_SB"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.system">
+      <path value="Patient.identifier.type.coding.system"/>
+      <fixedUri value="http://hl7.org/fhir/identifier-type"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.code">
+      <path value="Patient.identifier.type.coding.code"/>
+      <fixedCode value="SB"/>
+    </element>
     <element id="Patient:sdr-deathRecord-Decedent.name">
       <path value="Patient.name"/>
       <min value="1"/>
@@ -2418,6 +3435,15 @@
         <code value="boolean"/>
       </type>
       <fixedBoolean value="true"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.address">
+      <path value="Patient.address"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Residency"/>
+      </type>
     </element>
   </differential>
 </StructureDefinition>

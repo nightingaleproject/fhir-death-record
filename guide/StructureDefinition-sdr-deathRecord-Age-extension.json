@@ -3,7 +3,7 @@
   "id": "sdr-deathRecord-Age-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Age Extension</b></p>\n  <p>The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Age Extension</b></p>\n  <p>The decedent's age in years at last birthday.</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "SDR Age Extension",
   "title": "SDR Age Extension",
   "status": "draft",
-  "date": "2018-03-14",
+  "date": "2018-03-15",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death",
+  "description": "The decedent's age in years at last birthday.",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:age",
         "path": "Extension",
         "short": "SDR Age Extension",
-        "definition": "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death",
+        "definition": "The decedent's age in years at last birthday.",
         "min": 0,
         "max": "*",
         "base": {
@@ -182,7 +182,7 @@
         "id": "Extension:age",
         "path": "Extension",
         "short": "SDR Age Extension",
-        "definition": "The decedent's age in years at last birthday. Maps to item 4a on the U.S. Standard Certificate of Death",
+        "definition": "The decedent's age in years at last birthday.",
         "min": 0,
         "max": "*"
       },

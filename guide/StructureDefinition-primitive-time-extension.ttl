@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "SDR time Extension"];
   fhir:StructureDefinition.title [ fhir:value "SDR time Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-14"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-15"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

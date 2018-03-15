@@ -225,6 +225,19 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Residency.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Residency",
+            "display": "SDR Residency Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-shr-base-Condition.html"
             }
           ],
@@ -537,13 +550,117 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-SocialSecurityNumber-extension.html"
+              "valueUri": "StructureDefinition-sdr-deathRecord-Father-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-SocialSecurityNumber-extension",
-            "display": "SDR SocialSecurityNumber Extension"
+            "reference": "StructureDefinition/sdr-deathRecord-Father-extension",
+            "display": "SDR Father Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Informant-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Informant-extension",
+            "display": "SDR Informant Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-LegalName-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-LegalName-extension",
+            "display": "SDR LegalName Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-MaritalStatusAtDeath-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension",
+            "display": "SDR MaritalStatusAtDeath Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Mother-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Mother-extension",
+            "display": "SDR Mother Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-RelationshipType-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-RelationshipType-extension",
+            "display": "SDR RelationshipType Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-ServedInArmedForces-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-ServedInArmedForces-extension",
+            "display": "SDR ServedInArmedForces Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-SurvivingSpouse-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-SurvivingSpouse-extension",
+            "display": "SDR SurvivingSpouse Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-shr-core-Address-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/shr-core-Address-extension",
+            "display": "SDR Address Extension"
           }
         },
         {

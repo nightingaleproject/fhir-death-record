@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-deathRecord-DeathRecordContents"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathRecordContents Profile</b></p>\n  <p>Defines the contents of a death record document.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.DeathRecordContents maps to Composition:\n  TypeCode maps to type\n  Decedent maps to subject\n  Certifier maps to author\n  constrain type.coding to 1..*\n  CauseOfDeathSection maps to section (slice on = section.code; slice strategy = includes)\n  CauseOfDeathSection.TypeCode maps to section.code\n  constrain section.code.coding to 1..*\n  CauseOfDeathSection.ActualOrPresumedDateOfDeath maps to section.entry (slice at = section.entry; slice on = reference.resolve(); slice on type = profile)\n  CauseOfDeathSection.AutopsyPerformed maps to section.entry\n  CauseOfDeathSection.AutopsyResultsAvailable maps to section.entry\n  CauseOfDeathSection.CauseOfDeathCondition maps to section.entry\n  CauseOfDeathSection.DatePronouncedDead maps to section.entry\n  CauseOfDeathSection.DeathFromWorkInjury maps to section.entry\n  CauseOfDeathSection.DeathFromTransportInjury maps to section.entry\n  CauseOfDeathSection.MannerOfDeath maps to section.entry\n  CauseOfDeathSection.MedicalExaminerContacted maps to section.entry\n  CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry\n  CauseOfDeathSection.TobaccoUseContributedToDeath maps to section.entry\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathRecordContents Profile</b></p>\n  <p>Defines the contents of a death record document.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.DeathRecordContents maps to Composition:\n  TypeCode maps to type\n  Decedent maps to subject\n  Certifier maps to author\n  FuneralDirector maps to author\n  constrain type.coding to 1..*\n  CauseOfDeathSection maps to section (slice on = section.code; slice strategy = includes)\n  CauseOfDeathSection.TypeCode maps to section.code\n  constrain section.code.coding to 1..*\n  CauseOfDeathSection.ActualOrPresumedDateOfDeath maps to section.entry (slice at = section.entry; slice on = reference.resolve(); slice on type = profile)\n  CauseOfDeathSection.AutopsyPerformed maps to section.entry\n  CauseOfDeathSection.AutopsyResultsAvailable maps to section.entry\n  CauseOfDeathSection.CauseOfDeathCondition maps to section.entry\n  CauseOfDeathSection.ContributedToDeathCondition maps to section.entry\n  CauseOfDeathSection.DatePronouncedDead maps to section.entry\n  CauseOfDeathSection.DeathFromWorkInjury maps to section.entry\n  CauseOfDeathSection.DeathFromTransportInjury maps to section.entry\n  CauseOfDeathSection.MannerOfDeath maps to section.entry\n  CauseOfDeathSection.MedicalExaminerContacted maps to section.entry\n  CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry\n  CauseOfDeathSection.TobaccoUseContributedToDeath maps to section.entry\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"];
   fhir:StructureDefinition.identifier [
@@ -21,7 +21,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "SDR DeathRecordContents Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-15"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-19"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -955,6 +955,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector" ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -2487,6 +2491,33 @@
        ]
      ], [
        fhir:index 78;
+       fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ContributedToDeathCondition" ];
+       fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-ContributedToDeathCondition" ];
+       fhir:ElementDefinition.short [ fhir:value "ContributedToDeathCondition" ];
+       fhir:ElementDefinition.definition [ fhir:value "A condition that lead to death either directly or indirectly" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "cmp-2";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "cda" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
+       ]
+     ], [
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DatePronouncedDead" ];
@@ -2513,7 +2544,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury" ];
@@ -2540,7 +2571,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury" ];
@@ -2567,7 +2598,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MannerOfDeath" ];
@@ -2594,7 +2625,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MedicalExaminerContacted" ];
@@ -2621,7 +2652,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
@@ -2648,7 +2679,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
@@ -2675,7 +2706,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".entry" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.emptyReason" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.emptyReason" ];
        fhir:ElementDefinition.short [ fhir:value "Why the section is empty" ];
@@ -2715,7 +2746,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.section" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.section" ];
        fhir:ElementDefinition.short [ fhir:value "Nested Section" ];
@@ -2808,6 +2839,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector" ]
        ]
      ], [
        fhir:index 8;
@@ -2936,6 +2971,18 @@
        ]
      ], [
        fhir:index 19;
+       fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ContributedToDeathCondition" ];
+       fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-ContributedToDeathCondition" ];
+       fhir:ElementDefinition.short [ fhir:value "ContributedToDeathCondition" ];
+       fhir:ElementDefinition.definition [ fhir:value "A condition that lead to death either directly or indirectly" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition" ]
+       ]
+     ], [
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DatePronouncedDead" ];
@@ -2949,7 +2996,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury" ];
@@ -2963,7 +3010,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury" ];
@@ -2977,7 +3024,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MannerOfDeath" ];
@@ -2991,7 +3038,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MedicalExaminerContacted" ];
@@ -3005,7 +3052,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
@@ -3019,7 +3066,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.path [ fhir:value "Composition.section.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TobaccoUseContributedToDeath" ];

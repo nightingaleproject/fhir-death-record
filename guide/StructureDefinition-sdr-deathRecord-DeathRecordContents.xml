@@ -11,6 +11,7 @@
   TypeCode maps to type
   Decedent maps to subject
   Certifier maps to author
+  FuneralDirector maps to author
   constrain type.coding to 1..*
   CauseOfDeathSection maps to section (slice on = section.code; slice strategy = includes)
   CauseOfDeathSection.TypeCode maps to section.code
@@ -19,6 +20,7 @@
   CauseOfDeathSection.AutopsyPerformed maps to section.entry
   CauseOfDeathSection.AutopsyResultsAvailable maps to section.entry
   CauseOfDeathSection.CauseOfDeathCondition maps to section.entry
+  CauseOfDeathSection.ContributedToDeathCondition maps to section.entry
   CauseOfDeathSection.DatePronouncedDead maps to section.entry
   CauseOfDeathSection.DeathFromWorkInjury maps to section.entry
   CauseOfDeathSection.DeathFromTransportInjury maps to section.entry
@@ -37,7 +39,7 @@
   <version value="0.0.1"/>
   <name value="SDR DeathRecordContents Profile"/>
   <status value="draft"/>
-  <date value="2018-03-15"/>
+  <date value="2018-03-19"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -818,6 +820,10 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -2064,6 +2070,27 @@
         <map value=".entry"/>
       </mapping>
     </element>
+    <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ContributedToDeathCondition">
+      <path value="Composition.section.entry"/>
+      <sliceName value="sdr-causeOfDeath-ContributedToDeathCondition"/>
+      <short value="ContributedToDeathCondition"/>
+      <definition value="A condition that lead to death either directly or indirectly"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition"/>
+      </type>
+      <condition value="cmp-2"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]"/>
+      </mapping>
+      <mapping>
+        <identity value="cda"/>
+        <map value=".entry"/>
+      </mapping>
+    </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
@@ -2317,6 +2344,10 @@
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector"/>
+      </type>
     </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section">
       <path value="Composition.section"/>
@@ -2421,6 +2452,16 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition"/>
+      </type>
+    </element>
+    <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ContributedToDeathCondition">
+      <path value="Composition.section.entry"/>
+      <sliceName value="sdr-causeOfDeath-ContributedToDeathCondition"/>
+      <short value="ContributedToDeathCondition"/>
+      <definition value="A condition that lead to death either directly or indirectly"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition"/>
       </type>
     </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead">

@@ -94,7 +94,7 @@ middle name","",0,*,"","","Y","string
 ","The date  on which the practitioner was born","The date of birth for the practitioner.","","Needed for identification.","","","","","","","",,,,,"",,,,"Practitioner.birthDate",0,1,"","","STF-6","./birthTime","(not represented in ServD)"
 "Practitioner.photo","","","",0,*,"","","","Attachment
 ","Image of the person","Image of the person.","","Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Practitioner.photo",0,*,"","","./subjectOf/ObservationEvent[code=""photo""]/value","./ImageURI (only supports the URI reference)"
-"Practitioner.qualification","","","",0,*,"","","","BackboneElement
+"Practitioner.qualification","","","",1,*,"","","","BackboneElement
 ","Qualifications obtained by training and certification","Qualifications obtained by training and certification.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
 "Practitioner.qualification.id","","","",0,1,"","","","string

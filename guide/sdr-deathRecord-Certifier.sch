@@ -14,6 +14,7 @@
     <sch:rule context="f:Practitioner">
       <sch:assert test="count(f:extension[@url = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension']) &gt;= 1">extension with URL = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension']) &lt;= 1">extension with URL = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:qualification) &gt;= 1">qualification: minimum cardinality of 'qualification' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

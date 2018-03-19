@@ -8,6 +8,7 @@
   <p>The certifier of the death record</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.deathRecord.Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
+  constrain qualification to 1..*
 </pre></p>
 </div>
   </text>
@@ -19,7 +20,7 @@
   <version value="0.0.1"/>
   <name value="SDR Certifier Profile"/>
   <status value="draft"/>
-  <date value="2018-03-15"/>
+  <date value="2018-03-19"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -1180,7 +1181,7 @@
       <path value="Practitioner.qualification"/>
       <short value="Qualifications obtained by training and certification"/>
       <definition value="Qualifications obtained by training and certification."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="*"/>
       <base>
         <path value="Practitioner.qualification"/>
@@ -1449,6 +1450,11 @@
           <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS"/>
         </valueSetReference>
       </binding>
+    </element>
+    <element id="Practitioner:sdr-deathRecord-Certifier.qualification">
+      <path value="Practitioner.qualification"/>
+      <min value="1"/>
+      <max value="*"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -3,7 +3,7 @@
   "id": "sdr-deathRecord-Certifier",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Certifier Profile</b></p>\n  <p>The certifier of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Certifier Profile</b></p>\n  <p>The certifier of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier",
   "identifier": [
@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR Certifier Profile",
   "status": "draft",
-  "date": "2018-03-15",
+  "date": "2018-03-19",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -1429,7 +1429,7 @@
         "path": "Practitioner.qualification",
         "short": "Qualifications obtained by training and certification",
         "definition": "Qualifications obtained by training and certification.",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Practitioner.qualification",
@@ -1765,6 +1765,12 @@
             "reference": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS"
           }
         }
+      },
+      {
+        "id": "Practitioner:sdr-deathRecord-Certifier.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1,
+        "max": "*"
       }
     ]
   }

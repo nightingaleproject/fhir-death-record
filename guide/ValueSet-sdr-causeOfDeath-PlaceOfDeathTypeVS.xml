@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sdr-causeOfDeath-PlaceOfDeathTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>SDR PlaceOfDeathTypeVS ValueSet</b></p>
+<p>Place of decedent's demise</p>
+</div>
+  </text>
+  <url value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PlaceOfDeathTypeVS"/>
+  <identifier>
+    <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    <value value="sdr.causeOfDeath.PlaceOfDeathTypeVS"/>
+  </identifier>
+  <version value="0.0.1"/>
+  <name value="SDR PlaceOfDeathTypeVS ValueSet"/>
+  <title value="SDR PlaceOfDeathTypeVS ValueSet"/>
+  <status value="draft"/>
+  <date value="2018-03-19"/>
+  <publisher value="The MITRE Corporation: Nightingale Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
+    </telecom>
+  </contact>
+  <description value="Place of decedent&#39;s demise"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="63238001"/>
+        <display value="Dead on arrival at hospital"/>
+      </concept>
+      <concept>
+        <code value="440081000124100"/>
+        <display value="Death in home"/>
+      </concept>
+      <concept>
+        <code value="440071000124103"/>
+        <display value="Death in hospice"/>
+      </concept>
+      <concept>
+        <code value="16983000"/>
+        <display value="Death in hospital"/>
+      </concept>
+      <concept>
+        <code value="450391000124102"/>
+        <display value="Death in hospital-based emergency department or outpatient department"/>
+      </concept>
+      <concept>
+        <code value="450381000124100"/>
+        <display value="Death in nursing home or long term care facility"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="Unknown"/>
+      </concept>
+      <concept>
+        <code value="OTH"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

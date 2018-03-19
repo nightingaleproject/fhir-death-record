@@ -70,7 +70,7 @@ user content","",0,*,"","","","Extension
 "Composition.date","","","",1,1,"","","Y","dateTime
 ","Composition editing time","The composition editing time, when the composition was last logically changed by the author.","The Last Modified Date on the composition may be after the date of the document was attested without being changed.","dateTime is used for tracking, organizing versions and searching.","","","","","","","",,,,,"",,,,"",0,null,"","",".effectiveTime[type=""TS""]",".effectiveTime","when.done"
 "Composition.author","","","",1,1,"","","Y","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier}
-","Who and/or what authored the composition","Identifies who is responsible for the information in the composition, not necessarily who typed it in.","","Identifies who is responsible for the content.","","","","","","","",,,,,"",,,,"",0,null,"","",".participation[typeCode=""AUT""].role[classCode=""ASSIGNED""]",".author.assignedAuthor","who.author"
+Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector}","Who and/or what authored the composition","Identifies who is responsible for the information in the composition, not necessarily who typed it in.","","Identifies who is responsible for the content.","","","","","","","",,,,,"",,,,"",0,null,"","",".participation[typeCode=""AUT""].role[classCode=""ASSIGNED""]",".author.assignedAuthor","who.author"
 "Composition.title","","","",1,1,"","","Y","string
 ","Human Readable name/title","Official human-readable label for the composition.","For many compositions, the title is the same as the text or a display name of Composition.type (e.g. a ""consultation"" or ""progress note""). Note that CDA does not make title mandatory, but there are no known cases where it is useful for title to be omitted, so it is mandatory here. Feedback on this requirement is welcome during the trial use period.","","","","","","","","",,,,,"",,,,"",0,null,"","","./title",".title"
 "Composition.confidentiality","","","",0,1,"","Y","Y","code
@@ -195,6 +195,9 @@ value:reference.resolve()}","",,"open","",0,null,"cmp-2
 ","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","sdr-causeOfDeath-CauseOfDeathCondition","","",1,*,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition}
 ","CauseOfDeathCondition","A condition that lead to death either directly or indirectly","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
+","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
+"Composition.section.entry","sdr-causeOfDeath-ContributedToDeathCondition","","",0,*,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition}
+","ContributedToDeathCondition","A condition that lead to death either directly or indirectly","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
 ","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","sdr-causeOfDeath-DatePronouncedDead","","",1,1,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead}
 ","DatePronouncedDead","Date pronounced dead.","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2

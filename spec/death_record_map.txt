@@ -6,6 +6,7 @@ DeathRecordContents maps to Composition:
   TypeCode maps to type
   Decedent maps to subject
   Certifier maps to author
+  FuneralDirector maps to author
   constrain type.coding to 1..*
   CauseOfDeathSection maps to section (slice on = section.code; slice strategy = includes)
   CauseOfDeathSection.TypeCode maps to section.code
@@ -14,6 +15,7 @@ DeathRecordContents maps to Composition:
   CauseOfDeathSection.AutopsyPerformed maps to section.entry
   CauseOfDeathSection.AutopsyResultsAvailable maps to section.entry
   CauseOfDeathSection.CauseOfDeathCondition maps to section.entry
+  CauseOfDeathSection.ContributedToDeathCondition maps to section.entry
   CauseOfDeathSection.DatePronouncedDead maps to section.entry
   CauseOfDeathSection.DeathFromWorkInjury maps to section.entry
   CauseOfDeathSection.DeathFromTransportInjury maps to section.entry
@@ -21,12 +23,6 @@ DeathRecordContents maps to Composition:
   CauseOfDeathSection.MedicalExaminerContacted maps to section.entry
   CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry
   CauseOfDeathSection.TobaccoUseContributedToDeath maps to section.entry
-
-// TBD fix this so we can map these elements to Patient.contact
-// DecedentRelative maps to Patient.contact:
-//  LegalName maps to name.text
-//  RelationshipType maps to relationship
-//  Address maps to address
 
 Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
   constrain deceased[x] to 1..1
@@ -40,12 +36,30 @@ Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
   fix identifier.use to http://hl7.org/fhir/identifier-use#official
   fix identifier.type to http://hl7.org/fhir/identifier-type#SB
   Residency maps to address
-//  SurvivingSpouse maps to contact (slice at = contact; slice on = contact.name; slice strategy = includes)
-//  Father maps to contact
-//  Mother maps to contact
-//  Informant maps to contact
+  SurvivingSpouse maps to contact (slice on = relationship)
+  constrain contact.name to 1..1
+  constrain contact.name.text to 1..1
+  SurvivingSpouse.LegalName maps to contact.name.text
+  SurvivingSpouse.RelationshipType maps to contact.relationship
+  SurvivingSpouse.Address maps to contact.address
+  Father maps to contact
+  Father.LegalName maps to contact.name.text
+  Father.RelationshipType maps to contact.relationship
+  Father.Address maps to contact.address
+  Mother maps to contact
+  Mother.LegalName maps to contact.name.text
+  Mother.RelationshipType maps to contact.relationship
+  Mother.Address maps to contact.address
+  Informant maps to contact
+  Informant.LegalName maps to contact.name.text
+  Informant.RelationshipType maps to contact.relationship
+  Informant.Address maps to contact.address
 
 Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
+  constrain qualification to 1..*
+
+FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
+  constrain qualification to 1..*
 
 DeathRecord maps to Bundle:
   fix type to http://hl7.org/fhir/bundle-type#document
@@ -54,11 +68,13 @@ DeathRecord maps to Bundle:
   AutopsyPerformed maps to entry
   AutopsyResultsAvailable maps to entry
   CauseOfDeathCondition maps to entry
+  ContributedToDeathCondition maps to entry
   Certifier maps to entry
   DatePronouncedDead maps to entry
   DeathFromWorkInjury maps to entry
   DeathFromTransportInjury maps to entry
   Decedent maps to entry
+  FuneralDirector maps to entry
   MannerOfDeath maps to entry
   MedicalExaminerContacted maps to entry
   TimingOfRecentPregnancyInRelationToDeath maps to entry

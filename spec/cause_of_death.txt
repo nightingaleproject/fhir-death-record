@@ -37,6 +37,12 @@ Description: "A condition that lead to death either directly or indirectly"
 1..1 Subject
 1..1 Onset
 
+EntryElement: ContributedToDeathCondition
+Based on: Condition
+Concept: TBD
+Description: "A condition that lead to death either directly or indirectly"
+1..1 Subject
+
 EntryElement: DatePronouncedDead
 Based on: Observation
 Concept: MTH#C4263722  "Date and time pronounced dead"

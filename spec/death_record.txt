@@ -60,6 +60,7 @@ Description: "The subject of the death record"
 1..1 Education // Item 51 on the U.S. Standard Certificate of Death
 1..1 Ethnicity // Item 52 on the U.S. Standard Certificate of Death
 1..1 Race // Item 53 on the U.S. Standard Certificate of Death
+0..1 Occupation // Items 54, 55 on the U.S. Standard Certificate of Death
 
 Element: LegalName
 Concept: TBD
@@ -192,6 +193,23 @@ Description: "Decedent of hispanic origin?"
 Element: Race
 Concept: TBD
 Description: "Decedent's race"
+
+Element: Occupation
+Concept: TBD
+Description: "Decedent's occupation"
+1..1 Job
+1..1 Industry
+
+  Element: Job
+  Concept: TBD
+  Description: "Type of work done during most of decedent's working life"
+  Value: 1..1 string
+
+  Element: Industry
+  Concept: TBD
+  Description: "Kind of industry or business in which the decedent worked"
+  Value: 1..1 string
+  
 
 Element: FuneralDirector
 Based on: Practitioner

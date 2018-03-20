@@ -57,6 +57,9 @@ Description: "The subject of the death record"
 0..1 Informant // Item 13 on the U.S. Standard Certificate of Death
 1..1 PlaceOfDeath // Items 14, 15, 16, 17 on the U.S. Standard Certificate of Death
 1..1 Disposition // Items 18, 19, 20, 21, 22, 23 on the U.S. Standard Certificate of Death
+1..1 Education // Item 51 on the U.S. Standard Certificate of Death
+1..1 Ethnicity // Item 52 on the U.S. Standard Certificate of Death
+1..1 Race // Item 53 on the U.S. Standard Certificate of Death
 
 Element: LegalName
 Concept: TBD
@@ -159,13 +162,13 @@ Description: "The location that death occurred"
 Element: Disposition // Items 18, 19, 20, 21, 22, 23 on the U.S. Standard Certificate of Death
 Concept: TBD
 Description: "Disposition of the decedent's body"
-1..1 DispositionType from DispositionTypeVS  // Item 18 on the U.S. Standard Certificate of Death
+1..1 DispositionType  // Item 18 on the U.S. Standard Certificate of Death
 0..1 DispositionFacility // Items 19, 20 on the U.S. Standard Certificate of Death
 0..1 FuneralFacility // Item 21 on the U.S. Standard Certificate of Death
 
   Element: DispositionType
   Concept: TBD
-  Value: 1..1 CodeableConcept
+  Value: 1..1 CodeableConcept from DispositionTypeVS
 
   Element: DispositionFacility
   Concept: TBD
@@ -177,6 +180,18 @@ Description: "Disposition of the decedent's body"
   1..1 FacilityName
   1..1 Address
   
+Element: Education
+Concept: TBD
+Description: "Decedent's education"
+Value: 1..1 CodeableConcept from EducationVS
+
+Element: Ethnicity
+Concept: TBD
+Description: "Decedent of hispanic origin?"
+
+Element: Race
+Concept: TBD
+Description: "Decedent's race"
 
 Element: FuneralDirector
 Based on: Practitioner

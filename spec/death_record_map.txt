@@ -54,6 +54,8 @@ Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
   Informant.LegalName maps to contact.name.text
   Informant.RelationshipType maps to contact.relationship
   Informant.Address maps to contact.address
+  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
+  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 
 Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
   constrain qualification to 1..*

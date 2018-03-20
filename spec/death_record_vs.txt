@@ -3,6 +3,7 @@ Namespace: sdr.causeOfDeath
 
 CodeSystem: SCT = http://snomed.info/sct
 CodeSystem: NF = http://hl7.org/fhir/v3/NullFlavor
+CodeSystem: PHIN = http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274
 
 ValueSet: CertifierTypeVS
 Description: "Type of certifier for a death record"
@@ -33,3 +34,15 @@ SCT#449941000124103 "Removal from state"
 SCT#455401000124109 "Hospital Disposition"
 NF#UNK "Unknown"
 NF#OTH "Other"
+
+ValueSet: EducationVS
+Description: "Decedent's education"
+PHIN#PHC1448 "8th grade or less"
+PHIN#PHC1449 "9th through 12th grade; no diploma"
+PHIN#PHC1450 "High School Graduate or GED Completed"
+PHIN#PHC1451 "Some college credit, but no degree"
+PHIN#PHC1452 "Associate Degree"
+PHIN#PHC1453 "Bachelor's Degree"
+PHIN#PHC1454 "Master's Degree"
+PHIN#PHC1455 "Doctorate Degree or Professional Degree"
+NF#UNK "Unknown"

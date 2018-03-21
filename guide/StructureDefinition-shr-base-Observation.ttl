@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "shr-base-Observation"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Observation Profile</b></p>\n  <p>Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.base.Observation maps to Observation:\n  CodeableConcept maps to value[x]\n  boolean maps to value[x]\n  dateTime maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Observation Profile</b></p>\n  <p>Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.base.Observation maps to Observation:\n  CodeableConcept maps to value[x]\n  boolean maps to value[x]\n  dateTime maps to value[x]\n  string maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-base-Observation"];
   fhir:StructureDefinition.identifier [
@@ -21,7 +21,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "SDR Observation Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-19"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -956,9 +956,12 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ], [
          fhir:index 1;
-         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ], [
          fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ], [
+         fhir:index 3;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ];
        fhir:ElementDefinition.condition [
@@ -2109,9 +2112,12 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ], [
          fhir:index 1;
-         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ], [
          fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ], [
+         fhir:index 3;
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ]

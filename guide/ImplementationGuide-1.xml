@@ -93,6 +93,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-DetailsOfInjury.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-DetailsOfInjury"/>
+        <display value="SDR DetailsOfInjury Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-InjuryLocation.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-InjuryLocation"/>
+        <display value="SDR InjuryLocation Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html"/>
       </extension>
       <example value="false"/>
@@ -413,6 +433,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-InjuryLocation-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension"/>
+        <display value="SDR InjuryLocation Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-causeOfDeath-PlaceOfInjury-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension"/>
+        <display value="SDR PlaceOfInjury Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-Age-extension.html"/>
       </extension>
       <example value="false"/>
@@ -473,6 +513,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Education-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Education-extension"/>
+        <display value="SDR Education Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-FacilityName-extension.html"/>
       </extension>
       <example value="false"/>
@@ -493,12 +543,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Industry-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Industry-extension"/>
+        <display value="SDR Industry Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Job-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Job-extension"/>
+        <display value="SDR Job Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-MaritalStatusAtDeath-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension"/>
         <display value="SDR MaritalStatusAtDeath Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-deathRecord-Occupation-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-deathRecord-Occupation-extension"/>
+        <display value="SDR Occupation Extension"/>
       </sourceReference>
     </resource>
     <resource>
@@ -569,6 +649,16 @@
       <sourceReference>
         <reference value="ValueSet/sdr-causeOfDeath-DispositionTypeVS"/>
         <display value="SDR DispositionTypeVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-causeOfDeath-EducationVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-causeOfDeath-EducationVS"/>
+        <display value="SDR EducationVS ValueSet"/>
       </sourceReference>
     </resource>
     <resource>

@@ -16,7 +16,7 @@
   "name": "SDR Disposition Extension",
   "title": "SDR Disposition Extension",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -150,111 +150,6 @@
           }
         ],
         "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension:disposition.extension:dispositiontype.id",
-        "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension:disposition.extension:dispositiontype.extension:extension",
-        "path": "Extension.extension.extension",
-        "sliceName": "extension",
-        "short": "Extension",
-        "definition": "An Extension",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension:disposition.extension:dispositiontype.url",
-        "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "identifies the meaning of the extension",
-        "definition": "Source of the definition for the extension code - a logical name or a URL.",
-        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.url",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DispositionType-extension",
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension:disposition.extension:dispositiontype.valueCodeableConcept",
-        "path": "Extension.extension.valueCodeableConcept",
-        "short": "Value of extension",
-        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS"
-          }
-        },
         "mapping": [
           {
             "identity": "rim",
@@ -503,16 +398,6 @@
             "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DispositionType-extension"
           }
         ]
-      },
-      {
-        "id": "Extension:disposition.extension:dispositiontype.valueCodeableConcept",
-        "path": "Extension.extension.valueCodeableConcept",
-        "binding": {
-          "strength": "required",
-          "valueSetReference": {
-            "reference": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS"
-          }
-        }
       },
       {
         "id": "Extension:disposition.extension:dispositionfacility",

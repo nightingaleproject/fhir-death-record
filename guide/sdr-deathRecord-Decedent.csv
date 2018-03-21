@@ -22,10 +22,10 @@ anonymous resourcescontained resources","",0,*,"","","","Resource
 "Patient.extension","","","",0,*,"","","","Extension
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"",""
-"Patient.extension","race","","",0,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-race}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
-"Patient.extension","ethnicity","","",0,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity}
-","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
+"Patient.extension","race","","",1,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-race}
+","","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
+"Patient.extension","ethnicity","","",1,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity}
+","","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
 "Patient.extension","birthsex","","",1,1,"Y","","","Extension {http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex}
 ","","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","","Patient.extension"
 "Patient.extension","age","","",0,1,"","","","Extension {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension}
@@ -45,6 +45,12 @@ anonymous resourcescontained resources","",0,*,"","","","Resource
 ","",,"open","",0,null,"",""
 "Patient.extension","disposition","","",1,1,"","","","Extension {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Disposition-extension}
 ","","Disposition of the decedent's body","","","","","","","","","",,,,,"","value:url}
+","",,"open","",0,null,"",""
+"Patient.extension","education","","",1,1,"","","","Extension {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Education-extension}
+","","Decedent's education","","","","","","","","","",,,,,"","value:url}
+","",,"open","",0,null,"",""
+"Patient.extension","occupation","","",0,1,"","","","Extension {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Occupation-extension}
+","","Decedent's occupation","","","","","","","","","",,,,,"","value:url}
 ","",,"open","",0,null,"",""
 "Patient.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension

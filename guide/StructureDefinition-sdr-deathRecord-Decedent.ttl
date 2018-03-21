@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-deathRecord-Decedent"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)\n  fix identifier.use to http://hl7.org/fhir/identifier-use#official\n  fix identifier.type to http://hl7.org/fhir/identifier-type#SB\n  Residency maps to address\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.Address maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.Address maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.Address maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.Address maps to contact.address\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)\n  fix identifier.use to http://hl7.org/fhir/identifier-use#official\n  fix identifier.type to http://hl7.org/fhir/identifier-type#SB\n  Residency maps to address\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.Address maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.Address maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.Address maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.Address maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent"];
   fhir:StructureDefinition.identifier [
@@ -21,7 +21,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.0.1"];
   fhir:StructureDefinition.name [ fhir:value "SDR Decedent Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-19"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -355,9 +355,8 @@
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:race" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "race" ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
        fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
@@ -381,9 +380,8 @@
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:ethnicity" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "ethnicity" ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
        fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
@@ -567,6 +565,52 @@
        ]
      ], [
        fhir:index 17;
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:education" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "education" ];
+       fhir:ElementDefinition.slicing [
+         fhir:Element.id [ fhir:value "1" ];
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.definition [ fhir:value "Decedent's education" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Education-extension" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:occupation" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "occupation" ];
+       fhir:ElementDefinition.slicing [
+         fhir:Element.id [ fhir:value "1" ];
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.definition [ fhir:value "Decedent's occupation" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Occupation-extension" ]
+       ]
+     ], [
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -597,7 +641,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.slicing [
@@ -648,7 +692,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -687,7 +731,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary (If known)" ];
@@ -731,7 +775,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -770,7 +814,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.slicing [
@@ -808,7 +852,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_SB" ];
@@ -821,7 +865,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -847,7 +891,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -886,7 +930,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -915,7 +959,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.version" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -942,7 +986,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -970,7 +1014,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1002,7 +1046,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -1030,7 +1074,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1063,7 +1107,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1105,7 +1149,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier.system" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-SocialSecurityNumber" ];
@@ -1146,7 +1190,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -1172,7 +1216,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1211,7 +1255,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary (If known)" ];
@@ -1255,7 +1299,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -1301,7 +1345,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -1327,7 +1371,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1366,7 +1410,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.slicing [
@@ -1404,7 +1448,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_SB" ];
@@ -1417,7 +1461,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -1443,7 +1487,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1482,7 +1526,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -1511,7 +1555,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.version" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -1538,7 +1582,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -1566,7 +1610,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1598,7 +1642,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -1626,7 +1670,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1659,7 +1703,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1701,7 +1745,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier.system" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique within the system." ];
@@ -1743,7 +1787,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier.value" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1774,7 +1818,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -1807,7 +1851,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.active" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.short [ fhir:value "Whether this patient's record is in active use" ];
@@ -1842,7 +1886,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "status" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the patient" ];
@@ -1880,7 +1924,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.id" ];
        fhir:ElementDefinition.representation [
@@ -1906,7 +1950,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1945,7 +1989,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -1993,7 +2037,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -2022,7 +2066,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -2063,7 +2107,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name.family" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -2108,7 +2152,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name.given" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -2140,7 +2184,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -2168,7 +2212,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./part[partType = SFX]" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -2200,7 +2244,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the individual" ];
@@ -2233,7 +2277,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".telecom" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -2278,7 +2322,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.gender" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.short [ fhir:value "The date of birth for the individual" ];
@@ -2320,7 +2364,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.birthDate" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.deceased[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Indicates if the individual is deceased or not" ];
@@ -2355,7 +2399,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.short [ fhir:value "Addresses for the individual" ];
@@ -2389,7 +2433,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".addr" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.maritalStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.maritalStatus" ];
        fhir:ElementDefinition.short [ fhir:value "Marital (civil) status of a patient" ];
@@ -2437,7 +2481,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.maritalStatusCode" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.multipleBirth[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.multipleBirth[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Whether patient is part of a multiple birth" ];
@@ -2472,7 +2516,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.photo" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.photo" ];
        fhir:ElementDefinition.short [ fhir:value "Image of the patient" ];
@@ -2503,7 +2547,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2562,7 +2606,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2601,7 +2645,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -2643,7 +2687,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2691,7 +2735,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.representation [
@@ -2717,7 +2761,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -2747,7 +2791,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -2782,7 +2826,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.short [ fhir:value "The kind of relationship" ];
@@ -2826,7 +2870,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.id" ];
        fhir:ElementDefinition.representation [
@@ -2852,7 +2896,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2891,7 +2935,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -2929,7 +2973,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_N" ];
@@ -2942,7 +2986,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 85;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -2968,7 +3012,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3007,7 +3051,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -3036,7 +3080,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.version" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -3063,7 +3107,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -3091,7 +3135,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3123,7 +3167,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -3151,7 +3195,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3184,7 +3228,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the contact person" ];
@@ -3215,7 +3259,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.id" ];
        fhir:ElementDefinition.representation [
@@ -3241,7 +3285,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3280,7 +3324,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -3322,7 +3366,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -3346,7 +3390,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -3377,7 +3421,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./FamilyName" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -3412,7 +3456,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./GivenNames" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -3439,7 +3483,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -3462,7 +3506,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./part[partType = SFX]" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -3489,7 +3533,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -3521,7 +3565,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -3553,7 +3597,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -3601,7 +3645,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -3637,7 +3681,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -3663,7 +3707,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3711,7 +3755,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.representation [
@@ -3737,7 +3781,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 110;
+       fhir:index 112;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -3767,7 +3811,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 111;
+       fhir:index 113;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -3802,7 +3846,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 112;
+       fhir:index 114;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.short [ fhir:value "The kind of relationship" ];
@@ -3846,7 +3890,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 113;
+       fhir:index 115;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.id" ];
        fhir:ElementDefinition.representation [
@@ -3872,7 +3916,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 114;
+       fhir:index 116;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3911,7 +3955,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 115;
+       fhir:index 117;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -3949,7 +3993,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 116;
+       fhir:index 118;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_N" ];
@@ -3962,7 +4006,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 117;
+       fhir:index 119;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -3988,7 +4032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 118;
+       fhir:index 120;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4027,7 +4071,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 119;
+       fhir:index 121;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -4056,7 +4100,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 120;
+       fhir:index 122;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.version" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -4083,7 +4127,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 121;
+       fhir:index 123;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -4111,7 +4155,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 122;
+       fhir:index 124;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4143,7 +4187,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 123;
+       fhir:index 125;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -4171,7 +4215,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 124;
+       fhir:index 126;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4204,7 +4248,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 125;
+       fhir:index 127;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the contact person" ];
@@ -4235,7 +4279,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 126;
+       fhir:index 128;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.id" ];
        fhir:ElementDefinition.representation [
@@ -4261,7 +4305,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 127;
+       fhir:index 129;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4300,7 +4344,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 128;
+       fhir:index 130;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -4342,7 +4386,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 129;
+       fhir:index 131;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -4366,7 +4410,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 130;
+       fhir:index 132;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -4397,7 +4441,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./FamilyName" ]
        ]
      ], [
-       fhir:index 131;
+       fhir:index 133;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -4432,7 +4476,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./GivenNames" ]
        ]
      ], [
-       fhir:index 132;
+       fhir:index 134;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -4459,7 +4503,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 133;
+       fhir:index 135;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -4482,7 +4526,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./part[partType = SFX]" ]
        ]
      ], [
-       fhir:index 134;
+       fhir:index 136;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -4509,7 +4553,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 135;
+       fhir:index 137;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -4541,7 +4585,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 136;
+       fhir:index 138;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -4573,7 +4617,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 137;
+       fhir:index 139;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -4621,7 +4665,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 138;
+       fhir:index 140;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -4657,7 +4701,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 139;
+       fhir:index 141;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -4683,7 +4727,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 140;
+       fhir:index 142;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4731,7 +4775,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 141;
+       fhir:index 143;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.representation [
@@ -4757,7 +4801,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 142;
+       fhir:index 144;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -4787,7 +4831,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 143;
+       fhir:index 145;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -4822,7 +4866,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 144;
+       fhir:index 146;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.short [ fhir:value "The kind of relationship" ];
@@ -4866,7 +4910,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 145;
+       fhir:index 147;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.id" ];
        fhir:ElementDefinition.representation [
@@ -4892,7 +4936,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 146;
+       fhir:index 148;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4931,7 +4975,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 147;
+       fhir:index 149;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -4969,7 +5013,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 148;
+       fhir:index 150;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_N" ];
@@ -4982,7 +5026,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 149;
+       fhir:index 151;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -5008,7 +5052,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 150;
+       fhir:index 152;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5047,7 +5091,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 151;
+       fhir:index 153;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -5076,7 +5120,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 152;
+       fhir:index 154;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.version" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -5103,7 +5147,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 153;
+       fhir:index 155;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -5131,7 +5175,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 154;
+       fhir:index 156;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5163,7 +5207,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 155;
+       fhir:index 157;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -5191,7 +5235,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 156;
+       fhir:index 158;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5224,7 +5268,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 157;
+       fhir:index 159;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the contact person" ];
@@ -5255,7 +5299,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 158;
+       fhir:index 160;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.id" ];
        fhir:ElementDefinition.representation [
@@ -5281,7 +5325,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 159;
+       fhir:index 161;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5320,7 +5364,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 160;
+       fhir:index 162;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -5362,7 +5406,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 161;
+       fhir:index 163;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -5386,7 +5430,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 162;
+       fhir:index 164;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -5417,7 +5461,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./FamilyName" ]
        ]
      ], [
-       fhir:index 163;
+       fhir:index 165;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -5452,7 +5496,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./GivenNames" ]
        ]
      ], [
-       fhir:index 164;
+       fhir:index 166;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -5479,7 +5523,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 165;
+       fhir:index 167;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -5502,7 +5546,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./part[partType = SFX]" ]
        ]
      ], [
-       fhir:index 166;
+       fhir:index 168;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -5529,7 +5573,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 167;
+       fhir:index 169;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -5561,7 +5605,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 168;
+       fhir:index 170;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -5593,7 +5637,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 169;
+       fhir:index 171;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -5641,7 +5685,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 170;
+       fhir:index 172;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -5677,7 +5721,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 171;
+       fhir:index 173;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -5703,7 +5747,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 172;
+       fhir:index 174;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5751,7 +5795,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 173;
+       fhir:index 175;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.representation [
@@ -5777,7 +5821,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 174;
+       fhir:index 176;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -5807,7 +5851,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 175;
+       fhir:index 177;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -5842,7 +5886,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 176;
+       fhir:index 178;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.short [ fhir:value "The kind of relationship" ];
@@ -5886,7 +5930,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 177;
+       fhir:index 179;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.id" ];
        fhir:ElementDefinition.representation [
@@ -5912,7 +5956,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 178;
+       fhir:index 180;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5951,7 +5995,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 179;
+       fhir:index 181;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -5989,7 +6033,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 180;
+       fhir:index 182;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_CP" ];
@@ -6002,7 +6046,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 181;
+       fhir:index 183;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -6028,7 +6072,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 182;
+       fhir:index 184;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6067,7 +6111,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 183;
+       fhir:index 185;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -6096,7 +6140,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 184;
+       fhir:index 186;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.version" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -6123,7 +6167,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 185;
+       fhir:index 187;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -6151,7 +6195,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 186;
+       fhir:index 188;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6183,7 +6227,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 187;
+       fhir:index 189;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -6211,7 +6255,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 188;
+       fhir:index 190;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6244,7 +6288,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 189;
+       fhir:index 191;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the contact person" ];
@@ -6275,7 +6319,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 190;
+       fhir:index 192;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.id" ];
        fhir:ElementDefinition.representation [
@@ -6301,7 +6345,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 191;
+       fhir:index 193;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6340,7 +6384,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 192;
+       fhir:index 194;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | nickname | anonymous | old | maiden" ];
@@ -6382,7 +6426,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./NamePurpose" ]
        ]
      ], [
-       fhir:index 193;
+       fhir:index 195;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the full name" ];
@@ -6406,7 +6450,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./formatted" ]
        ]
      ], [
-       fhir:index 194;
+       fhir:index 196;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.family" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.family" ];
        fhir:ElementDefinition.short [ fhir:value "Family name (often called 'Surname')" ];
@@ -6437,7 +6481,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./FamilyName" ]
        ]
      ], [
-       fhir:index 195;
+       fhir:index 197;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.given" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.given" ];
        fhir:ElementDefinition.short [ fhir:value "Given names (not always 'first'). Includes middle names" ];
@@ -6472,7 +6516,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./GivenNames" ]
        ]
      ], [
-       fhir:index 196;
+       fhir:index 198;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come before the name" ];
@@ -6499,7 +6543,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./TitleCode" ]
        ]
      ], [
-       fhir:index 197;
+       fhir:index 199;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.suffix" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.suffix" ];
        fhir:ElementDefinition.short [ fhir:value "Parts that come after the name" ];
@@ -6522,7 +6566,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./part[partType = SFX]" ]
        ]
      ], [
-       fhir:index 198;
+       fhir:index 200;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when name was/is in use" ];
@@ -6549,7 +6593,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 199;
+       fhir:index 201;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -6581,7 +6625,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 200;
+       fhir:index 202;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -6613,7 +6657,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 201;
+       fhir:index 203;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -6661,7 +6705,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 202;
+       fhir:index 204;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -6697,7 +6741,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 203;
+       fhir:index 205;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -6723,7 +6767,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 204;
+       fhir:index 206;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6772,7 +6816,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.animal" ]
        ]
      ], [
-       fhir:index 205;
+       fhir:index 207;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.animal.id" ];
        fhir:ElementDefinition.representation [
@@ -6798,7 +6842,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 206;
+       fhir:index 208;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.animal.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -6828,7 +6872,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 207;
+       fhir:index 209;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.animal.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -6863,7 +6907,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 208;
+       fhir:index 210;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal.species" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.animal.species" ];
        fhir:ElementDefinition.short [ fhir:value "E.g. Dog, Cow" ];
@@ -6909,7 +6953,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 209;
+       fhir:index 211;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal.breed" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.animal.breed" ];
        fhir:ElementDefinition.short [ fhir:value "E.g. Poodle, Angus" ];
@@ -6955,7 +6999,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 210;
+       fhir:index 212;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.animal.genderStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.animal.genderStatus" ];
        fhir:ElementDefinition.short [ fhir:value "E.g. Neutered, Intact" ];
@@ -7000,7 +7044,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 211;
+       fhir:index 213;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.communication" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.short [ fhir:value "A list of Languages which may be used to communicate with the patient about his or her health" ];
@@ -7042,7 +7086,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.communication" ]
        ]
      ], [
-       fhir:index 212;
+       fhir:index 214;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.communication.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.representation [
@@ -7068,7 +7112,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 213;
+       fhir:index 215;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.communication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -7098,7 +7142,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 214;
+       fhir:index 216;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.communication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -7133,7 +7177,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 215;
+       fhir:index 217;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.communication.language" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.short [ fhir:value "The language which can be used to communicate with the patient about his or her health" ];
@@ -7185,7 +7229,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.communication.language" ]
        ]
      ], [
-       fhir:index 216;
+       fhir:index 218;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.communication.preferred" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.short [ fhir:value "Language preference indicator" ];
@@ -7217,7 +7261,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".preferenceInd" ]
        ]
      ], [
-       fhir:index 217;
+       fhir:index 219;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.generalPractitioner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.short [ fhir:value "Patient's nominated primary care provider" ];
@@ -7257,7 +7301,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 218;
+       fhir:index 220;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.managingOrganization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is the custodian of the patient record" ];
@@ -7287,7 +7331,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".providerOrganization" ]
        ]
      ], [
-       fhir:index 219;
+       fhir:index 221;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.link" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.short [ fhir:value "Link to another patient resource that concerns the same actual person" ];
@@ -7326,7 +7370,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 220;
+       fhir:index 222;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.link.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.representation [
@@ -7352,7 +7396,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 221;
+       fhir:index 223;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.link.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
@@ -7382,7 +7426,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 222;
+       fhir:index 224;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.link.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -7417,7 +7461,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 223;
+       fhir:index 225;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.link.other" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.short [ fhir:value "The other patient or related person resource that the link refers to" ];
@@ -7454,7 +7498,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 224;
+       fhir:index 226;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.link.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.short [ fhir:value "replaced-by | replaces | refer | seealso - type of link" ];
@@ -7505,12 +7549,24 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:sex" ];
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:race" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:ethnicity" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:sex" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:age" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "age" ];
@@ -7533,7 +7589,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Age-extension" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:birthplace" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "birthplace" ];
@@ -7556,7 +7612,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Birthplace-extension" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:servedinarmedforces" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "servedinarmedforces" ];
@@ -7579,7 +7635,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-ServedInArmedForces-extension" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:maritalstatusatdeath" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "maritalstatusatdeath" ];
@@ -7602,7 +7658,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:placeofdeath" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "placeofdeath" ];
@@ -7625,7 +7681,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-PlaceOfDeath-extension" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:disposition" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "disposition" ];
@@ -7648,7 +7704,53 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Disposition-extension" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:education" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "education" ];
+       fhir:ElementDefinition.slicing [
+         fhir:Element.id [ fhir:value "1" ];
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.definition [ fhir:value "Decedent's education" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Education-extension" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.extension:occupation" ];
+       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "occupation" ];
+       fhir:ElementDefinition.slicing [
+         fhir:Element.id [ fhir:value "1" ];
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.definition [ fhir:value "Decedent's occupation" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Occupation-extension" ]
+       ]
+     ], [
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.slicing [
@@ -7662,16 +7764,16 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "official" ]
      ], [
-       fhir:index 10;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ]
      ], [
-       fhir:index 11;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.slicing [
@@ -7685,7 +7787,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_SB" ];
@@ -7698,33 +7800,33 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.system" ];
        fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/identifier-type" ]
      ], [
-       fhir:index 14;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier.type.coding:Fixed_SB.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.code" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "SB" ]
      ], [
-       fhir:index 15;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-SocialSecurityNumber" ];
        fhir:ElementDefinition.short [ fhir:value "SocialSecurityNumber" ];
        fhir:ElementDefinition.definition [ fhir:value "The decedent's social security number." ]
      ], [
-       fhir:index 16;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "official" ]
      ], [
-       fhir:index 17;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ]
      ], [
-       fhir:index 18;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.slicing [
@@ -7738,7 +7840,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_SB" ];
@@ -7751,34 +7853,34 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.system" ];
        fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/identifier-type" ]
      ], [
-       fhir:index 21;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.identifier:sdr-deathRecord-SocialSecurityNumber.type.coding:Fixed_SB.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding.code" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "SB" ]
      ], [
-       fhir:index 22;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 23;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.use" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "official" ]
      ], [
-       fhir:index 24;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name.text" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 25;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.deceased[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -7789,7 +7891,7 @@
        ];
        fhir:ElementDefinition.fixedBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -7800,7 +7902,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Residency" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact" ];
        fhir:ElementDefinition.slicing [
@@ -7814,7 +7916,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-SurvivingSpouse" ];
@@ -7823,13 +7925,13 @@
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 29;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 30;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -7843,7 +7945,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_N" ];
@@ -7856,29 +7958,29 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/v2/0131" ]
      ], [
-       fhir:index 33;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.relationship.coding:Fixed_N.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "N" ]
      ], [
-       fhir:index 34;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 35;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 36;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-SurvivingSpouse.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.type [
@@ -7887,7 +7989,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-Father" ];
@@ -7896,13 +7998,13 @@
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 38;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 39;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -7916,7 +8018,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_N" ];
@@ -7929,29 +8031,29 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/v2/0131" ]
      ], [
-       fhir:index 42;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.relationship.coding:Fixed_N.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "N" ]
      ], [
-       fhir:index 43;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 44;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 45;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Father.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.type [
@@ -7960,7 +8062,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-Mother" ];
@@ -7969,13 +8071,13 @@
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 47;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 48;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -7989,7 +8091,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_N" ];
@@ -8002,29 +8104,29 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 50;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/v2/0131" ]
      ], [
-       fhir:index 51;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.relationship.coding:Fixed_N.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "N" ]
      ], [
-       fhir:index 52;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 53;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 54;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Mother.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.type [
@@ -8033,7 +8135,7 @@
          fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-Informant" ];
@@ -8042,13 +8144,13 @@
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 56;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 57;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.slicing [
@@ -8062,7 +8164,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_CP" ];
@@ -8075,29 +8177,29 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 59;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.system" ];
        fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/v2/0131" ]
      ], [
-       fhir:index 60;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.relationship.coding:Fixed_CP.code" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship.coding.code" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "CP" ]
      ], [
-       fhir:index 61;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 62;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.name.text" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name.text" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 63;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Patient:sdr-deathRecord-Decedent.contact:sdr-deathRecord-Informant.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.type [

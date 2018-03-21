@@ -37,6 +37,8 @@
   Informant.LegalName maps to contact.name.text
   Informant.RelationshipType maps to contact.relationship
   Informant.Address maps to contact.address
+  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
+  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 </pre></p>
 </div>
   </text>
@@ -48,7 +50,7 @@
   <version value="0.0.1"/>
   <name value="SDR Decedent Profile"/>
   <status value="draft"/>
-  <date value="2018-03-19"/>
+  <date value="2018-03-21"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -326,9 +328,8 @@
     <element id="Patient:sdr-deathRecord-Decedent.extension:race">
       <path value="Patient.extension"/>
       <sliceName value="race"/>
-      <short value="Extension"/>
       <definition value="An Extension"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DomainResource.extension"/>
@@ -349,9 +350,8 @@
     <element id="Patient:sdr-deathRecord-Decedent.extension:ethnicity">
       <path value="Patient.extension"/>
       <sliceName value="ethnicity"/>
-      <short value="Extension"/>
       <definition value="An Extension"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DomainResource.extension"/>
@@ -503,6 +503,44 @@
       <type>
         <code value="Extension"/>
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Disposition-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:education">
+      <path value="Patient.extension"/>
+      <sliceName value="education"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Decedent&#39;s education"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Education-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:occupation">
+      <path value="Patient.extension"/>
+      <sliceName value="occupation"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Decedent&#39;s occupation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Occupation-extension"/>
       </type>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.modifierExtension">
@@ -6347,6 +6385,16 @@
       <definition value="The subject of the death record"/>
       <mustSupport value="false"/>
     </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:race">
+      <path value="Patient.extension"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:ethnicity">
+      <path value="Patient.extension"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
     <element id="Patient:sdr-deathRecord-Decedent.extension:sex">
       <path value="Patient.extension"/>
       <min value="1"/>
@@ -6464,6 +6512,44 @@
       <type>
         <code value="Extension"/>
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Disposition-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:education">
+      <path value="Patient.extension"/>
+      <sliceName value="education"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Decedent&#39;s education"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Education-extension"/>
+      </type>
+    </element>
+    <element id="Patient:sdr-deathRecord-Decedent.extension:occupation">
+      <path value="Patient.extension"/>
+      <sliceName value="occupation"/>
+      <slicing id="1">
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Decedent&#39;s occupation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Occupation-extension"/>
       </type>
     </element>
     <element id="Patient:sdr-deathRecord-Decedent.identifier">

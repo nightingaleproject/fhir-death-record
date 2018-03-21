@@ -208,6 +208,9 @@ value:reference.resolve()}","",,"open","",0,null,"cmp-2
 "Composition.section.entry","sdr-causeOfDeath-DeathFromTransportInjury","","",1,1,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury}
 ","DeathFromTransportInjury","Injury leading to death associated with transportation event","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
 ","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
+"Composition.section.entry","sdr-causeOfDeath-DetailsOfInjury","","",0,1,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury}
+","DetailsOfInjury","Injury incident description","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
+","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","sdr-causeOfDeath-MannerOfDeath","","",1,1,"","","","Reference {http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath}
 ","MannerOfDeath","The manner of the decendents demise.","","","","","","","","","",,,,,"",,,,"",0,null,"cmp-2
 ","",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"

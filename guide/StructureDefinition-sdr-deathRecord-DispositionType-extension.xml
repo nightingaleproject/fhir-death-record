@@ -17,7 +17,7 @@
   <name value="SDR DispositionType Extension"/>
   <title value="SDR DispositionType Extension"/>
   <status value="draft"/>
-  <date value="2018-03-19"/>
+  <date value="2018-03-21"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -135,6 +135,12 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS"/>
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -167,6 +173,12 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS"/>
+        </valueSetReference>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

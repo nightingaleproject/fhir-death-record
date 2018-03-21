@@ -24,6 +24,7 @@
   CauseOfDeathSection.DatePronouncedDead maps to section.entry
   CauseOfDeathSection.DeathFromWorkInjury maps to section.entry
   CauseOfDeathSection.DeathFromTransportInjury maps to section.entry
+  CauseOfDeathSection.DetailsOfInjury maps to section.entry
   CauseOfDeathSection.MannerOfDeath maps to section.entry
   CauseOfDeathSection.MedicalExaminerContacted maps to section.entry
   CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry
@@ -39,7 +40,7 @@
   <version value="0.0.1"/>
   <name value="SDR DeathRecordContents Profile"/>
   <status value="draft"/>
-  <date value="2018-03-19"/>
+  <date value="2018-03-21"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -2154,6 +2155,27 @@
         <map value=".entry"/>
       </mapping>
     </element>
+    <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DetailsOfInjury">
+      <path value="Composition.section.entry"/>
+      <sliceName value="sdr-causeOfDeath-DetailsOfInjury"/>
+      <short value="DetailsOfInjury"/>
+      <definition value="Injury incident description"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury"/>
+      </type>
+      <condition value="cmp-2"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]"/>
+      </mapping>
+      <mapping>
+        <identity value="cda"/>
+        <map value=".entry"/>
+      </mapping>
+    </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath">
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
@@ -2498,6 +2520,18 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury"/>
+      </type>
+    </element>
+    <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DetailsOfInjury">
+      <path value="Composition.section.entry"/>
+      <sliceName value="sdr-causeOfDeath-DetailsOfInjury"/>
+      <short value="DetailsOfInjury"/>
+      <definition value="Injury incident description"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury"/>
       </type>
     </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath">

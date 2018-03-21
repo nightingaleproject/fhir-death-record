@@ -17,7 +17,7 @@
   <name value="SDR Disposition Extension"/>
   <title value="SDR Disposition Extension"/>
   <status value="draft"/>
-  <date value="2018-03-19"/>
+  <date value="2018-03-21"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -123,89 +123,6 @@
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DispositionType-extension"/>
       </type>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
-    </element>
-    <element id="Extension:disposition.extension:dispositiontype.id">
-      <path value="Extension.extension.id"/>
-      <representation value="xmlAttr"/>
-      <short value="xml:id (or equivalent in JSON)"/>
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.id"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
-    </element>
-    <element id="Extension:disposition.extension:dispositiontype.extension:extension">
-      <path value="Extension.extension.extension"/>
-      <sliceName value="extension"/>
-      <short value="Extension"/>
-      <definition value="An Extension"/>
-      <min value="0"/>
-      <max value="0"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension:disposition.extension:dispositiontype.url">
-      <path value="Extension.extension.url"/>
-      <representation value="xmlAttr"/>
-      <short value="identifies the meaning of the extension"/>
-      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
-      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="Extension.url"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DispositionType-extension"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
-    </element>
-    <element id="Extension:disposition.extension:dispositiontype.valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept"/>
-      <short value="Value of extension"/>
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="Extension.value[x]"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetReference>
-          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -424,15 +341,6 @@
         <code value="Extension"/>
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DispositionType-extension"/>
       </type>
-    </element>
-    <element id="Extension:disposition.extension:dispositiontype.valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetReference>
-          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS"/>
-        </valueSetReference>
-      </binding>
     </element>
     <element id="Extension:disposition.extension:dispositionfacility">
       <path value="Extension.extension"/>

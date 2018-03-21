@@ -121,6 +121,32 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-DetailsOfInjury.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-DetailsOfInjury",
+            "display": "SDR DetailsOfInjury Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-InjuryLocation.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-InjuryLocation",
+            "display": "SDR InjuryLocation Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html"
             }
           ],
@@ -537,6 +563,32 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-InjuryLocation-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension",
+            "display": "SDR InjuryLocation Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-causeOfDeath-PlaceOfInjury-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension",
+            "display": "SDR PlaceOfInjury Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-Age-extension.html"
             }
           ],
@@ -615,6 +667,19 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Education-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Education-extension",
+            "display": "SDR Education Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-FacilityName-extension.html"
             }
           ],
@@ -641,6 +706,32 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Industry-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Industry-extension",
+            "display": "SDR Industry Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Job-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Job-extension",
+            "display": "SDR Job Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-MaritalStatusAtDeath-extension.html"
             }
           ],
@@ -648,6 +739,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension",
             "display": "SDR MaritalStatusAtDeath Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-deathRecord-Occupation-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-deathRecord-Occupation-extension",
+            "display": "SDR Occupation Extension"
           }
         },
         {
@@ -739,6 +843,19 @@
           "sourceReference": {
             "reference": "ValueSet/sdr-causeOfDeath-DispositionTypeVS",
             "display": "SDR DispositionTypeVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-causeOfDeath-EducationVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-causeOfDeath-EducationVS",
+            "display": "SDR EducationVS ValueSet"
           }
         },
         {

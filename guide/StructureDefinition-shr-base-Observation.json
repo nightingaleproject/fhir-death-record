@@ -3,7 +3,7 @@
   "id": "shr-base-Observation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Observation Profile</b></p>\n  <p>Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.base.Observation maps to Observation:\n  CodeableConcept maps to value[x]\n  boolean maps to value[x]\n  dateTime maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Observation Profile</b></p>\n  <p>Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.base.Observation maps to Observation:\n  CodeableConcept maps to value[x]\n  boolean maps to value[x]\n  dateTime maps to value[x]\n  string maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-base-Observation",
   "identifier": [
@@ -15,7 +15,7 @@
   "version": "0.0.1",
   "name": "SDR Observation Profile",
   "status": "draft",
-  "date": "2018-03-19",
+  "date": "2018-03-21",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -961,6 +961,9 @@
         "type": [
           {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
           },
           {
             "code": "boolean"
@@ -2150,6 +2153,9 @@
         "type": [
           {
             "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
           },
           {
             "code": "boolean"

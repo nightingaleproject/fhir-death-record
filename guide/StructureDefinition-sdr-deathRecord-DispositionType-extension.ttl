@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "SDR DispositionType Extension"];
   fhir:StructureDefinition.title [ fhir:value "SDR DispositionType Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-19"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -167,6 +167,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS>;
+           fhir:Reference.reference [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS" ]
+         ]
+       ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
@@ -206,6 +213,13 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ];
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS>;
+           fhir:Reference.reference [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/DispositionTypeVS" ]
+         ]
        ]
      ]
   ] .

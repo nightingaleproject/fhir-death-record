@@ -1,0 +1,40 @@
+Grammar: ValueSet 5.0
+Namespace: sdr.decedent
+
+CodeSystem: SCT = http://snomed.info/sct
+CodeSystem: NF = http://hl7.org/fhir/v3/NullFlavor
+CodeSystem: PHIN = http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274
+
+ValueSet: PlaceOfDeathTypeVS
+Description: "Place of decedent's demise"
+SCT#63238001 "Dead on arrival at hospital"
+SCT#440081000124100 "Death in home"
+SCT#440071000124103 "Death in hospice"
+SCT#16983000 "Death in hospital"
+SCT#450391000124102 "Death in hospital-based emergency department or outpatient department"
+SCT#450381000124100 "Death in nursing home or long term care facility"
+NF#UNK "Unknown"
+NF#OTH "Other"
+
+ValueSet: DispositionTypeVS
+Description: "Method of disposition of decedent's remains"
+SCT#449951000124101 "Donation"
+SCT#449971000124106 "Burial"
+SCT#449961000124104 "Cremation"
+SCT#449931000124108 "Entombment"
+SCT#449941000124103 "Removal from state"
+SCT#455401000124109 "Hospital Disposition"
+NF#UNK "Unknown"
+NF#OTH "Other"
+
+ValueSet: EducationVS
+Description: "Decedent's education"
+PHIN#PHC1448 "8th grade or less"
+PHIN#PHC1449 "9th through 12th grade; no diploma"
+PHIN#PHC1450 "High School Graduate or GED Completed"
+PHIN#PHC1451 "Some college credit, but no degree"
+PHIN#PHC1452 "Associate Degree"
+PHIN#PHC1453 "Bachelor's Degree"
+PHIN#PHC1454 "Master's Degree"
+PHIN#PHC1455 "Doctorate Degree or Professional Degree"
+NF#UNK "Unknown"

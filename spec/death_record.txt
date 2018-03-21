@@ -46,7 +46,7 @@ Description: "The subject of the death record"
 1..1 LegalName // Item 1 on the U.S. Standard Certificate of Death
 1..1 Sex // Item 2 on the U.S. Standard Certificate of Death
 0..1 SocialSecurityNumber // Item 3 on the U.S. Standard Certificate of Death
-0..1 Age // Item 4a on the U.S. Standard Certificate of Death
+0..1 Age // Item 4 on the U.S. Standard Certificate of Death
 0..1 DateOfBirth // Item 5 on the U.S. Standard Certificate of Death
 0..1 Birthplace // Item 6 on the U.S. Standard Certificate of Death
 0..1 Residency // Item 7 on the U.S. Standard Certificate of Death
@@ -75,8 +75,45 @@ Value: 1..1 CodeableConcept from http://hl7.org/fhir/us/core/ValueSet/us-core-bi
 
 Element: Age
 Concept: TBD
-Description: "The decedent's age in years at last birthday."
-Value: 1..1 unsignedInt
+Description: "The decedent's age"
+Value: 1..1 (AgeInYears or AgeInMonthsAndDays or AgeInHoursAndMinutes)
+
+  Element: AgeInYears
+  Concept: TBD
+  Description: "Age in years if greater than 1 year old"
+  Value: 1..1 unsignedInt
+  
+  Element: AgeInMonthsAndDays
+  Concept: TBD
+  Description: "Age in months and days if less than 1 year old"
+  1..1 Months
+  1..1 Days
+
+    Element: Months
+    Concept: TBD
+    Description: "Age in months if less than 1 year old"
+    Value: 1..1 unsignedInt
+
+    Element: Days
+    Concept: TBD
+    Description: "Age in days if less than 1 year old"
+    Value: 1..1 unsignedInt
+
+  Element: AgeInHoursAndMinutes
+  Concept: TBD
+  Description: "Age in hours and minutes if less than 1 day old"
+  1..1 Hours
+  1..1 Minutes
+
+    Element: Hours
+    Concept: TBD
+    Description: "Age in hours if less than 1 day old"
+    Value: 1..1 unsignedInt
+
+    Element: Minutes
+    Concept: TBD
+    Description: "Age in minutes if less than 1 day old"
+    Value: 1..1 unsignedInt
 
 Element: SocialSecurityNumber
 Concept: TBD
@@ -97,6 +134,12 @@ Element: Residency
 Based on: Address
 Concept: TBD
 Description: "Decedents place of residence"
+1..1 InsideCityLimits
+
+  Element: InsideCityLimits
+  Concept: TBD
+  Description: "Residence located within the city limits?"
+  Value: 1..1 boolean
 
 Element: ServedInArmedForces
 Concept: TBD

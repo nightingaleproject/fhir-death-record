@@ -7743,9 +7743,9 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent",
         "path": "Bundle.entry",
-        "sliceName": "sdr-deathRecord-Decedent",
+        "sliceName": "sdr-decedent-Decedent",
         "short": "Decedent",
         "definition": "The subject of the death record",
         "min": 1,
@@ -7782,7 +7782,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.id",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.id",
         "path": "Bundle.entry.id",
         "representation": [
           "xmlAttr"
@@ -7809,7 +7809,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.extension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.extension",
         "path": "Bundle.entry.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -7838,7 +7838,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.modifierExtension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.modifierExtension",
         "path": "Bundle.entry.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -7870,7 +7870,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.link",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.link",
         "path": "Bundle.entry.link",
         "short": "Links related to this entry",
         "definition": "A series of links that provide context to this entry.",
@@ -7880,7 +7880,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.fullUrl",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.fullUrl",
         "path": "Bundle.entry.fullUrl",
         "short": "Absolute URL for resource (server address, or UUID/OID)",
         "definition": "The Absolute URL for the resource.  The fullUrl SHALL not disagree with the id in the resource. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that: \n* fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)\n* Results from operations might involve resources that are not identified.",
@@ -7895,7 +7895,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.resource",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.resource",
         "path": "Bundle.entry.resource",
         "short": "A resource in the bundle",
         "definition": "The Resources for the entry.",
@@ -7909,7 +7909,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.search",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.search",
         "path": "Bundle.entry.search",
         "short": "Search related information",
         "definition": "Information about the search process that lead to the creation of this entry.",
@@ -7936,7 +7936,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.search.id",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.search.id",
         "path": "Bundle.entry.search.id",
         "representation": [
           "xmlAttr"
@@ -7963,7 +7963,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.search.extension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.search.extension",
         "path": "Bundle.entry.search.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -7992,7 +7992,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.search.modifierExtension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.search.modifierExtension",
         "path": "Bundle.entry.search.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -8024,7 +8024,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.search.mode",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.search.mode",
         "path": "Bundle.entry.search.mode",
         "short": "match | include | outcome - why this is in the result set",
         "definition": "Why this entry is in the result set - whether it's included as a match or because of an _include requirement.",
@@ -8052,7 +8052,7 @@
         }
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.search.score",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.search.score",
         "path": "Bundle.entry.search.score",
         "short": "Search ranking (between 0 and 1)",
         "definition": "When searching, the server's search ranking score for the entry.",
@@ -8067,7 +8067,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request",
         "path": "Bundle.entry.request",
         "short": "Transaction Related Information",
         "definition": "Additional information about how this entry should be processed as part of a transaction.",
@@ -8094,7 +8094,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.id",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.id",
         "path": "Bundle.entry.request.id",
         "representation": [
           "xmlAttr"
@@ -8121,7 +8121,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.extension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.extension",
         "path": "Bundle.entry.request.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -8150,7 +8150,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.modifierExtension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.modifierExtension",
         "path": "Bundle.entry.request.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -8182,7 +8182,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.method",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.method",
         "path": "Bundle.entry.request.method",
         "short": "GET | POST | PUT | DELETE",
         "definition": "The HTTP verb for this entry in either a change history, or a transaction/ transaction response.",
@@ -8209,7 +8209,7 @@
         }
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.url",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.url",
         "path": "Bundle.entry.request.url",
         "short": "URL for HTTP equivalent of this entry",
         "definition": "The URL for this entry, relative to the root (the address to which the request is posted).",
@@ -8224,7 +8224,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.ifNoneMatch",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.ifNoneMatch",
         "path": "Bundle.entry.request.ifNoneMatch",
         "short": "For managing cache currency",
         "definition": "If the ETag values match, return a 304 Not Modified status. See the API documentation for [\"Conditional Read\"](http.html#cread).",
@@ -8238,7 +8238,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.ifModifiedSince",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.ifModifiedSince",
         "path": "Bundle.entry.request.ifModifiedSince",
         "short": "For managing update contention",
         "definition": "Only perform the operation if the last updated date matches. See the API documentation for [\"Conditional Read\"](http.html#cread).",
@@ -8252,7 +8252,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.ifMatch",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.ifMatch",
         "path": "Bundle.entry.request.ifMatch",
         "short": "For managing update contention",
         "definition": "Only perform the operation if the Etag value matches. For more information, see the API section [\"Managing Resource Contention\"](http.html#concurrency).",
@@ -8266,7 +8266,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.request.ifNoneExist",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.request.ifNoneExist",
         "path": "Bundle.entry.request.ifNoneExist",
         "short": "For conditional creates",
         "definition": "Instruct the server not to perform the create if a specified resource already exists. For further information, see the API documentation for [\"Conditional Create\"](http.html#ccreate). This is just the query portion of the URL - what follows the \"?\" (not including the \"?\").",
@@ -8280,7 +8280,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response",
         "path": "Bundle.entry.response",
         "short": "Transaction Related Information",
         "definition": "Additional information about how this entry should be processed as part of a transaction.",
@@ -8307,7 +8307,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.id",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.id",
         "path": "Bundle.entry.response.id",
         "representation": [
           "xmlAttr"
@@ -8334,7 +8334,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.extension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.extension",
         "path": "Bundle.entry.response.extension",
         "short": "Additional Content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
@@ -8363,7 +8363,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.modifierExtension",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.modifierExtension",
         "path": "Bundle.entry.response.modifierExtension",
         "short": "Extensions that cannot be ignored",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
@@ -8395,7 +8395,7 @@
         ]
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.status",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.status",
         "path": "Bundle.entry.response.status",
         "short": "Status response code (text optional)",
         "definition": "The status code returned by processing this entry. The status SHALL start with a 3 digit HTTP code (e.g. 404) and may contain the standard HTTP description associated with the status code.",
@@ -8409,7 +8409,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.location",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.location",
         "path": "Bundle.entry.response.location",
         "short": "The location, if the operation returns a location",
         "definition": "The location header created by processing this operation.",
@@ -8423,7 +8423,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.etag",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.etag",
         "path": "Bundle.entry.response.etag",
         "short": "The etag for the resource (if relevant)",
         "definition": "The etag for the resource, it the operation for the entry produced a versioned resource (see [Resource Metadata and Versioning](http.html#versioning) and [Managing Resource Contention](http.html#concurrency)).",
@@ -8438,7 +8438,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.lastModified",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.lastModified",
         "path": "Bundle.entry.response.lastModified",
         "short": "Server's date time modified",
         "definition": "The date/time that the resource was modified on the server.",
@@ -8453,7 +8453,7 @@
         "isSummary": true
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent.response.outcome",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent.response.outcome",
         "path": "Bundle.entry.response.outcome",
         "short": "OperationOutcome with hints and warnings (for batch/transaction)",
         "definition": "An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.",
@@ -12956,9 +12956,9 @@
         "max": "1"
       },
       {
-        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-Decedent",
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-decedent-Decedent",
         "path": "Bundle.entry",
-        "sliceName": "sdr-deathRecord-Decedent",
+        "sliceName": "sdr-decedent-Decedent",
         "short": "Decedent",
         "definition": "The subject of the death record",
         "min": 1,

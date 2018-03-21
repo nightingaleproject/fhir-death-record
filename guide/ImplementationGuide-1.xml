@@ -153,16 +153,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Birthplace.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Birthplace"/>
-        <display value="SDR Birthplace Profile"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-Certifier.html"/>
       </extension>
       <example value="false"/>
@@ -193,16 +183,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Decedent.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Decedent"/>
-        <display value="SDR Decedent Profile"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-FuneralDirector.html"/>
       </extension>
       <example value="false"/>
@@ -213,11 +193,31 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Residency.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-Birthplace.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Residency"/>
+        <reference value="StructureDefinition/sdr-decedent-Birthplace"/>
+        <display value="SDR Birthplace Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Decedent.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Decedent"/>
+        <display value="SDR Decedent Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Residency.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Residency"/>
         <display value="SDR Residency Profile"/>
       </sourceReference>
     </resource>
@@ -453,26 +453,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Age-extension.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Age-extension"/>
-        <display value="SDR Age Extension"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Birthplace-extension.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Birthplace-extension"/>
-        <display value="SDR Birthplace Extension"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-deathRecord-CertifierType-extension.html"/>
       </extension>
       <example value="false"/>
@@ -483,131 +463,231 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Disposition-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-Age-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Disposition-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-Age-extension"/>
+        <display value="SDR Age Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-AgeInHoursAndMinutes-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension"/>
+        <display value="SDR AgeInHoursAndMinutes Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-AgeInMonthsAndDays-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension"/>
+        <display value="SDR AgeInMonthsAndDays Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-AgeInYears-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-AgeInYears-extension"/>
+        <display value="SDR AgeInYears Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Birthplace-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Birthplace-extension"/>
+        <display value="SDR Birthplace Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Days-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Days-extension"/>
+        <display value="SDR Days Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Disposition-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Disposition-extension"/>
         <display value="SDR Disposition Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-DispositionFacility-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-DispositionFacility-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-DispositionFacility-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-DispositionFacility-extension"/>
         <display value="SDR DispositionFacility Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-DispositionType-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-DispositionType-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-DispositionType-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-DispositionType-extension"/>
         <display value="SDR DispositionType Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Education-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-Education-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Education-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-Education-extension"/>
         <display value="SDR Education Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-FacilityName-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-FacilityName-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-FacilityName-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-FacilityName-extension"/>
         <display value="SDR FacilityName Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-FuneralFacility-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-FuneralFacility-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-FuneralFacility-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-FuneralFacility-extension"/>
         <display value="SDR FuneralFacility Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Industry-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-Hours-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Industry-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-Hours-extension"/>
+        <display value="SDR Hours Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Industry-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Industry-extension"/>
         <display value="SDR Industry Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Job-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-InsideCityLimits-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Job-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-InsideCityLimits-extension"/>
+        <display value="SDR InsideCityLimits Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Job-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Job-extension"/>
         <display value="SDR Job Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-MaritalStatusAtDeath-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-MaritalStatusAtDeath-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension"/>
         <display value="SDR MaritalStatusAtDeath Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-Occupation-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-Minutes-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-Occupation-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-Minutes-extension"/>
+        <display value="SDR Minutes Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Months-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Months-extension"/>
+        <display value="SDR Months Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-Occupation-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-Occupation-extension"/>
         <display value="SDR Occupation Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-PlaceOfDeath-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-PlaceOfDeath-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-PlaceOfDeath-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-PlaceOfDeath-extension"/>
         <display value="SDR PlaceOfDeath Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-PlaceOfDeathType-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-PlaceOfDeathType-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-PlaceOfDeathType-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-PlaceOfDeathType-extension"/>
         <display value="SDR PlaceOfDeathType Extension"/>
       </sourceReference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-deathRecord-ServedInArmedForces-extension.html"/>
+        <valueUri value="StructureDefinition-sdr-decedent-ServedInArmedForces-extension.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-deathRecord-ServedInArmedForces-extension"/>
+        <reference value="StructureDefinition/sdr-decedent-ServedInArmedForces-extension"/>
         <display value="SDR ServedInArmedForces Extension"/>
       </sourceReference>
     </resource>
@@ -643,42 +723,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-sdr-causeOfDeath-DispositionTypeVS.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/sdr-causeOfDeath-DispositionTypeVS"/>
-        <display value="SDR DispositionTypeVS ValueSet"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-sdr-causeOfDeath-EducationVS.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/sdr-causeOfDeath-EducationVS"/>
-        <display value="SDR EducationVS ValueSet"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-sdr-causeOfDeath-MannerOfDeathVS.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/sdr-causeOfDeath-MannerOfDeathVS"/>
         <display value="SDR MannerOfDeathVS ValueSet"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-sdr-causeOfDeath-PlaceOfDeathTypeVS.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/sdr-causeOfDeath-PlaceOfDeathTypeVS"/>
-        <display value="SDR PlaceOfDeathTypeVS ValueSet"/>
       </sourceReference>
     </resource>
     <resource>
@@ -699,6 +749,36 @@
       <sourceReference>
         <reference value="ValueSet/sdr-causeOfDeath-TransportRelationshipsVS"/>
         <display value="SDR TransportRelationshipsVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-decedent-DispositionTypeVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-decedent-DispositionTypeVS"/>
+        <display value="SDR DispositionTypeVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-decedent-EducationVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-decedent-EducationVS"/>
+        <display value="SDR EducationVS ValueSet"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-sdr-decedent-PlaceOfDeathTypeVS.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/sdr-decedent-PlaceOfDeathTypeVS"/>
+        <display value="SDR PlaceOfDeathTypeVS ValueSet"/>
       </sourceReference>
     </resource>
   </package>

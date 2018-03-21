@@ -889,7 +889,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent"
+            "targetProfile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent"
           }
         ],
         "isSummary": true,
@@ -2947,7 +2947,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent"
+            "targetProfile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent"
           }
         ]
       },

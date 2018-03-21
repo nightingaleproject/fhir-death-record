@@ -837,7 +837,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension
 ","Server's date time modified","The date/time that the resource was modified on the server.","This has to match the same time in the meta header if a resource is included.","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "Bundle.entry.response.outcome","","","",0,1,"","","Y","Resource
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.","","","","","","","","",,,,,"",,,,"",0,null,"",""
-"Bundle.entry","sdr-deathRecord-Decedent","","",1,1,"","","Y","BackboneElement
+"Bundle.entry","sdr-decedent-Decedent","","",1,1,"","","Y","BackboneElement
 ","Decedent","The subject of the death record","","","","","","","","","",,,,,"",,,,"",0,null,"","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}"
 "Bundle.entry.id","","","",0,1,"","","","string

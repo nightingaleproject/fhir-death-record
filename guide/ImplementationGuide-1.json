@@ -199,19 +199,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Birthplace.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Birthplace",
-            "display": "SDR Birthplace Profile"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-Certifier.html"
             }
           ],
@@ -251,19 +238,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Decedent.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Decedent",
-            "display": "SDR Decedent Profile"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-FuneralDirector.html"
             }
           ],
@@ -277,12 +251,38 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Residency.html"
+              "valueUri": "StructureDefinition-sdr-decedent-Birthplace.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Residency",
+            "reference": "StructureDefinition/sdr-decedent-Birthplace",
+            "display": "SDR Birthplace Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Decedent.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Decedent",
+            "display": "SDR Decedent Profile"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Residency.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Residency",
             "display": "SDR Residency Profile"
           }
         },
@@ -589,32 +589,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Age-extension.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Age-extension",
-            "display": "SDR Age Extension"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Birthplace-extension.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Birthplace-extension",
-            "display": "SDR Birthplace Extension"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-deathRecord-CertifierType-extension.html"
             }
           ],
@@ -628,12 +602,90 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Disposition-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-Age-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Disposition-extension",
+            "reference": "StructureDefinition/sdr-decedent-Age-extension",
+            "display": "SDR Age Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-AgeInHoursAndMinutes-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension",
+            "display": "SDR AgeInHoursAndMinutes Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-AgeInMonthsAndDays-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension",
+            "display": "SDR AgeInMonthsAndDays Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-AgeInYears-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-AgeInYears-extension",
+            "display": "SDR AgeInYears Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Birthplace-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Birthplace-extension",
+            "display": "SDR Birthplace Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Days-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Days-extension",
+            "display": "SDR Days Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Disposition-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Disposition-extension",
             "display": "SDR Disposition Extension"
           }
         },
@@ -641,12 +693,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-DispositionFacility-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-DispositionFacility-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-DispositionFacility-extension",
+            "reference": "StructureDefinition/sdr-decedent-DispositionFacility-extension",
             "display": "SDR DispositionFacility Extension"
           }
         },
@@ -654,12 +706,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-DispositionType-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-DispositionType-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-DispositionType-extension",
+            "reference": "StructureDefinition/sdr-decedent-DispositionType-extension",
             "display": "SDR DispositionType Extension"
           }
         },
@@ -667,12 +719,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Education-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-Education-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Education-extension",
+            "reference": "StructureDefinition/sdr-decedent-Education-extension",
             "display": "SDR Education Extension"
           }
         },
@@ -680,12 +732,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-FacilityName-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-FacilityName-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-FacilityName-extension",
+            "reference": "StructureDefinition/sdr-decedent-FacilityName-extension",
             "display": "SDR FacilityName Extension"
           }
         },
@@ -693,12 +745,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-FuneralFacility-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-FuneralFacility-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-FuneralFacility-extension",
+            "reference": "StructureDefinition/sdr-decedent-FuneralFacility-extension",
             "display": "SDR FuneralFacility Extension"
           }
         },
@@ -706,12 +758,25 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Industry-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-Hours-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Industry-extension",
+            "reference": "StructureDefinition/sdr-decedent-Hours-extension",
+            "display": "SDR Hours Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Industry-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Industry-extension",
             "display": "SDR Industry Extension"
           }
         },
@@ -719,12 +784,25 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Job-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-InsideCityLimits-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Job-extension",
+            "reference": "StructureDefinition/sdr-decedent-InsideCityLimits-extension",
+            "display": "SDR InsideCityLimits Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Job-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Job-extension",
             "display": "SDR Job Extension"
           }
         },
@@ -732,12 +810,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-MaritalStatusAtDeath-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-MaritalStatusAtDeath-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-MaritalStatusAtDeath-extension",
+            "reference": "StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension",
             "display": "SDR MaritalStatusAtDeath Extension"
           }
         },
@@ -745,12 +823,38 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-Occupation-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-Minutes-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-Occupation-extension",
+            "reference": "StructureDefinition/sdr-decedent-Minutes-extension",
+            "display": "SDR Minutes Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Months-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Months-extension",
+            "display": "SDR Months Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-Occupation-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-Occupation-extension",
             "display": "SDR Occupation Extension"
           }
         },
@@ -758,12 +862,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-PlaceOfDeath-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-PlaceOfDeath-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-PlaceOfDeath-extension",
+            "reference": "StructureDefinition/sdr-decedent-PlaceOfDeath-extension",
             "display": "SDR PlaceOfDeath Extension"
           }
         },
@@ -771,12 +875,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-PlaceOfDeathType-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-PlaceOfDeathType-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-PlaceOfDeathType-extension",
+            "reference": "StructureDefinition/sdr-decedent-PlaceOfDeathType-extension",
             "display": "SDR PlaceOfDeathType Extension"
           }
         },
@@ -784,12 +888,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-deathRecord-ServedInArmedForces-extension.html"
+              "valueUri": "StructureDefinition-sdr-decedent-ServedInArmedForces-extension.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-deathRecord-ServedInArmedForces-extension",
+            "reference": "StructureDefinition/sdr-decedent-ServedInArmedForces-extension",
             "display": "SDR ServedInArmedForces Extension"
           }
         },
@@ -836,32 +940,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-sdr-causeOfDeath-DispositionTypeVS.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "ValueSet/sdr-causeOfDeath-DispositionTypeVS",
-            "display": "SDR DispositionTypeVS ValueSet"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-sdr-causeOfDeath-EducationVS.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "ValueSet/sdr-causeOfDeath-EducationVS",
-            "display": "SDR EducationVS ValueSet"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "ValueSet-sdr-causeOfDeath-MannerOfDeathVS.html"
             }
           ],
@@ -869,19 +947,6 @@
           "sourceReference": {
             "reference": "ValueSet/sdr-causeOfDeath-MannerOfDeathVS",
             "display": "SDR MannerOfDeathVS ValueSet"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-sdr-causeOfDeath-PlaceOfDeathTypeVS.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "ValueSet/sdr-causeOfDeath-PlaceOfDeathTypeVS",
-            "display": "SDR PlaceOfDeathTypeVS ValueSet"
           }
         },
         {
@@ -908,6 +973,45 @@
           "sourceReference": {
             "reference": "ValueSet/sdr-causeOfDeath-TransportRelationshipsVS",
             "display": "SDR TransportRelationshipsVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-decedent-DispositionTypeVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-decedent-DispositionTypeVS",
+            "display": "SDR DispositionTypeVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-decedent-EducationVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-decedent-EducationVS",
+            "display": "SDR EducationVS ValueSet"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-sdr-decedent-PlaceOfDeathTypeVS.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/sdr-decedent-PlaceOfDeathTypeVS",
+            "display": "SDR PlaceOfDeathTypeVS ValueSet"
           }
         }
       ]

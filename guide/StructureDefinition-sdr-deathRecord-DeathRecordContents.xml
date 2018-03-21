@@ -745,7 +745,7 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -2355,7 +2355,7 @@
       <path value="Composition.subject"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Decedent"/>
+        <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent"/>
       </type>
     </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.author">

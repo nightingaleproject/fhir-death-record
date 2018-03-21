@@ -98,3 +98,29 @@ Description: "Did tobacco use contribute to death."
 Value: CodeableConcept from ContributoryTobaccoUseVS
 ObservationCode is LNC#69443-0 "Did tobacco use contribute to death"
 1..1 Subject
+
+EntryElement: DetailsOfInjury
+Based on: Observation
+Concept: MTH#C0541589 "Circumstances Related to Injury or Death"
+Description: "Injury incident description"
+Value: string
+ObservationCode is LNC#11374-6 "Injury incident description"
+1..1 Subject
+1..1 PlaceOfInjury
+1..1 InjuryDateTime
+1..1 InjuryLocation
+
+  Element: PlaceOfInjury
+  Concept: TBD
+  Description: "Place of injury, e.g. decedent's home, restaurant, wooded area"
+  Value: 1..1 string
+
+  Element: InjuryDateTime
+  Concept: TBD
+  Description: "Date and time of injury"
+  Value: 1..1 dateTime
+
+  Element: InjuryLocation
+  Concept: TBD
+  Based on: Address
+  Description: "Location of injury"

@@ -28,6 +28,7 @@ Description: "A section that details the cause of death"
 1..1 ref(DatePronouncedDead)
 1..1 ref(DeathFromWorkInjury)
 1..1 ref(DeathFromTransportInjury)
+0..1 ref(DetailsOfInjury)
 1..1 ref(MannerOfDeath)
 1..1 ref(MedicalExaminerContacted)
 1..1 ref(TimingOfRecentPregnancyInRelationToDeath)
@@ -246,3 +247,4 @@ Description: "A record that details information about the death of an individual
 1..1 MedicalExaminerContacted
 1..1 TimingOfRecentPregnancyInRelationToDeath
 1..1 TobaccoUseContributedToDeath
+0..1 DetailsOfInjury

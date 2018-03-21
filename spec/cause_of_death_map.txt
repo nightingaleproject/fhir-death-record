@@ -1,0 +1,6 @@
+Grammar: Map 5.0
+Namespace: sdr.causeOfDeath
+Target: FHIR_STU_3
+
+DetailsOfInjury maps to Observation:
+  InjuryDateTime maps to effective[x]

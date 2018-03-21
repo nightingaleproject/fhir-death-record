@@ -19,6 +19,7 @@ DeathRecordContents maps to Composition:
   CauseOfDeathSection.DatePronouncedDead maps to section.entry
   CauseOfDeathSection.DeathFromWorkInjury maps to section.entry
   CauseOfDeathSection.DeathFromTransportInjury maps to section.entry
+  CauseOfDeathSection.DetailsOfInjury maps to section.entry
   CauseOfDeathSection.MannerOfDeath maps to section.entry
   CauseOfDeathSection.MedicalExaminerContacted maps to section.entry
   CauseOfDeathSection.TimingOfRecentPregnancyInRelationToDeath maps to section.entry
@@ -81,3 +82,4 @@ DeathRecord maps to Bundle:
   MedicalExaminerContacted maps to entry
   TimingOfRecentPregnancyInRelationToDeath maps to entry
   TobaccoUseContributedToDeath maps to entry
+  DetailsOfInjury maps to entry

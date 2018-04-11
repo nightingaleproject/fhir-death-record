@@ -34,19 +34,3 @@ FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-
 DeathRecord maps to Bundle:
   fix type to http://hl7.org/fhir/bundle-type#document
   DeathRecordContents maps to entry (slice at = entry; slice on = resource; slice on type = profile)
-  ActualOrPresumedDateOfDeath maps to entry
-  AutopsyPerformed maps to entry
-  AutopsyResultsAvailable maps to entry
-  CauseOfDeathCondition maps to entry
-  ContributedToDeathCondition maps to entry
-  Certifier maps to entry
-  DatePronouncedDead maps to entry
-  DeathFromWorkInjury maps to entry
-  DeathFromTransportInjury maps to entry
-  Decedent maps to entry
-  FuneralDirector maps to entry
-  MannerOfDeath maps to entry
-  MedicalExaminerContacted maps to entry
-  TimingOfRecentPregnancyInRelationToDeath maps to entry
-  TobaccoUseContributedToDeath maps to entry
-  DetailsOfInjury maps to entry

@@ -1,18 +1,22 @@
 {
-    "projectName": "Standard Death Record",
-    "projectShorthand": "SDR",
-    "projectURL": "http://github.com/nightingaleproject/fhirDeathRecord",
-    "fhirURL": "http://nightingaleproject.github.io/fhirDeathRecord",
-    "igIndexContent": "deathRecordIndexContent.html",
-    "publisher": "The MITRE Corporation: Nightingale Project",
-    "contact": [
+  "projectName": "Standard Death Record",
+  "projectShorthand": "SDR",
+  "projectURL": "http://github.com/nightingaleproject/fhirDeathRecord",
+  "fhirURL": "http://nightingaleproject.github.io/fhirDeathRecord",
+  "igIndexContent": "deathRecordIndexContent.html",
+  "igPrimarySelectionStrategy": {
+    "strategy": "namespace",
+    "primary": ["sdr.decedent", "sdr.causeOfDeath", "sdr.deathRecord"]
+  },
+  "publisher": "The MITRE Corporation: Nightingale Project",
+  "contact": [
+    {
+      "telecom": [
         {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "http://github.com/nightingaleproject/fhirDeathRecord"
-                }
-            ]
+          "system": "url",
+          "value": "http://github.com/nightingaleproject/fhirDeathRecord"
         }
-    ]
+      ]
+    }
+  ]
 }

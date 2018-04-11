@@ -3,10 +3,10 @@ Namespace: sdr.causeOfDeath
 
 CodeSystem: SCT = http://snomed.info/sct
 CodeSystem: NF = http://hl7.org/fhir/v3/NullFlavor
-CodeSystem: PHIN = http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274
+// CodeSystem: PHIN = http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274
 
 ValueSet: MannerOfDeathVS
-Description: "Manner of death"
+Description: "Manner of death. Corresponds to the allowed values for item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 SCT#38605008 "Natural"
 SCT#7878000 "Accident"
 SCT#44301001 "Suicide"
@@ -15,23 +15,23 @@ SCT#185973002 "Pending Investigation"
 SCT#65037004 "Could not be determined"
 
 ValueSet: TransportRelationshipsVS
-Description: "Transportation Relationships (NCHS)"
+Description: "Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 SCT#236320001 "Vehicle driver"
 SCT#257500003 "Passenger"
 SCT#257518000 "Pedestrian"
 NF#OTH "Other"
 
 ValueSet: PregnancyStatusVS
-Description: "Whether the decedent was pregnant at or around the time of death"
-PHIN#PHC1260 "Not pregnant within past year"
-PHIN#PHC1261 "Pregnant at time of death"
-PHIN#PHC1262 "Not pregnant, but pregnant within 42 days of death"
-PHIN#PHC1263 "Not pregnant, but pregnant 43 days to 1 year before death"
-PHIN#PHC1264 "Unknown if pregnant within the past year"
+Description: "Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."
+#PHC1260 "Not pregnant within past year"
+#PHC1261 "Pregnant at time of death"
+#PHC1262 "Not pregnant, but pregnant within 42 days of death"
+#PHC1263 "Not pregnant, but pregnant 43 days to 1 year before death"
+#PHC1264 "Unknown if pregnant within the past year"
 NF#NA "Not applicable"
 
 ValueSet: ContributoryTobaccoUseVS
-Description: "The extent to which tobacco use contributed to the person's death."
+Description: "The extent to which tobacco use contributed to the person's death. Corresponds to the allowed values for item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 SCT#373066001 "Yes"
 SCT#373067005 "No"
 SCT#2931005 "Probably"

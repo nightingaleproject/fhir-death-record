@@ -3,10 +3,10 @@ Namespace: sdr.decedent
 
 CodeSystem: SCT = http://snomed.info/sct
 CodeSystem: NF = http://hl7.org/fhir/v3/NullFlavor
-CodeSystem: PHIN = http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274
+// CodeSystem: PHIN = http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274
 
 ValueSet: PlaceOfDeathTypeVS
-Description: "Place of decedent's demise"
+Description: "Place of decedent's demise. Corresponds to the allowed values for item 14 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 SCT#63238001 "Dead on arrival at hospital"
 SCT#440081000124100 "Death in home"
 SCT#440071000124103 "Death in hospice"
@@ -17,7 +17,7 @@ NF#UNK "Unknown"
 NF#OTH "Other"
 
 ValueSet: DispositionTypeVS
-Description: "Method of disposition of decedent's remains"
+Description: "Method of disposition of decedent's remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 SCT#449951000124101 "Donation"
 SCT#449971000124106 "Burial"
 SCT#449961000124104 "Cremation"
@@ -28,13 +28,13 @@ NF#UNK "Unknown"
 NF#OTH "Other"
 
 ValueSet: EducationVS
-Description: "Decedent's education"
-PHIN#PHC1448 "8th grade or less"
-PHIN#PHC1449 "9th through 12th grade; no diploma"
-PHIN#PHC1450 "High School Graduate or GED Completed"
-PHIN#PHC1451 "Some college credit, but no degree"
-PHIN#PHC1452 "Associate Degree"
-PHIN#PHC1453 "Bachelor's Degree"
-PHIN#PHC1454 "Master's Degree"
-PHIN#PHC1455 "Doctorate Degree or Professional Degree"
+Description: "Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."
+#PHC1448 "8th grade or less"
+#PHC1449 "9th through 12th grade; no diploma"
+#PHC1450 "High School Graduate or GED Completed"
+#PHC1451 "Some college credit, but no degree"
+#PHC1452 "Associate Degree"
+#PHC1453 "Bachelor's Degree"
+#PHC1454 "Master's Degree"
+#PHC1455 "Doctorate Degree or Professional Degree"
 NF#UNK "Unknown"

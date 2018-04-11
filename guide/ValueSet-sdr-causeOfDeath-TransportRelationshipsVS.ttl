@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-TransportRelationshipsVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR TransportRelationshipsVS ValueSet</b></p>\n<p>Transportation Relationships (NCHS)</p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR TransportRelationshipsVS ValueSet</b></p>\n<p>Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/TransportRelationshipsVS"];
   fhir:ValueSet.identifier [
@@ -18,11 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.TransportRelationshipsVS" ]
   ];
-  fhir:ValueSet.version [ fhir:value "0.0.1"];
-  fhir:ValueSet.name [ fhir:value "SDR TransportRelationshipsVS ValueSet"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "TransportRelationshipsVS"];
   fhir:ValueSet.title [ fhir:value "SDR TransportRelationshipsVS ValueSet"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:ValueSet.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Transportation Relationships (NCHS)"];
+  fhir:ValueSet.description [ fhir:value "Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

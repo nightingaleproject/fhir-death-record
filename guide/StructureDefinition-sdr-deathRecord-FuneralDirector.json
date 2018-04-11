@@ -3,7 +3,7 @@
   "id": "sdr-deathRecord-FuneralDirector",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR FuneralDirector Profile</b></p>\n  <p>Funeral Director</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR FuneralDirector Profile</b></p>\n  <p>Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector",
   "identifier": [
@@ -12,10 +12,11 @@
       "value": "sdr.deathRecord.FuneralDirector"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR FuneralDirector Profile",
+  "version": "0.1.0",
+  "name": "FuneralDirectorProfile",
+  "title": "SDR FuneralDirector Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -27,14 +28,14 @@
       ]
     }
   ],
-  "description": "Funeral Director",
+  "description": "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "jurisdiction": [
     {
       "coding": [
         {
           "system": "urn:iso:std:iso:3166",
           "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "display": "United States of America"
         }
       ]
     }
@@ -73,7 +74,7 @@
         "id": "Practitioner:sdr-deathRecord-FuneralDirector",
         "path": "Practitioner",
         "short": "SDR FuneralDirector Profile",
-        "definition": "Funeral Director",
+        "definition": "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "comment": "Note that a cab driver no longer fits the bill. You probably would be interested in the organization rather than the individual?",
         "alias": [
           "Provider"
@@ -1609,7 +1610,7 @@
         "id": "Practitioner:sdr-deathRecord-FuneralDirector",
         "path": "Practitioner",
         "short": "SDR FuneralDirector Profile",
-        "definition": "Funeral Director",
+        "definition": "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "mustSupport": false
       },
       {

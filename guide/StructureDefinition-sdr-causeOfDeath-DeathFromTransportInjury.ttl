@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathFromTransportInjury Profile</b></p>\n  <p>Injury leading to death associated with transportation event</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.DeathFromTransportInjury maps to Observation:\n  CodeableConcept maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathFromTransportInjury Profile</b></p>\n  <p>Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.DeathFromTransportInjury maps to Observation:\n  CodeableConcept maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury"];
   fhir:StructureDefinition.identifier [
@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.DeathFromTransportInjury" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR DeathFromTransportInjury Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "DeathFromTransportInjuryProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR DeathFromTransportInjury Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Injury leading to death associated with transportation event"];
+  fhir:StructureDefinition.description [ fhir:value "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.purpose [ fhir:value "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.mapping [
@@ -76,7 +77,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Observation" ];
        fhir:ElementDefinition.short [ fhir:value "SDR DeathFromTransportInjury Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event" ];
+       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
@@ -740,9 +741,10 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromTransportInjury.code.coding:Fixed_69448-9" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.code.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_69448-9" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ];
+       fhir:ElementDefinition.short [ fhir:value "Injury leading to death associated with transportation event" ];
+       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
@@ -2290,7 +2292,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Observation" ];
        fhir:ElementDefinition.short [ fhir:value "SDR DeathFromTransportInjury Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event" ]
+       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromTransportInjury.code" ];
@@ -2316,9 +2318,10 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromTransportInjury.code.coding:Fixed_69448-9" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.code.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_69448-9" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ];
+       fhir:ElementDefinition.short [ fhir:value "Injury leading to death associated with transportation event" ];
+       fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Coding" ]

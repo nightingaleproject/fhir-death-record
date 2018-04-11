@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Occupation Extension</b></p>
-  <p>Decedent's occupation</p>
+  <p>Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
 </div>
   </text>
   <url value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Occupation-extension"/>
@@ -13,11 +13,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.Occupation"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Occupation Extension"/>
+  <version value="0.1.0"/>
+  <name value="OccupationExtension"/>
   <title value="SDR Occupation Extension"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Decedent&#39;s occupation"/>
+  <description value="Decedent&#39;s usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -38,7 +38,7 @@
     <element id="Extension:occupation">
       <path value="Extension"/>
       <short value="SDR Occupation Extension"/>
-      <definition value="Decedent&#39;s occupation"/>
+      <definition value="Decedent&#39;s usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -110,7 +110,7 @@
     <element id="Extension:occupation.extension:job">
       <path value="Extension.extension"/>
       <sliceName value="job"/>
-      <definition value="Type of work done during most of decedent&#39;s working life"/>
+      <definition value="Type of work done during most of decedent&#39;s working life. Corresponds to item 54 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -131,7 +131,7 @@
     <element id="Extension:occupation.extension:industry">
       <path value="Extension.extension"/>
       <sliceName value="industry"/>
-      <definition value="Kind of industry or business in which the decedent worked"/>
+      <definition value="Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -306,14 +306,14 @@
     <element id="Extension:occupation">
       <path value="Extension"/>
       <short value="SDR Occupation Extension"/>
-      <definition value="Decedent&#39;s occupation"/>
+      <definition value="Decedent&#39;s usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
     <element id="Extension:occupation.extension:job">
       <path value="Extension.extension"/>
       <sliceName value="job"/>
-      <definition value="Type of work done during most of decedent&#39;s working life"/>
+      <definition value="Type of work done during most of decedent&#39;s working life. Corresponds to item 54 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -324,7 +324,7 @@
     <element id="Extension:occupation.extension:industry">
       <path value="Extension.extension"/>
       <sliceName value="industry"/>
-      <definition value="Kind of industry or business in which the decedent worked"/>
+      <definition value="Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>

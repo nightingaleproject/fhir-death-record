@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-CauseOfDeathCondition"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR CauseOfDeathCondition Profile</b></p>\n  <p>A condition that lead to death either directly or indirectly</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.CauseOfDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR CauseOfDeathCondition Profile</b></p>\n  <p>A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.CauseOfDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition"];
   fhir:StructureDefinition.identifier [
@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.CauseOfDeathCondition" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR CauseOfDeathCondition Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "CauseOfDeathConditionProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR CauseOfDeathCondition Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "A condition that lead to death either directly or indirectly"];
+  fhir:StructureDefinition.description [ fhir:value "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
@@ -70,7 +71,7 @@
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-CauseOfDeathCondition" ];
        fhir:ElementDefinition.path [ fhir:value "Condition" ];
        fhir:ElementDefinition.short [ fhir:value "SDR CauseOfDeathCondition Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "A condition that lead to death either directly or indirectly" ];
+       fhir:ElementDefinition.definition [ fhir:value "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.constraint [
@@ -598,7 +599,7 @@
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-CauseOfDeathCondition.code" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
        fhir:ElementDefinition.short [ fhir:value "Identification of the condition, problem or diagnosis" ];
-       fhir:ElementDefinition.definition [ fhir:value "Code representing a condition that lead to death either directly or indirectly" ];
+       fhir:ElementDefinition.definition [ fhir:value "Code representing a condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`." ];
        fhir:ElementDefinition.requirements [ fhir:value "0..1 to account for primarily narrative only resources." ];
        fhir:ElementDefinition.alias [
          fhir:value "type";
@@ -1306,7 +1307,7 @@
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-CauseOfDeathCondition" ];
        fhir:ElementDefinition.path [ fhir:value "Condition" ];
        fhir:ElementDefinition.short [ fhir:value "SDR CauseOfDeathCondition Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "A condition that lead to death either directly or indirectly" ]
+       fhir:ElementDefinition.definition [ fhir:value "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`." ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-CauseOfDeathCondition.text" ];
@@ -1317,7 +1318,7 @@
        fhir:index 2;
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-CauseOfDeathCondition.code" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
-       fhir:ElementDefinition.definition [ fhir:value "Code representing a condition that lead to death either directly or indirectly" ]
+       fhir:ElementDefinition.definition [ fhir:value "Code representing a condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`." ]
      ], [
        fhir:index 3;
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-CauseOfDeathCondition.subject" ];

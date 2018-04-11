@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Disposition Extension</b></p>
-  <p>Disposition of the decedent's body</p>
+  <p>Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
 </div>
   </text>
   <url value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Disposition-extension"/>
@@ -13,11 +13,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.Disposition"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Disposition Extension"/>
+  <version value="0.1.0"/>
+  <name value="DispositionExtension"/>
   <title value="SDR Disposition Extension"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Disposition of the decedent&#39;s body"/>
+  <description value="Disposition of the decedent&#39;s body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -38,7 +38,7 @@
     <element id="Extension:disposition">
       <path value="Extension"/>
       <short value="SDR Disposition Extension"/>
-      <definition value="Disposition of the decedent&#39;s body"/>
+      <definition value="Disposition of the decedent&#39;s body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -110,7 +110,7 @@
     <element id="Extension:disposition.extension:dispositiontype">
       <path value="Extension.extension"/>
       <sliceName value="dispositiontype"/>
-      <definition value="DispositionType"/>
+      <definition value="The method of disposition of the decedent&#39;s remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -131,7 +131,7 @@
     <element id="Extension:disposition.extension:dispositionfacility">
       <path value="Extension.extension"/>
       <sliceName value="dispositionfacility"/>
-      <definition value="DispositionFacility"/>
+      <definition value="The place of disposition of the decedent&#39;s remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -152,7 +152,7 @@
     <element id="Extension:disposition.extension:funeralfacility">
       <path value="Extension.extension"/>
       <sliceName value="funeralfacility"/>
-      <definition value="FuneralFacility"/>
+      <definition value="Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -327,14 +327,14 @@
     <element id="Extension:disposition">
       <path value="Extension"/>
       <short value="SDR Disposition Extension"/>
-      <definition value="Disposition of the decedent&#39;s body"/>
+      <definition value="Disposition of the decedent&#39;s body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
     <element id="Extension:disposition.extension:dispositiontype">
       <path value="Extension.extension"/>
       <sliceName value="dispositiontype"/>
-      <definition value="DispositionType"/>
+      <definition value="The method of disposition of the decedent&#39;s remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -345,7 +345,7 @@
     <element id="Extension:disposition.extension:dispositionfacility">
       <path value="Extension.extension"/>
       <sliceName value="dispositionfacility"/>
-      <definition value="DispositionFacility"/>
+      <definition value="The place of disposition of the decedent&#39;s remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -356,7 +356,7 @@
     <element id="Extension:disposition.extension:funeralfacility">
       <path value="Extension.extension"/>
       <sliceName value="funeralfacility"/>
-      <definition value="FuneralFacility"/>
+      <definition value="Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>

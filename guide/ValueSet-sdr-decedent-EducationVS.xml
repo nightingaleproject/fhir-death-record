@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
 <p><b>SDR EducationVS ValueSet</b></p>
-<p>Decedent's education</p>
+<p>Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).</p>
 </div>
   </text>
   <url value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/EducationVS"/>
@@ -13,11 +13,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.EducationVS"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR EducationVS ValueSet"/>
+  <version value="0.1.0"/>
+  <name value="EducationVS"/>
   <title value="SDR EducationVS ValueSet"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,10 +25,10 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Decedent&#39;s education"/>
+  <description value="Decedent&#39;s education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."/>
   <compose>
     <include>
-      <system value="http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274"/>
+      <system value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS"/>
       <concept>
         <code value="PHC1448"/>
         <display value="8th grade or less"/>

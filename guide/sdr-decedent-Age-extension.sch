@@ -12,10 +12,8 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInYears-extension']) &lt;= 1">extension with URL = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInYears-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension']) &lt;= 1">extension with URL = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension']) &lt;= 1">extension with URL = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
+      <sch:assert test="count(f:extension) &lt;= 0">extension: maximum cardinality of 'extension' is 0</sch:assert>
+      <sch:assert test="count(f:valueUnsignedInt) &gt;= 1">valueUnsignedInt: minimum cardinality of 'valueUnsignedInt' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

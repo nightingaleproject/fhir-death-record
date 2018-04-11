@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR ContributedToDeathCondition Profile</b></p>
-  <p>A condition that lead to death either directly or indirectly</p>
+  <p>A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:
   CodeableConcept maps to code
@@ -20,10 +20,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.causeOfDeath.ContributedToDeathCondition"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR ContributedToDeathCondition Profile"/>
+  <version value="0.1.0"/>
+  <name value="ContributedToDeathConditionProfile"/>
+  <title value="SDR ContributedToDeathCondition Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -31,7 +32,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="A condition that lead to death either directly or indirectly"/>
+  <description value="A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <fhirVersion value="3.0.1"/>
   <mapping>
     <identity value="sct-concept"/>
@@ -67,7 +68,7 @@
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition">
       <path value="Condition"/>
       <short value="SDR ContributedToDeathCondition Profile"/>
-      <definition value="A condition that lead to death either directly or indirectly"/>
+      <definition value="A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
       <constraint>
@@ -502,7 +503,7 @@
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition.code">
       <path value="Condition.code"/>
       <short value="Identification of the condition, problem or diagnosis"/>
-      <definition value="Code representing a condition that lead to death either directly or indirectly"/>
+      <definition value="Code representing a significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <requirements value="0..1 to account for primarily narrative only resources."/>
       <alias value="type"/>
       <min value="0"/>
@@ -1078,7 +1079,7 @@
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition">
       <path value="Condition"/>
       <short value="SDR ContributedToDeathCondition Profile"/>
-      <definition value="A condition that lead to death either directly or indirectly"/>
+      <definition value="A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
     </element>
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition.text">
       <path value="Condition.text"/>
@@ -1087,7 +1088,7 @@
     </element>
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition.code">
       <path value="Condition.code"/>
-      <definition value="Code representing a condition that lead to death either directly or indirectly"/>
+      <definition value="Code representing a significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
     </element>
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition.subject">
       <path value="Condition.subject"/>

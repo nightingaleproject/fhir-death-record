@@ -12,10 +12,11 @@
       "value": "shr.core.Address"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Address Profile",
+  "version": "0.1.0",
+  "name": "AddressProfile",
+  "title": "SDR Address Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -162,6 +163,30 @@
           {
             "identity": "rim",
             "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Address:shr-core-Address.extension:insidecitylimits",
+        "path": "Address.extension",
+        "sliceName": "insidecitylimits",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "definition": "Whether the address is within city limits (true) or not (false).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"
           }
         ]
       },
@@ -540,8 +565,8 @@
           {
             "label": "General",
             "valuePeriod": {
-              "start": "2010-03-23",
-              "end": "2010-07-01"
+              "start": "2010-03-23T00:00:00-04:00",
+              "end": "2010-07-01T00:00:00-04:00"
             }
           }
         ],
@@ -570,6 +595,30 @@
         "path": "Address",
         "short": "SDR Address Profile",
         "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)."
+      },
+      {
+        "id": "Address:shr-core-Address.extension:insidecitylimits",
+        "path": "Address.extension",
+        "sliceName": "insidecitylimits",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "definition": "Whether the address is within city limits (true) or not (false).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"
+          }
+        ]
       },
       {
         "id": "Address:shr-core-Address.line",

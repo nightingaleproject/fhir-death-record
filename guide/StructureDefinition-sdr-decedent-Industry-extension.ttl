@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-decedent-Industry-extension"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Industry Extension</b></p>\n  <p>Kind of industry or business in which the decedent worked</p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Industry Extension</b></p>\n  <p>Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Industry-extension"];
   fhir:StructureDefinition.identifier [
@@ -18,11 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.decedent.Industry" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR Industry Extension"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "IndustryExtension"];
   fhir:StructureDefinition.title [ fhir:value "SDR Industry Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Kind of industry or business in which the decedent worked"];
+  fhir:StructureDefinition.description [ fhir:value "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.kind [ fhir:value "complex-type"];
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
@@ -50,7 +50,7 @@
        fhir:Element.id [ fhir:value "Extension:industry" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Industry Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Kind of industry or business in which the decedent worked" ];
+       fhir:ElementDefinition.definition [ fhir:value "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -181,7 +181,7 @@
        fhir:Element.id [ fhir:value "Extension:industry" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Industry Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Kind of industry or business in which the decedent worked" ];
+       fhir:ElementDefinition.definition [ fhir:value "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [

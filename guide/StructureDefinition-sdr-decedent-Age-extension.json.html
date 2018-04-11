@@ -4,17 +4,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Standard Death Record FHIR Profiles</title>
+  
+  <title>Standard Death Record</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Standard Death Record FHIR Implemenation Guide" />
-  <meta name="author" content="http://standardhealthrecord.org" />
+  <meta name="description" content="Standard Death Record FHIR Profiles" />
 
   <link href="fhir.css" rel="stylesheet" />
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet" />
@@ -35,9 +36,12 @@
   <!-- segment-header -->
   <div class="container">
     <!-- container -->
-    <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png" /> </a>
-    <div id="hl7-status">
-      <b>Standard Death Record FHIR Implementation Guide</b>
+    <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="HL7 FHIR Homepage" class="img-responsive logo" src="assets/images/fhir-logo-www.png" />
+    </a>
+    <div id="hl7-status" class="hl7-status">
+      
+      <b>Standard Death Record</b>
     </div>
 
     <div id="hl7-nav">
@@ -70,11 +74,13 @@
         <div class="nav-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
+            <!-- no logical models -->
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="extensions.html">Extensions</a></li>
             <li><a href="valuesets.html">Value Sets</a></li>
             <li><a href="codesystems.html">Code Systems</a></li>
             <li><a href="downloads.html">Downloads</a></li>
+            <!-- no reference model -->
           </ul>
 
         </div>
@@ -96,7 +102,7 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
-      <li><b>SDR Age Extension</b></li>
+      <li><b>AgeExtension</b></li>
     </ul>
   </div>
   <!-- /container -->
@@ -110,19 +116,24 @@
  <div class="container">  <!-- container -->
    <div class="row">
      <div class="inner-wrapper">
-       <div class="col-9">
+       <div class="col-12">
 
 <!-- ============CONTENT CONTENT=============== -->
+
 
 <ul class="nav nav-tabs">
   <li><a href="StructureDefinition-sdr-decedent-Age-extension.html">Content</a></li>
   <li><a href="StructureDefinition-sdr-decedent-Age-extension-definitions.html">Detailed Descriptions</a></li>
+
   <li><a href="StructureDefinition-sdr-decedent-Age-extension.xml.html">XML</a></li>
-  <li><a href="StructureDefinition-sdr-decedent-Age-extension.json.html">JSON</a></li>
+
+  <li class="active"><a href="#">JSON</a></li>
+
   <li><a href="StructureDefinition-sdr-decedent-Age-extension.ttl.html">Turtle</a></li>
+
 </ul>
 
-<h2>SDR Age Extension</h2>
+<h2>AgeExtension</h2>
 
 <pre class="json">
 {
@@ -132,7 +143,7 @@
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
   &lt;p&gt;&lt;b&gt;SDR Age Extension&lt;/b&gt;&lt;/p&gt;
-  &lt;p&gt;The decedent's age&lt;/p&gt;
+  &lt;p&gt;The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).&lt;/p&gt;
 &lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.url">url</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Age-extension",
@@ -142,11 +153,11 @@
       "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "sdr.decedent.Age"
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.version">version</a>" : "0.0.1",
-  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a>" : "SDR Age Extension",
+  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a>" : "AgeExtension",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">title</a>" : "SDR Age Extension",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a>" : "2018-03-21",
+  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a>" : "2018-04-11T00:00:00-04:00",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "The MITRE Corporation: Nightingale Project",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -158,7 +169,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.description">description</a>" : "The decedent's age",
+  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.description">description</a>" : "The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a>" : "3.0.1",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.kind">kind</a>" : "complex-type",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.abstract">abstract</a>" : false,
@@ -175,7 +186,7 @@
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "SDR Age Extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The decedent's age",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
@@ -202,12 +213,6 @@
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "extension.exists() != value.exists()",
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">xpath</a>" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "Extension"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "choice-1",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "sdr-decedent-Age-extension SHALL have either extension('ageinyears') or extension('ageinmonthsanddays') or extension('ageinhoursandminutes')",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "( extension('ageinyears').url | extension('ageinmonthsanddays').url | extension('ageinhoursandminutes').url ).distinct().count() == 1"
           }
         ]
       },
@@ -239,23 +244,13 @@
         ]
       },
       {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.id">id</a>" : "1",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a>" : "value",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a>" : "url"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a>" : false,
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a>" : "open"
-        },
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "An Extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "0",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Element.extension",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
@@ -264,84 +259,6 @@
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:ageinyears",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ageinyears",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Age in years if greater than 1 year old",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Extension.extension",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
-        },
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInYears-extension"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:ageinmonthsanddays",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ageinmonthsanddays",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Age in months and days if less than 1 year old",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Extension.extension",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
-        },
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:ageinhoursandminutes",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ageinhoursandminutes",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Age in hours and minutes if less than 1 day old",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Extension.extension",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a>" : "1"
-        },
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isModifier">isModifier</a>" : false,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a>" : "rim",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>" : "N/A"
           }
         ]
       },
@@ -375,12 +292,12 @@
         ]
       },
       {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.value[x]",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.value[x]",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.valueUnsignedInt",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.valueUnsignedInt",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "Value of extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "0",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Extension.value[x]",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
@@ -388,118 +305,7 @@
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "base64Binary"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "boolean"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "date"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "dateTime"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "decimal"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "id"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "instant"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "integer"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "markdown"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "oid"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "positiveInt"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "string"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "time"
-          },
-          {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "unsignedInt"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "uri"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Age"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Annotation"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Attachment"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "CodeableConcept"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Coding"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "ContactPoint"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Count"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Distance"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Duration"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "HumanName"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Identifier"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Money"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Period"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Quantity"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Range"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Ratio"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Reference"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "SampledData"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Signature"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Timing"
-          },
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Meta"
           }
         ],
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -517,59 +323,15 @@
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>" : "SDR Age Extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The decedent's age",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "choice-1",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "sdr-decedent-Age-extension SHALL have either extension('ageinyears') or extension('ageinmonthsanddays') or extension('ageinhoursandminutes')",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "( extension('ageinyears').url | extension('ageinmonthsanddays').url | extension('ageinhoursandminutes').url ).distinct().count() == 1"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "*"
       },
       {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:ageinyears",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:extension",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ageinyears",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Age in years if greater than 1 year old",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInYears-extension"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:ageinmonthsanddays",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ageinmonthsanddays",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Age in months and days if less than 1 year old",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension"
-          }
-        ]
-      },
-      {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.extension:ageinhoursandminutes",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.extension",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "ageinhoursandminutes",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Age in hours and minutes if less than 1 day old",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Extension",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a>" : "extension",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "0"
       },
       {
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.url",
@@ -582,10 +344,14 @@
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedUri</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Age-extension"
       },
       {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.value[x]",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.value[x]",
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "0"
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Extension:age.valueUnsignedInt",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Extension.valueUnsignedInt",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "unsignedInt"
+          }
+        ]
       }
     ]
   }
@@ -609,8 +375,12 @@
 <div id="segment-footer" class="segment">  <!-- segment-footer -->
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
-    <p>Implementation guide generated by the Standard Health Record Collaborative &copy; FHIR STU3 (IG Publisher v3.0.1-11916) generated
-        on Wed, Mar 21, 2018 16:17-0400.</p>
+    <p>
+      
+      Standard Death Record, Version: 0.1.0 &copy;
+      ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
+      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+    </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
 </div>  <!-- /segment-footer -->
@@ -619,6 +389,19 @@
   <div class="container">  <!-- container -->
   </div>  <!-- /container -->
 </div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
 
 </body>
 </html>

@@ -4,17 +4,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Standard Death Record FHIR Profiles</title>
+  
+  <title>Standard Death Record</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Standard Death Record FHIR Implemenation Guide" />
-  <meta name="author" content="http://standardhealthrecord.org" />
+  <meta name="description" content="Standard Death Record FHIR Profiles" />
 
   <link href="fhir.css" rel="stylesheet" />
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet" />
@@ -35,9 +36,12 @@
   <!-- segment-header -->
   <div class="container">
     <!-- container -->
-    <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png" /> </a>
-    <div id="hl7-status">
-      <b>Standard Death Record FHIR Implementation Guide</b>
+    <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="HL7 FHIR Homepage" class="img-responsive logo" src="assets/images/fhir-logo-www.png" />
+    </a>
+    <div id="hl7-status" class="hl7-status">
+      
+      <b>Standard Death Record</b>
     </div>
 
     <div id="hl7-nav">
@@ -70,11 +74,13 @@
         <div class="nav-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
+            <!-- no logical models -->
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="extensions.html">Extensions</a></li>
             <li><a href="valuesets.html">Value Sets</a></li>
             <li><a href="codesystems.html">Code Systems</a></li>
             <li><a href="downloads.html">Downloads</a></li>
+            <!-- no reference model -->
           </ul>
 
         </div>
@@ -91,6 +97,18 @@
 <!-- /segment-navbar -->
 
 <!-- ============BreadCrumb=============== -->
+<div id="segment-breadcrumb" class="segmnt">
+  <!-- segment-breadcrumb -->
+  <div class="container">
+    <!-- container -->
+    <ul class="breadcrumb">
+      <li title="home"><a href="index.html"><b>Home</b></a></li>
+      <li><b>Extensions</b></li>
+    </ul>
+  </div>
+  <!-- /container -->
+</div>
+<!-- /segment-breadcrumb -->
 
   </div>  <!-- /container -->
  </div>  <!-- /segment-breadcrumb -->
@@ -99,19 +117,16 @@
  <div class="container">  <!-- container -->
    <div class="row">
      <div class="inner-wrapper">
-       <div class="col-9">
+       <div class="col-12">
 
 <!-- ============CONTENT CONTENT=============== -->
 
 <h2>
-  Extensions defined for this Guide
+  Extensions defined as part of this Implementation Guide
 </h2>
 <table class="codes">
   <thead>
     <tr>
-      <td>
-        <b>SDR Namespace</b>
-      </td>
       <td>
         <b>Name</b>
       </td>
@@ -122,224 +137,84 @@
   </thead>
   <tbody>
     <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-base64Binary-extension.html">base64Binary</a></td>
-      <td>The base64Binary that represents the value of the SDR element to which it is applied.</td>
+      <td><a href="StructureDefinition-shr-core-Address-extension.html">Address</a></td>
+      <td>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</td>
     </tr>
     <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-boolean-extension.html">boolean</a></td>
-      <td>The boolean that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-code-extension.html">code</a></td>
-      <td>The code that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-date-extension.html">date</a></td>
-      <td>The date that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-dateTime-extension.html">dateTime</a></td>
-      <td>The dateTime that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-decimal-extension.html">decimal</a></td>
-      <td>The decimal that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-id-extension.html">id</a></td>
-      <td>The id that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-instant-extension.html">instant</a></td>
-      <td>The instant that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-integer-extension.html">integer</a></td>
-      <td>The integer that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-markdown-extension.html">markdown</a></td>
-      <td>The markdown that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-oid-extension.html">oid</a></td>
-      <td>The oid that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-positiveInt-extension.html">positiveInt</a></td>
-      <td>The positiveInt that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-string-extension.html">string</a></td>
-      <td>The string that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-time-extension.html">time</a></td>
-      <td>The time that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-unsignedInt-extension.html">unsignedInt</a></td>
-      <td>The unsignedInt that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-uri-extension.html">uri</a></td>
-      <td>The uri that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>Primitive</td>
-      <td><a href="StructureDefinition-primitive-xhtml-extension.html">xhtml</a></td>
-      <td>The xhtml that represents the value of the SDR element to which it is applied.</td>
-    </tr>
-    <tr>
-      <td>CauseOfDeath</td>
-      <td><a href="StructureDefinition-sdr-causeOfDeath-InjuryLocation-extension.html">InjuryLocation</a></td>
-      <td>Location of injury</td>
-    </tr>
-    <tr>
-      <td>CauseOfDeath</td>
-      <td><a href="StructureDefinition-sdr-causeOfDeath-PlaceOfInjury-extension.html">PlaceOfInjury</a></td>
-      <td>Place of injury, e.g. decedent&#039;s home, restaurant, wooded area</td>
-    </tr>
-    <tr>
-      <td>DeathRecord</td>
-      <td><a href="StructureDefinition-sdr-deathRecord-CertifierType-extension.html">CertifierType</a></td>
-      <td>A code that represents the type of death record certifier.</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-Age-extension.html">Age</a></td>
-      <td>The decedent&#039;s age</td>
+      <td>The decedent&#039;s age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-AgeInHoursAndMinutes-extension.html">AgeInHoursAndMinutes</a></td>
-      <td>Age in hours and minutes if less than 1 day old</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-AgeInMonthsAndDays-extension.html">AgeInMonthsAndDays</a></td>
-      <td>Age in months and days if less than 1 year old</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-AgeInYears-extension.html">AgeInYears</a></td>
-      <td>Age in years if greater than 1 year old</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-Birthplace-extension.html">Birthplace</a></td>
-      <td>Decedents place of birth</td>
+      <td>Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-Days-extension.html">Days</a></td>
-      <td>Age in days if less than 1 year old</td>
+      <td><a href="StructureDefinition-sdr-deathRecord-CertifierType-extension.html">CertifierType</a></td>
+      <td>A code that represents the type of death record certifier. Corresponds to item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-Disposition-extension.html">Disposition</a></td>
-      <td>Disposition of the decedent&#039;s body</td>
+      <td>Disposition of the decedent&#039;s body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-DispositionFacility-extension.html">DispositionFacility</a></td>
-      <td></td>
+      <td>The place of disposition of the decedent&#039;s remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-DispositionType-extension.html">DispositionType</a></td>
-      <td></td>
+      <td>The method of disposition of the decedent&#039;s remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-Education-extension.html">Education</a></td>
-      <td>Decedent&#039;s education</td>
+      <td>Decedent&#039;s level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-FacilityName-extension.html">FacilityName</a></td>
       <td>The name of a facility or institution</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-FuneralFacility-extension.html">FuneralFacility</a></td>
-      <td></td>
+      <td>Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-Hours-extension.html">Hours</a></td>
-      <td>Age in hours if less than 1 day old</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-Industry-extension.html">Industry</a></td>
-      <td>Kind of industry or business in which the decedent worked</td>
+      <td>Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-InsideCityLimits-extension.html">InsideCityLimits</a></td>
-      <td>Residence located within the city limits?</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-InjuryLocation-extension.html">InjuryLocation</a></td>
+      <td>Location of injury</td>
     </tr>
     <tr>
-      <td>Decedent</td>
+      <td><a href="StructureDefinition-shr-core-InsideCityLimits-extension.html">InsideCityLimits</a></td>
+      <td>Whether the address is within city limits (true) or not (false).</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-sdr-decedent-Job-extension.html">Job</a></td>
-      <td>Type of work done during most of decedent&#039;s working life</td>
+      <td>Type of work done during most of decedent&#039;s working life. Corresponds to item 54 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-MaritalStatusAtDeath-extension.html">MaritalStatusAtDeath</a></td>
-      <td>The marital status of the decedent at the time of death.</td>
+      <td>The marital status of the decedent at the time of death. Corresponds to item 9 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-Minutes-extension.html">Minutes</a></td>
-      <td>Age in minutes if less than 1 day old</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-Months-extension.html">Months</a></td>
-      <td>Age in months if less than 1 year old</td>
-    </tr>
-    <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-Occupation-extension.html">Occupation</a></td>
-      <td>Decedent&#039;s occupation</td>
+      <td>Decedent&#039;s usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-PlaceOfDeath-extension.html">PlaceOfDeath</a></td>
-      <td>The location that death occurred</td>
+      <td>The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td>Decedent</td>
       <td><a href="StructureDefinition-sdr-decedent-PlaceOfDeathType-extension.html">PlaceOfDeathType</a></td>
       <td>The type of location at which death occurred.</td>
     </tr>
     <tr>
-      <td>Decedent</td>
-      <td><a href="StructureDefinition-sdr-decedent-ServedInArmedForces-extension.html">ServedInArmedForces</a></td>
-      <td>Whether the decedent ever served in the US armed forces</td>
+      <td><a href="StructureDefinition-sdr-causeOfDeath-PlaceOfInjury-extension.html">PlaceOfInjury</a></td>
+      <td>Place of injury, e.g. decedent&#039;s home, restaurant, wooded area</td>
     </tr>
     <tr>
-      <td>Core</td>
-      <td><a href="StructureDefinition-shr-core-Address-extension.html">Address</a></td>
-      <td>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</td>
+      <td><a href="StructureDefinition-sdr-decedent-ServedInArmedForces-extension.html">ServedInArmedForces</a></td>
+      <td>Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     
   </tbody>
@@ -362,8 +237,12 @@
 <div id="segment-footer" class="segment">  <!-- segment-footer -->
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
-    <p>Implementation guide generated by the Standard Health Record Collaborative &copy; FHIR STU3 (IG Publisher v3.0.1-11916) generated
-        on Wed, Mar 21, 2018 16:17-0400.</p>
+    <p>
+      
+      Standard Death Record, Version: 0.1.0 &copy;
+      ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
+      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+    </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
 </div>  <!-- /segment-footer -->
@@ -372,6 +251,19 @@
   <div class="container">  <!-- container -->
   </div>  <!-- /container -->
 </div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
 
 </body>
 </html>

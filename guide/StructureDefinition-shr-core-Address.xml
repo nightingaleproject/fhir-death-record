@@ -25,10 +25,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="shr.core.Address"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Address Profile"/>
+  <version value="0.1.0"/>
+  <name value="AddressProfile"/>
+  <title value="SDR Address Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -147,6 +148,25 @@
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
+    </element>
+    <element id="Address:shr-core-Address.extension:insidecitylimits">
+      <path value="Address.extension"/>
+      <sliceName value="insidecitylimits"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Whether the address is within city limits (true) or not (false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
+      </type>
     </element>
     <element id="Address:shr-core-Address.use">
       <path value="Address.use"/>
@@ -446,8 +466,8 @@
       <example>
         <label value="General"/>
         <valuePeriod>
-          <start value="2010-03-23"/>
-          <end value="2010-07-01"/>
+          <start value="2010-03-23T00:00:00-04:00"/>
+          <end value="2010-07-01T00:00:00-04:00"/>
         </valuePeriod>
       </example>
       <isSummary value="true"/>
@@ -470,6 +490,25 @@
       <path value="Address"/>
       <short value="SDR Address Profile"/>
       <definition value="An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)."/>
+    </element>
+    <element id="Address:shr-core-Address.extension:insidecitylimits">
+      <path value="Address.extension"/>
+      <sliceName value="insidecitylimits"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Whether the address is within city limits (true) or not (false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
+      </type>
     </element>
     <element id="Address:shr-core-Address.line">
       <path value="Address.line"/>

@@ -3,7 +3,7 @@
   "id": "sdr-decedent-ServedInArmedForces-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ServedInArmedForces Extension</b></p>\n  <p>Whether the decedent ever served in the US armed forces</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ServedInArmedForces Extension</b></p>\n  <p>Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ServedInArmedForces-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.ServedInArmedForces"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR ServedInArmedForces Extension",
+  "version": "0.1.0",
+  "name": "ServedInArmedForcesExtension",
   "title": "SDR ServedInArmedForces Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Whether the decedent ever served in the US armed forces",
+  "description": "Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:servedinarmedforces",
         "path": "Extension",
         "short": "SDR ServedInArmedForces Extension",
-        "definition": "Whether the decedent ever served in the US armed forces",
+        "definition": "Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -182,7 +182,7 @@
         "id": "Extension:servedinarmedforces",
         "path": "Extension",
         "short": "SDR ServedInArmedForces Extension",
-        "definition": "Whether the decedent ever served in the US armed forces",
+        "definition": "Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },

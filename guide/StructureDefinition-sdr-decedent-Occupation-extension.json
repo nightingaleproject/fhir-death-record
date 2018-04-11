@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Occupation-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Occupation Extension</b></p>\n  <p>Decedent's occupation</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Occupation Extension</b></p>\n  <p>Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Occupation-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.Occupation"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Occupation Extension",
+  "version": "0.1.0",
+  "name": "OccupationExtension",
   "title": "SDR Occupation Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Decedent's occupation",
+  "description": "Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:occupation",
         "path": "Extension",
         "short": "SDR Occupation Extension",
-        "definition": "Decedent's occupation",
+        "definition": "Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -135,7 +135,7 @@
         "id": "Extension:occupation.extension:job",
         "path": "Extension.extension",
         "sliceName": "job",
-        "definition": "Type of work done during most of decedent's working life",
+        "definition": "Type of work done during most of decedent's working life. Corresponds to item 54 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "base": {
@@ -161,7 +161,7 @@
         "id": "Extension:occupation.extension:industry",
         "path": "Extension.extension",
         "sliceName": "industry",
-        "definition": "Kind of industry or business in which the decedent worked",
+        "definition": "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "base": {
@@ -355,7 +355,7 @@
         "id": "Extension:occupation",
         "path": "Extension",
         "short": "SDR Occupation Extension",
-        "definition": "Decedent's occupation",
+        "definition": "Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },
@@ -363,7 +363,7 @@
         "id": "Extension:occupation.extension:job",
         "path": "Extension.extension",
         "sliceName": "job",
-        "definition": "Type of work done during most of decedent's working life",
+        "definition": "Type of work done during most of decedent's working life. Corresponds to item 54 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -377,7 +377,7 @@
         "id": "Extension:occupation.extension:industry",
         "path": "Extension.extension",
         "sliceName": "industry",
-        "definition": "Kind of industry or business in which the decedent worked",
+        "definition": "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [

@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Industry-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Industry Extension</b></p>\n  <p>Kind of industry or business in which the decedent worked</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Industry Extension</b></p>\n  <p>Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Industry-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.Industry"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Industry Extension",
+  "version": "0.1.0",
+  "name": "IndustryExtension",
   "title": "SDR Industry Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Kind of industry or business in which the decedent worked",
+  "description": "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:industry",
         "path": "Extension",
         "short": "SDR Industry Extension",
-        "definition": "Kind of industry or business in which the decedent worked",
+        "definition": "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -182,7 +182,7 @@
         "id": "Extension:industry",
         "path": "Extension",
         "short": "SDR Industry Extension",
-        "definition": "Kind of industry or business in which the decedent worked",
+        "definition": "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },

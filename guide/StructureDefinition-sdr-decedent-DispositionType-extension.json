@@ -3,7 +3,7 @@
   "id": "sdr-decedent-DispositionType-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DispositionType Extension</b></p>\n  <p/>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DispositionType Extension</b></p>\n  <p>The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-DispositionType-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.DispositionType"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR DispositionType Extension",
+  "version": "0.1.0",
+  "name": "DispositionTypeExtension",
   "title": "SDR DispositionType Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,6 +28,7 @@
       ]
     }
   ],
+  "description": "The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +45,7 @@
         "id": "Extension:dispositiontype",
         "path": "Extension",
         "short": "SDR DispositionType Extension",
-        "definition": "DispositionType",
+        "definition": "The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -187,7 +188,7 @@
         "id": "Extension:dispositiontype",
         "path": "Extension",
         "short": "SDR DispositionType Extension",
-        "definition": "DispositionType",
+        "definition": "The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },

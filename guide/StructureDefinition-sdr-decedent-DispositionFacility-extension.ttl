@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-decedent-DispositionFacility-extension"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DispositionFacility Extension</b></p>\n  <p/>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DispositionFacility Extension</b></p>\n  <p>The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-DispositionFacility-extension"];
   fhir:StructureDefinition.identifier [
@@ -18,11 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.decedent.DispositionFacility" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR DispositionFacility Extension"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "DispositionFacilityExtension"];
   fhir:StructureDefinition.title [ fhir:value "SDR DispositionFacility Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -32,6 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
+  fhir:StructureDefinition.description [ fhir:value "The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.kind [ fhir:value "complex-type"];
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
@@ -49,7 +50,7 @@
        fhir:Element.id [ fhir:value "Extension:dispositionfacility" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR DispositionFacility Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "DispositionFacility" ];
+       fhir:ElementDefinition.definition [ fhir:value "The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -348,7 +349,7 @@
        fhir:Element.id [ fhir:value "Extension:dispositionfacility" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR DispositionFacility Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "DispositionFacility" ];
+       fhir:ElementDefinition.definition [ fhir:value "The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [

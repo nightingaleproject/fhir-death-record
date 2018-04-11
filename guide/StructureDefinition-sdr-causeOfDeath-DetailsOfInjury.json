@@ -12,10 +12,11 @@
       "value": "sdr.causeOfDeath.DetailsOfInjury"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR DetailsOfInjury Profile",
+  "version": "0.1.0",
+  "name": "DetailsOfInjuryProfile",
+  "title": "SDR DetailsOfInjury Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -776,9 +777,10 @@
         "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.code.coding:Fixed_11374-6",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_11374-6",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Injury incident description",
+        "definition": "Injury incident description",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -1120,8 +1122,8 @@
         ]
       },
       {
-        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.effective[x]",
-        "path": "Observation.effective[x]",
+        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
         "short": "Clinically relevant time/time-period for observation",
         "definition": "The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.",
         "comment": "At least a date should be present unless this observation is a historical report.",
@@ -1232,8 +1234,8 @@
         ]
       },
       {
-        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.valueString",
+        "path": "Observation.valueString",
         "short": "Actual result",
         "definition": "String representing injury incident description",
         "comment": "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.",
@@ -2452,9 +2454,10 @@
         "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.code.coding:Fixed_11374-6",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_11374-6",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Injury incident description",
+        "definition": "Injury incident description",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2485,8 +2488,8 @@
         ]
       },
       {
-        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.effective[x]",
-        "path": "Observation.effective[x]",
+        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
         "min": 1,
         "max": "1",
         "type": [
@@ -2496,8 +2499,8 @@
         ]
       },
       {
-        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.valueString",
+        "path": "Observation.valueString",
         "definition": "String representing injury incident description",
         "min": 1,
         "max": "1",

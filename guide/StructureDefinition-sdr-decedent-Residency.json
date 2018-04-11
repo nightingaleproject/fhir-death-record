@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Residency",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Residency Profile</b></p>\n  <p>Decedents place of residence</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Residency maps to Address:\n  Purpose maps to use\n  Type maps to type\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Residency Profile</b></p>\n  <p>Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Residency maps to Address:\n  Purpose maps to use\n  Type maps to type\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency",
   "identifier": [
@@ -12,10 +12,11 @@
       "value": "sdr.decedent.Residency"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Residency Profile",
+  "version": "0.1.0",
+  "name": "ResidencyProfile",
+  "title": "SDR Residency Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -27,7 +28,7 @@
       ]
     }
   ],
-  "description": "Decedents place of residence",
+  "description": "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "purpose": "Need to be able to record postal addresses, along with notes about their use.",
   "fhirVersion": "3.0.1",
   "mapping": [
@@ -63,7 +64,7 @@
         "id": "Address:sdr-decedent-Residency",
         "path": "Address",
         "short": "SDR Residency Profile",
-        "definition": "Decedents place of residence",
+        "definition": "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "comment": "Note: address is for postal addresses, not physical locations.",
         "min": 0,
         "max": "*",
@@ -179,13 +180,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "definition": "Residence located within the city limits?",
+        "definition": "Whether the address is within city limits (true) or not (false).",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-InsideCityLimits-extension"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"
           }
         ]
       },
@@ -564,8 +565,8 @@
           {
             "label": "General",
             "valuePeriod": {
-              "start": "2010-03-23",
-              "end": "2010-07-01"
+              "start": "2010-03-23T00:00:00-04:00",
+              "end": "2010-07-01T00:00:00-04:00"
             }
           }
         ],
@@ -593,7 +594,7 @@
         "id": "Address:sdr-decedent-Residency",
         "path": "Address",
         "short": "SDR Residency Profile",
-        "definition": "Decedents place of residence"
+        "definition": "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
       },
       {
         "id": "Address:sdr-decedent-Residency.extension:insidecitylimits",
@@ -609,13 +610,13 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "open"
         },
-        "definition": "Residence located within the city limits?",
+        "definition": "Whether the address is within city limits (true) or not (false).",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-InsideCityLimits-extension"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"
           }
         ]
       },

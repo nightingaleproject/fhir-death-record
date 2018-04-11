@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Age Extension</b></p>
-  <p>The decedent's age</p>
+  <p>The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
 </div>
   </text>
   <url value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Age-extension"/>
@@ -13,11 +13,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.Age"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Age Extension"/>
+  <version value="0.1.0"/>
+  <name value="AgeExtension"/>
   <title value="SDR Age Extension"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="The decedent&#39;s age"/>
+  <description value="The decedent&#39;s age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -38,7 +38,7 @@
     <element id="Extension:age">
       <path value="Extension"/>
       <short value="SDR Age Extension"/>
-      <definition value="The decedent&#39;s age"/>
+      <definition value="The decedent&#39;s age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -63,12 +63,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
         <source value="Extension"/>
       </constraint>
-      <constraint>
-        <key value="choice-1"/>
-        <severity value="error"/>
-        <human value="sdr-decedent-Age-extension SHALL have either extension(&#39;ageinyears&#39;) or extension(&#39;ageinmonthsanddays&#39;) or extension(&#39;ageinhoursandminutes&#39;)"/>
-        <expression value="( extension(&#39;ageinyears&#39;).url | extension(&#39;ageinmonthsanddays&#39;).url | extension(&#39;ageinhoursandminutes&#39;).url ).distinct().count() == 1"/>
-      </constraint>
     </element>
     <element id="Extension:age.id">
       <path value="Extension.id"/>
@@ -90,20 +84,13 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Extension:age.extension">
+    <element id="Extension:age.extension:extension">
       <path value="Extension.extension"/>
-      <slicing id="1">
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <ordered value="false"/>
-        <rules value="open"/>
-      </slicing>
+      <sliceName value="extension"/>
       <short value="Extension"/>
       <definition value="An Extension"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="Element.extension"/>
         <min value="0"/>
@@ -112,69 +99,6 @@
       <type>
         <code value="Extension"/>
       </type>
-    </element>
-    <element id="Extension:age.extension:ageinyears">
-      <path value="Extension.extension"/>
-      <sliceName value="ageinyears"/>
-      <definition value="Age in years if greater than 1 year old"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Extension.extension"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInYears-extension"/>
-      </type>
-      <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
-    </element>
-    <element id="Extension:age.extension:ageinmonthsanddays">
-      <path value="Extension.extension"/>
-      <sliceName value="ageinmonthsanddays"/>
-      <definition value="Age in months and days if less than 1 year old"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Extension.extension"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension"/>
-      </type>
-      <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
-    </element>
-    <element id="Extension:age.extension:ageinhoursandminutes">
-      <path value="Extension.extension"/>
-      <sliceName value="ageinhoursandminutes"/>
-      <definition value="Age in hours and minutes if less than 1 day old"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Extension.extension"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension"/>
-      </type>
-      <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Extension:age.url">
       <path value="Extension.url"/>
@@ -198,130 +122,19 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Extension:age.value[x]">
-      <path value="Extension.value[x]"/>
+    <element id="Extension:age.valueUnsignedInt">
+      <path value="Extension.valueUnsignedInt"/>
       <short value="Value of extension"/>
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
-      <min value="0"/>
-      <max value="0"/>
+      <min value="1"/>
+      <max value="1"/>
       <base>
         <path value="Extension.value[x]"/>
         <min value="0"/>
         <max value="1"/>
       </base>
       <type>
-        <code value="base64Binary"/>
-      </type>
-      <type>
-        <code value="boolean"/>
-      </type>
-      <type>
-        <code value="code"/>
-      </type>
-      <type>
-        <code value="date"/>
-      </type>
-      <type>
-        <code value="dateTime"/>
-      </type>
-      <type>
-        <code value="decimal"/>
-      </type>
-      <type>
-        <code value="id"/>
-      </type>
-      <type>
-        <code value="instant"/>
-      </type>
-      <type>
-        <code value="integer"/>
-      </type>
-      <type>
-        <code value="markdown"/>
-      </type>
-      <type>
-        <code value="oid"/>
-      </type>
-      <type>
-        <code value="positiveInt"/>
-      </type>
-      <type>
-        <code value="string"/>
-      </type>
-      <type>
-        <code value="time"/>
-      </type>
-      <type>
         <code value="unsignedInt"/>
-      </type>
-      <type>
-        <code value="uri"/>
-      </type>
-      <type>
-        <code value="Address"/>
-      </type>
-      <type>
-        <code value="Age"/>
-      </type>
-      <type>
-        <code value="Annotation"/>
-      </type>
-      <type>
-        <code value="Attachment"/>
-      </type>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <type>
-        <code value="Coding"/>
-      </type>
-      <type>
-        <code value="ContactPoint"/>
-      </type>
-      <type>
-        <code value="Count"/>
-      </type>
-      <type>
-        <code value="Distance"/>
-      </type>
-      <type>
-        <code value="Duration"/>
-      </type>
-      <type>
-        <code value="HumanName"/>
-      </type>
-      <type>
-        <code value="Identifier"/>
-      </type>
-      <type>
-        <code value="Money"/>
-      </type>
-      <type>
-        <code value="Period"/>
-      </type>
-      <type>
-        <code value="Quantity"/>
-      </type>
-      <type>
-        <code value="Range"/>
-      </type>
-      <type>
-        <code value="Ratio"/>
-      </type>
-      <type>
-        <code value="Reference"/>
-      </type>
-      <type>
-        <code value="SampledData"/>
-      </type>
-      <type>
-        <code value="Signature"/>
-      </type>
-      <type>
-        <code value="Timing"/>
-      </type>
-      <type>
-        <code value="Meta"/>
       </type>
       <mapping>
         <identity value="rim"/>
@@ -333,48 +146,14 @@
     <element id="Extension:age">
       <path value="Extension"/>
       <short value="SDR Age Extension"/>
-      <definition value="The decedent&#39;s age"/>
+      <definition value="The decedent&#39;s age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
-      <constraint>
-        <key value="choice-1"/>
-        <severity value="error"/>
-        <human value="sdr-decedent-Age-extension SHALL have either extension(&#39;ageinyears&#39;) or extension(&#39;ageinmonthsanddays&#39;) or extension(&#39;ageinhoursandminutes&#39;)"/>
-        <expression value="( extension(&#39;ageinyears&#39;).url | extension(&#39;ageinmonthsanddays&#39;).url | extension(&#39;ageinhoursandminutes&#39;).url ).distinct().count() == 1"/>
-      </constraint>
     </element>
-    <element id="Extension:age.extension:ageinyears">
+    <element id="Extension:age.extension:extension">
       <path value="Extension.extension"/>
-      <sliceName value="ageinyears"/>
-      <definition value="Age in years if greater than 1 year old"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInYears-extension"/>
-      </type>
-    </element>
-    <element id="Extension:age.extension:ageinmonthsanddays">
-      <path value="Extension.extension"/>
-      <sliceName value="ageinmonthsanddays"/>
-      <definition value="Age in months and days if less than 1 year old"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension"/>
-      </type>
-    </element>
-    <element id="Extension:age.extension:ageinhoursandminutes">
-      <path value="Extension.extension"/>
-      <sliceName value="ageinhoursandminutes"/>
-      <definition value="Age in hours and minutes if less than 1 day old"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension"/>
-      </type>
+      <sliceName value="extension"/>
+      <max value="0"/>
     </element>
     <element id="Extension:age.url">
       <path value="Extension.url"/>
@@ -383,10 +162,12 @@
       </type>
       <fixedUri value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Age-extension"/>
     </element>
-    <element id="Extension:age.value[x]">
-      <path value="Extension.value[x]"/>
-      <min value="0"/>
-      <max value="0"/>
+    <element id="Extension:age.valueUnsignedInt">
+      <path value="Extension.valueUnsignedInt"/>
+      <min value="1"/>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
     </element>
   </differential>
 </StructureDefinition>

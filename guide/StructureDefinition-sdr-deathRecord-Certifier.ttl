@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-deathRecord-Certifier"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Certifier Profile</b></p>\n  <p>The certifier of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Certifier Profile</b></p>\n  <p>The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier"];
   fhir:StructureDefinition.identifier [
@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.deathRecord.Certifier" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR Certifier Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "CertifierProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR Certifier Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,14 +32,14 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "The certifier of the death record"];
+  fhir:StructureDefinition.description [ fhir:value "The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
        fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States Minor Outlying Islands (the)" ]
+       fhir:Coding.display [ fhir:value "United States of America" ]
      ]
   ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
@@ -74,7 +75,7 @@
        fhir:Element.id [ fhir:value "Practitioner:sdr-deathRecord-Certifier" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Certifier Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "The certifier of the death record" ];
+       fhir:ElementDefinition.definition [ fhir:value "The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.comment [ fhir:value "Note that a cab driver no longer fits the bill. You probably would be interested in the organization rather than the individual?" ];
        fhir:ElementDefinition.alias [
          fhir:value "Provider";
@@ -359,7 +360,7 @@
        fhir:Element.id [ fhir:value "Practitioner:sdr-deathRecord-Certifier.extension:certifiertype" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "certifiertype" ];
-       fhir:ElementDefinition.definition [ fhir:value "A code that represents the type of death record certifier." ];
+       fhir:ElementDefinition.definition [ fhir:value "A code that represents the type of death record certifier. Corresponds to item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -459,8 +460,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSetReference [
-           fhir:link <http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS>;
-           fhir:Reference.reference [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS" ]
+           fhir:link <http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS>;
+           fhir:Reference.reference [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS" ]
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1689,14 +1690,14 @@
        fhir:Element.id [ fhir:value "Practitioner:sdr-deathRecord-Certifier" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Certifier Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "The certifier of the death record" ];
+       fhir:ElementDefinition.definition [ fhir:value "The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Practitioner:sdr-deathRecord-Certifier.extension:certifiertype" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "certifiertype" ];
-       fhir:ElementDefinition.definition [ fhir:value "A code that represents the type of death record certifier." ];
+       fhir:ElementDefinition.definition [ fhir:value "A code that represents the type of death record certifier. Corresponds to item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -1711,8 +1712,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSetReference [
-           fhir:link <http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS>;
-           fhir:Reference.reference [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS" ]
+           fhir:link <http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS>;
+           fhir:Reference.reference [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS" ]
          ]
        ]
      ], [

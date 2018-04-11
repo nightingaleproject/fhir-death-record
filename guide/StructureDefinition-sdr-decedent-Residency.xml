@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Residency Profile</b></p>
-  <p>Decedents place of residence</p>
+  <p>Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.decedent.Residency maps to Address:
   Purpose maps to use
@@ -25,10 +25,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.Residency"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Residency Profile"/>
+  <version value="0.1.0"/>
+  <name value="ResidencyProfile"/>
+  <title value="SDR Residency Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -36,7 +37,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Decedents place of residence"/>
+  <description value="Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <purpose value="Need to be able to record postal addresses, along with notes about their use."/>
   <fhirVersion value="3.0.1"/>
   <mapping>
@@ -68,7 +69,7 @@
     <element id="Address:sdr-decedent-Residency">
       <path value="Address"/>
       <short value="SDR Residency Profile"/>
-      <definition value="Decedents place of residence"/>
+      <definition value="Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <comment value="Note: address is for postal addresses, not physical locations."/>
       <min value="0"/>
       <max value="*"/>
@@ -159,12 +160,12 @@
         <description value="Extensions are always sliced by (at least) url"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Residence located within the city limits?"/>
+      <definition value="Whether the address is within city limits (true) or not (false)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-InsideCityLimits-extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
       </type>
     </element>
     <element id="Address:sdr-decedent-Residency.use">
@@ -465,8 +466,8 @@
       <example>
         <label value="General"/>
         <valuePeriod>
-          <start value="2010-03-23"/>
-          <end value="2010-07-01"/>
+          <start value="2010-03-23T00:00:00-04:00"/>
+          <end value="2010-07-01T00:00:00-04:00"/>
         </valuePeriod>
       </example>
       <isSummary value="true"/>
@@ -488,7 +489,7 @@
     <element id="Address:sdr-decedent-Residency">
       <path value="Address"/>
       <short value="SDR Residency Profile"/>
-      <definition value="Decedents place of residence"/>
+      <definition value="Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
     </element>
     <element id="Address:sdr-decedent-Residency.extension:insidecitylimits">
       <path value="Address.extension"/>
@@ -501,12 +502,12 @@
         <description value="Extensions are always sliced by (at least) url"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Residence located within the city limits?"/>
+      <definition value="Whether the address is within city limits (true) or not (false)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-InsideCityLimits-extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
       </type>
     </element>
     <element id="Address:sdr-decedent-Residency.line">

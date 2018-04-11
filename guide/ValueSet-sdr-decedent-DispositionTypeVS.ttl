@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-decedent-DispositionTypeVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR DispositionTypeVS ValueSet</b></p>\n<p>Method of disposition of decedent's remains</p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR DispositionTypeVS ValueSet</b></p>\n<p>Method of disposition of decedent's remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/DispositionTypeVS"];
   fhir:ValueSet.identifier [
@@ -18,11 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.decedent.DispositionTypeVS" ]
   ];
-  fhir:ValueSet.version [ fhir:value "0.0.1"];
-  fhir:ValueSet.name [ fhir:value "SDR DispositionTypeVS ValueSet"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "DispositionTypeVS"];
   fhir:ValueSet.title [ fhir:value "SDR DispositionTypeVS ValueSet"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:ValueSet.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Method of disposition of decedent's remains"];
+  fhir:ValueSet.description [ fhir:value "Method of disposition of decedent's remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

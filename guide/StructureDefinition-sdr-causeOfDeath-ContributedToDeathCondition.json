@@ -3,7 +3,7 @@
   "id": "sdr-causeOfDeath-ContributedToDeathCondition",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ContributedToDeathCondition Profile</b></p>\n  <p>A condition that lead to death either directly or indirectly</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ContributedToDeathCondition Profile</b></p>\n  <p>A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition",
   "identifier": [
@@ -12,10 +12,11 @@
       "value": "sdr.causeOfDeath.ContributedToDeathCondition"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR ContributedToDeathCondition Profile",
+  "version": "0.1.0",
+  "name": "ContributedToDeathConditionProfile",
+  "title": "SDR ContributedToDeathCondition Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -27,7 +28,7 @@
       ]
     }
   ],
-  "description": "A condition that lead to death either directly or indirectly",
+  "description": "A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "mapping": [
     {
@@ -67,7 +68,7 @@
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition",
         "path": "Condition",
         "short": "SDR ContributedToDeathCondition Profile",
-        "definition": "A condition that lead to death either directly or indirectly",
+        "definition": "A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "constraint": [
@@ -595,7 +596,7 @@
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition.code",
         "path": "Condition.code",
         "short": "Identification of the condition, problem or diagnosis",
-        "definition": "Code representing a condition that lead to death either directly or indirectly",
+        "definition": "Code representing a significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "requirements": "0..1 to account for primarily narrative only resources.",
         "alias": [
           "type"
@@ -1322,7 +1323,7 @@
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition",
         "path": "Condition",
         "short": "SDR ContributedToDeathCondition Profile",
-        "definition": "A condition that lead to death either directly or indirectly"
+        "definition": "A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
       },
       {
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition.text",
@@ -1333,7 +1334,7 @@
       {
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition.code",
         "path": "Condition.code",
-        "definition": "Code representing a condition that lead to death either directly or indirectly"
+        "definition": "Code representing a significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
       },
       {
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition.subject",

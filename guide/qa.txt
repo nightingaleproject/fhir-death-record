@@ -1,210 +1,129 @@
 ﻿Standard Death Record FHIR Profiles : Validation Results
 =========================================
 
-Generated Wed Mar 21 16:18:24 EDT 2018. FHIR version 3.0.1
+err = 12, warn = 0, info = 0
+Generated Wed Apr 11 13:51:52 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 27 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ImplementationGuide/data : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-base64Binary-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-boolean-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-code-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-date-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-dateTime-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-decimal-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-id-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-instant-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-integer-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-markdown-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-oid-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-positiveInt-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-string-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-time-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-unsignedInt-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-uri-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/primitive-xhtml-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-AutopsyPerformed : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-AutopsyResultsAvailable : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-CauseOfDeathCondition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-ContributedToDeathCondition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-DatePronouncedDead : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-DeathFromTransportInjury : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-DeathFromWorkInjury : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-DetailsOfInjury : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-InjuryLocation : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-InjuryLocation-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-MannerOfDeath : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-MedicalExaminerContacted : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-PlaceOfInjury-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-Certifier : 2 / 1
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-CertifierType-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-DeathRecord : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-DeathRecordContents : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-deathRecord-FuneralDirector : 0 / 1
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Age-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-AgeInHoursAndMinutes-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-AgeInMonthsAndDays-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-AgeInYears-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Birthplace : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Birthplace-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Days-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Decedent : 0 / 1
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Disposition-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-DispositionFacility-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-DispositionType-extension : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Education-extension : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-FacilityName-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-FuneralFacility-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Hours-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Industry-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-InsideCityLimits-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Job-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-MaritalStatusAtDeath-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Minutes-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Months-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Occupation-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-PlaceOfDeath-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-PlaceOfDeathType-extension : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-Residency : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/sdr-decedent-ServedInArmedForces-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-base-Condition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-base-Entry : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-base-Observation : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-core-Address : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition/shr-core-Address-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-causeOfDeath-CertifierTypeVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-causeOfDeath-ContributoryTobaccoUseVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-causeOfDeath-MannerOfDeathVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-causeOfDeath-PregnancyStatusVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-causeOfDeath-TransportRelationshipsVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-decedent-DispositionTypeVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-decedent-EducationVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset/sdr-decedent-PlaceOfDeathTypeVS : 0 / 0
+ Build Errors : 2 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyPerformed : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyResultsAvailable : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-CauseOfDeathCondition : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ContributedToDeathCondition : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DatePronouncedDead : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromTransportInjury : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromWorkInjury : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DetailsOfInjury : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-InjuryLocation : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-InjuryLocation-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MannerOfDeath : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MedicalExaminerContacted : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-PlaceOfInjury-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-Certifier : 2 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-CertifierType-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecord : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecordContents : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-FuneralDirector : 2 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Age-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Decedent : 2 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Disposition-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionFacility-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionType-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Education-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FacilityName-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FuneralFacility-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Industry-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Job-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-MaritalStatusAtDeath-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Occupation-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeath-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeathType-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Residency : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ServedInArmedForces-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Condition : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Entry : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Observation : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-Address : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-Address-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-InsideCityLimits-extension : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-ContributoryTobaccoUseVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-MannerOfDeathVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-PregnancyStatusVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-TransportRelationshipsVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-deathRecord-CertifierTypeVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-DispositionTypeVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-EducationVS : 0 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-PlaceOfDeathTypeVS : 0 / 0
 </table>
 == n/a ==
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/index.html#/html/head/body/div/div/div/div/div/div/div/div/p/a at Line 136, column 2 ==> The link './StructureDefinition-sdr-deathRecord-DeathRecordContents.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/StructureDefinition-shr-base-Entry-definitions.html#/html/head/body/div/div/div/div/div/table/tr/td/p/a at Line 177, column 232 ==> The link '' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 130, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 136, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 142, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 148, column 12 ==> The link 'http://hl7.org/fhir/STU3/Condition.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 154, column 12 ==> The link 'http://hl7.org/fhir/STU3/Condition.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 160, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 166, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 172, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 178, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 184, column 12 ==> The link 'http://hl7.org/fhir/STU3/Address.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 190, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 196, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 202, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 208, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 214, column 12 ==> The link 'http://hl7.org/fhir/STU3/Practitioner.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 220, column 12 ==> The link 'http://hl7.org/fhir/STU3/Bundle.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 226, column 12 ==> The link 'http://hl7.org/fhir/STU3/Composition.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 232, column 12 ==> The link 'http://hl7.org/fhir/STU3/Practitioner.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 238, column 12 ==> The link 'http://hl7.org/fhir/STU3/Address.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 244, column 12 ==> The link 'http://hl7.org/fhir/STU3/Patient.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 250, column 12 ==> The link 'http://hl7.org/fhir/STU3/Address.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 256, column 12 ==> The link 'http://hl7.org/fhir/STU3/Condition.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 262, column 12 ==> The link 'http://hl7.org/fhir/STU3/DomainResource.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 268, column 12 ==> The link 'http://hl7.org/fhir/STU3/Observation.html' cannot be resolved
- * error : /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/guide/profiles.html#/html/head/body/div/div/div/div/div/table/tbody/tr/td/a at Line 274, column 12 ==> The link 'http://hl7.org/fhir/STU3/Address.html' cannot be resolved
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ImplementationGuide/data.xml ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-base64Binary-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-boolean-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-code-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-date-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-dateTime-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-decimal-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-id-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-instant-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-integer-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-markdown-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-oid-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-positiveInt-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-string-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-time-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-unsignedInt-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-uri-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/primitive-xhtml-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury.json ==
- * error : StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury: StructureDefinition.snapshot.element[32].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/TransportRelationshipsVS'
- * error : StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury: StructureDefinition.differential.element[8].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/TransportRelationshipsVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-InjuryLocation.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-MannerOfDeath.json ==
- * error : StructureDefinition/sdr-causeOfDeath-MannerOfDeath: StructureDefinition.snapshot.element[32].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/MannerOfDeathVS'
- * error : StructureDefinition/sdr-causeOfDeath-MannerOfDeath: StructureDefinition.differential.element[8].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/MannerOfDeathVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.json ==
- * error : StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath: StructureDefinition.snapshot.element[32].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PregnancyStatusVS'
- * error : StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath: StructureDefinition.differential.element[8].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PregnancyStatusVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath.json ==
- * error : StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath: StructureDefinition.snapshot.element[32].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS'
- * error : StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath: StructureDefinition.differential.element[8].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-Certifier.json ==
- * warning : StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.jurisdiction ==> Display Name for US must be 'United States of America'
- * error : StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.snapshot.element[13].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS'
- * error : StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.differential.element[3].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-CertifierType-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-DeathRecord.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-DeathRecordContents.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-deathRecord-FuneralDirector.json ==
- * warning : StructureDefinition/sdr-deathRecord-FuneralDirector: StructureDefinition.jurisdiction ==> Display Name for US must be 'United States of America'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Age-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-AgeInHoursAndMinutes-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-AgeInMonthsAndDays-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-AgeInYears-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Birthplace.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Birthplace-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Days-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Decedent.json ==
- * warning : StructureDefinition/sdr-decedent-Decedent: StructureDefinition.jurisdiction ==> Display Name for US must be 'United States of America'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Disposition-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-DispositionFacility-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-DispositionType-extension.json ==
- * error : StructureDefinition/sdr-decedent-DispositionType-extension: StructureDefinition.snapshot.element[5].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/DispositionTypeVS'
- * error : StructureDefinition/sdr-decedent-DispositionType-extension: StructureDefinition.differential.element[4].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/DispositionTypeVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Education-extension.json ==
- * error : StructureDefinition/sdr-decedent-Education-extension: StructureDefinition.snapshot.element[5].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/EducationVS'
- * error : StructureDefinition/sdr-decedent-Education-extension: StructureDefinition.differential.element[4].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/EducationVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-FacilityName-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-FuneralFacility-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Hours-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Industry-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-InsideCityLimits-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Job-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Minutes-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Months-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Occupation-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-PlaceOfDeath-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-PlaceOfDeathType-extension.json ==
- * error : StructureDefinition/sdr-decedent-PlaceOfDeathType-extension: StructureDefinition.snapshot.element[5].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/PlaceOfDeathTypeVS'
- * error : StructureDefinition/sdr-decedent-PlaceOfDeathType-extension: StructureDefinition.differential.element[4].binding.valueSetReference ==> Unable to resolve resource 'http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/PlaceOfDeathTypeVS'
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-Residency.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/sdr-decedent-ServedInArmedForces-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-base-Condition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-base-Entry.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-base-Observation.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-core-Address.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/StructureDefinition/shr-core-Address-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-causeOfDeath-CertifierTypeVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-causeOfDeath-ContributoryTobaccoUseVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-causeOfDeath-MannerOfDeathVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-causeOfDeath-PregnancyStatusVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-causeOfDeath-TransportRelationshipsVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-decedent-DispositionTypeVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-decedent-EducationVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ValueSet/sdr-decedent-PlaceOfDeathTypeVS.json ==
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 183, column 232: The link '' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html#/html/head/link/body/div/div/div/div/div/p/a at Line 138, column 2: The link './StructureDefinition-sdr-deathRecord-DeathRecordContents.html' cannot be resolved
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig.xml ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyPerformed.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyResultsAvailable.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-CauseOfDeathCondition.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ContributedToDeathCondition.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DatePronouncedDead.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromTransportInjury.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromWorkInjury.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DetailsOfInjury.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-InjuryLocation.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-InjuryLocation-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MannerOfDeath.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MedicalExaminerContacted.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-PlaceOfInjury-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-Certifier.json ==
+ERROR: StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.snapshot.element[20].example[1].valueUri: URI values cannot have whitespace
+ERROR: StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.snapshot.element[20].example[2].valueUri: URI values cannot have whitespace
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-CertifierType-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecord.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecordContents.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-FuneralDirector.json ==
+ERROR: StructureDefinition/sdr-deathRecord-FuneralDirector: StructureDefinition.snapshot.element[15].example[1].valueUri: URI values cannot have whitespace
+ERROR: StructureDefinition/sdr-deathRecord-FuneralDirector: StructureDefinition.snapshot.element[15].example[2].valueUri: URI values cannot have whitespace
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Age-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Decedent.json ==
+ERROR: StructureDefinition/sdr-decedent-Decedent: StructureDefinition.snapshot.element[35].example.valueUri: URI values cannot have whitespace
+ERROR: StructureDefinition/sdr-decedent-Decedent: StructureDefinition.snapshot.element[53].example.valueUri: URI values cannot have whitespace
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Disposition-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionFacility-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionType-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Education-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FacilityName-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FuneralFacility-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Industry-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Job-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-MaritalStatusAtDeath-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Occupation-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeath-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeathType-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Residency.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ServedInArmedForces-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Condition.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Entry.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Observation.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-Address.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-Address-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-InsideCityLimits-extension.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-ContributoryTobaccoUseVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-MannerOfDeathVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-PregnancyStatusVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-TransportRelationshipsVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-deathRecord-CertifierTypeVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-DispositionTypeVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-EducationVS.json ==
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-PlaceOfDeathTypeVS.json ==

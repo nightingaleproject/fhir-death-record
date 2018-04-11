@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Decedent",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)\n  fix identifier.use to http://hl7.org/fhir/identifier-use#official\n  fix identifier.type to http://hl7.org/fhir/identifier-type#SB\n  Residency maps to address\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.Address maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.Address maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.Address maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.Address maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)\n  fix identifier.use to http://hl7.org/fhir/identifier-use#official\n  fix identifier.type to http://hl7.org/fhir/identifier-type#SB\n  Residency maps to address\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.Address maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.Address maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.Address maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.Address maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent",
   "identifier": [
@@ -12,10 +12,11 @@
       "value": "sdr.decedent.Decedent"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Decedent Profile",
+  "version": "0.1.0",
+  "name": "DecedentProfile",
+  "title": "SDR Decedent Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -27,14 +28,14 @@
       ]
     }
   ],
-  "description": "The subject of the death record",
+  "description": "The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.",
   "jurisdiction": [
     {
       "coding": [
         {
           "system": "urn:iso:std:iso:3166",
           "code": "US",
-          "display": "United States Minor Outlying Islands (the)"
+          "display": "United States of America"
         }
       ]
     }
@@ -43,7 +44,7 @@
   "mapping": [
     {
       "identity": "argonaut-dq-dstu2",
-      "uri": "http://unknown.org/Argonaut DQ DSTU2",
+      "uri": "http://unknown.org/Argonaut%20DQ%20DSTU2",
       "name": "Argonaut DQ DSTU2"
     },
     {
@@ -83,7 +84,7 @@
         "id": "Patient:sdr-decedent-Decedent",
         "path": "Patient",
         "short": "SDR Decedent Profile",
-        "definition": "The subject of the death record",
+        "definition": "The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.",
         "alias": [
           "SubjectOfCare Client Resident"
         ],
@@ -443,7 +444,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "The decedent's age",
+        "definition": "The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -468,7 +469,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Decedents place of birth",
+        "definition": "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -493,7 +494,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Whether the decedent ever served in the US armed forces",
+        "definition": "Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -518,7 +519,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "The marital status of the decedent at the time of death.",
+        "definition": "The marital status of the decedent at the time of death. Corresponds to item 9 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -543,7 +544,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "The location that death occurred",
+        "definition": "The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -568,7 +569,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Disposition of the decedent's body",
+        "definition": "Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -593,7 +594,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Decedent's education",
+        "definition": "Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -618,7 +619,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Decedent's occupation",
+        "definition": "Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -882,8 +883,8 @@
         "path": "Patient.identifier.type.coding",
         "sliceName": "Fixed_SB",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -1198,7 +1199,7 @@
         "path": "Patient.identifier",
         "sliceName": "sdr-decedent-SocialSecurityNumber",
         "short": "SocialSecurityNumber",
-        "definition": "The decedent's social security number.",
+        "definition": "The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "*",
         "base": {
@@ -1508,8 +1509,8 @@
         "path": "Patient.identifier.type.coding",
         "sliceName": "Fixed_SB",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2466,8 +2467,8 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.deceased[x]",
-        "path": "Patient.deceased[x]",
+        "id": "Patient:sdr-decedent-Decedent.deceasedBoolean",
+        "path": "Patient.deceasedBoolean",
         "short": "Indicates if the individual is deceased or not",
         "definition": "Indicates if the individual is deceased or not.",
         "comment": "If there's no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.\n\nThis element is labeled as a modifier because once a patient is marked as deceased, the actions that are appropriate to perform on the patient may be significantly different.",
@@ -2816,7 +2817,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-SurvivingSpouse",
         "short": "SurvivingSpouse",
-        "definition": "The surviving spouse of the decedent",
+        "definition": "The surviving spouse of the decedent. Corresponds to item 10 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "base": {
@@ -3103,8 +3104,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_N",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -3881,7 +3882,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-Father",
         "short": "Father",
-        "definition": "The father of the decedent",
+        "definition": "The father of the decedent. Corresponds to item 11 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "base": {
@@ -4168,8 +4169,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_N",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -4946,7 +4947,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-Mother",
         "short": "Mother",
-        "definition": "The mother of the decedent",
+        "definition": "The mother of the decedent. Corresponds to item 12 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "base": {
@@ -5233,8 +5234,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_N",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -6011,7 +6012,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-Informant",
         "short": "Informant",
-        "definition": "The decedent's informant",
+        "definition": "The decedent's informant. Corresponds to item 13 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "base": {
@@ -6298,8 +6299,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_CP",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -7861,7 +7862,7 @@
         "id": "Patient:sdr-decedent-Decedent",
         "path": "Patient",
         "short": "SDR Decedent Profile",
-        "definition": "The subject of the death record",
+        "definition": "The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.",
         "mustSupport": false
       },
       {
@@ -7897,7 +7898,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "The decedent's age",
+        "definition": "The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -7922,7 +7923,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Decedents place of birth",
+        "definition": "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -7947,7 +7948,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Whether the decedent ever served in the US armed forces",
+        "definition": "Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -7972,7 +7973,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "The marital status of the decedent at the time of death.",
+        "definition": "The marital status of the decedent at the time of death. Corresponds to item 9 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -7997,7 +7998,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "The location that death occurred",
+        "definition": "The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -8022,7 +8023,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Disposition of the decedent's body",
+        "definition": "Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -8047,7 +8048,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Decedent's education",
+        "definition": "Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -8072,7 +8073,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "definition": "Decedent's occupation",
+        "definition": "Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -8126,8 +8127,8 @@
         "path": "Patient.identifier.type.coding",
         "sliceName": "Fixed_SB",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -8150,7 +8151,7 @@
         "path": "Patient.identifier",
         "sliceName": "sdr-decedent-SocialSecurityNumber",
         "short": "SocialSecurityNumber",
-        "definition": "The decedent's social security number."
+        "definition": "The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
       },
       {
         "id": "Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.use",
@@ -8181,8 +8182,8 @@
         "path": "Patient.identifier.type.coding",
         "sliceName": "Fixed_SB",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -8218,8 +8219,8 @@
         "max": "1"
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.deceased[x]",
-        "path": "Patient.deceased[x]",
+        "id": "Patient:sdr-decedent-Decedent.deceasedBoolean",
+        "path": "Patient.deceasedBoolean",
         "min": 1,
         "max": "1",
         "type": [
@@ -8261,7 +8262,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-SurvivingSpouse",
         "short": "SurvivingSpouse",
-        "definition": "The surviving spouse of the decedent",
+        "definition": "The surviving spouse of the decedent. Corresponds to item 10 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1"
       },
@@ -8291,8 +8292,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_N",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -8337,7 +8338,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-Father",
         "short": "Father",
-        "definition": "The father of the decedent",
+        "definition": "The father of the decedent. Corresponds to item 11 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1"
       },
@@ -8367,8 +8368,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_N",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -8413,7 +8414,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-Mother",
         "short": "Mother",
-        "definition": "The mother of the decedent",
+        "definition": "The mother of the decedent. Corresponds to item 12 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1"
       },
@@ -8443,8 +8444,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_N",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -8489,7 +8490,7 @@
         "path": "Patient.contact",
         "sliceName": "sdr-decedent-Informant",
         "short": "Informant",
-        "definition": "The decedent's informant",
+        "definition": "The decedent's informant. Corresponds to item 13 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1"
       },
@@ -8519,8 +8520,8 @@
         "path": "Patient.contact.relationship.coding",
         "sliceName": "Fixed_CP",
         "definition": "A reference to a code defined by a terminology system.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Coding"

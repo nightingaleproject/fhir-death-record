@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Education-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Education Extension</b></p>\n  <p>Decedent's education</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Education Extension</b></p>\n  <p>Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Education-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.Education"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Education Extension",
+  "version": "0.1.0",
+  "name": "EducationExtension",
   "title": "SDR Education Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Decedent's education",
+  "description": "Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:education",
         "path": "Extension",
         "short": "SDR Education Extension",
-        "definition": "Decedent's education",
+        "definition": "Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -188,7 +188,7 @@
         "id": "Extension:education",
         "path": "Extension",
         "short": "SDR Education Extension",
-        "definition": "Decedent's education",
+        "definition": "Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },

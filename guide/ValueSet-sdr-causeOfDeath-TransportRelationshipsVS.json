@@ -3,7 +3,7 @@
   "id": "sdr-causeOfDeath-TransportRelationshipsVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR TransportRelationshipsVS ValueSet</b></p>\n<p>Transportation Relationships (NCHS)</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR TransportRelationshipsVS ValueSet</b></p>\n<p>Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/TransportRelationshipsVS",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.causeOfDeath.TransportRelationshipsVS"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR TransportRelationshipsVS ValueSet",
+  "version": "0.1.0",
+  "name": "TransportRelationshipsVS",
   "title": "SDR TransportRelationshipsVS ValueSet",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Transportation Relationships (NCHS)",
+  "description": "Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "compose": {
     "include": [
       {

@@ -23,10 +23,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="shr.base.Observation"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Observation Profile"/>
+  <version value="0.1.0"/>
+  <name value="ObservationProfile"/>
+  <title value="SDR Observation Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>

@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.InjuryLocation" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR InjuryLocation Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "InjuryLocationProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR InjuryLocation Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -167,6 +168,28 @@
        ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.extension:insidecitylimits" ];
+       fhir:ElementDefinition.path [ fhir:value "Address.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "insidecitylimits" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether the address is within city limits (true) or not (false)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension" ]
+       ]
+     ], [
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.use" ];
        fhir:ElementDefinition.path [ fhir:value "Address.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old - purpose of this address" ];
@@ -213,7 +236,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.type" ];
        fhir:ElementDefinition.path [ fhir:value "Address.type" ];
        fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
@@ -257,7 +280,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.text" ];
        fhir:ElementDefinition.path [ fhir:value "Address.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
@@ -290,7 +313,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.line" ];
        fhir:ElementDefinition.path [ fhir:value "Address.line" ];
        fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
@@ -327,7 +350,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.city" ];
        fhir:ElementDefinition.path [ fhir:value "Address.city" ];
        fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
@@ -366,7 +389,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.district" ];
        fhir:ElementDefinition.path [ fhir:value "Address.district" ];
        fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
@@ -398,7 +421,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.state" ];
        fhir:ElementDefinition.path [ fhir:value "Address.state" ];
        fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
@@ -435,7 +458,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.postalCode" ];
        fhir:ElementDefinition.path [ fhir:value "Address.postalCode" ];
        fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
@@ -474,7 +497,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.country" ];
        fhir:ElementDefinition.path [ fhir:value "Address.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
@@ -505,7 +528,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.period" ];
        fhir:ElementDefinition.path [ fhir:value "Address.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
@@ -521,8 +544,8 @@
          fhir:index 0;
          fhir:ElementDefinition.example.label [ fhir:value "General" ];
          fhir:ElementDefinition.example.valuePeriod [
-           fhir:Period.start [ fhir:value "2010-03-23"^^xsd:date ];
-           fhir:Period.end [ fhir:value "2010-07-01"^^xsd:date ]
+           fhir:Period.start [ fhir:value "2010-03-23T00:00:00-04:00"^^xsd:dateTime ];
+           fhir:Period.end [ fhir:value "2010-07-01T00:00:00-04:00"^^xsd:dateTime ]
          ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
@@ -550,12 +573,34 @@
        fhir:ElementDefinition.definition [ fhir:value "Location of injury" ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.extension:insidecitylimits" ];
+       fhir:ElementDefinition.path [ fhir:value "Address.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "insidecitylimits" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether the address is within city limits (true) or not (false)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension" ]
+       ]
+     ], [
+       fhir:index 2;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.line" ];
        fhir:ElementDefinition.path [ fhir:value "Address.line" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "2" ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.id [ fhir:value "Address:sdr-causeOfDeath-InjuryLocation.country" ];
        fhir:ElementDefinition.path [ fhir:value "Address.country" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-deathRecord-FuneralDirector"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR FuneralDirector Profile</b></p>\n  <p>Funeral Director</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR FuneralDirector Profile</b></p>\n  <p>Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:\n  constrain qualification to 1..*\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-FuneralDirector"];
   fhir:StructureDefinition.identifier [
@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.deathRecord.FuneralDirector" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR FuneralDirector Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "FuneralDirectorProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR FuneralDirector Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,14 +32,14 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Funeral Director"];
+  fhir:StructureDefinition.description [ fhir:value "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
        fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States Minor Outlying Islands (the)" ]
+       fhir:Coding.display [ fhir:value "United States of America" ]
      ]
   ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
@@ -74,7 +75,7 @@
        fhir:Element.id [ fhir:value "Practitioner:sdr-deathRecord-FuneralDirector" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner" ];
        fhir:ElementDefinition.short [ fhir:value "SDR FuneralDirector Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Funeral Director" ];
+       fhir:ElementDefinition.definition [ fhir:value "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.comment [ fhir:value "Note that a cab driver no longer fits the bill. You probably would be interested in the organization rather than the individual?" ];
        fhir:ElementDefinition.alias [
          fhir:value "Provider";
@@ -1565,7 +1566,7 @@
        fhir:Element.id [ fhir:value "Practitioner:sdr-deathRecord-FuneralDirector" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner" ];
        fhir:ElementDefinition.short [ fhir:value "SDR FuneralDirector Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Funeral Director" ];
+       fhir:ElementDefinition.definition [ fhir:value "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;

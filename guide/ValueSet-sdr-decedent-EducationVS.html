@@ -4,17 +4,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Standard Death Record FHIR Profiles</title>
+  
+  <title>Standard Death Record</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Standard Death Record FHIR Implemenation Guide" />
-  <meta name="author" content="http://standardhealthrecord.org" />
+  <meta name="description" content="Standard Death Record FHIR Profiles" />
 
   <link href="fhir.css" rel="stylesheet" />
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet" />
@@ -35,9 +36,12 @@
   <!-- segment-header -->
   <div class="container">
     <!-- container -->
-    <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png" /> </a>
-    <div id="hl7-status">
-      <b>Standard Death Record FHIR Implementation Guide</b>
+    <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="HL7 FHIR Homepage" class="img-responsive logo" src="assets/images/fhir-logo-www.png" />
+    </a>
+    <div id="hl7-status" class="hl7-status">
+      
+      <b>Standard Death Record</b>
     </div>
 
     <div id="hl7-nav">
@@ -70,11 +74,13 @@
         <div class="nav-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
+            <!-- no logical models -->
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="extensions.html">Extensions</a></li>
             <li><a href="valuesets.html">Value Sets</a></li>
             <li><a href="codesystems.html">Code Systems</a></li>
             <li><a href="downloads.html">Downloads</a></li>
+            <!-- no reference model -->
           </ul>
 
         </div>
@@ -96,7 +102,8 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
-      <li><b>SDR EducationVS ValueSet</b></li>
+      <li title="value sets"><a href="valuesets.html"><b>Value Sets</b></a></li>
+      <li><b>EducationVS</b></li>
     </ul>
   </div>
   <!-- /container -->
@@ -110,7 +117,7 @@
  <div class="container">  <!-- container -->
    <div class="row">
      <div class="inner-wrapper">
-       <div class="col-9">
+       <div class="col-12">
 
 <!-- ============CONTENT CONTENT=============== -->
 
@@ -121,16 +128,16 @@
   <li><a href="ValueSet-sdr-decedent-EducationVS.ttl.html">Turtle</a></li>
 </ul>
 
-<h2>SDR EducationVS ValueSet</h2>
+<h2>EducationVS</h2>
 
 <div xmlns="http://www.w3.org/1999/xhtml">
 <p><b>SDR EducationVS ValueSet</b></p>
-<p>Decedent's education</p>
+<p>Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).</p>
 </div>
 <table class="grid">
  <tbody><tr><td>Defining URL:</td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/EducationVS</td></tr>
- <tr><td>Name:</td><td>SDR EducationVS ValueSet</td></tr>
- <tr><td>Definition:</td><td><p>Decedent's education</p>
+ <tr><td>Name:</td><td>EducationVS</td></tr>
+ <tr><td>Definition:</td><td><p>Decedent's education. Corresponds to the allowed values for item 51 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>. Most of the codes in this value set belong to the <a href="http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274">PHIN VS code system</a> but this is not currently supported as a <a href="https://www.hl7.org/fhir/terminologies-systems.html">standard FHIR code system</a>.</p>
 </td></tr>
  <tr><td>Publisher:</td><td>The MITRE Corporation: Nightingale Project</td></tr>
  <tr><td>Source Resource</td><td><a href="ValueSet-sdr-decedent-EducationVS.xml.html">XML</a> / <a href="ValueSet-sdr-decedent-EducationVS.json.html">JSON</a> / <a href="ValueSet-sdr-decedent-EducationVS.ttl.html">Turtle</a></td></tr>
@@ -143,15 +150,21 @@ Downloads: <a href="ValueSet-sdr-decedent-EducationVS.xml" download>XML</a>, <a 
 
 <h3>Expansion</h3>
 
-<p style="color: maroon; font-weight: bold">Error expanding ValueSet &quot;http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/EducationVS: Error unmarshalling resource: Unable to provide support for code system http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274</p>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 9 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/v3/NullFlavor version 2016-11-11, http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS version 0.1.0</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1448"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1448">PHC1448</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>8th grade or less</td><td>8th grade or less</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1449"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1449">PHC1449</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>9th through 12th grade; no diploma</td><td>9th through 12th grade; no diploma</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1450"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1450">PHC1450</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>High School Graduate or GED Completed</td><td>High School Graduate or GED Completed</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1451"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1451">PHC1451</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>Some college credit, but no degree</td><td>Some college credit, but no degree</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1452"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1452">PHC1452</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>Associate Degree</td><td>Associate Degree</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1453"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1453">PHC1453</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>Bachelor's Degree</td><td>Bachelor's Degree</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1454"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1454">PHC1454</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>Master's Degree</td><td>Master's Degree</td></tr><tr><td style="white-space:nowrap"><a name="http---github.com-nightingaleproject-fhirDeathRecord-sdr-decedent-cs-EducationCS-PHC1455"> </a><a href="CodeSystem-sdr-decedent-EducationCS.html#sdr-decedent-EducationCS-PHC1455">PHC1455</a></td><td>http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS</td><td>Doctorate Degree or Professional Degree</td><td>Doctorate Degree or Professional Degree</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-NullFlavor-UNK"> </a><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-UNK">UNK</a></td><td>http://hl7.org/fhir/v3/NullFlavor</td><td>Unknown</td><td>Description:A proper value is applicable, but not known.
 
+                        
+                           Usage Notes: This means the actual value is not known.  If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used.  No properties should be included for a datatype with this property unless:
+
+                        
+                           Those properties themselves directly translate to a semantic of &quot;unknown&quot;.  (E.g. a local code sent as a translation that conveys 'unknown')
+                           Those properties further qualify the nature of what is unknown.  (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</td></tr></table></div>
 
 <h3>References</h3>
 
-This value set is used by the following profiles and extensions:
+This value set is used by the following logical models, profiles and extensions:
 
 <ul>
- <li><a href="StructureDefinition-sdr-decedent-Education-extension.html">SDR Education Extension</a></li>
+ <li><a href="StructureDefinition-sdr-decedent-Education-extension.html">EducationExtension</a></li>
 </ul>
 
 
@@ -172,8 +185,12 @@ This value set is used by the following profiles and extensions:
 <div id="segment-footer" class="segment">  <!-- segment-footer -->
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
-    <p>Implementation guide generated by the Standard Health Record Collaborative &copy; FHIR STU3 (IG Publisher v3.0.1-11916) generated
-        on Wed, Mar 21, 2018 16:17-0400.</p>
+    <p>
+      
+      Standard Death Record, Version: 0.1.0 &copy;
+      ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
+      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+    </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
 </div>  <!-- /segment-footer -->
@@ -182,6 +199,19 @@ This value set is used by the following profiles and extensions:
   <div class="container">  <!-- container -->
   </div>  <!-- /container -->
 </div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
 
 </body>
 </html>

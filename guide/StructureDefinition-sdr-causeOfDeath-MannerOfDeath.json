@@ -3,7 +3,7 @@
   "id": "sdr-causeOfDeath-MannerOfDeath",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR MannerOfDeath Profile</b></p>\n  <p>The manner of the decendents demise.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.MannerOfDeath maps to Observation:\n  CodeableConcept maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR MannerOfDeath Profile</b></p>\n  <p>The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.MannerOfDeath maps to Observation:\n  CodeableConcept maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath",
   "identifier": [
@@ -12,10 +12,11 @@
       "value": "sdr.causeOfDeath.MannerOfDeath"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR MannerOfDeath Profile",
+  "version": "0.1.0",
+  "name": "MannerOfDeathProfile",
+  "title": "SDR MannerOfDeath Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -27,7 +28,7 @@
       ]
     }
   ],
-  "description": "The manner of the decendents demise.",
+  "description": "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
   "fhirVersion": "3.0.1",
   "mapping": [
@@ -73,7 +74,7 @@
         "id": "Observation:sdr-causeOfDeath-MannerOfDeath",
         "path": "Observation",
         "short": "SDR MannerOfDeath Profile",
-        "definition": "The manner of the decendents demise.",
+        "definition": "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -737,9 +738,10 @@
         "id": "Observation:sdr-causeOfDeath-MannerOfDeath.code.coding:Fixed_69449-7",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_69449-7",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Manner of Death",
+        "definition": "Manner of Death",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2345,7 +2347,7 @@
         "id": "Observation:sdr-causeOfDeath-MannerOfDeath",
         "path": "Observation",
         "short": "SDR MannerOfDeath Profile",
-        "definition": "The manner of the decendents demise."
+        "definition": "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
       },
       {
         "id": "Observation:sdr-causeOfDeath-MannerOfDeath.code",
@@ -2372,9 +2374,10 @@
         "id": "Observation:sdr-causeOfDeath-MannerOfDeath.code.coding:Fixed_69449-7",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_69449-7",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Manner of Death",
+        "definition": "Manner of Death",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Coding"

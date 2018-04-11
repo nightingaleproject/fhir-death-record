@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Industry Extension</b></p>
-  <p>Kind of industry or business in which the decedent worked</p>
+  <p>Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
 </div>
   </text>
   <url value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Industry-extension"/>
@@ -13,11 +13,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.Industry"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Industry Extension"/>
+  <version value="0.1.0"/>
+  <name value="IndustryExtension"/>
   <title value="SDR Industry Extension"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Kind of industry or business in which the decedent worked"/>
+  <description value="Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -38,7 +38,7 @@
     <element id="Extension:industry">
       <path value="Extension"/>
       <short value="SDR Industry Extension"/>
-      <definition value="Kind of industry or business in which the decedent worked"/>
+      <definition value="Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -146,7 +146,7 @@
     <element id="Extension:industry">
       <path value="Extension"/>
       <short value="SDR Industry Extension"/>
-      <definition value="Kind of industry or business in which the decedent worked"/>
+      <definition value="Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
     </element>

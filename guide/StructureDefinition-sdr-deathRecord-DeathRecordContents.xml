@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR DeathRecordContents Profile</b></p>
-  <p>Defines the contents of a death record document.</p>
+  <p>Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.deathRecord.DeathRecordContents maps to Composition:
   TypeCode maps to type
@@ -37,10 +37,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.deathRecord.DeathRecordContents"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR DeathRecordContents Profile"/>
+  <version value="0.1.0"/>
+  <name value="DeathRecordContentsProfile"/>
+  <title value="SDR DeathRecordContents Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -48,7 +49,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Defines the contents of a death record document."/>
+  <description value="Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <purpose value="To support documents, and also to capture the EN13606 notion of an attested commit to the patient EHR, and to allow a set of disparate resources at the information/engineering level to be gathered into a clinical statement."/>
   <fhirVersion value="3.0.1"/>
   <mapping>
@@ -75,7 +76,7 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents">
       <path value="Composition"/>
       <short value="SDR DeathRecordContents Profile"/>
-      <definition value="Defines the contents of a death record document."/>
+      <definition value="Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <comment value="While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical."/>
       <min value="0"/>
       <max value="*"/>
@@ -489,7 +490,7 @@
       <sliceName value="Fixed_64297-5"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -1657,7 +1658,7 @@
       <sliceName value="Fixed_69453-9"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -1991,7 +1992,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
       <short value="ActualOrPresumedDateOfDeath"/>
-      <definition value="Actual or presumed date of death."/>
+      <definition value="Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2012,7 +2013,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyPerformed"/>
       <short value="AutopsyPerformed"/>
-      <definition value="Whether an autopsy was performed (true) or not (false)."/>
+      <definition value="Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2033,7 +2034,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyResultsAvailable"/>
       <short value="AutopsyResultsAvailable"/>
-      <definition value="Were autopsy findings available to complete the cause of death?"/>
+      <definition value="Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2054,7 +2055,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-CauseOfDeathCondition"/>
       <short value="CauseOfDeathCondition"/>
-      <definition value="A condition that lead to death either directly or indirectly"/>
+      <definition value="A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`."/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -2075,7 +2076,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-ContributedToDeathCondition"/>
       <short value="ContributedToDeathCondition"/>
-      <definition value="A condition that lead to death either directly or indirectly"/>
+      <definition value="A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -2096,7 +2097,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
       <short value="DatePronouncedDead"/>
-      <definition value="Date pronounced dead."/>
+      <definition value="Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2117,7 +2118,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromWorkInjury"/>
       <short value="DeathFromWorkInjury"/>
-      <definition value="Did death result from injury at work?"/>
+      <definition value="Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2138,7 +2139,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromTransportInjury"/>
       <short value="DeathFromTransportInjury"/>
-      <definition value="Injury leading to death associated with transportation event"/>
+      <definition value="Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2180,7 +2181,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
       <short value="MannerOfDeath"/>
-      <definition value="The manner of the decendents demise."/>
+      <definition value="The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2201,7 +2202,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
       <short value="MedicalExaminerContacted"/>
-      <definition value="Whether a medical examiner or coroner was contacted."/>
+      <definition value="Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2222,7 +2223,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
       <short value="TimingOfRecentPregnancyInRelationToDeath"/>
-      <definition value="Timing of recent pregnancy in relation to death."/>
+      <definition value="Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2243,7 +2244,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
       <short value="TobaccoUseContributedToDeath"/>
-      <definition value="Did tobacco use contribute to death."/>
+      <definition value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2314,7 +2315,7 @@
     <element id="Composition:sdr-deathRecord-DeathRecordContents">
       <path value="Composition"/>
       <short value="SDR DeathRecordContents Profile"/>
-      <definition value="Defines the contents of a death record document."/>
+      <definition value="Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
     </element>
     <element id="Composition:sdr-deathRecord-DeathRecordContents.type">
       <path value="Composition.type"/>
@@ -2337,7 +2338,7 @@
       <sliceName value="Fixed_64297-5"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -2399,7 +2400,7 @@
       <sliceName value="Fixed_69453-9"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -2432,7 +2433,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
       <short value="ActualOrPresumedDateOfDeath"/>
-      <definition value="Actual or presumed date of death."/>
+      <definition value="Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2444,7 +2445,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyPerformed"/>
       <short value="AutopsyPerformed"/>
-      <definition value="Whether an autopsy was performed (true) or not (false)."/>
+      <definition value="Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2456,7 +2457,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-AutopsyResultsAvailable"/>
       <short value="AutopsyResultsAvailable"/>
-      <definition value="Were autopsy findings available to complete the cause of death?"/>
+      <definition value="Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2468,7 +2469,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-CauseOfDeathCondition"/>
       <short value="CauseOfDeathCondition"/>
-      <definition value="A condition that lead to death either directly or indirectly"/>
+      <definition value="A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`."/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -2480,7 +2481,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-ContributedToDeathCondition"/>
       <short value="ContributedToDeathCondition"/>
-      <definition value="A condition that lead to death either directly or indirectly"/>
+      <definition value="A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition"/>
@@ -2490,7 +2491,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
       <short value="DatePronouncedDead"/>
-      <definition value="Date pronounced dead."/>
+      <definition value="Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2502,7 +2503,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromWorkInjury"/>
       <short value="DeathFromWorkInjury"/>
-      <definition value="Did death result from injury at work?"/>
+      <definition value="Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2514,7 +2515,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-DeathFromTransportInjury"/>
       <short value="DeathFromTransportInjury"/>
-      <definition value="Injury leading to death associated with transportation event"/>
+      <definition value="Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2538,7 +2539,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
       <short value="MannerOfDeath"/>
-      <definition value="The manner of the decendents demise."/>
+      <definition value="The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2550,7 +2551,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
       <short value="MedicalExaminerContacted"/>
-      <definition value="Whether a medical examiner or coroner was contacted."/>
+      <definition value="Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2562,7 +2563,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
       <short value="TimingOfRecentPregnancyInRelationToDeath"/>
-      <definition value="Timing of recent pregnancy in relation to death."/>
+      <definition value="Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -2574,7 +2575,7 @@
       <path value="Composition.section.entry"/>
       <sliceName value="sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
       <short value="TobaccoUseContributedToDeath"/>
-      <definition value="Did tobacco use contribute to death."/>
+      <definition value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>

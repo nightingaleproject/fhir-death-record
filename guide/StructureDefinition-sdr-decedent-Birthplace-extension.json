@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Birthplace-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Birthplace Extension</b></p>\n  <p>Decedents place of birth</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Birthplace Extension</b></p>\n  <p>Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.Birthplace"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Birthplace Extension",
+  "version": "0.1.0",
+  "name": "BirthplaceExtension",
   "title": "SDR Birthplace Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Decedents place of birth",
+  "description": "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:birthplace",
         "path": "Extension",
         "short": "SDR Birthplace Extension",
-        "definition": "Decedents place of birth",
+        "definition": "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -183,7 +183,7 @@
         "id": "Extension:birthplace",
         "path": "Extension",
         "short": "SDR Birthplace Extension",
-        "definition": "Decedents place of birth",
+        "definition": "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },

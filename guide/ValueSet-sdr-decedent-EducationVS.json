@@ -3,7 +3,7 @@
   "id": "sdr-decedent-EducationVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR EducationVS ValueSet</b></p>\n<p>Decedent's education</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR EducationVS ValueSet</b></p>\n<p>Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).</p>\n</div>"
   },
   "url": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/EducationVS",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.EducationVS"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR EducationVS ValueSet",
+  "version": "0.1.0",
+  "name": "EducationVS",
   "title": "SDR EducationVS ValueSet",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,11 +28,11 @@
       ]
     }
   ],
-  "description": "Decedent's education",
+  "description": "Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).",
   "compose": {
     "include": [
       {
-        "system": "http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274",
+        "system": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS",
         "concept": [
           {
             "code": "PHC1448",

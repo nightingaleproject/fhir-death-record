@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
 <p><b>SDR ContributoryTobaccoUseVS ValueSet</b></p>
-<p>The extent to which tobacco use contributed to the person's death.</p>
+<p>The extent to which tobacco use contributed to the person's death. Corresponds to the allowed values for item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
 </div>
   </text>
   <url value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS"/>
@@ -13,11 +13,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.causeOfDeath.ContributoryTobaccoUseVS"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR ContributoryTobaccoUseVS ValueSet"/>
+  <version value="0.1.0"/>
+  <name value="ContributoryTobaccoUseVS"/>
   <title value="SDR ContributoryTobaccoUseVS ValueSet"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="The extent to which tobacco use contributed to the person&#39;s death."/>
+  <description value="The extent to which tobacco use contributed to the person&#39;s death. Corresponds to the allowed values for item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

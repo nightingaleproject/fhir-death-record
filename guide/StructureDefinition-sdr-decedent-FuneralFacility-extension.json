@@ -3,7 +3,7 @@
   "id": "sdr-decedent-FuneralFacility-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR FuneralFacility Extension</b></p>\n  <p/>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR FuneralFacility Extension</b></p>\n  <p>Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-FuneralFacility-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.FuneralFacility"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR FuneralFacility Extension",
+  "version": "0.1.0",
+  "name": "FuneralFacilityExtension",
   "title": "SDR FuneralFacility Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,6 +28,7 @@
       ]
     }
   ],
+  "description": "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -44,7 +45,7 @@
         "id": "Extension:funeralfacility",
         "path": "Extension",
         "short": "SDR FuneralFacility Extension",
-        "definition": "FuneralFacility",
+        "definition": "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -354,7 +355,7 @@
         "id": "Extension:funeralfacility",
         "path": "Extension",
         "short": "SDR FuneralFacility Extension",
-        "definition": "FuneralFacility",
+        "definition": "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },

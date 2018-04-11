@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-decedent-Residency"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Residency Profile</b></p>\n  <p>Decedents place of residence</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Residency maps to Address:\n  Purpose maps to use\n  Type maps to type\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Residency Profile</b></p>\n  <p>Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Residency maps to Address:\n  Purpose maps to use\n  Type maps to type\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"];
   fhir:StructureDefinition.identifier [
@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.decedent.Residency" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR Residency Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "ResidencyProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR Residency Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Decedents place of residence"];
+  fhir:StructureDefinition.description [ fhir:value "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.purpose [ fhir:value "Need to be able to record postal addresses, along with notes about their use."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.mapping [
@@ -66,7 +67,7 @@
        fhir:Element.id [ fhir:value "Address:sdr-decedent-Residency" ];
        fhir:ElementDefinition.path [ fhir:value "Address" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Residency Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Decedents place of residence" ];
+       fhir:ElementDefinition.definition [ fhir:value "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.comment [ fhir:value "Note: address is for postal addresses, not physical locations." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
@@ -179,13 +180,13 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.definition [ fhir:value "Residence located within the city limits?" ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether the address is within city limits (true) or not (false)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-InsideCityLimits-extension" ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension" ]
        ]
      ], [
        fhir:index 4;
@@ -543,8 +544,8 @@
          fhir:index 0;
          fhir:ElementDefinition.example.label [ fhir:value "General" ];
          fhir:ElementDefinition.example.valuePeriod [
-           fhir:Period.start [ fhir:value "2010-03-23"^^xsd:date ];
-           fhir:Period.end [ fhir:value "2010-07-01"^^xsd:date ]
+           fhir:Period.start [ fhir:value "2010-03-23T00:00:00-04:00"^^xsd:dateTime ];
+           fhir:Period.end [ fhir:value "2010-07-01T00:00:00-04:00"^^xsd:dateTime ]
          ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
@@ -569,7 +570,7 @@
        fhir:Element.id [ fhir:value "Address:sdr-decedent-Residency" ];
        fhir:ElementDefinition.path [ fhir:value "Address" ];
        fhir:ElementDefinition.short [ fhir:value "SDR Residency Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Decedents place of residence" ]
+       fhir:ElementDefinition.definition [ fhir:value "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Address:sdr-decedent-Residency.extension:insidecitylimits" ];
@@ -584,13 +585,13 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
-       fhir:ElementDefinition.definition [ fhir:value "Residence located within the city limits?" ];
+       fhir:ElementDefinition.definition [ fhir:value "Whether the address is within city limits (true) or not (false)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-InsideCityLimits-extension" ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension" ]
        ]
      ], [
        fhir:index 2;

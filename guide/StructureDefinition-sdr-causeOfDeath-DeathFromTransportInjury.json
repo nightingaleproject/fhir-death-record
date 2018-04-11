@@ -3,7 +3,7 @@
   "id": "sdr-causeOfDeath-DeathFromTransportInjury",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathFromTransportInjury Profile</b></p>\n  <p>Injury leading to death associated with transportation event</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.DeathFromTransportInjury maps to Observation:\n  CodeableConcept maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathFromTransportInjury Profile</b></p>\n  <p>Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.DeathFromTransportInjury maps to Observation:\n  CodeableConcept maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury",
   "identifier": [
@@ -12,10 +12,11 @@
       "value": "sdr.causeOfDeath.DeathFromTransportInjury"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR DeathFromTransportInjury Profile",
+  "version": "0.1.0",
+  "name": "DeathFromTransportInjuryProfile",
+  "title": "SDR DeathFromTransportInjury Profile",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -27,7 +28,7 @@
       ]
     }
   ],
-  "description": "Injury leading to death associated with transportation event",
+  "description": "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "purpose": "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms.",
   "fhirVersion": "3.0.1",
   "mapping": [
@@ -73,7 +74,7 @@
         "id": "Observation:sdr-causeOfDeath-DeathFromTransportInjury",
         "path": "Observation",
         "short": "SDR DeathFromTransportInjury Profile",
-        "definition": "Injury leading to death associated with transportation event",
+        "definition": "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "comment": "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc.",
         "alias": [
           "Vital Signs",
@@ -737,9 +738,10 @@
         "id": "Observation:sdr-causeOfDeath-DeathFromTransportInjury.code.coding:Fixed_69448-9",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_69448-9",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Injury leading to death associated with transportation event",
+        "definition": "Injury leading to death associated with transportation event",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Coding"
@@ -2345,7 +2347,7 @@
         "id": "Observation:sdr-causeOfDeath-DeathFromTransportInjury",
         "path": "Observation",
         "short": "SDR DeathFromTransportInjury Profile",
-        "definition": "Injury leading to death associated with transportation event"
+        "definition": "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
       },
       {
         "id": "Observation:sdr-causeOfDeath-DeathFromTransportInjury.code",
@@ -2372,9 +2374,10 @@
         "id": "Observation:sdr-causeOfDeath-DeathFromTransportInjury.code.coding:Fixed_69448-9",
         "path": "Observation.code.coding",
         "sliceName": "Fixed_69448-9",
-        "definition": "A reference to a code defined by a terminology system.",
+        "short": "Injury leading to death associated with transportation event",
+        "definition": "Injury leading to death associated with transportation event",
         "min": 1,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Coding"

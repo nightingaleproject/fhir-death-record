@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/CodeSystem/sdr-decedent-EducationCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sdr-decedent-EducationCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR EducationCS CodeSystem</b></p>\n<p>Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).</p>\n</div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/cs/EducationCS"];
+  fhir:CodeSystem.identifier [
+     fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
+     fhir:Identifier.value [ fhir:value "sdr.decedent.EducationCS" ]
+  ];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "EducationCS"];
+  fhir:CodeSystem.title [ fhir:value "SDR EducationCS CodeSystem"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1448" ];
+     fhir:CodeSystem.concept.display [ fhir:value "8th grade or less" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "8th grade or less" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1449" ];
+     fhir:CodeSystem.concept.display [ fhir:value "9th through 12th grade; no diploma" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "9th through 12th grade; no diploma" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1450" ];
+     fhir:CodeSystem.concept.display [ fhir:value "High School Graduate or GED Completed" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "High School Graduate or GED Completed" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1451" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Some college credit, but no degree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Some college credit, but no degree" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1452" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Associate Degree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Associate Degree" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1453" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bachelor's Degree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bachelor's Degree" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1454" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Master's Degree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Master's Degree" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "PHC1455" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Doctorate Degree or Professional Degree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Doctorate Degree or Professional Degree" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/CodeSystem/sdr-decedent-EducationCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

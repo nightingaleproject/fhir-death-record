@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Disposition-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Disposition Extension</b></p>\n  <p>Disposition of the decedent's body</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Disposition Extension</b></p>\n  <p>Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Disposition-extension",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.Disposition"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR Disposition Extension",
+  "version": "0.1.0",
+  "name": "DispositionExtension",
   "title": "SDR Disposition Extension",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Disposition of the decedent's body",
+  "description": "Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:disposition",
         "path": "Extension",
         "short": "SDR Disposition Extension",
-        "definition": "Disposition of the decedent's body",
+        "definition": "Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*",
         "base": {
@@ -135,7 +135,7 @@
         "id": "Extension:disposition.extension:dispositiontype",
         "path": "Extension.extension",
         "sliceName": "dispositiontype",
-        "definition": "DispositionType",
+        "definition": "The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "base": {
@@ -161,7 +161,7 @@
         "id": "Extension:disposition.extension:dispositionfacility",
         "path": "Extension.extension",
         "sliceName": "dispositionfacility",
-        "definition": "DispositionFacility",
+        "definition": "The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "base": {
@@ -187,7 +187,7 @@
         "id": "Extension:disposition.extension:funeralfacility",
         "path": "Extension.extension",
         "sliceName": "funeralfacility",
-        "definition": "FuneralFacility",
+        "definition": "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "base": {
@@ -381,7 +381,7 @@
         "id": "Extension:disposition",
         "path": "Extension",
         "short": "SDR Disposition Extension",
-        "definition": "Disposition of the decedent's body",
+        "definition": "Disposition of the decedent's body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "*"
       },
@@ -389,7 +389,7 @@
         "id": "Extension:disposition.extension:dispositiontype",
         "path": "Extension.extension",
         "sliceName": "dispositiontype",
-        "definition": "DispositionType",
+        "definition": "The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 1,
         "max": "1",
         "type": [
@@ -403,7 +403,7 @@
         "id": "Extension:disposition.extension:dispositionfacility",
         "path": "Extension.extension",
         "sliceName": "dispositionfacility",
-        "definition": "DispositionFacility",
+        "definition": "The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [
@@ -417,7 +417,7 @@
         "id": "Extension:disposition.extension:funeralfacility",
         "path": "Extension.extension",
         "sliceName": "funeralfacility",
-        "definition": "FuneralFacility",
+        "definition": "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "min": 0,
         "max": "1",
         "type": [

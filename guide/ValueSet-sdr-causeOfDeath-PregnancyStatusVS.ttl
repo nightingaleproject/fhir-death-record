@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-PregnancyStatusVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR PregnancyStatusVS ValueSet</b></p>\n<p>Whether the decedent was pregnant at or around the time of death</p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR PregnancyStatusVS ValueSet</b></p>\n<p>Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).</p>\n</div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/PregnancyStatusVS"];
   fhir:ValueSet.identifier [
@@ -18,11 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.PregnancyStatusVS" ]
   ];
-  fhir:ValueSet.version [ fhir:value "0.0.1"];
-  fhir:ValueSet.name [ fhir:value "SDR PregnancyStatusVS ValueSet"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "PregnancyStatusVS"];
   fhir:ValueSet.title [ fhir:value "SDR PregnancyStatusVS ValueSet"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:ValueSet.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,11 +32,11 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Whether the decedent was pregnant at or around the time of death"];
+  fhir:ValueSet.description [ fhir:value "Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274" ];
+       fhir:ValueSet.compose.include.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/cs/PregnancyStatusCS" ];
        fhir:ValueSet.compose.include.concept [
          fhir:index 0;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "PHC1260" ];

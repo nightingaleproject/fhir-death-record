@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Decedent Profile</b></p>
-  <p>The subject of the death record</p>
+  <p>The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.decedent.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
   constrain deceased[x] to 1..1
@@ -47,10 +47,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.decedent.Decedent"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Decedent Profile"/>
+  <version value="0.1.0"/>
+  <name value="DecedentProfile"/>
+  <title value="SDR Decedent Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -58,18 +59,18 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="The subject of the death record"/>
+  <description value="The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
-      <display value="United States Minor Outlying Islands (the)"/>
+      <display value="United States of America"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="3.0.1"/>
   <mapping>
     <identity value="argonaut-dq-dstu2"/>
-    <uri value="http://unknown.org/Argonaut DQ DSTU2"/>
+    <uri value="http://unknown.org/Argonaut%20DQ%20DSTU2"/>
     <name value="Argonaut DQ DSTU2"/>
   </mapping>
   <mapping>
@@ -106,7 +107,7 @@
     <element id="Patient:sdr-decedent-Decedent">
       <path value="Patient"/>
       <short value="SDR Decedent Profile"/>
-      <definition value="The subject of the death record"/>
+      <definition value="The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property."/>
       <alias value="SubjectOfCare Client Resident"/>
       <min value="0"/>
       <max value="*"/>
@@ -402,7 +403,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The decedent&#39;s age"/>
+      <definition value="The decedent&#39;s age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -421,7 +422,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Decedents place of birth"/>
+      <definition value="Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -440,7 +441,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Whether the decedent ever served in the US armed forces"/>
+      <definition value="Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -459,7 +460,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The marital status of the decedent at the time of death."/>
+      <definition value="The marital status of the decedent at the time of death. Corresponds to item 9 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -478,7 +479,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The location that death occurred"/>
+      <definition value="The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -497,7 +498,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Disposition of the decedent&#39;s body"/>
+      <definition value="Disposition of the decedent&#39;s body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -516,7 +517,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Decedent&#39;s education"/>
+      <definition value="Decedent&#39;s level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -535,7 +536,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Decedent&#39;s occupation"/>
+      <definition value="Decedent&#39;s usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -747,8 +748,8 @@
       <path value="Patient.identifier.type.coding"/>
       <sliceName value="Fixed_SB"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -1001,7 +1002,7 @@
       <path value="Patient.identifier"/>
       <sliceName value="sdr-decedent-SocialSecurityNumber"/>
       <short value="SocialSecurityNumber"/>
-      <definition value="The decedent&#39;s social security number."/>
+      <definition value="The decedent&#39;s social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="*"/>
       <base>
@@ -1249,8 +1250,8 @@
       <path value="Patient.identifier.type.coding"/>
       <sliceName value="Fixed_SB"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -2045,8 +2046,8 @@
         <map value="Patient.birthDate"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.deceased[x]">
-      <path value="Patient.deceased[x]"/>
+    <element id="Patient:sdr-decedent-Decedent.deceasedBoolean">
+      <path value="Patient.deceasedBoolean"/>
       <short value="Indicates if the individual is deceased or not"/>
       <definition value="Indicates if the individual is deceased or not."/>
       <comment value="If there&#39;s no value in the instance it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.&#xA;&#xA;This element is labeled as a modifier because once a patient is marked as deceased, the actions that are appropriate to perform on the patient may be significantly different."/>
@@ -2333,7 +2334,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-SurvivingSpouse"/>
       <short value="SurvivingSpouse"/>
-      <definition value="The surviving spouse of the decedent"/>
+      <definition value="The surviving spouse of the decedent. Corresponds to item 10 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -2560,8 +2561,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_N"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -3186,7 +3187,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-Father"/>
       <short value="Father"/>
-      <definition value="The father of the decedent"/>
+      <definition value="The father of the decedent. Corresponds to item 11 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -3413,8 +3414,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_N"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -4039,7 +4040,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-Mother"/>
       <short value="Mother"/>
-      <definition value="The mother of the decedent"/>
+      <definition value="The mother of the decedent. Corresponds to item 12 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4266,8 +4267,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_N"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -4892,7 +4893,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-Informant"/>
       <short value="Informant"/>
-      <definition value="The decedent&#39;s informant"/>
+      <definition value="The decedent&#39;s informant. Corresponds to item 13 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -5119,8 +5120,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_CP"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -6382,7 +6383,7 @@
     <element id="Patient:sdr-decedent-Decedent">
       <path value="Patient"/>
       <short value="SDR Decedent Profile"/>
-      <definition value="The subject of the death record"/>
+      <definition value="The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property."/>
       <mustSupport value="false"/>
     </element>
     <element id="Patient:sdr-decedent-Decedent.extension:race">
@@ -6411,7 +6412,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The decedent&#39;s age"/>
+      <definition value="The decedent&#39;s age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -6430,7 +6431,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Decedents place of birth"/>
+      <definition value="Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -6449,7 +6450,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Whether the decedent ever served in the US armed forces"/>
+      <definition value="Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -6468,7 +6469,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The marital status of the decedent at the time of death."/>
+      <definition value="The marital status of the decedent at the time of death. Corresponds to item 9 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -6487,7 +6488,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="The location that death occurred"/>
+      <definition value="The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -6506,7 +6507,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Disposition of the decedent&#39;s body"/>
+      <definition value="Disposition of the decedent&#39;s body. Corresponds to items 18, 19, 20, 21, 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -6525,7 +6526,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Decedent&#39;s education"/>
+      <definition value="Decedent&#39;s level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -6544,7 +6545,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
-      <definition value="Decedent&#39;s occupation"/>
+      <definition value="Decedent&#39;s usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -6585,8 +6586,8 @@
       <path value="Patient.identifier.type.coding"/>
       <sliceName value="Fixed_SB"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -6604,7 +6605,7 @@
       <path value="Patient.identifier"/>
       <sliceName value="sdr-decedent-SocialSecurityNumber"/>
       <short value="SocialSecurityNumber"/>
-      <definition value="The decedent&#39;s social security number."/>
+      <definition value="The decedent&#39;s social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
     </element>
     <element id="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.use">
       <path value="Patient.identifier.use"/>
@@ -6628,8 +6629,8 @@
       <path value="Patient.identifier.type.coding"/>
       <sliceName value="Fixed_SB"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -6657,8 +6658,8 @@
       <min value="1"/>
       <max value="1"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.deceased[x]">
-      <path value="Patient.deceased[x]"/>
+    <element id="Patient:sdr-decedent-Decedent.deceasedBoolean">
+      <path value="Patient.deceasedBoolean"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -6690,7 +6691,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-SurvivingSpouse"/>
       <short value="SurvivingSpouse"/>
-      <definition value="The surviving spouse of the decedent"/>
+      <definition value="The surviving spouse of the decedent. Corresponds to item 10 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -6714,8 +6715,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_N"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -6750,7 +6751,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-Father"/>
       <short value="Father"/>
-      <definition value="The father of the decedent"/>
+      <definition value="The father of the decedent. Corresponds to item 11 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -6774,8 +6775,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_N"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -6810,7 +6811,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-Mother"/>
       <short value="Mother"/>
-      <definition value="The mother of the decedent"/>
+      <definition value="The mother of the decedent. Corresponds to item 12 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -6834,8 +6835,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_N"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -6870,7 +6871,7 @@
       <path value="Patient.contact"/>
       <sliceName value="sdr-decedent-Informant"/>
       <short value="Informant"/>
-      <definition value="The decedent&#39;s informant"/>
+      <definition value="The decedent&#39;s informant. Corresponds to item 13 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -6894,8 +6895,8 @@
       <path value="Patient.contact.relationship.coding"/>
       <sliceName value="Fixed_CP"/>
       <definition value="A reference to a code defined by a terminology system."/>
-      <min value="0"/>
-      <max value="*"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>

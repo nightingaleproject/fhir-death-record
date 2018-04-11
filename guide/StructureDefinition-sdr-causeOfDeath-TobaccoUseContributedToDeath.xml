@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR TobaccoUseContributedToDeath Profile</b></p>
-  <p>Did tobacco use contribute to death.</p>
+  <p>Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.causeOfDeath.TobaccoUseContributedToDeath maps to Observation:
   CodeableConcept maps to value[x]
@@ -20,10 +20,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.causeOfDeath.TobaccoUseContributedToDeath"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR TobaccoUseContributedToDeath Profile"/>
+  <version value="0.1.0"/>
+  <name value="TobaccoUseContributedToDeathProfile"/>
+  <title value="SDR TobaccoUseContributedToDeath Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -31,7 +32,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Did tobacco use contribute to death."/>
+  <description value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <purpose value="Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms."/>
   <fhirVersion value="3.0.1"/>
   <mapping>
@@ -73,7 +74,7 @@
     <element id="Observation:sdr-causeOfDeath-TobaccoUseContributedToDeath">
       <path value="Observation"/>
       <short value="SDR TobaccoUseContributedToDeath Profile"/>
-      <definition value="Did tobacco use contribute to death."/>
+      <definition value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc."/>
       <alias value="Vital Signs"/>
       <alias value="Measurement"/>
@@ -618,9 +619,10 @@
     <element id="Observation:sdr-causeOfDeath-TobaccoUseContributedToDeath.code.coding:Fixed_69443-0">
       <path value="Observation.code.coding"/>
       <sliceName value="Fixed_69443-0"/>
-      <definition value="A reference to a code defined by a terminology system."/>
+      <short value="Did tobacco use contribute to death"/>
+      <definition value="Did tobacco use contribute to death"/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -1913,7 +1915,7 @@
     <element id="Observation:sdr-causeOfDeath-TobaccoUseContributedToDeath">
       <path value="Observation"/>
       <short value="SDR TobaccoUseContributedToDeath Profile"/>
-      <definition value="Did tobacco use contribute to death."/>
+      <definition value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
     </element>
     <element id="Observation:sdr-causeOfDeath-TobaccoUseContributedToDeath.code">
       <path value="Observation.code"/>
@@ -1934,9 +1936,10 @@
     <element id="Observation:sdr-causeOfDeath-TobaccoUseContributedToDeath.code.coding:Fixed_69443-0">
       <path value="Observation.code.coding"/>
       <sliceName value="Fixed_69443-0"/>
-      <definition value="A reference to a code defined by a terminology system."/>
+      <short value="Did tobacco use contribute to death"/>
+      <definition value="Did tobacco use contribute to death"/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>

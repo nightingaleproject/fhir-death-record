@@ -25,10 +25,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.causeOfDeath.InjuryLocation"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR InjuryLocation Profile"/>
+  <version value="0.1.0"/>
+  <name value="InjuryLocationProfile"/>
+  <title value="SDR InjuryLocation Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -147,6 +148,25 @@
         <identity value="rim"/>
         <map value="n/a"/>
       </mapping>
+    </element>
+    <element id="Address:sdr-causeOfDeath-InjuryLocation.extension:insidecitylimits">
+      <path value="Address.extension"/>
+      <sliceName value="insidecitylimits"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Whether the address is within city limits (true) or not (false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
+      </type>
     </element>
     <element id="Address:sdr-causeOfDeath-InjuryLocation.use">
       <path value="Address.use"/>
@@ -446,8 +466,8 @@
       <example>
         <label value="General"/>
         <valuePeriod>
-          <start value="2010-03-23"/>
-          <end value="2010-07-01"/>
+          <start value="2010-03-23T00:00:00-04:00"/>
+          <end value="2010-07-01T00:00:00-04:00"/>
         </valuePeriod>
       </example>
       <isSummary value="true"/>
@@ -470,6 +490,25 @@
       <path value="Address"/>
       <short value="SDR InjuryLocation Profile"/>
       <definition value="Location of injury"/>
+    </element>
+    <element id="Address:sdr-causeOfDeath-InjuryLocation.extension:insidecitylimits">
+      <path value="Address.extension"/>
+      <sliceName value="insidecitylimits"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <definition value="Whether the address is within city limits (true) or not (false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
+      </type>
     </element>
     <element id="Address:sdr-causeOfDeath-InjuryLocation.line">
       <path value="Address.line"/>

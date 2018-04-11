@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "sdr-causeOfDeath-PregnancyStatusCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR PregnancyStatusCS CodeSystem</b></p>\n<p>Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).</p>\n</div>"
+  },
+  "url": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/cs/PregnancyStatusCS",
+  "identifier": {
+    "system": "http://github.com/nightingaleproject/fhirDeathRecord",
+    "value": "sdr.causeOfDeath.PregnancyStatusCS"
+  },
+  "version": "0.1.0",
+  "name": "PregnancyStatusCS",
+  "title": "SDR PregnancyStatusCS CodeSystem",
+  "status": "draft",
+  "date": "2018-04-11T00:00:00-04:00",
+  "publisher": "The MITRE Corporation: Nightingale Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://github.com/nightingaleproject/fhirDeathRecord"
+        }
+      ]
+    }
+  ],
+  "description": "Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "PHC1260",
+      "display": "Not pregnant within past year",
+      "definition": "Not pregnant within past year"
+    },
+    {
+      "code": "PHC1261",
+      "display": "Pregnant at time of death",
+      "definition": "Pregnant at time of death"
+    },
+    {
+      "code": "PHC1262",
+      "display": "Not pregnant, but pregnant within 42 days of death",
+      "definition": "Not pregnant, but pregnant within 42 days of death"
+    },
+    {
+      "code": "PHC1263",
+      "display": "Not pregnant, but pregnant 43 days to 1 year before death",
+      "definition": "Not pregnant, but pregnant 43 days to 1 year before death"
+    },
+    {
+      "code": "PHC1264",
+      "display": "Unknown if pregnant within the past year",
+      "definition": "Unknown if pregnant within the past year"
+    }
+  ]
+}

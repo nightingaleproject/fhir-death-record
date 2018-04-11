@@ -3,7 +3,7 @@
   "id": "sdr-decedent-DispositionTypeVS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR DispositionTypeVS ValueSet</b></p>\n<p>Method of disposition of decedent's remains</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>SDR DispositionTypeVS ValueSet</b></p>\n<p>Method of disposition of decedent's remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n</div>"
   },
   "url": "http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/DispositionTypeVS",
   "identifier": [
@@ -12,11 +12,11 @@
       "value": "sdr.decedent.DispositionTypeVS"
     }
   ],
-  "version": "0.0.1",
-  "name": "SDR DispositionTypeVS ValueSet",
+  "version": "0.1.0",
+  "name": "DispositionTypeVS",
   "title": "SDR DispositionTypeVS ValueSet",
   "status": "draft",
-  "date": "2018-03-21",
+  "date": "2018-04-11T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Method of disposition of decedent's remains",
+  "description": "Method of disposition of decedent's remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
   "compose": {
     "include": [
       {

@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR Certifier Profile</b></p>
-  <p>The certifier of the death record</p>
+  <p>The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.deathRecord.Certifier maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner:
   constrain qualification to 1..*
@@ -17,10 +17,11 @@
     <system value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     <value value="sdr.deathRecord.Certifier"/>
   </identifier>
-  <version value="0.0.1"/>
-  <name value="SDR Certifier Profile"/>
+  <version value="0.1.0"/>
+  <name value="CertifierProfile"/>
+  <title value="SDR Certifier Profile"/>
   <status value="draft"/>
-  <date value="2018-03-21"/>
+  <date value="2018-04-11T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -28,12 +29,12 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="The certifier of the death record"/>
+  <description value="The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="US"/>
-      <display value="United States Minor Outlying Islands (the)"/>
+      <display value="United States of America"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="3.0.1"/>
@@ -66,7 +67,7 @@
     <element id="Practitioner:sdr-deathRecord-Certifier">
       <path value="Practitioner"/>
       <short value="SDR Certifier Profile"/>
-      <definition value="The certifier of the death record"/>
+      <definition value="The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <comment value="Note that a cab driver no longer fits the bill. You probably would be interested in the organization rather than the individual?"/>
       <alias value="Provider"/>
       <min value="0"/>
@@ -296,7 +297,7 @@
     <element id="Practitioner:sdr-deathRecord-Certifier.extension:certifiertype">
       <path value="Practitioner.extension"/>
       <sliceName value="certifiertype"/>
-      <definition value="A code that represents the type of death record certifier."/>
+      <definition value="A code that represents the type of death record certifier. Corresponds to item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -379,7 +380,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS"/>
+          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS"/>
         </valueSetReference>
       </binding>
       <mapping>
@@ -1428,13 +1429,13 @@
     <element id="Practitioner:sdr-deathRecord-Certifier">
       <path value="Practitioner"/>
       <short value="SDR Certifier Profile"/>
-      <definition value="The certifier of the death record"/>
+      <definition value="The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <mustSupport value="false"/>
     </element>
     <element id="Practitioner:sdr-deathRecord-Certifier.extension:certifiertype">
       <path value="Practitioner.extension"/>
       <sliceName value="certifiertype"/>
-      <definition value="A code that represents the type of death record certifier."/>
+      <definition value="A code that represents the type of death record certifier. Corresponds to item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -1447,7 +1448,7 @@
       <binding>
         <strength value="required"/>
         <valueSetReference>
-          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/CertifierTypeVS"/>
+          <reference value="http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS"/>
         </valueSetReference>
       </binding>
     </element>

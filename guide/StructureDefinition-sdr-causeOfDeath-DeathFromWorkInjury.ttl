@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathFromWorkInjury Profile</b></p>\n  <p>Did death result from injury at work?</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.DeathFromWorkInjury maps to Observation:\n  boolean maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathFromWorkInjury Profile</b></p>\n  <p>Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.DeathFromWorkInjury maps to Observation:\n  boolean maps to value[x]\n  ObservationCode maps to code\n  constrain code.coding to 1..*\n  Subject maps to subject\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury"];
   fhir:StructureDefinition.identifier [
@@ -18,10 +18,11 @@
      fhir:Identifier.system [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ];
      fhir:Identifier.value [ fhir:value "sdr.causeOfDeath.DeathFromWorkInjury" ]
   ];
-  fhir:StructureDefinition.version [ fhir:value "0.0.1"];
-  fhir:StructureDefinition.name [ fhir:value "SDR DeathFromWorkInjury Profile"];
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.name [ fhir:value "DeathFromWorkInjuryProfile"];
+  fhir:StructureDefinition.title [ fhir:value "SDR DeathFromWorkInjury Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21"^^xsd:date];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Did death result from injury at work?"];
+  fhir:StructureDefinition.description [ fhir:value "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."];
   fhir:StructureDefinition.purpose [ fhir:value "Observations are a key aspect of healthcare.  This resource is used to capture those that do not require more sophisticated mechanisms."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.mapping [
@@ -76,7 +77,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Observation" ];
        fhir:ElementDefinition.short [ fhir:value "SDR DeathFromWorkInjury Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work?" ];
+       fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.comment [ fhir:value "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc." ];
        fhir:ElementDefinition.alias [
          fhir:value "Vital Signs";
@@ -740,9 +741,10 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.code.coding:Fixed_69444-8" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.code.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_69444-8" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ];
+       fhir:ElementDefinition.short [ fhir:value "Death resulted from injury at work" ];
+       fhir:ElementDefinition.definition [ fhir:value "Death resulted from injury at work" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
@@ -1175,10 +1177,10 @@
        ]
      ], [
        fhir:index 31;
-       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.value[x]" ];
-       fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
+       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.valueBoolean" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.valueBoolean" ];
        fhir:ElementDefinition.short [ fhir:value "Actual result" ];
-       fhir:ElementDefinition.definition [ fhir:value "Boolean representing did death result from injury at work?" ];
+       fhir:ElementDefinition.definition [ fhir:value "Boolean representing did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.comment [ fhir:value "Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is \"'value' + the type name\" with a capital on the first letter of the type).\r\r\rIf the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below." ];
        fhir:ElementDefinition.requirements [ fhir:value "An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
@@ -2305,7 +2307,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.path [ fhir:value "Observation" ];
        fhir:ElementDefinition.short [ fhir:value "SDR DeathFromWorkInjury Profile" ];
-       fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work?" ]
+       fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.code" ];
@@ -2331,9 +2333,10 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.code.coding:Fixed_69444-8" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.code.coding" ];
        fhir:ElementDefinition.sliceName [ fhir:value "Fixed_69444-8" ];
-       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ];
+       fhir:ElementDefinition.short [ fhir:value "Death resulted from injury at work" ];
+       fhir:ElementDefinition.definition [ fhir:value "Death resulted from injury at work" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
@@ -2362,9 +2365,9 @@
        ]
      ], [
        fhir:index 7;
-       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.value[x]" ];
-       fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
-       fhir:ElementDefinition.definition [ fhir:value "Boolean representing did death result from injury at work?" ];
+       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DeathFromWorkInjury.valueBoolean" ];
+       fhir:ElementDefinition.path [ fhir:value "Observation.valueBoolean" ];
+       fhir:ElementDefinition.definition [ fhir:value "Boolean representing did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [

@@ -108,19 +108,14 @@ ObservationCode is LNC#11374-6 "Injury incident description"
 1..1 Subject
 1..1 PlaceOfInjury
 1..1 InjuryDateTime
-1..1 InjuryLocation
+1..1 Address
 
   Element: PlaceOfInjury
   Concept: TBD
-  Description: "Place of injury, e.g. decedent's home, restaurant, wooded area"
+  Description: "Description of the place of injury, e.g. decedent's home, restaurant, wooded area"
   Value: 1..1 string
 
   Element: InjuryDateTime
   Concept: TBD
   Description: "Date and time of injury"
   Value: 1..1 dateTime
-
-  Element: InjuryLocation
-  Concept: TBD
-  Based on: Address
-  Description: "Location of injury"

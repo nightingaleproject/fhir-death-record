@@ -3,7 +3,7 @@
   "id": "sdr-causeOfDeath-PlaceOfInjury-extension",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PlaceOfInjury Extension</b></p>\n  <p>Place of injury, e.g. decedent's home, restaurant, wooded area</p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PlaceOfInjury Extension</b></p>\n  <p>Description of the place of injury, e.g. decedent's home, restaurant, wooded area</p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "PlaceOfInjuryExtension",
   "title": "SDR PlaceOfInjury Extension",
   "status": "draft",
-  "date": "2018-04-11T00:00:00-04:00",
+  "date": "2018-04-12T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Place of injury, e.g. decedent's home, restaurant, wooded area",
+  "description": "Description of the place of injury, e.g. decedent's home, restaurant, wooded area",
   "fhirVersion": "3.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -45,7 +45,7 @@
         "id": "Extension:placeofinjury",
         "path": "Extension",
         "short": "SDR PlaceOfInjury Extension",
-        "definition": "Place of injury, e.g. decedent's home, restaurant, wooded area",
+        "definition": "Description of the place of injury, e.g. decedent's home, restaurant, wooded area",
         "min": 0,
         "max": "*",
         "base": {
@@ -182,7 +182,7 @@
         "id": "Extension:placeofinjury",
         "path": "Extension",
         "short": "SDR PlaceOfInjury Extension",
-        "definition": "Place of injury, e.g. decedent's home, restaurant, wooded area",
+        "definition": "Description of the place of injury, e.g. decedent's home, restaurant, wooded area",
         "min": 0,
         "max": "*"
       },

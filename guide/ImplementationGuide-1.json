@@ -31,19 +31,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-shr-core-Address.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/shr-core-Address",
-            "display": "SDR Address Profile"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html"
             }
           ],
@@ -64,19 +51,6 @@
           "sourceReference": {
             "reference": "StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable",
             "display": "SDR AutopsyResultsAvailable Profile"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-decedent-Birthplace.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-decedent-Birthplace",
-            "display": "SDR Birthplace Profile"
           }
         },
         {
@@ -252,19 +226,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-causeOfDeath-InjuryLocation.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-causeOfDeath-InjuryLocation",
-            "display": "SDR InjuryLocation Profile"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html"
             }
           ],
@@ -304,13 +265,13 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-decedent-Residency.html"
+              "valueUri": "StructureDefinition-shr-core-PostalAddress.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/sdr-decedent-Residency",
-            "display": "SDR Residency Profile"
+            "reference": "StructureDefinition/shr-core-PostalAddress",
+            "display": "SDR PostalAddress Profile"
           }
         },
         {
@@ -337,19 +298,6 @@
           "sourceReference": {
             "reference": "StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath",
             "display": "SDR TobaccoUseContributedToDeath Profile"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-shr-core-Address-extension.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/shr-core-Address-extension",
-            "display": "SDR Address Extension"
           }
         },
         {
@@ -486,19 +434,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-sdr-causeOfDeath-InjuryLocation-extension.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension",
-            "display": "SDR InjuryLocation Extension"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-shr-core-InsideCityLimits-extension.html"
             }
           ],
@@ -584,6 +519,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension",
             "display": "SDR PlaceOfInjury Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-shr-core-PostalAddress-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/shr-core-PostalAddress-extension",
+            "display": "SDR PostalAddress Extension"
           }
         },
         {

@@ -23,16 +23,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-shr-core-Address.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/shr-core-Address"/>
-        <display value="SDR Address Profile"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html"/>
       </extension>
       <example value="false"/>
@@ -49,16 +39,6 @@
       <sourceReference>
         <reference value="StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable"/>
         <display value="SDR AutopsyResultsAvailable Profile"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-decedent-Birthplace.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-decedent-Birthplace"/>
-        <display value="SDR Birthplace Profile"/>
       </sourceReference>
     </resource>
     <resource>
@@ -193,16 +173,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-causeOfDeath-InjuryLocation.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-causeOfDeath-InjuryLocation"/>
-        <display value="SDR InjuryLocation Profile"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html"/>
       </extension>
       <example value="false"/>
@@ -233,12 +203,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-decedent-Residency.html"/>
+        <valueUri value="StructureDefinition-shr-core-PostalAddress.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/sdr-decedent-Residency"/>
-        <display value="SDR Residency Profile"/>
+        <reference value="StructureDefinition/shr-core-PostalAddress"/>
+        <display value="SDR PostalAddress Profile"/>
       </sourceReference>
     </resource>
     <resource>
@@ -259,16 +229,6 @@
       <sourceReference>
         <reference value="StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
         <display value="SDR TobaccoUseContributedToDeath Profile"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-shr-core-Address-extension.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/shr-core-Address-extension"/>
-        <display value="SDR Address Extension"/>
       </sourceReference>
     </resource>
     <resource>
@@ -373,16 +333,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sdr-causeOfDeath-InjuryLocation-extension.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension"/>
-        <display value="SDR InjuryLocation Extension"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-shr-core-InsideCityLimits-extension.html"/>
       </extension>
       <example value="false"/>
@@ -449,6 +399,16 @@
       <sourceReference>
         <reference value="StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension"/>
         <display value="SDR PlaceOfInjury Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-shr-core-PostalAddress-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/shr-core-PostalAddress-extension"/>
+        <display value="SDR PostalAddress Extension"/>
       </sourceReference>
     </resource>
     <resource>

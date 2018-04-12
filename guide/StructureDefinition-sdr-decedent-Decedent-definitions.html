@@ -225,7 +225,7 @@
   <tr><td>Definition</td><td><p>Decedents place of birth. Corresponds to item 6 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-sdr-decedent-Birthplace.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace]]">BirthplaceProfile</a>))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>))</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:servedinarmedforces"> </a><b>Patient.extension (<a href="StructureDefinition-sdr-decedent-ServedInArmedForces-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ServedInArmedForces-extension]]</a>)</b></td></tr>
@@ -708,7 +708,7 @@
   <tr><td>Definition</td><td><p>Addresses for the individual.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-sdr-decedent-Residency.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency]]">ResidencyProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Patient may have multiple addresses with different uses or applicable periods.</p>
@@ -984,7 +984,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Address for the contact person.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-Address.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address]]">AddressProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.gender"> </a><a name="Patient.contact.gender"> </a><b>Patient.contact.gender</b></td></tr>
@@ -1221,7 +1221,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Address for the contact person.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-Address.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address]]">AddressProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.gender"> </a><a name="Patient.contact.gender"> </a><b>Patient.contact.gender</b></td></tr>
@@ -1458,7 +1458,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Address for the contact person.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-Address.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address]]">AddressProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.gender"> </a><a name="Patient.contact.gender"> </a><b>Patient.contact.gender</b></td></tr>
@@ -1695,7 +1695,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Address for the contact person.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-Address.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address]]">AddressProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Informant.gender"> </a><a name="Patient.contact.gender"> </a><b>Patient.contact.gender</b></td></tr>
@@ -1931,7 +1931,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+      ; Generated on Thu, Apr 12, 2018 15:13-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

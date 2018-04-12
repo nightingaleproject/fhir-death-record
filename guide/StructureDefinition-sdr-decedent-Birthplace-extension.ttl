@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "BirthplaceExtension"];
   fhir:StructureDefinition.title [ fhir:value "SDR Birthplace Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-12T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -167,7 +167,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Address" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace" ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress" ]
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
@@ -208,7 +208,7 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Address" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace" ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress" ]
        ]
      ]
   ] .

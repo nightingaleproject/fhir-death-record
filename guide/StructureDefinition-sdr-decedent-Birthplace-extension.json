@@ -16,7 +16,7 @@
   "name": "BirthplaceExtension",
   "title": "SDR Birthplace Extension",
   "status": "draft",
-  "date": "2018-04-11T00:00:00-04:00",
+  "date": "2018-04-12T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -165,7 +165,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "mapping": [
@@ -210,7 +210,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       }

@@ -16,7 +16,7 @@
   "name": "DetailsOfInjuryProfile",
   "title": "SDR DetailsOfInjury Profile",
   "status": "draft",
-  "date": "2018-04-11T00:00:00-04:00",
+  "date": "2018-04-12T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -369,7 +369,7 @@
         "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:placeofinjury",
         "path": "Observation.extension",
         "sliceName": "placeofinjury",
-        "definition": "Place of injury, e.g. decedent's home, restaurant, wooded area",
+        "definition": "Description of the place of injury, e.g. decedent's home, restaurant, wooded area",
         "min": 1,
         "max": "1",
         "type": [
@@ -380,16 +380,16 @@
         ]
       },
       {
-        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:injurylocation",
+        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:postaladdress",
         "path": "Observation.extension",
-        "sliceName": "injurylocation",
-        "definition": "Location of injury",
+        "sliceName": "postaladdress",
+        "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension"
           }
         ]
       },
@@ -2405,7 +2405,7 @@
         "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:placeofinjury",
         "path": "Observation.extension",
         "sliceName": "placeofinjury",
-        "definition": "Place of injury, e.g. decedent's home, restaurant, wooded area",
+        "definition": "Description of the place of injury, e.g. decedent's home, restaurant, wooded area",
         "min": 1,
         "max": "1",
         "type": [
@@ -2416,16 +2416,16 @@
         ]
       },
       {
-        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:injurylocation",
+        "id": "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:postaladdress",
         "path": "Observation.extension",
-        "sliceName": "injurylocation",
-        "definition": "Location of injury",
+        "sliceName": "postaladdress",
+        "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension"
           }
         ]
       },

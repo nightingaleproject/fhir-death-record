@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-PlaceOfInjury-extension"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PlaceOfInjury Extension</b></p>\n  <p>Place of injury, e.g. decedent's home, restaurant, wooded area</p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PlaceOfInjury Extension</b></p>\n  <p>Description of the place of injury, e.g. decedent's home, restaurant, wooded area</p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension"];
   fhir:StructureDefinition.identifier [
@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "PlaceOfInjuryExtension"];
   fhir:StructureDefinition.title [ fhir:value "SDR PlaceOfInjury Extension"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-12T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "http://github.com/nightingaleproject/fhirDeathRecord" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Place of injury, e.g. decedent's home, restaurant, wooded area"];
+  fhir:StructureDefinition.description [ fhir:value "Description of the place of injury, e.g. decedent's home, restaurant, wooded area"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "3.0.1"];
   fhir:StructureDefinition.kind [ fhir:value "complex-type"];
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
@@ -50,7 +50,7 @@
        fhir:Element.id [ fhir:value "Extension:placeofinjury" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR PlaceOfInjury Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Place of injury, e.g. decedent's home, restaurant, wooded area" ];
+       fhir:ElementDefinition.definition [ fhir:value "Description of the place of injury, e.g. decedent's home, restaurant, wooded area" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -181,7 +181,7 @@
        fhir:Element.id [ fhir:value "Extension:placeofinjury" ];
        fhir:ElementDefinition.path [ fhir:value "Extension" ];
        fhir:ElementDefinition.short [ fhir:value "SDR PlaceOfInjury Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Place of injury, e.g. decedent's home, restaurant, wooded area" ];
+       fhir:ElementDefinition.definition [ fhir:value "Description of the place of injury, e.g. decedent's home, restaurant, wooded area" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ]
      ], [

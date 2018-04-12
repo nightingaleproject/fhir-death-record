@@ -1,8 +1,8 @@
 {
   "resourceType": "Bundle",
-  "id": "8061980d-f514-443c-9d34-41936f5dea4d",
+  "id": "567d6d33-7323-4a87-ae07-1005797b2b7d",
   "meta": {
-    "lastUpdated": "2018-04-11T13:51:12.561-04:00"
+    "lastUpdated": "2018-04-12T15:13:18.158-04:00"
   },
   "type": "collection",
   "entry": [
@@ -26,7 +26,7 @@
         "name": "CertifierTypeVS",
         "title": "SDR CertifierTypeVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -115,7 +115,7 @@
         "name": "ContributoryTobaccoUseVS",
         "title": "SDR ContributoryTobaccoUseVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -204,7 +204,7 @@
         "name": "DispositionTypeVS",
         "title": "SDR DispositionTypeVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -308,7 +308,7 @@
         "name": "EducationVS",
         "title": "SDR EducationVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -409,7 +409,7 @@
         "name": "MannerOfDeathVS",
         "title": "SDR MannerOfDeathVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -499,7 +499,7 @@
         "name": "PlaceOfDeathTypeVS",
         "title": "SDR PlaceOfDeathTypeVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -603,7 +603,7 @@
         "name": "PregnancyStatusVS",
         "title": "SDR PregnancyStatusVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -689,7 +689,7 @@
         "name": "TransportRelationshipsVS",
         "title": "SDR TransportRelationshipsVS ValueSet",
         "status": "draft",
-        "date": "2018-04-11T00:00:00-04:00",
+        "date": "2018-04-12T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {

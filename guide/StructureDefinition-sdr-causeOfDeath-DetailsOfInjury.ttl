@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "DetailsOfInjuryProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR DetailsOfInjury Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-11T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-12T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -383,7 +383,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:placeofinjury" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "placeofinjury" ];
-       fhir:ElementDefinition.definition [ fhir:value "Place of injury, e.g. decedent's home, restaurant, wooded area" ];
+       fhir:ElementDefinition.definition [ fhir:value "Description of the place of injury, e.g. decedent's home, restaurant, wooded area" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -393,16 +393,16 @@
        ]
      ], [
        fhir:index 9;
-       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:injurylocation" ];
+       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:postaladdress" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "injurylocation" ];
-       fhir:ElementDefinition.definition [ fhir:value "Location of injury" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "postaladdress" ];
+       fhir:ElementDefinition.definition [ fhir:value "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension" ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension" ]
        ]
      ], [
        fhir:index 10;
@@ -2346,7 +2346,7 @@
        fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:placeofinjury" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "placeofinjury" ];
-       fhir:ElementDefinition.definition [ fhir:value "Place of injury, e.g. decedent's home, restaurant, wooded area" ];
+       fhir:ElementDefinition.definition [ fhir:value "Description of the place of injury, e.g. decedent's home, restaurant, wooded area" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -2356,16 +2356,16 @@
        ]
      ], [
        fhir:index 2;
-       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:injurylocation" ];
+       fhir:Element.id [ fhir:value "Observation:sdr-causeOfDeath-DetailsOfInjury.extension:postaladdress" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "injurylocation" ];
-       fhir:ElementDefinition.definition [ fhir:value "Location of injury" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "postaladdress" ];
+       fhir:ElementDefinition.definition [ fhir:value "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension" ]
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension" ]
        ]
      ], [
        fhir:index 3;

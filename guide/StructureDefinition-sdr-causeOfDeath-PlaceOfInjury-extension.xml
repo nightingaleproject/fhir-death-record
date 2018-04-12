@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
   <p><b>SDR PlaceOfInjury Extension</b></p>
-  <p>Place of injury, e.g. decedent's home, restaurant, wooded area</p>
+  <p>Description of the place of injury, e.g. decedent's home, restaurant, wooded area</p>
 </div>
   </text>
   <url value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-PlaceOfInjury-extension"/>
@@ -17,7 +17,7 @@
   <name value="PlaceOfInjuryExtension"/>
   <title value="SDR PlaceOfInjury Extension"/>
   <status value="draft"/>
-  <date value="2018-04-11T00:00:00-04:00"/>
+  <date value="2018-04-12T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://github.com/nightingaleproject/fhirDeathRecord"/>
     </telecom>
   </contact>
-  <description value="Place of injury, e.g. decedent&#39;s home, restaurant, wooded area"/>
+  <description value="Description of the place of injury, e.g. decedent&#39;s home, restaurant, wooded area"/>
   <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -38,7 +38,7 @@
     <element id="Extension:placeofinjury">
       <path value="Extension"/>
       <short value="SDR PlaceOfInjury Extension"/>
-      <definition value="Place of injury, e.g. decedent&#39;s home, restaurant, wooded area"/>
+      <definition value="Description of the place of injury, e.g. decedent&#39;s home, restaurant, wooded area"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -146,7 +146,7 @@
     <element id="Extension:placeofinjury">
       <path value="Extension"/>
       <short value="SDR PlaceOfInjury Extension"/>
-      <definition value="Place of injury, e.g. decedent&#39;s home, restaurant, wooded area"/>
+      <definition value="Description of the place of injury, e.g. decedent&#39;s home, restaurant, wooded area"/>
       <min value="0"/>
       <max value="*"/>
     </element>

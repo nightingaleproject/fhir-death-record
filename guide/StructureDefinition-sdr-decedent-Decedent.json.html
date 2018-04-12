@@ -156,25 +156,25 @@
   SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)
   fix identifier.use to http://hl7.org/fhir/identifier-use#official
   fix identifier.type to http://hl7.org/fhir/identifier-type#SB
-  Residency maps to address
+  PostalAddress maps to address
   SurvivingSpouse maps to contact (slice on = relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text
   SurvivingSpouse.RelationshipType maps to contact.relationship
-  SurvivingSpouse.Address maps to contact.address
+  SurvivingSpouse.PostalAddress maps to contact.address
   Father maps to contact
   Father.LegalName maps to contact.name.text
   Father.RelationshipType maps to contact.relationship
-  Father.Address maps to contact.address
+  Father.PostalAddress maps to contact.address
   Mother maps to contact
   Mother.LegalName maps to contact.name.text
   Mother.RelationshipType maps to contact.relationship
-  Mother.Address maps to contact.address
+  Mother.PostalAddress maps to contact.address
   Informant maps to contact
   Informant.LegalName maps to contact.name.text
   Informant.RelationshipType maps to contact.relationship
-  Informant.Address maps to contact.address
+  Informant.PostalAddress maps to contact.address
   Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
   Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 &lt;/pre&gt;&lt;/p&gt;
@@ -191,7 +191,7 @@
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a>" : "DecedentProfile",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">title</a>" : "SDR Decedent Profile",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a>" : "2018-04-11T00:00:00-04:00",
+  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a>" : "2018-04-12T00:00:00-04:00",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "The MITRE Corporation: Nightingale Project",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -2703,7 +2703,7 @@ This element is labeled as a modifier because once a patient is marked as deceas
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a>" : true,
@@ -3923,7 +3923,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -4988,7 +4988,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -6053,7 +6053,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -7118,7 +7118,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -8429,7 +8429,7 @@ This element is labelled as a modifier because it may not be the main Patient re
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8520,7 +8520,7 @@ This element is labelled as a modifier because it may not be the main Patient re
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8596,7 +8596,7 @@ This element is labelled as a modifier because it may not be the main Patient re
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8672,7 +8672,7 @@ This element is labelled as a modifier because it may not be the main Patient re
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8748,7 +8748,7 @@ This element is labelled as a modifier because it may not be the main Patient re
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>" : [
           {
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "Address",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>" : "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       }
@@ -8778,7 +8778,7 @@ This element is labelled as a modifier because it may not be the main Patient re
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+      ; Generated on Thu, Apr 12, 2018 15:13-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

@@ -157,11 +157,11 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Extension:dispositionfacility.extension:address"> </a><b>Extension.extension (<a href="StructureDefinition-shr-core-Address-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address-extension]]</a>)</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Extension:dispositionfacility.extension:postaladdress"> </a><b>Extension.extension (<a href="StructureDefinition-shr-core-PostalAddress-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension]]</a>)</b></td></tr>
   <tr><td>Definition</td><td><p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-Address.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address]]">AddressProfile</a>))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>))</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Extension:dispositionfacility.url"> </a><a name="Extension.url"> </a><b>Extension.url</b></td></tr>
@@ -206,7 +206,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+      ; Generated on Thu, Apr 12, 2018 15:13-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

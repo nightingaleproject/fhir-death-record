@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Decedent",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)\n  fix identifier.use to http://hl7.org/fhir/identifier-use#official\n  fix identifier.type to http://hl7.org/fhir/identifier-type#SB\n  Residency maps to address\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.Address maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.Address maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.Address maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.Address maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)\n  fix identifier.use to http://hl7.org/fhir/identifier-use#official\n  fix identifier.type to http://hl7.org/fhir/identifier-type#SB\n  PostalAddress maps to address\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.PostalAddress maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.PostalAddress maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.PostalAddress maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.PostalAddress maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "DecedentProfile",
   "title": "SDR Decedent Profile",
   "status": "draft",
-  "date": "2018-04-11T00:00:00-04:00",
+  "date": "2018-04-12T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -2520,7 +2520,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "isSummary": true,
@@ -3738,7 +3738,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "mapping": [
@@ -4803,7 +4803,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "mapping": [
@@ -5868,7 +5868,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "mapping": [
@@ -6933,7 +6933,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ],
         "mapping": [
@@ -8238,7 +8238,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8329,7 +8329,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8405,7 +8405,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8481,7 +8481,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       },
@@ -8557,7 +8557,7 @@
         "type": [
           {
             "code": "Address",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"
           }
         ]
       }

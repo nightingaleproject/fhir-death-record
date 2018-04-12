@@ -18,25 +18,25 @@
   SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)
   fix identifier.use to http://hl7.org/fhir/identifier-use#official
   fix identifier.type to http://hl7.org/fhir/identifier-type#SB
-  Residency maps to address
+  PostalAddress maps to address
   SurvivingSpouse maps to contact (slice on = relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text
   SurvivingSpouse.RelationshipType maps to contact.relationship
-  SurvivingSpouse.Address maps to contact.address
+  SurvivingSpouse.PostalAddress maps to contact.address
   Father maps to contact
   Father.LegalName maps to contact.name.text
   Father.RelationshipType maps to contact.relationship
-  Father.Address maps to contact.address
+  Father.PostalAddress maps to contact.address
   Mother maps to contact
   Mother.LegalName maps to contact.name.text
   Mother.RelationshipType maps to contact.relationship
-  Mother.Address maps to contact.address
+  Mother.PostalAddress maps to contact.address
   Informant maps to contact
   Informant.LegalName maps to contact.name.text
   Informant.RelationshipType maps to contact.relationship
-  Informant.Address maps to contact.address
+  Informant.PostalAddress maps to contact.address
   Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
   Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 </pre></p>
@@ -51,7 +51,7 @@
   <name value="DecedentProfile"/>
   <title value="SDR Decedent Profile"/>
   <status value="draft"/>
-  <date value="2018-04-11T00:00:00-04:00"/>
+  <date value="2018-04-12T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -2093,7 +2093,7 @@
       </base>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
       <isSummary value="true"/>
       <mapping>
@@ -3071,7 +3071,7 @@
       </base>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
       <mapping>
         <identity value="v2"/>
@@ -3924,7 +3924,7 @@
       </base>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
       <mapping>
         <identity value="v2"/>
@@ -4777,7 +4777,7 @@
       </base>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
       <mapping>
         <identity value="v2"/>
@@ -5630,7 +5630,7 @@
       </base>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
       <mapping>
         <identity value="v2"/>
@@ -6673,7 +6673,7 @@
       <max value="1"/>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Residency"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact">
@@ -6744,7 +6744,7 @@
       <path value="Patient.contact.address"/>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father">
@@ -6804,7 +6804,7 @@
       <path value="Patient.contact.address"/>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother">
@@ -6864,7 +6864,7 @@
       <path value="Patient.contact.address"/>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Informant">
@@ -6924,7 +6924,7 @@
       <path value="Patient.contact.address"/>
       <type>
         <code value="Address"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"/>
       </type>
     </element>
   </differential>

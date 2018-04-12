@@ -155,11 +155,6 @@
       <td>Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-sdr-decedent-Birthplace.html">Birthplace</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
-      <td>Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-sdr-causeOfDeath-CauseOfDeathCondition.html">CauseOfDeathCondition</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`.</td>
@@ -215,11 +210,6 @@
       <td>Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-sdr-causeOfDeath-InjuryLocation.html">InjuryLocation</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
-      <td>Location of injury</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html">MannerOfDeath</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
@@ -228,11 +218,6 @@
       <td><a href="StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html">MedicalExaminerContacted</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-sdr-decedent-Residency.html">Residency</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
-      <td>Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.html">TimingOfRecentPregnancyInRelationToDeath</a></td>
@@ -267,11 +252,6 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-shr-core-Address.html">Address</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
-      <td>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-shr-base-Condition.html">Condition</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td>A disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. &#039;Condition&#039; is interpreted broadly to cover states of existence - things the patient is or has.</td>
@@ -285,6 +265,11 @@
       <td><a href="StructureDefinition-shr-base-Observation.html">Observation</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td>Base class for observations (measurements, tests, or questions) and a value containing the result (answer). The subject of a finding can be the entire patient, or an entity such as a location body structure, intervention, or condition. Things observed about the subject can include social and behavioral factors, subjective and objective observations, and assessments.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-shr-core-PostalAddress.html">PostalAddress</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
+      <td>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</td>
     </tr>
     
   </tbody>
@@ -311,7 +296,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+      ; Generated on Thu, Apr 12, 2018 15:13-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

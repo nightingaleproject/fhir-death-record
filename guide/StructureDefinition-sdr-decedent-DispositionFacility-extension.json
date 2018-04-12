@@ -16,7 +16,7 @@
   "name": "DispositionFacilityExtension",
   "title": "SDR DispositionFacility Extension",
   "status": "draft",
-  "date": "2018-04-11T00:00:00-04:00",
+  "date": "2018-04-12T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -158,9 +158,9 @@
         ]
       },
       {
-        "id": "Extension:dispositionfacility.extension:address",
+        "id": "Extension:dispositionfacility.extension:postaladdress",
         "path": "Extension.extension",
-        "sliceName": "address",
+        "sliceName": "postaladdress",
         "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).",
         "min": 1,
         "max": "1",
@@ -172,7 +172,7 @@
         "type": [
           {
             "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address-extension"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension"
           }
         ],
         "isModifier": false,
@@ -374,16 +374,16 @@
         ]
       },
       {
-        "id": "Extension:dispositionfacility.extension:address",
+        "id": "Extension:dispositionfacility.extension:postaladdress",
         "path": "Extension.extension",
-        "sliceName": "address",
+        "sliceName": "postaladdress",
         "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-Address-extension"
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension"
           }
         ]
       },

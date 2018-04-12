@@ -164,7 +164,7 @@
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DetailsOfInjuryProfile&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;SDR DetailsOfInjury Profile&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-04-11T00:00:00-04:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-04-12T00:00:00-04:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;The MITRE Corporation: Nightingale Project&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -492,7 +492,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;placeofinjury&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Place of injury, e.g. decedent&amp;#39;s home, restaurant, wooded area&quot;/&gt;
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Description of the place of injury, e.g. decedent&amp;#39;s home, restaurant, wooded area&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
@@ -502,16 +502,17 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Observation:sdr-causeOfDeath-DetailsOfInjury.extension:injurylocation&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Observation:sdr-causeOfDeath-DetailsOfInjury.extension:postaladdress&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation.extension&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;injurylocation&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Location of injury&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;postaladdress&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension&quot;/&gt;
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Observation:sdr-causeOfDeath-DetailsOfInjury.modifierExtension&quot;&gt;
@@ -2337,7 +2338,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;placeofinjury&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Place of injury, e.g. decedent&amp;#39;s home, restaurant, wooded area&quot;/&gt;
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Description of the place of injury, e.g. decedent&amp;#39;s home, restaurant, wooded area&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
@@ -2347,16 +2348,17 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Observation:sdr-causeOfDeath-DetailsOfInjury.extension:injurylocation&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Observation:sdr-causeOfDeath-DetailsOfInjury.extension:postaladdress&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation.extension&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;injurylocation&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Location of injury&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;postaladdress&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
-                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-InjuryLocation-extension&quot;/&gt;
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Observation:sdr-causeOfDeath-DetailsOfInjury.code&quot;&gt;
@@ -2450,7 +2452,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 11, 2018 13:51-0400.
+      ; Generated on Thu, Apr 12, 2018 15:13-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

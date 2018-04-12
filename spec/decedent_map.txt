@@ -13,24 +13,24 @@ Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
   SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)
   fix identifier.use to http://hl7.org/fhir/identifier-use#official
   fix identifier.type to http://hl7.org/fhir/identifier-type#SB
-  Residency maps to address
+  PostalAddress maps to address
   SurvivingSpouse maps to contact (slice on = relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text
   SurvivingSpouse.RelationshipType maps to contact.relationship
-  SurvivingSpouse.Address maps to contact.address
+  SurvivingSpouse.PostalAddress maps to contact.address
   Father maps to contact
   Father.LegalName maps to contact.name.text
   Father.RelationshipType maps to contact.relationship
-  Father.Address maps to contact.address
+  Father.PostalAddress maps to contact.address
   Mother maps to contact
   Mother.LegalName maps to contact.name.text
   Mother.RelationshipType maps to contact.relationship
-  Mother.Address maps to contact.address
+  Mother.PostalAddress maps to contact.address
   Informant maps to contact
   Informant.LegalName maps to contact.name.text
   Informant.RelationshipType maps to contact.relationship
-  Informant.Address maps to contact.address
+  Informant.PostalAddress maps to contact.address
   Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
   Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race

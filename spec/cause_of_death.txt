@@ -108,7 +108,7 @@ ObservationCode is LNC#11374-6 "Injury incident description"
 1..1 Subject
 1..1 PlaceOfInjury
 1..1 InjuryDateTime
-1..1 Address
+1..1 PostalAddress
 
   Element: PlaceOfInjury
   Concept: TBD

@@ -16,9 +16,9 @@ TimePeriod maps to Period:
   TimePeriodStart maps to start
   TimePeriodEnd maps to end
 
-Address maps to Address:
-	Purpose maps to use
-	Type maps to type
+PostalAddress maps to Address:
+	constrain use to 0..0
+	fix type to http://hl7.org/fhir/ValueSet/address-type#postal
 	DisplayText maps to text
 	AddressLine maps to line
 	City maps to city

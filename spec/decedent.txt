@@ -7,7 +7,7 @@ CodeSystem: LNC = http://loinc.org
 CodeSystem: MTH = http://ncimeta.nci.nih.gov
 CodeSystem: RLN = http://hl7.org/fhir/v2/0131
 
-Element: Decedent
+EntryElement: Decedent
 Based on: Patient
 Concept: MTH#C3274946
 Description: "The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property."
@@ -17,7 +17,7 @@ Description: "The subject of the death record (the decedent). Extensions are use
 0..1 Age // Item 4a on the U.S. Standard Certificate of Death
 0..1 DateOfBirth // Item 5 on the U.S. Standard Certificate of Death
 0..1 Birthplace // Item 6 on the U.S. Standard Certificate of Death
-0..1 Residency // Item 7 on the U.S. Standard Certificate of Death
+0..1 PostalAddress // Item 7 on the U.S. Standard Certificate of Death
 0..1 ServedInArmedForces // Item 8 on the U.S. Standard Certificate of Death
 0..1 MaritalStatusAtDeath // Item 9 on the U.S. Standard Certificate of Death
 0..1 SurvivingSpouse // Item 10 on the U.S. Standard Certificate of Death
@@ -57,15 +57,9 @@ Description: "Decedents date of birth. Corresponds to item 5 of the [U.S. Standa
 Value: 1..1 date
 
 Element: Birthplace
-Based on: Address
 Concept: TBD
 Description: "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-
-Element: Residency
-Based on: Address
-Concept: TBD
-Description: "Decedents place of residence. Corresponds to item 7 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-1..1 InsideCityLimits
+Value: 1..1 PostalAddress
 
 Element: ServedInArmedForces
 Concept: TBD
@@ -82,7 +76,7 @@ Concept: TBD
 Description: "A relative of the decedent. Used as a basis for surviving spouse, father and mother profiles."
 1..1 LegalName
 1..1 RelationshipType from http://hl7.org/fhir/ValueSet/v2-0131
-0..1 Address
+0..1 PostalAddress
 
 Element: RelationshipType
 Concept: TBD
@@ -118,7 +112,7 @@ Concept: TBD
 Description: "The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 PlaceOfDeathType
 0..1 FacilityName
-1..1 Address
+1..1 PostalAddress
 
   Element: PlaceOfDeathType
   Concept: TBD
@@ -146,13 +140,13 @@ Description: "Disposition of the decedent's body. Corresponds to items 18, 19, 2
   Concept: TBD
   Description: "The place of disposition of the decedent's remains. Corresponds to items 19 and 20 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
   1..1 FacilityName
-  1..1 Address
+  1..1 PostalAddress
   
   Element: FuneralFacility
   Concept: TBD
   Description: "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
   1..1 FacilityName
-  1..1 Address
+  1..1 PostalAddress
   
 Element: Education
 Concept: TBD

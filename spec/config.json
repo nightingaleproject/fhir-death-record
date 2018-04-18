@@ -8,6 +8,7 @@
     "strategy": "namespace",
     "primary": ["sdr.decedent", "sdr.causeOfDeath", "sdr.deathRecord"]
   },
+  "igModelDoc": true,
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {

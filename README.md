@@ -8,7 +8,7 @@ The guide uses tooling and builds on content developed by the [Standard Health R
 
 ## Building the FHIR IG
 
-Install the [`shr-cli`](https://github.com/standardhealth/shr-cli) tool.
+Install the [`shr-cli`](https://github.com/standardhealth/shr-cli) tool. The current version of the guide should be built with [`shr-cli` version 5.7.0](https://github.com/standardhealth/shr-cli/releases/tag/v5.7.0) or later.
 
 Compile the CIMPL definitions
 

@@ -2,9 +2,9 @@
 =========================================
 
 err = 12, warn = 0, info = 0
-Generated Thu Apr 12 15:13:57 EDT 2018. FHIR version 3.3.0 for 3.0.1
+Generated Wed Apr 18 16:12:25 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 2 / 0
+ Build Errors : 4 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig : 0 / 0
@@ -60,7 +60,9 @@ Generated Thu Apr 12 15:13:57 EDT 2018. FHIR version 3.3.0 for 3.0.1
 </table>
 == n/a ==
 ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 183, column 232: The link '' cannot be resolved
-ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html#/html/head/link/body/div/div/div/div/div/p/a at Line 138, column 2: The link './StructureDefinition-sdr-deathRecord-DeathRecordContents.html' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html#/html/head/link/body/div/div/div/div/div/p/a at Line 136, column 54: The link './StructureDefinition-sdr-deathRecord-DeathRecord.html' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html#/html/head/link/body/div/div/div/div/div/p/p/a at Line 362, column 140: The link './StructureDefinition-sdr-deathRecord-DeathRecordContents.html' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html#/html/head/link/body/div/div/div/div/div/p/p/a at Line 362, column 298: The link './StructureDefinition-sdr-decedent-Decedent.html' cannot be resolved
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig.xml ==

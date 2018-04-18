@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="567d6d33-7323-4a87-ae07-1005797b2b7d"/>
+  <id value="3ae37290-f5b1-4f41-8daa-96ec73f964ef"/>
   <meta>
-    <lastUpdated value="2018-04-12T15:13:18.158-04:00"/>
+    <lastUpdated value="2018-04-18T16:11:50.734-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -93,7 +93,7 @@
         <name value="CertifierTypeVS"/>
         <title value="SDR CertifierTypeVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -103,8 +103,8 @@
         </contact>
         <description value="Type of certifier for a death record. Corresponds to the allowed values for item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
         <expansion>
-          <identifier value="urn:uuid:75f0947e-0a8b-427f-9f78-656611f2e8f1"/>
-          <timestamp value="2018-04-11T11:39:43-04:00"/>
+          <identifier value="urn:uuid:6282ecb8-b439-46a5-8f68-517a6f487d02"/>
+          <timestamp value="2018-04-18T15:50:40-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="profile"/>
@@ -244,7 +244,7 @@
         <name value="ContributoryTobaccoUseVS"/>
         <title value="SDR ContributoryTobaccoUseVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -254,8 +254,8 @@
         </contact>
         <description value="The extent to which tobacco use contributed to the person&#39;s death. Corresponds to the allowed values for item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
         <expansion>
-          <identifier value="urn:uuid:95875fe5-0ffc-4aba-8c1a-9a1d64a2a251"/>
-          <timestamp value="2018-04-11T11:39:44-04:00"/>
+          <identifier value="urn:uuid:09a6daa8-a701-4dfb-b536-ff18e4bfcaec"/>
+          <timestamp value="2018-04-18T15:50:40-04:00"/>
           <total value="5"/>
           <parameter>
             <name value="profile"/>
@@ -427,7 +427,7 @@
         <name value="DispositionTypeVS"/>
         <title value="SDR DispositionTypeVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -437,8 +437,8 @@
         </contact>
         <description value="Method of disposition of decedent&#39;s remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
         <expansion>
-          <identifier value="urn:uuid:e671bc13-8d08-441f-859b-867f2d2a990e"/>
-          <timestamp value="2018-04-11T11:39:45-04:00"/>
+          <identifier value="urn:uuid:39d0ae6f-b5b0-4ad0-b066-52ae57bb8441"/>
+          <timestamp value="2018-04-18T15:50:41-04:00"/>
           <total value="8"/>
           <parameter>
             <name value="profile"/>
@@ -629,7 +629,7 @@
         <name value="EducationVS"/>
         <title value="SDR EducationVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -639,8 +639,8 @@
         </contact>
         <description value="Decedent&#39;s education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."/>
         <expansion>
-          <identifier value="urn:uuid:164fc927-3fa0-4441-843b-3561f9369c65"/>
-          <timestamp value="2018-04-11T13:51:37-04:00"/>
+          <identifier value="urn:uuid:36b83b06-abcf-4b00-a592-395f9e2a7c7d"/>
+          <timestamp value="2018-04-18T15:50:41-04:00"/>
           <total value="9"/>
           <parameter>
             <name value="profile"/>
@@ -789,7 +789,7 @@
         <name value="MannerOfDeathVS"/>
         <title value="SDR MannerOfDeathVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -799,8 +799,8 @@
         </contact>
         <description value="Manner of death. Corresponds to the allowed values for item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
         <expansion>
-          <identifier value="urn:uuid:e90a7e9d-1bb0-42e2-9c0f-efcbe3ab2ced"/>
-          <timestamp value="2018-04-11T11:39:46-04:00"/>
+          <identifier value="urn:uuid:18856740-9500-4e2b-8311-bb9ddf5d4419"/>
+          <timestamp value="2018-04-18T15:50:41-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="profile"/>
@@ -973,7 +973,7 @@
         <name value="PlaceOfDeathTypeVS"/>
         <title value="SDR PlaceOfDeathTypeVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -983,8 +983,8 @@
         </contact>
         <description value="Place of decedent&#39;s demise. Corresponds to the allowed values for item 14 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
         <expansion>
-          <identifier value="urn:uuid:e4679b44-226b-4dc6-8279-7f40ef103050"/>
-          <timestamp value="2018-04-11T11:39:47-04:00"/>
+          <identifier value="urn:uuid:27305329-ce9a-4716-9422-5aa6276bb400"/>
+          <timestamp value="2018-04-18T15:50:42-04:00"/>
           <total value="8"/>
           <parameter>
             <name value="profile"/>
@@ -1141,7 +1141,7 @@
         <name value="PregnancyStatusVS"/>
         <title value="SDR PregnancyStatusVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -1151,8 +1151,8 @@
         </contact>
         <description value="Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html)."/>
         <expansion>
-          <identifier value="urn:uuid:b2041d29-cb9b-4151-af66-6b86fbb696f8"/>
-          <timestamp value="2018-04-11T11:39:47-04:00"/>
+          <identifier value="urn:uuid:825ba7cf-44f0-4727-9271-c1dcb90dd280"/>
+          <timestamp value="2018-04-18T15:50:42-04:00"/>
           <total value="6"/>
           <parameter>
             <name value="profile"/>
@@ -1278,7 +1278,7 @@
         <name value="TransportRelationshipsVS"/>
         <title value="SDR TransportRelationshipsVS ValueSet"/>
         <status value="draft"/>
-        <date value="2018-04-12T00:00:00-04:00"/>
+        <date value="2018-04-18T00:00:00-04:00"/>
         <publisher value="The MITRE Corporation: Nightingale Project"/>
         <contact>
           <telecom>
@@ -1288,8 +1288,8 @@
         </contact>
         <description value="Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
         <expansion>
-          <identifier value="urn:uuid:e16ddf53-0772-486e-b1e9-8b20f72325b0"/>
-          <timestamp value="2018-04-11T11:39:48-04:00"/>
+          <identifier value="urn:uuid:a4a77678-7cd8-4bb8-b8b3-16e2a8532bc2"/>
+          <timestamp value="2018-04-18T15:50:42-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="profile"/>

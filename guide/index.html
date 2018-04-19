@@ -1,42 +1,43 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   
   <title>Standard Death Record</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Standard Death Record FHIR Profiles"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Standard Death Record FHIR Profiles" />
 
-  <link rel="stylesheet" href="fhir.css"/>
+  <link href="fhir.css" rel="stylesheet" />
 
-    <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="dist/css/bootstrap.css"/>
-  <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css">
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
 
-    <!-- Project extras -->
-  <link rel="stylesheet" href="assets/css/project.css"/>
-  <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-  <link rel="stylesheet" href="jquery-ui.css"/>
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet" />
+  <link href="assets/css/pygments-manni.css" rel="stylesheet" />
+  <link href="jquery-ui.css" rel="stylesheet" />
 
-    <!-- Favicons -->
-  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="assets/ico/favicon.png" />
 
 
   <body>
 
     <div id="segment-header" class="segment">
-    <!-- segment-header -->
+  <!-- segment-header -->
   <div class="container">
-      <!-- container -->
-    <a no-external="true" id="logo" href="http://hl7.org/fhir">
-      <img src="assets/images/fhir-logo-www.png" alt="HL7 FHIR Homepage" class="img-responsive logo"/>
+    <!-- container -->
+    <a id="logo" no-external="true" href="http://hl7.org/fhir">
+      <img alt="HL7 FHIR Homepage" class="img-responsive logo" src="assets/images/fhir-logo-www.png" />
     </a>
     <div id="hl7-status" class="hl7-status">
       
@@ -44,36 +45,36 @@
     </div>
 
     <div id="hl7-nav">
-      <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
-        <img src="assets/images/hl7-logo.png" alt="visit the hl7 website" width="42" height="50"/>
+      <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+        <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png" />
       </a>
     </div>
   </div>
   <div class="container">
-      <!-- container -->
+    <!-- container -->
   </div>
 </div>
-  <!-- /segment-header -->
+<!-- /segment-header -->
 
 <div id="segment-navbar" class="segment">
-    <!-- segment-navbar -->
+  <!-- segment-navbar -->
   <div id="stripe"> </div>
   <div class="container">
-      <!-- container -->
-      <!-- HEADER CONTENT -->
+    <!-- container -->
+    <!-- HEADER CONTENT -->
 
     <nav class="navbar navbar-inverse">
       <div class="container">
-        <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
       <span class="icon-bar"> </span>
       <span class="icon-bar"> </span>
       <span class="icon-bar"> </span>
      </button>
-        <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+        <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-              <!-- no logical models -->
+            <!-- no logical models -->
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="extensions.html">Extensions</a></li>
             <li><a href="valuesets.html">Value Sets</a></li>
@@ -83,48 +84,48 @@
           </ul>
 
         </div>
-          <!-- /.nav-collapse -->
+        <!-- /.nav-collapse -->
       </div>
-        <!-- /.container -->
+      <!-- /.container -->
     </nav>
-      <!-- /.navbar -->
+    <!-- /.navbar -->
 
-      <!-- /HEADER CONTENT -->
+    <!-- /HEADER CONTENT -->
   </div>
-    <!-- /container -->
+  <!-- /container -->
 </div>
-  <!-- /segment-navbar -->
+<!-- /segment-navbar -->
 
-  <!-- ============BreadCrumb=============== -->
+<!-- ============BreadCrumb=============== -->
 
 <div id="segment-breadcrumb" class="segmnt">
-    <!-- segment-breadcrumb -->
+  <!-- segment-breadcrumb -->
   <div class="container">
-      <!-- container -->
+    <!-- container -->
     <ul class="breadcrumb">
       <li title="Home"><a href="index.html"><b>Home</b></a></li>
     </ul>
   </div>
-    <!-- /container -->
+  <!-- /container -->
 </div>
-  <!-- /segment-breadcrumb -->
+<!-- /segment-breadcrumb -->
 
-      <!-- /container -->
-     <!-- /segment-breadcrumb -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-breadcrumb -->
 
- <div id="segment-content" class="segment">    <!-- segment-content -->
- <div class="container">    <!-- container -->
+ <div id="segment-content" class="segment">  <!-- segment-content -->
+ <div class="container">  <!-- container -->
    <div class="row">
      <div class="inner-wrapper">
        <div class="col-12">
 
-  <!-- ============CONTENT CONTENT=============== -->
+<!-- ============CONTENT CONTENT=============== -->
 
 <h2>Standard Death Record Implementation Guide</h2>
 
 <p>The Standard Death Record (SDR) Implementation Guide (IG) describes how to exchange death event information between death certifiers, funeral directors and death registration systems.</p>
 
-<p>The source material and instructions for generating this IG are available at the following URL: <a href="https://github.com/nightingaleproject/fhir-death-record">https://github.com/nightingaleproject/fhir-death-record  <img src="external.png" style="text-align: baseline"/></a>.</p>
+<p>The source material and instructions for generating this IG are available at the following URL: <a href="https://github.com/nightingaleproject/fhir-death-record">https://github.com/nightingaleproject/fhir-death-record  <img style="text-align: baseline" src="external.png" /></a>.</p>
 
 <h3>Document Status</h3>
 
@@ -132,286 +133,285 @@
 
 <h3>Death Record Structure</h3>
 
-<p><a name="2559cfb6-0d69-4373-ad2e-486c992a20a9">​</a>The diagram below illustrates the structure of a <a href="./StructureDefinition-sdr-deathRecord-DeathRecord.html">DeathRecord</a>
+<p>The diagram below illustrates the structure of a <a href="./StructureDefinition-sdr-deathRecord-DeathRecord.html">DeathRecord</a>
 <div class="diagram">
-<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3.3710938 69.5 881.5664 1110" width="881.5664" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" height="1110">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="3.3710938 69.5 881.5664 1110" width="661.1748" height="832.5">
   <defs>
-    <font-face underline-thickness="50" descent="-216.99524" x-height="517" ascent="975.0061" font-weight="700" font-size="14" font-family="Helvetica Neue" cap-height="714" slope="0" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100">
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="700">
       <font-face-src>
-        <font-face-name name="HelveticaNeue-Bold"></font-face-name>
+        <font-face-name name="HelveticaNeue-Bold"/>
       </font-face-src>
     </font-face>
-    <font-face underline-thickness="50" descent="-212.99744" x-height="517" ascent="951.9958" font-weight="400" font-size="14" font-family="Helvetica Neue" cap-height="714" slope="0" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100">
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
       <font-face-src>
-        <font-face-name name="HelveticaNeue"></font-face-name>
+        <font-face-name name="HelveticaNeue"/>
       </font-face-src>
     </font-face>
-    <marker overflow="visible" orient="auto" viewBox="-6 -6 15 12" color="black" markerHeight="12" markerWidth="15" stroke-linejoin="miter" id="SharpArrow_Marker" markerUnits="strokeWidth" stroke-miterlimit="10">
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="SharpArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-6 -6 15 12" markerWidth="15" markerHeight="12" color="black">
       <g>
-        <path d="M 7.5 0 L -4.5 -4.5 L 0 0 L 0 0 L -4.5 4.5 Z" stroke-width="1" fill="currentColor" stroke="currentColor"></path>
+        <path d="M 7.5 0 L -4.5 -4.5 L 0 0 L 0 0 L -4.5 4.5 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
       </g>
     </marker>
   </defs>
   <metadata> Produced by OmniGraffle 7.7.1 
-    <date>2018-04-18 19:20:03 +0000</date>
+    <dc:date>2018-04-18 19:20:03 +0000</dc:date>
   </metadata>
-  <g stroke-opacity="1" stroke-dasharray="none" id="Canvas_1" fill="none" fill-opacity="1" stroke="none">
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none"">
     <title>Canvas 1</title>
-    <rect x="3.3710938" width="881.5664" y="69.5" fill="white" height="1110"></rect>
+    <rect fill="white" x="3.3710938" y="69.5" width="881.5664" height="1110"/>
     <g id="Canvas_1: Layer 1">
       <title>Layer 1</title>
       <g id="Graphic_3">
-        <path d="M 149 75 L 731 75 C 735.9706 75 740 79.02944 740 84 L 740 1165 C 740 1169.9706 735.9706 1174 731 1174 L 149 1174 C 144.02944 1174 140 1169.9706 140 1165 L 140 84 C 140 79.02944 144.02944 75 149 75 Z" fill="#666"></path>
-        <path d="M 149 75 L 731 75 C 735.9706 75 740 79.02944 740 84 L 740 1165 C 740 1169.9706 735.9706 1174 731 1174 L 149 1174 C 144.02944 1174 140 1169.9706 140 1165 L 140 84 C 140 79.02944 144.02944 75 149 75 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 149 75 L 731 75 C 735.9706 75 740 79.02944 740 84 L 740 1165 C 740 1169.9706 735.9706 1174 731 1174 L 149 1174 C 144.02944 1174 140 1169.9706 140 1165 L 140 84 C 140 79.02944 144.02944 75 149 75 Z" fill="#666"/>
+        <path d="M 149 75 L 731 75 C 735.9706 75 740 79.02944 740 84 L 740 1165 C 740 1169.9706 735.9706 1174 731 1174 L 149 1174 C 144.02944 1174 140 1169.9706 140 1165 L 140 84 C 140 79.02944 144.02944 75 149 75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(145 80)" fill="white">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="white">DeathRecord</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="white"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="white">Bundle</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="white"> of type Document)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="white" x="0" y="14">DeathRecord</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="white" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="white" y="14">Bundle</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="white" y="14"> of type Document)</tspan>
         </text>
       </g>
       <g id="Graphic_4">
-        <path d="M 166 109 L 715 109 C 719.9706 109 724 113.02944 724 118 L 724 555 C 724 559.97056 719.9706 564 715 564 L 166 564 C 161.02944 564 157 559.97056 157 555 L 157 118 C 157 113.02944 161.02944 109 166 109 Z" fill="#ccc"></path>
-        <path d="M 166 109 L 715 109 C 719.9706 109 724 113.02944 724 118 L 724 555 C 724 559.97056 719.9706 564 715 564 L 166 564 C 161.02944 564 157 559.97056 157 555 L 157 118 C 157 113.02944 161.02944 109 166 109 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 166 109 L 715 109 C 719.9706 109 724 113.02944 724 118 L 724 555 C 724 559.97056 719.9706 564 715 564 L 166 564 C 161.02944 564 157 559.97056 157 555 L 157 118 C 157 113.02944 161.02944 109 166 109 Z" fill="#ccc"/>
+        <path d="M 166 109 L 715 109 C 719.9706 109 724 113.02944 724 118 L 724 555 C 724 559.97056 719.9706 564 715 564 L 166 564 C 161.02944 564 157 559.97056 157 555 L 157 118 C 157 113.02944 161.02944 109 166 109 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(162 114)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry</tspan>
         </text>
       </g>
       <g id="Graphic_5">
-        <path d="M 179 143 L 704 143 C 708.9706 143 713 147.02944 713 152 L 713 540 C 713 544.97056 708.9706 549 704 549 L 179 549 C 174.02944 549 170 544.97056 170 540 L 170 152 C 170 147.02944 174.02944 143 179 143 Z" fill="white"></path>
-        <path d="M 179 143 L 704 143 C 708.9706 143 713 147.02944 713 152 L 713 540 C 713 544.97056 708.9706 549 704 549 L 179 549 C 174.02944 549 170 544.97056 170 540 L 170 152 C 170 147.02944 174.02944 143 179 143 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 179 143 L 704 143 C 708.9706 143 713 147.02944 713 152 L 713 540 C 713 544.97056 708.9706 549 704 549 L 179 549 C 174.02944 549 170 544.97056 170 540 L 170 152 C 170 147.02944 174.02944 143 179 143 Z" fill="white"/>
+        <path d="M 179 143 L 704 143 C 708.9706 143 713 147.02944 713 152 L 713 540 C 713 544.97056 708.9706 549 704 549 L 179 549 C 174.02944 549 170 544.97056 170 540 L 170 152 C 170 147.02944 174.02944 143 179 143 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(175 148)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">DeathRecordContents</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Composition</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">DeathRecordContents</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" y="14">Composition</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14">)</tspan>
         </text>
       </g>
       <g id="Graphic_6">
-        <path d="M 191 178 L 693 178 C 697.9706 178 702 182.02944 702 187 L 702 209 C 702 213.97056 697.9706 218 693 218 L 191 218 C 186.02944 218 182 213.97056 182 209 L 182 187 C 182 182.02944 186.02944 178 191 178 Z" fill="#c0ffc0"></path>
-        <path d="M 191 178 L 693 178 C 697.9706 178 702 182.02944 702 187 L 702 209 C 702 213.97056 697.9706 218 693 218 L 191 218 C 186.02944 218 182 213.97056 182 209 L 182 187 C 182 182.02944 186.02944 178 191 178 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 191 178 L 693 178 C 697.9706 178 702 182.02944 702 187 L 702 209 C 702 213.97056 697.9706 218 693 218 L 191 218 C 186.02944 218 182 213.97056 182 209 L 182 187 C 182 182.02944 186.02944 178 191 178 Z" fill="#c0ffc0"/>
+        <path d="M 191 178 L 693 178 C 697.9706 178 702 182.02944 702 187 L 702 209 C 702 213.97056 697.9706 218 693 218 L 191 218 C 186.02944 218 182 213.97056 182 209 L 182 187 C 182 182.02944 186.02944 178 191 178 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(187 189.804)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Subject</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Subject</tspan>
         </text>
       </g>
       <g id="Graphic_7">
-        <path d="M 191 232 L 693 232 C 697.9706 232 702 236.02944 702 241 L 702 263 C 702 267.97056 697.9706 272 693 272 L 191 272 C 186.02944 272 182 267.97056 182 263 L 182 241 C 182 236.02944 186.02944 232 191 232 Z" fill="#c0ffc0"></path>
-        <path d="M 191 232 L 693 232 C 697.9706 232 702 236.02944 702 241 L 702 263 C 702 267.97056 697.9706 272 693 272 L 191 272 C 186.02944 272 182 267.97056 182 263 L 182 241 C 182 236.02944 186.02944 232 191 232 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 191 232 L 693 232 C 697.9706 232 702 236.02944 702 241 L 702 263 C 702 267.97056 697.9706 272 693 272 L 191 272 C 186.02944 272 182 267.97056 182 263 L 182 241 C 182 236.02944 186.02944 232 191 232 Z" fill="#c0ffc0"/>
+        <path d="M 191 232 L 693 232 C 697.9706 232 702 236.02944 702 241 L 702 263 C 702 267.97056 697.9706 272 693 272 L 191 272 C 186.02944 272 182 267.97056 182 263 L 182 241 C 182 236.02944 186.02944 232 191 232 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(187 243.804)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Author</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Author</tspan>
         </text>
       </g>
       <g id="Graphic_8">
-        <path d="M 191 286 L 693 286 C 697.9706 286 702 290.02944 702 295 L 702 317 C 702 321.97056 697.9706 326 693 326 L 191 326 C 186.02944 326 182 321.97056 182 317 L 182 295 C 182 290.02944 186.02944 286 191 286 Z" fill="#c0ffc0"></path>
-        <path d="M 191 286 L 693 286 C 697.9706 286 702 290.02944 702 295 L 702 317 C 702 321.97056 697.9706 326 693 326 L 191 326 C 186.02944 326 182 321.97056 182 317 L 182 295 C 182 290.02944 186.02944 286 191 286 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 191 286 L 693 286 C 697.9706 286 702 290.02944 702 295 L 702 317 C 702 321.97056 697.9706 326 693 326 L 191 326 C 186.02944 326 182 321.97056 182 317 L 182 295 C 182 290.02944 186.02944 286 191 286 Z" fill="#c0ffc0"/>
+        <path d="M 191 286 L 693 286 C 697.9706 286 702 290.02944 702 295 L 702 317 C 702 321.97056 697.9706 326 693 326 L 191 326 C 186.02944 326 182 321.97056 182 317 L 182 295 C 182 290.02944 186.02944 286 191 286 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(187 297.804)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Author</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Author</tspan>
         </text>
       </g>
       <g id="Graphic_9">
-        <path d="M 191 340 L 693 340 C 697.9706 340 702 344.02944 702 349 L 702 525 C 702 529.97056 697.9706 534 693 534 L 191 534 C 186.02944 534 182 529.97056 182 525 L 182 349 C 182 344.02944 186.02944 340 191 340 Z" fill="#c0ffc0"></path>
-        <path d="M 191 340 L 693 340 C 697.9706 340 702 344.02944 702 349 L 702 525 C 702 529.97056 697.9706 534 693 534 L 191 534 C 186.02944 534 182 529.97056 182 525 L 182 349 C 182 344.02944 186.02944 340 191 340 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 191 340 L 693 340 C 697.9706 340 702 344.02944 702 349 L 702 525 C 702 529.97056 697.9706 534 693 534 L 191 534 C 186.02944 534 182 529.97056 182 525 L 182 349 C 182 344.02944 186.02944 340 191 340 Z" fill="#c0ffc0"/>
+        <path d="M 191 340 L 693 340 C 697.9706 340 702 344.02944 702 349 L 702 525 C 702 529.97056 697.9706 534 693 534 L 191 534 C 186.02944 534 182 529.97056 182 525 L 182 349 C 182 344.02944 186.02944 340 191 340 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(187 345)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Section</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Section</tspan>
         </text>
       </g>
       <g id="Graphic_10">
-        <path d="M 202 376 L 681 376 C 685.9706 376 690 380.02944 690 385 L 690 407 C 690 411.97056 685.9706 416 681 416 L 202 416 C 197.02944 416 193 411.97056 193 407 L 193 385 C 193 380.02944 197.02944 376 202 376 Z" fill="#c0c0ff"></path>
-        <path d="M 202 376 L 681 376 C 685.9706 376 690 380.02944 690 385 L 690 407 C 690 411.97056 685.9706 416 681 416 L 202 416 C 197.02944 416 193 411.97056 193 407 L 193 385 C 193 380.02944 197.02944 376 202 376 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 202 376 L 681 376 C 685.9706 376 690 380.02944 690 385 L 690 407 C 690 411.97056 685.9706 416 681 416 L 202 416 C 197.02944 416 193 411.97056 193 407 L 193 385 C 193 380.02944 197.02944 376 202 376 Z" fill="#c0c0ff"/>
+        <path d="M 202 376 L 681 376 C 685.9706 376 690 380.02944 690 385 L 690 407 C 690 411.97056 685.9706 416 681 416 L 202 416 C 197.02944 416 193 411.97056 193 407 L 193 385 C 193 380.02944 197.02944 376 202 376 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(198 387.804)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Reference</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Reference</tspan>
         </text>
       </g>
       <g id="Graphic_11">
-        <path d="M 202 429 L 681 429 C 685.9706 429 690 433.02944 690 438 L 690 460 C 690 464.97056 685.9706 469 681 469 L 202 469 C 197.02944 469 193 464.97056 193 460 L 193 438 C 193 433.02944 197.02944 429 202 429 Z" fill="#c0c0ff"></path>
-        <path d="M 202 429 L 681 429 C 685.9706 429 690 433.02944 690 438 L 690 460 C 690 464.97056 685.9706 469 681 469 L 202 469 C 197.02944 469 193 464.97056 193 460 L 193 438 C 193 433.02944 197.02944 429 202 429 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 202 429 L 681 429 C 685.9706 429 690 433.02944 690 438 L 690 460 C 690 464.97056 685.9706 469 681 469 L 202 469 C 197.02944 469 193 464.97056 193 460 L 193 438 C 193 433.02944 197.02944 429 202 429 Z" fill="#c0c0ff"/>
+        <path d="M 202 429 L 681 429 C 685.9706 429 690 433.02944 690 438 L 690 460 C 690 464.97056 685.9706 469 681 469 L 202 469 C 197.02944 469 193 464.97056 193 460 L 193 438 C 193 433.02944 197.02944 429 202 429 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(198 440.804)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Reference</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Reference</tspan>
         </text>
       </g>
       <g id="Graphic_13">
-        <path d="M 202 482 L 681 482 C 685.9706 482 690 486.02944 690 491 L 690 513 C 690 517.97056 685.9706 522 681 522 L 202 522 C 197.02944 522 193 517.97056 193 513 L 193 491 C 193 486.02944 197.02944 482 202 482 Z" fill="#c0c0ff"></path>
-        <path d="M 202 482 L 681 482 C 685.9706 482 690 486.02944 690 491 L 690 513 C 690 517.97056 685.9706 522 681 522 L 202 522 C 197.02944 522 193 517.97056 193 513 L 193 491 C 193 486.02944 197.02944 482 202 482 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 202 482 L 681 482 C 685.9706 482 690 486.02944 690 491 L 690 513 C 690 517.97056 685.9706 522 681 522 L 202 522 C 197.02944 522 193 517.97056 193 513 L 193 491 C 193 486.02944 197.02944 482 202 482 Z" fill="#c0c0ff"/>
+        <path d="M 202 482 L 681 482 C 685.9706 482 690 486.02944 690 491 L 690 513 C 690 517.97056 685.9706 522 681 522 L 202 522 C 197.02944 522 193 517.97056 193 513 L 193 491 C 193 486.02944 197.02944 482 202 482 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(198 493.29695)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">…</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">…</tspan>
         </text>
       </g>
       <g id="Graphic_20">
-        <path d="M 165.5 578 L 714.5 578 C 719.4706 578 723.5 582.02944 723.5 587 L 723.5 654 C 723.5 658.9706 719.4706 663 714.5 663 L 165.5 663 C 160.52944 663 156.5 658.9706 156.5 654 L 156.5 587 C 156.5 582.02944 160.52944 578 165.5 578 Z" fill="#ccc"></path>
-        <path d="M 165.5 578 L 714.5 578 C 719.4706 578 723.5 582.02944 723.5 587 L 723.5 654 C 723.5 658.9706 719.4706 663 714.5 663 L 165.5 663 C 160.52944 663 156.5 658.9706 156.5 654 L 156.5 587 C 156.5 582.02944 160.52944 578 165.5 578 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 165.5 578 L 714.5 578 C 719.4706 578 723.5 582.02944 723.5 587 L 723.5 654 C 723.5 658.9706 719.4706 663 714.5 663 L 165.5 663 C 160.52944 663 156.5 658.9706 156.5 654 L 156.5 587 C 156.5 582.02944 160.52944 578 165.5 578 Z" fill="#ccc"/>
+        <path d="M 165.5 578 L 714.5 578 C 719.4706 578 723.5 582.02944 723.5 587 L 723.5 654 C 723.5 658.9706 719.4706 663 714.5 663 L 165.5 663 C 160.52944 663 156.5 658.9706 156.5 654 L 156.5 587 C 156.5 582.02944 160.52944 578 165.5 578 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(161.5 583)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry</tspan>
         </text>
       </g>
       <g id="Graphic_21">
-        <path d="M 165.5 677 L 714.5 677 C 719.4706 677 723.5 681.0294 723.5 686 L 723.5 753 C 723.5 757.9706 719.4706 762 714.5 762 L 165.5 762 C 160.52944 762 156.5 757.9706 156.5 753 L 156.5 686 C 156.5 681.0294 160.52944 677 165.5 677 Z" fill="#ccc"></path>
-        <path d="M 165.5 677 L 714.5 677 C 719.4706 677 723.5 681.0294 723.5 686 L 723.5 753 C 723.5 757.9706 719.4706 762 714.5 762 L 165.5 762 C 160.52944 762 156.5 757.9706 156.5 753 L 156.5 686 C 156.5 681.0294 160.52944 677 165.5 677 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 165.5 677 L 714.5 677 C 719.4706 677 723.5 681.0294 723.5 686 L 723.5 753 C 723.5 757.9706 719.4706 762 714.5 762 L 165.5 762 C 160.52944 762 156.5 757.9706 156.5 753 L 156.5 686 C 156.5 681.0294 160.52944 677 165.5 677 Z" fill="#ccc"/>
+        <path d="M 165.5 677 L 714.5 677 C 719.4706 677 723.5 681.0294 723.5 686 L 723.5 753 C 723.5 757.9706 719.4706 762 714.5 762 L 165.5 762 C 160.52944 762 156.5 757.9706 156.5 753 L 156.5 686 C 156.5 681.0294 160.52944 677 165.5 677 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(161.5 682)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry</tspan>
         </text>
       </g>
       <g id="Graphic_24">
-        <path d="M 165.5 776 L 714.5 776 C 719.4706 776 723.5 780.0294 723.5 785 L 723.5 852 C 723.5 856.9706 719.4706 861 714.5 861 L 165.5 861 C 160.52944 861 156.5 856.9706 156.5 852 L 156.5 785 C 156.5 780.0294 160.52944 776 165.5 776 Z" fill="#ccc"></path>
-        <path d="M 165.5 776 L 714.5 776 C 719.4706 776 723.5 780.0294 723.5 785 L 723.5 852 C 723.5 856.9706 719.4706 861 714.5 861 L 165.5 861 C 160.52944 861 156.5 856.9706 156.5 852 L 156.5 785 C 156.5 780.0294 160.52944 776 165.5 776 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 165.5 776 L 714.5 776 C 719.4706 776 723.5 780.0294 723.5 785 L 723.5 852 C 723.5 856.9706 719.4706 861 714.5 861 L 165.5 861 C 160.52944 861 156.5 856.9706 156.5 852 L 156.5 785 C 156.5 780.0294 160.52944 776 165.5 776 Z" fill="#ccc"/>
+        <path d="M 165.5 776 L 714.5 776 C 719.4706 776 723.5 780.0294 723.5 785 L 723.5 852 C 723.5 856.9706 719.4706 861 714.5 861 L 165.5 861 C 160.52944 861 156.5 856.9706 156.5 852 L 156.5 785 C 156.5 780.0294 160.52944 776 165.5 776 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(161.5 781)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry</tspan>
         </text>
       </g>
       <g id="Graphic_25">
-        <path d="M 165.5 875 L 714.5 875 C 719.4706 875 723.5 879.0294 723.5 884 L 723.5 951 C 723.5 955.9706 719.4706 960 714.5 960 L 165.5 960 C 160.52944 960 156.5 955.9706 156.5 951 L 156.5 884 C 156.5 879.0294 160.52944 875 165.5 875 Z" fill="#ccc"></path>
-        <path d="M 165.5 875 L 714.5 875 C 719.4706 875 723.5 879.0294 723.5 884 L 723.5 951 C 723.5 955.9706 719.4706 960 714.5 960 L 165.5 960 C 160.52944 960 156.5 955.9706 156.5 951 L 156.5 884 C 156.5 879.0294 160.52944 875 165.5 875 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 165.5 875 L 714.5 875 C 719.4706 875 723.5 879.0294 723.5 884 L 723.5 951 C 723.5 955.9706 719.4706 960 714.5 960 L 165.5 960 C 160.52944 960 156.5 955.9706 156.5 951 L 156.5 884 C 156.5 879.0294 160.52944 875 165.5 875 Z" fill="#ccc"/>
+        <path d="M 165.5 875 L 714.5 875 C 719.4706 875 723.5 879.0294 723.5 884 L 723.5 951 C 723.5 955.9706 719.4706 960 714.5 960 L 165.5 960 C 160.52944 960 156.5 955.9706 156.5 951 L 156.5 884 C 156.5 879.0294 160.52944 875 165.5 875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(161.5 880)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry</tspan>
         </text>
       </g>
       <g id="Graphic_26">
-        <path d="M 165.5 974 L 714.5 974 C 719.4706 974 723.5 978.0294 723.5 983 L 723.5 1050 C 723.5 1054.9706 719.4706 1059 714.5 1059 L 165.5 1059 C 160.52944 1059 156.5 1054.9706 156.5 1050 L 156.5 983 C 156.5 978.0294 160.52944 974 165.5 974 Z" fill="#ccc"></path>
-        <path d="M 165.5 974 L 714.5 974 C 719.4706 974 723.5 978.0294 723.5 983 L 723.5 1050 C 723.5 1054.9706 719.4706 1059 714.5 1059 L 165.5 1059 C 160.52944 1059 156.5 1054.9706 156.5 1050 L 156.5 983 C 156.5 978.0294 160.52944 974 165.5 974 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 165.5 974 L 714.5 974 C 719.4706 974 723.5 978.0294 723.5 983 L 723.5 1050 C 723.5 1054.9706 719.4706 1059 714.5 1059 L 165.5 1059 C 160.52944 1059 156.5 1054.9706 156.5 1050 L 156.5 983 C 156.5 978.0294 160.52944 974 165.5 974 Z" fill="#ccc"/>
+        <path d="M 165.5 974 L 714.5 974 C 719.4706 974 723.5 978.0294 723.5 983 L 723.5 1050 C 723.5 1054.9706 719.4706 1059 714.5 1059 L 165.5 1059 C 160.52944 1059 156.5 1054.9706 156.5 1050 L 156.5 983 C 156.5 978.0294 160.52944 974 165.5 974 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(161.5 979)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry</tspan>
         </text>
       </g>
       <g id="Graphic_27">
-        <path d="M 165.5 1073 L 714.5 1073 C 719.4706 1073 723.5 1077.0294 723.5 1082 L 723.5 1149 C 723.5 1153.9706 719.4706 1158 714.5 1158 L 165.5 1158 C 160.52944 1158 156.5 1153.9706 156.5 1149 L 156.5 1082 C 156.5 1077.0294 160.52944 1073 165.5 1073 Z" fill="#ccc"></path>
-        <path d="M 165.5 1073 L 714.5 1073 C 719.4706 1073 723.5 1077.0294 723.5 1082 L 723.5 1149 C 723.5 1153.9706 719.4706 1158 714.5 1158 L 165.5 1158 C 160.52944 1158 156.5 1153.9706 156.5 1149 L 156.5 1082 C 156.5 1077.0294 160.52944 1073 165.5 1073 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 165.5 1073 L 714.5 1073 C 719.4706 1073 723.5 1077.0294 723.5 1082 L 723.5 1149 C 723.5 1153.9706 719.4706 1158 714.5 1158 L 165.5 1158 C 160.52944 1158 156.5 1153.9706 156.5 1149 L 156.5 1082 C 156.5 1077.0294 160.52944 1073 165.5 1073 Z" fill="#ccc"/>
+        <path d="M 165.5 1073 L 714.5 1073 C 719.4706 1073 723.5 1077.0294 723.5 1082 L 723.5 1149 C 723.5 1153.9706 719.4706 1158 714.5 1158 L 165.5 1158 C 160.52944 1158 156.5 1153.9706 156.5 1149 L 156.5 1082 C 156.5 1077.0294 160.52944 1073 165.5 1073 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(161.5 1078)" fill="black">
-          <tspan font-weight="400" x="0" font-size="14" y="13" font-family="Helvetica Neue" fill="black">Entry … </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Entry … </tspan>
         </text>
       </g>
       <g id="Graphic_15">
-        <path d="M 177 711 L 704 711 C 708.9706 711 713 715.0294 713 720 L 713 742 C 713 746.9706 708.9706 751 704 751 L 177 751 C 172.02944 751 168 746.9706 168 742 L 168 720 C 168 715.0294 172.02944 711 177 711 Z" fill="white"></path>
-        <path d="M 177 711 L 704 711 C 708.9706 711 713 715.0294 713 720 L 713 742 C 713 746.9706 708.9706 751 704 751 L 177 751 C 172.02944 751 168 746.9706 168 742 L 168 720 C 168 715.0294 172.02944 711 177 711 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 177 711 L 704 711 C 708.9706 711 713 715.0294 713 720 L 713 742 C 713 746.9706 708.9706 751 704 751 L 177 751 C 172.02944 751 168 746.9706 168 742 L 168 720 C 168 715.0294 172.02944 711 177 711 Z" fill="white"/>
+        <path d="M 177 711 L 704 711 C 708.9706 711 713 715.0294 713 720 L 713 742 C 713 746.9706 708.9706 751 704 751 L 177 751 C 172.02944 751 168 746.9706 168 742 L 168 720 C 168 715.0294 172.02944 711 177 711 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(173 722.29695)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Certifier</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Practitioner</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">Certifier</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" y="14">Practitioner</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14">)</tspan>
         </text>
       </g>
       <g id="Graphic_16">
-        <path d="M 176.5 610.5 L 703.5 610.5 C 708.4706 610.5 712.5 614.52944 712.5 619.5 L 712.5 641.5 C 712.5 646.4706 708.4706 650.5 703.5 650.5 L 176.5 650.5 C 171.52944 650.5 167.5 646.4706 167.5 641.5 L 167.5 619.5 C 167.5 614.52944 171.52944 610.5 176.5 610.5 Z" fill="white"></path>
-        <path d="M 176.5 610.5 L 703.5 610.5 C 708.4706 610.5 712.5 614.52944 712.5 619.5 L 712.5 641.5 C 712.5 646.4706 708.4706 650.5 703.5 650.5 L 176.5 650.5 C 171.52944 650.5 167.5 646.4706 167.5 641.5 L 167.5 619.5 C 167.5 614.52944 171.52944 610.5 176.5 610.5 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 176.5 610.5 L 703.5 610.5 C 708.4706 610.5 712.5 614.52944 712.5 619.5 L 712.5 641.5 C 712.5 646.4706 708.4706 650.5 703.5 650.5 L 176.5 650.5 C 171.52944 650.5 167.5 646.4706 167.5 641.5 L 167.5 619.5 C 167.5 614.52944 171.52944 610.5 176.5 610.5 Z" fill="white"/>
+        <path d="M 176.5 610.5 L 703.5 610.5 C 708.4706 610.5 712.5 614.52944 712.5 619.5 L 712.5 641.5 C 712.5 646.4706 708.4706 650.5 703.5 650.5 L 176.5 650.5 C 171.52944 650.5 167.5 646.4706 167.5 641.5 L 167.5 619.5 C 167.5 614.52944 171.52944 610.5 176.5 610.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(172.5 621.79695)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">FuneralDirector</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Practitioner</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">FuneralDirector</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" y="14">Practitioner</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14">)</tspan>
         </text>
       </g>
       <g id="Graphic_17">
-        <path d="M 176.5 908 L 703.5 908 C 708.4706 908 712.5 912.0294 712.5 917 L 712.5 939 C 712.5 943.9706 708.4706 948 703.5 948 L 176.5 948 C 171.52944 948 167.5 943.9706 167.5 939 L 167.5 917 C 167.5 912.0294 171.52944 908 176.5 908 Z" fill="white"></path>
-        <path d="M 176.5 908 L 703.5 908 C 708.4706 908 712.5 912.0294 712.5 917 L 712.5 939 C 712.5 943.9706 708.4706 948 703.5 948 L 176.5 948 C 171.52944 948 167.5 943.9706 167.5 939 L 167.5 917 C 167.5 912.0294 171.52944 908 176.5 908 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 176.5 908 L 703.5 908 C 708.4706 908 712.5 912.0294 712.5 917 L 712.5 939 C 712.5 943.9706 708.4706 948 703.5 948 L 176.5 948 C 171.52944 948 167.5 943.9706 167.5 939 L 167.5 917 C 167.5 912.0294 171.52944 908 176.5 908 Z" fill="white"/>
+        <path d="M 176.5 908 L 703.5 908 C 708.4706 908 712.5 912.0294 712.5 917 L 712.5 939 C 712.5 943.9706 708.4706 948 703.5 948 L 176.5 948 C 171.52944 948 167.5 943.9706 167.5 939 L 167.5 917 C 167.5 912.0294 171.52944 908 176.5 908 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(172.5 919.297)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">CauseOfDeathCondition</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Condition</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">CauseOfDeathCondition</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" y="14">Condition</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14">)</tspan>
         </text>
       </g>
       <g id="Graphic_18">
-        <path d="M 176.5 1006 L 703.5 1006 C 708.4706 1006 712.5 1010.0294 712.5 1015 L 712.5 1037 C 712.5 1041.9706 708.4706 1046 703.5 1046 L 176.5 1046 C 171.52944 1046 167.5 1041.9706 167.5 1037 L 167.5 1015 C 167.5 1010.0294 171.52944 1006 176.5 1006 Z" fill="white"></path>
-        <path d="M 176.5 1006 L 703.5 1006 C 708.4706 1006 712.5 1010.0294 712.5 1015 L 712.5 1037 C 712.5 1041.9706 708.4706 1046 703.5 1046 L 176.5 1046 C 171.52944 1046 167.5 1041.9706 167.5 1037 L 167.5 1015 C 167.5 1010.0294 171.52944 1006 176.5 1006 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 176.5 1006 L 703.5 1006 C 708.4706 1006 712.5 1010.0294 712.5 1015 L 712.5 1037 C 712.5 1041.9706 708.4706 1046 703.5 1046 L 176.5 1046 C 171.52944 1046 167.5 1041.9706 167.5 1037 L 167.5 1015 C 167.5 1010.0294 171.52944 1006 176.5 1006 Z" fill="white"/>
+        <path d="M 176.5 1006 L 703.5 1006 C 708.4706 1006 712.5 1010.0294 712.5 1015 L 712.5 1037 C 712.5 1041.9706 708.4706 1046 703.5 1046 L 176.5 1046 C 171.52944 1046 167.5 1041.9706 167.5 1037 L 167.5 1015 C 167.5 1010.0294 171.52944 1006 176.5 1006 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(172.5 1017.297)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">AutopsyPerformed</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Observation</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">AutopsyPerformed</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" y="14">Observation</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14">)</tspan>
         </text>
       </g>
       <g id="Graphic_19">
-        <path d="M 176.5 1105 L 703.5 1105 C 708.4706 1105 712.5 1109.0294 712.5 1114 L 712.5 1136 C 712.5 1140.9706 708.4706 1145 703.5 1145 L 176.5 1145 C 171.52944 1145 167.5 1140.9706 167.5 1136 L 167.5 1114 C 167.5 1109.0294 171.52944 1105 176.5 1105 Z" fill="white"></path>
-        <path d="M 176.5 1105 L 703.5 1105 C 708.4706 1105 712.5 1109.0294 712.5 1114 L 712.5 1136 C 712.5 1140.9706 708.4706 1145 703.5 1145 L 176.5 1145 C 171.52944 1145 167.5 1140.9706 167.5 1136 L 167.5 1114 C 167.5 1109.0294 171.52944 1105 176.5 1105 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 176.5 1105 L 703.5 1105 C 708.4706 1105 712.5 1109.0294 712.5 1114 L 712.5 1136 C 712.5 1140.9706 708.4706 1145 703.5 1145 L 176.5 1145 C 171.52944 1145 167.5 1140.9706 167.5 1136 L 167.5 1114 C 167.5 1109.0294 171.52944 1105 176.5 1105 Z" fill="white"/>
+        <path d="M 176.5 1105 L 703.5 1105 C 708.4706 1105 712.5 1109.0294 712.5 1114 L 712.5 1136 C 712.5 1140.9706 708.4706 1145 703.5 1145 L 176.5 1145 C 171.52944 1145 167.5 1140.9706 167.5 1136 L 167.5 1114 C 167.5 1109.0294 171.52944 1105 176.5 1105 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(172.5 1116.297)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">…</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">…</tspan>
         </text>
       </g>
       <g id="Line_28">
-        <path marker-end="url(#SharpArrow_Marker)" d="M 702 195.08984 L 861.6172 195.08984 L 879.4375 195.08984 L 879.4375 685.84766 L 879.4375 829.5 L 721.9 829.5" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 702 195.08984 L 861.6172 195.08984 L 879.4375 195.08984 L 879.4375 685.84766 L 879.4375 829.5 L 721.9 829.5" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_14">
-        <path d="M 176.5 809.5 L 703.5 809.5 C 708.4706 809.5 712.5 813.5294 712.5 818.5 L 712.5 840.5 C 712.5 845.4706 708.4706 849.5 703.5 849.5 L 176.5 849.5 C 171.52944 849.5 167.5 845.4706 167.5 840.5 L 167.5 818.5 C 167.5 813.5294 171.52944 809.5 176.5 809.5 Z" fill="white"></path>
-        <path d="M 176.5 809.5 L 703.5 809.5 C 708.4706 809.5 712.5 813.5294 712.5 818.5 L 712.5 840.5 C 712.5 845.4706 708.4706 849.5 703.5 849.5 L 176.5 849.5 C 171.52944 849.5 167.5 845.4706 167.5 840.5 L 167.5 818.5 C 167.5 813.5294 171.52944 809.5 176.5 809.5 Z" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 176.5 809.5 L 703.5 809.5 C 708.4706 809.5 712.5 813.5294 712.5 818.5 L 712.5 840.5 C 712.5 845.4706 708.4706 849.5 703.5 849.5 L 176.5 849.5 C 171.52944 849.5 167.5 845.4706 167.5 840.5 L 167.5 818.5 C 167.5 813.5294 171.52944 809.5 176.5 809.5 Z" fill="white"/>
+        <path d="M 176.5 809.5 L 703.5 809.5 C 708.4706 809.5 712.5 813.5294 712.5 818.5 L 712.5 840.5 C 712.5 845.4706 708.4706 849.5 703.5 849.5 L 176.5 849.5 C 171.52944 849.5 167.5 845.4706 167.5 840.5 L 167.5 818.5 C 167.5 813.5294 171.52944 809.5 176.5 809.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
         <text transform="translate(172.5 820.797)" fill="black">
-          <tspan font-weight="700" x="0" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Decedent</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black"> (Profile of </tspan>
-          <tspan font-weight="700" font-size="14" y="14" font-family="Helvetica Neue" fill="black">Patient</tspan>
-          <tspan font-weight="400" font-size="14" y="14" font-family="Helvetica Neue" fill="black">)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" x="0" y="14">Decedent</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14"> (Profile of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="700" fill="black" y="14">Patient</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" y="14">)</tspan>
         </text>
       </g>
       <g id="Line_29">
-        <path marker-end="url(#SharpArrow_Marker)" d="M 702 248.6914 L 833.6914 248.6914 L 833.6914 731 L 830.7383 731 L 722.4 731" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 702 248.6914 L 833.6914 248.6914 L 833.6914 731 L 830.7383 731 L 722.4 731" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_30">
-        <path marker-end="url(#SharpArrow_Marker)" d="M 702 306 L 787.1875 306 L 787.1875 308.8086 L 787.1875 630 L 785 630 L 721.9 630.09145" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 702 306 L 787.1875 306 L 787.1875 308.8086 L 787.1875 630 L 785 630 L 721.9 630.09145" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_34">
-        <path marker-end="url(#SharpArrow_Marker)" d="M 193 394.8203 L 54.73828 394.8203 L 54.73828 1027.543 L 55.64844 1027.543 L 158.1 1027.543" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 193 394.8203 L 54.73828 394.8203 L 54.73828 1027.543 L 55.64844 1027.543 L 158.1 1027.543" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_35">
-        <path marker-end="url(#SharpArrow_Marker)" d="M 193 445.3164 L 94.15234 445.3164 L 94.15234 927.6836 L 100.74609 927.6836 L 158.1 927.7371" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 193 445.3164 L 94.15234 445.3164 L 94.15234 927.6836 L 100.74609 927.6836 L 158.1 927.7371" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_36">
-        <path marker-end="url(#SharpArrow_Marker)" d="M 193 502 L 99.65234 502 C 99.65234 496.5 88.65234 496.5 88.65234 502 L 60.23828 502 C 60.23828 496.5 49.23828 496.5 49.23828 502 L 8.871094 502 L 8.871094 505.6172 L 8.871094 1126.7422 L 11.628906 1126.7422 L 158.1 1126.7422" stroke-linejoin="round" stroke-width="1" stroke="black" stroke-linecap="round"></path>
+        <path d="M 193 502 L 99.65234 502 C 99.65234 496.5 88.65234 496.5 88.65234 502 L 60.23828 502 C 60.23828 496.5 49.23828 496.5 49.23828 502 L 8.871094 502 L 8.871094 505.6172 L 8.871094 1126.7422 L 11.628906 1126.7422 L 158.1 1126.7422" marker-end="url(#SharpArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>
 </svg>
 </div>
 
-<p><a name="9d866d44-6a1e-43d4-8e9e-6baf54b34941">​</a>The above diagram does not include the full list of data elements that comprise this IG, additional data elements are specified in the <a href="./StructureDefinition-sdr-deathRecord-DeathRecordContents.html">DeathRecordContents</a> profile of the Composition resource and as extensions to the <a href="./StructureDefinition-sdr-decedent-Decedent.html">Decedent</a> profile of the Patient resource.</p>
+<p>The above diagram does not include the full list of data elements that comprise this IG, additional data elements are specified in the <a href="./StructureDefinition-sdr-deathRecord-DeathRecordContents.html">DeathRecordContents</a> profile of the Composition resource and as extensions to the <a href="./StructureDefinition-sdr-decedent-Decedent.html">Decedent</a> profile of the Patient resource.</p>
 
 <h3>Acknowledgements</h3>
 
-<p>This guide builds on <a href="https://github.com/BioMIBLab/fhir-death">FHIR profiles  <img src="external.png" style="text-align: baseline"/></a> developed as part of a collaboration between Georgia Tech and CDC.</p>
+<p>This guide builds on <a href="https://github.com/BioMIBLab/fhir-death">FHIR profiles  <img style="text-align: baseline" src="external.png" /></a> developed as part of a collaboration between Georgia Tech and CDC.</p>
 
-<p>This guide uses tooling and builds on content developed by the <a href="http://standardhealthrecord.org">Standard Health Record Collaborative <img src="external.png" style="text-align: baseline"/></a>.</p>
+<p>This guide uses tooling and builds on content developed by the <a href="http://standardhealthrecord.org">Standard Health Record Collaborative <img style="text-align: baseline" src="external.png" /></a>.</p>
 
 
-  <!-- ==============END CONTENT END CONTENT=================== -->
+<!-- ==============END CONTENT END CONTENT=================== -->
 
-        
-          <!-- /inner-wrapper -->
-        <!-- /row -->
-      <!-- /container -->
-    <!-- /segment-content -->
+        </div>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /row -->
+  </div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-        
-          <!-- /inner-wrapper -->
-        <!-- /row -->
-      <!-- /container -->
-    <!-- /segment-content -->
+        </div>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /row -->
+  </div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-<div id="segment-footer" class="segment">    <!-- segment-footer -->
-  <div class="container">    <!-- container -->
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+  <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 18, 2018 16:11-0400.
+      ; Generated on Thu, Apr 19, 2018 10:10-0400.
     </p>
-   </div>    <!-- /inner-wrapper -->
-  </div>    <!-- /container -->
-</div>    <!-- /segment-footer -->
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
 
-<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-  <div class="container">    <!-- container -->
-  </div>    <!-- /container -->
-</div>    <!-- /segment-post-footer -->
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
 ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
 <script src="./dist/js/bootstrap.min.js"> </script>
 <script src="./assets/js/respond.min.js"> </script>
 
 <script src="./assets/js/fhir.js"> </script>
 
-  <!-- Analytics Below
+<!-- Analytics Below
 ================================================== -->
 
-
-
-</p></div></div></div></div></div></body></link></head></html>
+</body>
+</html>

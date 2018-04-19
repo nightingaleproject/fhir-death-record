@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "CauseOfDeathConditionProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR CauseOfDeathCondition Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-18T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-19T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

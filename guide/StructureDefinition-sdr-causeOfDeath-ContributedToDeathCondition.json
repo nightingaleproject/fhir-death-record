@@ -3,7 +3,7 @@
   "id": "sdr-causeOfDeath-ContributedToDeathCondition",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ContributedToDeathCondition Profile</b></p>\n  <p>A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ContributedToDeathCondition Profile</b></p>\n  <p>A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n  fix clinicalStatus to http://hl7.org/fhir/ValueSet/condition-clinical#active\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition",
   "identifier": [
@@ -405,6 +405,7 @@
             "code": "code"
           }
         ],
+        "fixedCode": "active",
         "condition": [
           "con-3",
           "con-4"
@@ -1330,6 +1331,11 @@
         "path": "Condition.text",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "fixedCode": "active"
       },
       {
         "id": "Condition:sdr-causeOfDeath-ContributedToDeathCondition.code",

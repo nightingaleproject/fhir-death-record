@@ -12,6 +12,7 @@
   Onset maps to onset[x]
   Subject maps to subject
   constrain text to 1..1
+  fix clinicalStatus to http://hl7.org/fhir/ValueSet/condition-clinical#active
 </pre></p>
 </div>
   </text>
@@ -346,6 +347,7 @@
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="active"/>
       <condition value="con-3"/>
       <condition value="con-4"/>
       <isModifier value="true"/>
@@ -1085,6 +1087,10 @@
       <path value="Condition.text"/>
       <min value="1"/>
       <max value="1"/>
+    </element>
+    <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition.clinicalStatus">
+      <path value="Condition.clinicalStatus"/>
+      <fixedCode value="active"/>
     </element>
     <element id="Condition:sdr-causeOfDeath-ContributedToDeathCondition.code">
       <path value="Condition.code"/>

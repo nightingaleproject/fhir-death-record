@@ -37,7 +37,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 "Condition.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","External Ids for this condition","This records identifiers associated with this condition that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).","","Need to allow connection to a wider workflow.","","","","","","","",,,,,"",,,,"",0,null,"","",".id","id"
 "Condition.clinicalStatus","","","",0,1,"","Y","Y","code {[]} {[]}
-","active | recurrence | inactive | remission | resolved","The clinical status of the condition.","This element is labeled as a modifier because the status contains codes that mark the condition as not currently valid or of concern.","","","","","","","","",,"required","The clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-clinical","",,,,"",0,null,"con-3
+","active | recurrence | inactive | remission | resolved","The clinical status of the condition.","This element is labeled as a modifier because the status contains codes that mark the condition as not currently valid or of concern.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""active""/>","","","","",,"required","The clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-clinical","",,,,"",0,null,"con-3
 con-4","","< 303105007 |Disease phases|","PRB-14 / DG1-6","Observation ACT
 .inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""clinicalStatus"", moodCode=EVN].value","status"
 "Condition.verificationStatus","","","",0,1,"","Y","Y","code {[]} {[]}

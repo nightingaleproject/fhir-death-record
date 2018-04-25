@@ -156,6 +156,7 @@
   Onset maps to onset[x]
   Subject maps to subject
   constrain text to 1..1
+  fix clinicalStatus to http://hl7.org/fhir/ValueSet/condition-clinical#active
 &lt;/pre&gt;&lt;/p&gt;
 &lt;/div&gt;"
   },
@@ -571,6 +572,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a>" : "code"
           }
         ],
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a>" : "active",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a>" : [
           "con-3",
           "con-4"
@@ -1511,6 +1513,11 @@ OR &lt; 272379006 |Event|"
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1"
       },
       {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Condition:sdr-causeOfDeath-CauseOfDeathCondition.clinicalStatus",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Condition.clinicalStatus",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a>" : "active"
+      },
+      {
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Condition:sdr-causeOfDeath-CauseOfDeathCondition.code",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Condition.code",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "Code representing a condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`."
@@ -1565,7 +1572,7 @@ OR &lt; 272379006 |Event|"
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 25, 2018 10:05-0400.
+      ; Generated on Wed, Apr 25, 2018 12:03-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-causeOfDeath-ContributedToDeathCondition"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ContributedToDeathCondition Profile</b></p>\n  <p>A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR ContributedToDeathCondition Profile</b></p>\n  <p>A significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.causeOfDeath.ContributedToDeathCondition maps to Condition:\n  CodeableConcept maps to code\n  Onset maps to onset[x]\n  Subject maps to subject\n  constrain text to 1..1\n  fix clinicalStatus to http://hl7.org/fhir/ValueSet/condition-clinical#active\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ContributedToDeathCondition"];
   fhir:StructureDefinition.identifier [
@@ -411,6 +411,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "active" ];
        fhir:ElementDefinition.condition [
          fhir:value "con-3";
          fhir:index 0
@@ -1316,11 +1317,16 @@
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-ContributedToDeathCondition.clinicalStatus" ];
+       fhir:ElementDefinition.path [ fhir:value "Condition.clinicalStatus" ];
+       fhir:ElementDefinition.fixedCode [ fhir:value "active" ]
+     ], [
+       fhir:index 3;
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-ContributedToDeathCondition.code" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.code" ];
        fhir:ElementDefinition.definition [ fhir:value "Code representing a significant condition that contributed to death but did not result in the underlying cause captured by a `CauseOfDeathCondition`. Corresponds to part 2 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-ContributedToDeathCondition.subject" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.subject" ];
        fhir:ElementDefinition.type [
@@ -1329,7 +1335,7 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Condition:sdr-causeOfDeath-ContributedToDeathCondition.onset[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Condition.onset[x]" ];
        fhir:ElementDefinition.type [

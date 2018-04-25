@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "ActualOrPresumedDateOfDeath",
+  "meta": {
+    "profile": [
+      "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ActualOrPresumedDateOfDeath</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Date and time of death <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '81956-5' = 'Date and time of death [TimeStamp]', given as 'Date and time of death'})</span></p><p><b>subject</b>: <a href=\"Patient/patient-example\">Amy Shaw</a></p><p><b>value</b>: Jul 2, 1999</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "81956-5",
+        "display": "Date and time of death"
+      }
+    ],
+    "text": "Date and time of death"
+  },
+  "subject": {
+    "reference": "Patient/patient-example",
+    "display": "Amy Shaw"
+  },
+  "valueDateTime": "1999-07-02"
+}

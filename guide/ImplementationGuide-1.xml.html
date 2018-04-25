@@ -102,6 +102,8 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
+
+
       <li><b>Standard Death Record FHIR Profiles</b></li>
     </ul>
   </div>
@@ -120,11 +122,17 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
+
 <ul class="nav nav-tabs">
+
   <li><a href="ImplementationGuide-1.html">Content</a></li>
-  <li><a href="ImplementationGuide-1.xml.html">XML</a></li>
+
+  <li class="active"><a href="#">XML</a></li>
+
   <li><a href="ImplementationGuide-1.json.html">JSON</a></li>
+
   <li><a href="ImplementationGuide-1.ttl.html">Turtle</a></li>
+
 </ul>
 
 <h2>Standard Death Record FHIR Profiles</h2>
@@ -762,6 +770,16 @@
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;SDR PregnancyStatusCS CodeSystem&quot;/&gt;
       &lt;/sourceReference&gt;
     &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Observation-ActualOrPresumedDateOfDeath.html&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation/ActualOrPresumedDateOfDeath&quot;/&gt;
+      &lt;/sourceReference&gt;
+    &lt;/resource&gt;
   &lt;/package&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page">page</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">source</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;index.html&quot;/&gt;
@@ -792,7 +810,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Apr 19, 2018 10:10-0400.
+      ; Generated on Wed, Apr 25, 2018 10:05-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

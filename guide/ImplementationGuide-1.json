@@ -676,6 +676,18 @@
             "reference": "CodeSystem/sdr-causeOfDeath-PregnancyStatusCS",
             "display": "SDR PregnancyStatusCS CodeSystem"
           }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-ActualOrPresumedDateOfDeath.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/ActualOrPresumedDateOfDeath"
+          }
         }
       ]
     }

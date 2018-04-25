@@ -102,6 +102,8 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
+
+
       <li><b>Standard Death Record FHIR Profiles</b></li>
     </ul>
   </div>
@@ -120,11 +122,17 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
+
 <ul class="nav nav-tabs">
+
   <li><a href="ImplementationGuide-1.html">Content</a></li>
+
   <li><a href="ImplementationGuide-1.xml.html">XML</a></li>
-  <li><a href="ImplementationGuide-1.json.html">JSON</a></li>
+
+  <li class="active"><a href="#">JSON</a></li>
+
   <li><a href="ImplementationGuide-1.ttl.html">Turtle</a></li>
+
 </ul>
 
 <h2>Standard Death Record FHIR Profiles</h2>
@@ -808,6 +816,18 @@
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "CodeSystem/sdr-causeOfDeath-PregnancyStatusCS",
             "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "SDR PregnancyStatusCS CodeSystem"
           }
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Observation-ActualOrPresumedDateOfDeath.html"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Observation/ActualOrPresumedDateOfDeath"
+          }
         }
       ]
     }
@@ -841,7 +861,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Apr 19, 2018 10:10-0400.
+      ; Generated on Wed, Apr 25, 2018 10:05-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

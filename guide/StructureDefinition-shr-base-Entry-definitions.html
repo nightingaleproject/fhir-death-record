@@ -101,38 +101,43 @@
       <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
-      <li><b>EntryProfile Details</b></li>
+
+
+      <li title="profiles"><a href="profiles.html"><b>Profiles</b></a></li>
+
+      <li><b>EntryProfile</b></li>
     </ul>
   </div>
     <!-- /container -->
 </div>
   <!-- /segment-breadcrumb -->
 
+      <!-- /container -->
+     <!-- /segment-breadcrumb -->
 
-<div id="segment-content" class="segment">
-    <!-- segment-content -->
-  <div class="container">
-      <!-- container -->
-    <div class="row">
-      <div class="inner-wrapper">
-          <!-- CONTENT CONTENT -->
+ <div id="segment-content" class="segment">    <!-- segment-content -->
+ <div class="container">    <!-- container -->
+   <div class="row">
+     <div class="inner-wrapper">
+       <div class="col-12">
 
-        <div class="col-9">
+  <!-- ============CONTENT CONTENT=============== -->
 
-          <ul class="nav nav-tabs">
-            <li><a href="StructureDefinition-shr-base-Entry.html">Content</a></li>
-            <li class="active"><a href="#">Detailed Descriptions</a></li>
-            <li><a href="StructureDefinition-shr-base-Entry.xml.html">XML</a></li>
-            <li><a href="StructureDefinition-shr-base-Entry.json.html">JSON</a></li>
-            <li><a href="StructureDefinition-shr-base-Entry.ttl.html">Turtle</a></li>
-          </ul>
 
-          <h3>
-            <a name="dd"></a>EntryProfile - Detailed Descriptions</h3>
+<ul class="nav nav-tabs">
+  <li><a href="StructureDefinition-shr-base-Entry.html">Content</a></li>
+  <li class="active"><a href="#">Detailed Descriptions</a></li>
 
-          <p>Definitions for shr-base-Entry.</p>
+  <li><a href="StructureDefinition-shr-base-Entry.xml.html">XML</a></li>
+  <li><a href="StructureDefinition-shr-base-Entry.json.html">JSON</a></li>
+  <li><a href="StructureDefinition-shr-base-Entry.ttl.html">Turtle</a></li>
+</ul>
 
-          <table class="dict">
+<h2><a name="dd"></a>EntryProfile</h2>
+
+<p>Definitions for shr-base-Entry.</p>
+
+<table class="dict">
   <tr><td colspan="2" class="structure"><a name="DomainResource:shr-base-Entry"> </a><a name="DomainResource"> </a><b>DomainResource</b></td></tr>
   <tr><td>Definition</td><td><p>Metadata attributes that apply to any item represented in the standard health record. An Entry may not belong exclusively to a single person's health record, but could represent an entity that surfaces in multiple records, such as organizations or practitioners. If the entry belongs to a single person's record, then the identity of the person of record must be recorded.</p>
 </td></tr>
@@ -179,7 +184,7 @@
   <tr><td>Comments</td><td><p>This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="DomainResource:shr-base-Entry.meta.profile"> </a><a name="DomainResource.meta.profile"> </a><b>DomainResource.meta.profile</b></td></tr>
-  <tr><td>Definition</td><td><p><a name="17e62626-bd5e-4e65-86ef-9473c583312a">​</a>A list of profiles (references to <a href="http://hl7.org/fhir/STU3/structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to <a href="null">StructureDefinition.url</a>.</p>
+  <tr><td>Definition</td><td><p><a name="ee93fc84-caa2-4ec3-bbe5-2680db44410d">​</a>A list of profiles (references to <a href="http://hl7.org/fhir/STU3/structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to <a href="null">StructureDefinition.url</a>.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
@@ -254,17 +259,13 @@
 </table>
 
 
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
         </div>
-
-      </div>
-        <!-- /inner-wrapper -->
-    </div>
-      <!-- /row -->
-  </div>
-    <!-- /container -->
-
-</div>
-  <!-- /segment-content -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /row -->
+  </div>    <!-- /container -->
+</div>    <!-- /segment-content -->
 
         
           <!-- /inner-wrapper -->
@@ -279,7 +280,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Apr 19, 2018 10:10-0400.
+      ; Generated on Wed, Apr 25, 2018 10:05-0400.
     </p>
    </div>    <!-- /inner-wrapper -->
   </div>    <!-- /container -->
@@ -304,8 +305,5 @@
 ================================================== -->
 
 </body>
-
-
-
 
 </link></head></html>

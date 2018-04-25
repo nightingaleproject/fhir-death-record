@@ -521,6 +521,15 @@
         <display value="SDR PregnancyStatusCS CodeSystem"/>
       </sourceReference>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-ActualOrPresumedDateOfDeath.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Observation/ActualOrPresumedDateOfDeath"/>
+      </sourceReference>
+    </resource>
   </package>
   <page>
     <source value="index.html"/>

@@ -1,10 +1,11 @@
 ﻿Standard Death Record FHIR Profiles : Validation Results
 =========================================
 
-err = 12, warn = 0, info = 0
-Generated Thu Apr 19 10:11:09 EDT 2018. FHIR version 3.3.0 for 3.0.1
+err = 14, warn = 0, info = 0
+Generated Wed Apr 25 10:05:41 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 2 / 0
+ Build Errors : 4 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath : 1 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig : 0 / 0
@@ -60,7 +61,11 @@ Generated Thu Apr 19 10:11:09 EDT 2018. FHIR version 3.3.0 for 3.0.1
 </table>
 == n/a ==
 ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html: Unable to read attribute on <g> at line 159 column 105
-ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 183, column 232: The link '' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 188, column 232: The link '' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-ActualOrPresumedDateOfDeath.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 406: The link 'Patient/patient-example' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/downloads.html#/html/head/link/body/div/div/div/div/div/ul/li/a at Line 126, column 9: The link 'full-ig.zip' cannot be resolved
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath.json ==
+ERROR: Observation/ActualOrPresumedDateOfDeath: Observation.subject: Unable to resolve resource 'Patient/patient-example'
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig.xml ==

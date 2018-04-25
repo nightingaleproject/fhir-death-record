@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "DeathRecordContentsProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR DeathRecordContents Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-19T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-25T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2389,8 +2389,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
        fhir:ElementDefinition.short [ fhir:value "ActualOrPresumedDateOfDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2416,8 +2416,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyPerformed" ];
        fhir:ElementDefinition.short [ fhir:value "AutopsyPerformed" ];
        fhir:ElementDefinition.definition [ fhir:value "Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2443,8 +2443,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyResultsAvailable" ];
        fhir:ElementDefinition.short [ fhir:value "AutopsyResultsAvailable" ];
        fhir:ElementDefinition.definition [ fhir:value "Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2470,7 +2470,7 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-CauseOfDeathCondition" ];
        fhir:ElementDefinition.short [ fhir:value "CauseOfDeathCondition" ];
        fhir:ElementDefinition.definition [ fhir:value "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
@@ -2524,8 +2524,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DatePronouncedDead" ];
        fhir:ElementDefinition.short [ fhir:value "DatePronouncedDead" ];
        fhir:ElementDefinition.definition [ fhir:value "Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2551,8 +2551,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.short [ fhir:value "DeathFromWorkInjury" ];
        fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2578,8 +2578,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.short [ fhir:value "DeathFromTransportInjury" ];
        fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2606,7 +2606,7 @@
        fhir:ElementDefinition.short [ fhir:value "DetailsOfInjury" ];
        fhir:ElementDefinition.definition [ fhir:value "Injury incident description" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2632,8 +2632,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MannerOfDeath" ];
        fhir:ElementDefinition.short [ fhir:value "MannerOfDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2659,8 +2659,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MedicalExaminerContacted" ];
        fhir:ElementDefinition.short [ fhir:value "MedicalExaminerContacted" ];
        fhir:ElementDefinition.definition [ fhir:value "Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2686,8 +2686,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.short [ fhir:value "TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2713,8 +2713,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.short [ fhir:value "TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2948,8 +2948,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-ActualOrPresumedDateOfDeath" ];
        fhir:ElementDefinition.short [ fhir:value "ActualOrPresumedDateOfDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2962,8 +2960,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyPerformed" ];
        fhir:ElementDefinition.short [ fhir:value "AutopsyPerformed" ];
        fhir:ElementDefinition.definition [ fhir:value "Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2976,8 +2972,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-AutopsyResultsAvailable" ];
        fhir:ElementDefinition.short [ fhir:value "AutopsyResultsAvailable" ];
        fhir:ElementDefinition.definition [ fhir:value "Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -2990,8 +2984,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-CauseOfDeathCondition" ];
        fhir:ElementDefinition.short [ fhir:value "CauseOfDeathCondition" ];
        fhir:ElementDefinition.definition [ fhir:value "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3016,8 +3008,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DatePronouncedDead" ];
        fhir:ElementDefinition.short [ fhir:value "DatePronouncedDead" ];
        fhir:ElementDefinition.definition [ fhir:value "Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3030,8 +3020,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromWorkInjury" ];
        fhir:ElementDefinition.short [ fhir:value "DeathFromWorkInjury" ];
        fhir:ElementDefinition.definition [ fhir:value "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3044,8 +3032,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DeathFromTransportInjury" ];
        fhir:ElementDefinition.short [ fhir:value "DeathFromTransportInjury" ];
        fhir:ElementDefinition.definition [ fhir:value "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3058,8 +3044,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-DetailsOfInjury" ];
        fhir:ElementDefinition.short [ fhir:value "DetailsOfInjury" ];
        fhir:ElementDefinition.definition [ fhir:value "Injury incident description" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3072,8 +3056,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MannerOfDeath" ];
        fhir:ElementDefinition.short [ fhir:value "MannerOfDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3086,8 +3068,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-MedicalExaminerContacted" ];
        fhir:ElementDefinition.short [ fhir:value "MedicalExaminerContacted" ];
        fhir:ElementDefinition.definition [ fhir:value "Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3100,8 +3080,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.short [ fhir:value "TimingOfRecentPregnancyInRelationToDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
@@ -3114,8 +3092,6 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-causeOfDeath-TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.short [ fhir:value "TobaccoUseContributedToDeath" ];
        fhir:ElementDefinition.definition [ fhir:value "Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];

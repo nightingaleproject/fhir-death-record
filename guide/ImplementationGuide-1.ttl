@@ -683,6 +683,18 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/sdr-causeOfDeath-PregnancyStatusCS" ];
          fhir:Reference.display [ fhir:value "SDR PregnancyStatusCS CodeSystem" ]
        ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-ActualOrPresumedDateOfDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/ActualOrPresumedDateOfDeath>;
+         fhir:Reference.reference [ fhir:value "Observation/ActualOrPresumedDateOfDeath" ]
+       ]
      ]
   ];
   fhir:ImplementationGuide.page [

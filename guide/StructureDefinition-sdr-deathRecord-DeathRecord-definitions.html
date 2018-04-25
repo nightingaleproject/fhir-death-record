@@ -102,38 +102,43 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
-      <li><b>DeathRecordProfile Details</b></li>
+
+
+      <li title="profiles"><a href="profiles.html"><b>Profiles</b></a></li>
+
+      <li><b>DeathRecordProfile</b></li>
     </ul>
   </div>
   <!-- /container -->
 </div>
 <!-- /segment-breadcrumb -->
 
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-breadcrumb -->
 
-<div id="segment-content" class="segment">
-  <!-- segment-content -->
-  <div class="container">
-    <!-- container -->
-    <div class="row">
-      <div class="inner-wrapper">
-        <!-- CONTENT CONTENT -->
+ <div id="segment-content" class="segment">  <!-- segment-content -->
+ <div class="container">  <!-- container -->
+   <div class="row">
+     <div class="inner-wrapper">
+       <div class="col-12">
 
-        <div class="col-9">
+<!-- ============CONTENT CONTENT=============== -->
 
-          <ul class="nav nav-tabs">
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.html">Content</a></li>
-            <li class="active"><a href="#">Detailed Descriptions</a></li>
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.xml.html">XML</a></li>
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.json.html">JSON</a></li>
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.ttl.html">Turtle</a></li>
-          </ul>
 
-          <h3>
-            <a name="dd"></a>DeathRecordProfile - Detailed Descriptions</h3>
+<ul class="nav nav-tabs">
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.html">Content</a></li>
+  <li class="active"><a href="#">Detailed Descriptions</a></li>
 
-          <p>Definitions for sdr-deathRecord-DeathRecord.</p>
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.xml.html">XML</a></li>
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.json.html">JSON</a></li>
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecord.ttl.html">Turtle</a></li>
+</ul>
 
-          <table class="dict">
+<h2><a name="dd"></a>DeathRecordProfile</h2>
+
+<p>Definitions for sdr-deathRecord-DeathRecord.</p>
+
+<table class="dict">
   <tr><td colspan="2" class="structure"><a name="Bundle:sdr-deathRecord-DeathRecord"> </a><a name="Bundle"> </a><b>Bundle</b></td></tr>
   <tr><td>Definition</td><td><p>A document that details information about the death of an individual. The contents correspond to items included in the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
@@ -242,7 +247,7 @@
   <tr><td colspan="2" class="structure"><a name="Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents"> </a><a name="Bundle.entry"> </a><b>Bundle.entry(sdr-deathRecord-DeathRecordContents)</b></td></tr>
   <tr><td>Definition</td><td><p>Defines the contents of a death record document. The content is mapped from the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">bdl-5</b>: must be a resource unless there's a request or response (: resource.exists() or request.exists() or response.exists())<br/><b title="Formal Invariant Identifier">bdl-8</b>: fullUrl cannot be a version specific reference (: fullUrl.contains('/_history/').not())<br/><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -285,8 +290,8 @@
   <tr><td colspan="2" class="structure"><a name="Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents.resource"> </a><a name="Bundle.entry.resource"> </a><b>Bundle.entry.resource</b></td></tr>
   <tr><td>Definition</td><td><p>The Resources for the entry.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/resource.html">Resource</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/resource.html">Resource</a>(<a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents]]">DeathRecordContentsProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents.search"> </a><a name="Bundle.entry.search"> </a><b>Bundle.entry.search</b></td></tr>
   <tr><td>Definition</td><td><p>Information about the search process that lead to the creation of this entry.</p>
 </td></tr>
@@ -465,17 +470,13 @@
 </table>
 
 
+<!-- ==============END CONTENT END CONTENT=================== -->
+
         </div>
-
-      </div>
-      <!-- /inner-wrapper -->
-    </div>
-    <!-- /row -->
-  </div>
-  <!-- /container -->
-
-</div>
-<!-- /segment-content -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /row -->
+  </div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
         </div>
       </div>  <!-- /inner-wrapper -->
@@ -490,7 +491,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Apr 19, 2018 10:10-0400.
+      ; Generated on Wed, Apr 25, 2018 10:05-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
@@ -515,8 +516,4 @@
 ================================================== -->
 
 </body>
-</html>
-
-</body>
-
 </html>

@@ -37,7 +37,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Entry in the bundle - will have a resource, or information","An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:resource}
 ","",,"open","",0,null,"","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}"
-"Bundle.entry","sdr-deathRecord-DeathRecordContents","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry","sdr-deathRecord-DeathRecordContents","","",0,*,"","","Y","BackboneElement {[]} {[]}
 ","DeathRecordContents","Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).","","","","","","","","","",,,,,"",,,,"",0,null,"","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}"
 "Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -53,7 +53,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Absolute URL for resource (server address, or UUID/OID)","The Absolute URL for the resource.  The fullUrl SHALL not disagree with the id in the resource. The fullUrl is a version independent reference to the resource. The fullUrl element SHALL have a value except that: 
 * fullUrl can be empty on a POST (although it does not need to when specifying a temporary id for reference in the bundle)
 * Results from operations might involve resources that are not identified.","fullUrl may not be [unique in the context of a resource](bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](references.html), the absolute URL may not end with the logical id of the resource (Resource.id), but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](references.html#regex), then it SHALL end with the Resource.id.","","","","","","","","",,,,,"",,,,"",0,null,"",""
-"Bundle.entry.resource","","","",0,1,"","","Y","Resource {[]} {[]}
+"Bundle.entry.resource","","","",1,1,"","","Y","Resource {[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents]]} {[]}
 ","A resource in the bundle","The Resources for the entry.","","","","","","","","","",,,,,"",,,,"",0,null,"",""
 "Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"",0,null,"bdl-2

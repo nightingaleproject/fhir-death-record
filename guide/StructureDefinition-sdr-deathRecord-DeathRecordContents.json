@@ -16,7 +16,7 @@
   "name": "DeathRecordContentsProfile",
   "title": "SDR DeathRecordContents Profile",
   "status": "draft",
-  "date": "2018-04-19T00:00:00-04:00",
+  "date": "2018-04-25T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -2465,8 +2465,8 @@
         "sliceName": "sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
         "short": "ActualOrPresumedDateOfDeath",
         "definition": "Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2493,8 +2493,8 @@
         "sliceName": "sdr-causeOfDeath-AutopsyPerformed",
         "short": "AutopsyPerformed",
         "definition": "Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2521,8 +2521,8 @@
         "sliceName": "sdr-causeOfDeath-AutopsyResultsAvailable",
         "short": "AutopsyResultsAvailable",
         "definition": "Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2549,7 +2549,7 @@
         "sliceName": "sdr-causeOfDeath-CauseOfDeathCondition",
         "short": "CauseOfDeathCondition",
         "definition": "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`.",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "type": [
           {
@@ -2605,8 +2605,8 @@
         "sliceName": "sdr-causeOfDeath-DatePronouncedDead",
         "short": "DatePronouncedDead",
         "definition": "Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2633,8 +2633,8 @@
         "sliceName": "sdr-causeOfDeath-DeathFromWorkInjury",
         "short": "DeathFromWorkInjury",
         "definition": "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2661,8 +2661,8 @@
         "sliceName": "sdr-causeOfDeath-DeathFromTransportInjury",
         "short": "DeathFromTransportInjury",
         "definition": "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2690,7 +2690,7 @@
         "short": "DetailsOfInjury",
         "definition": "Injury incident description",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2717,8 +2717,8 @@
         "sliceName": "sdr-causeOfDeath-MannerOfDeath",
         "short": "MannerOfDeath",
         "definition": "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2745,8 +2745,8 @@
         "sliceName": "sdr-causeOfDeath-MedicalExaminerContacted",
         "short": "MedicalExaminerContacted",
         "definition": "Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2773,8 +2773,8 @@
         "sliceName": "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
         "short": "TimingOfRecentPregnancyInRelationToDeath",
         "definition": "Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -2801,8 +2801,8 @@
         "sliceName": "sdr-causeOfDeath-TobaccoUseContributedToDeath",
         "short": "TobaccoUseContributedToDeath",
         "definition": "Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -3046,8 +3046,6 @@
         "sliceName": "sdr-causeOfDeath-ActualOrPresumedDateOfDeath",
         "short": "ActualOrPresumedDateOfDeath",
         "definition": "Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3061,8 +3059,6 @@
         "sliceName": "sdr-causeOfDeath-AutopsyPerformed",
         "short": "AutopsyPerformed",
         "definition": "Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3076,8 +3072,6 @@
         "sliceName": "sdr-causeOfDeath-AutopsyResultsAvailable",
         "short": "AutopsyResultsAvailable",
         "definition": "Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3091,8 +3085,6 @@
         "sliceName": "sdr-causeOfDeath-CauseOfDeathCondition",
         "short": "CauseOfDeathCondition",
         "definition": "A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`.",
-        "min": 1,
-        "max": "*",
         "type": [
           {
             "code": "Reference",
@@ -3119,8 +3111,6 @@
         "sliceName": "sdr-causeOfDeath-DatePronouncedDead",
         "short": "DatePronouncedDead",
         "definition": "Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3134,8 +3124,6 @@
         "sliceName": "sdr-causeOfDeath-DeathFromWorkInjury",
         "short": "DeathFromWorkInjury",
         "definition": "Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3149,8 +3137,6 @@
         "sliceName": "sdr-causeOfDeath-DeathFromTransportInjury",
         "short": "DeathFromTransportInjury",
         "definition": "Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3164,8 +3150,6 @@
         "sliceName": "sdr-causeOfDeath-DetailsOfInjury",
         "short": "DetailsOfInjury",
         "definition": "Injury incident description",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3179,8 +3163,6 @@
         "sliceName": "sdr-causeOfDeath-MannerOfDeath",
         "short": "MannerOfDeath",
         "definition": "The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3194,8 +3176,6 @@
         "sliceName": "sdr-causeOfDeath-MedicalExaminerContacted",
         "short": "MedicalExaminerContacted",
         "definition": "Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3209,8 +3189,6 @@
         "sliceName": "sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath",
         "short": "TimingOfRecentPregnancyInRelationToDeath",
         "definition": "Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -3224,8 +3202,6 @@
         "sliceName": "sdr-causeOfDeath-TobaccoUseContributedToDeath",
         "short": "TobaccoUseContributedToDeath",
         "definition": "Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",

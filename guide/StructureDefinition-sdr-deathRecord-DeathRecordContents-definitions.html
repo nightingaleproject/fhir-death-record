@@ -102,38 +102,43 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
-      <li><b>DeathRecordContentsProfile Details</b></li>
+
+
+      <li title="profiles"><a href="profiles.html"><b>Profiles</b></a></li>
+
+      <li><b>DeathRecordContentsProfile</b></li>
     </ul>
   </div>
   <!-- /container -->
 </div>
 <!-- /segment-breadcrumb -->
 
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-breadcrumb -->
 
-<div id="segment-content" class="segment">
-  <!-- segment-content -->
-  <div class="container">
-    <!-- container -->
-    <div class="row">
-      <div class="inner-wrapper">
-        <!-- CONTENT CONTENT -->
+ <div id="segment-content" class="segment">  <!-- segment-content -->
+ <div class="container">  <!-- container -->
+   <div class="row">
+     <div class="inner-wrapper">
+       <div class="col-12">
 
-        <div class="col-9">
+<!-- ============CONTENT CONTENT=============== -->
 
-          <ul class="nav nav-tabs">
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.html">Content</a></li>
-            <li class="active"><a href="#">Detailed Descriptions</a></li>
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.xml.html">XML</a></li>
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.json.html">JSON</a></li>
-            <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.ttl.html">Turtle</a></li>
-          </ul>
 
-          <h3>
-            <a name="dd"></a>DeathRecordContentsProfile - Detailed Descriptions</h3>
+<ul class="nav nav-tabs">
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.html">Content</a></li>
+  <li class="active"><a href="#">Detailed Descriptions</a></li>
 
-          <p>Definitions for sdr-deathRecord-DeathRecordContents.</p>
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.xml.html">XML</a></li>
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.json.html">JSON</a></li>
+  <li><a href="StructureDefinition-sdr-deathRecord-DeathRecordContents.ttl.html">Turtle</a></li>
+</ul>
 
-          <table class="dict">
+<h2><a name="dd"></a>DeathRecordContentsProfile</h2>
+
+<p>Definitions for sdr-deathRecord-DeathRecordContents.</p>
+
+<table class="dict">
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents"> </a><a name="Composition"> </a><b>Composition</b></td></tr>
   <tr><td>Definition</td><td><p>Defines the contents of a death record document. The content is mapped from the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
@@ -724,22 +729,22 @@
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ActualOrPresumedDateOfDeath"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-ActualOrPresumedDateOfDeath)</b></td></tr>
   <tr><td>Definition</td><td><p>Actual or presumed date of death. Corresponds to item 29 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath">ActualOrPresumedDateOfDeathProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyPerformed"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-AutopsyPerformed)</b></td></tr>
   <tr><td>Definition</td><td><p>Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-AutopsyPerformed.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed">AutopsyPerformedProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-AutopsyResultsAvailable"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-AutopsyResultsAvailable)</b></td></tr>
   <tr><td>Definition</td><td><p>Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-AutopsyResultsAvailable.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable">AutopsyResultsAvailableProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-CauseOfDeathCondition"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-CauseOfDeathCondition)</b></td></tr>
   <tr><td>Definition</td><td><p>A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>. Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a <code>ContributedToDeathCondition</code>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-CauseOfDeathCondition.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition">CauseOfDeathConditionProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-ContributedToDeathCondition"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-ContributedToDeathCondition)</b></td></tr>
   <tr><td>Definition</td><td><p>A significant condition that contributed to death but did not result in the underlying cause captured by a <code>CauseOfDeathCondition</code>. Corresponds to part 2 of item 32 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
@@ -749,42 +754,42 @@
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DatePronouncedDead"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-DatePronouncedDead)</b></td></tr>
   <tr><td>Definition</td><td><p>Date pronounced dead. Corresponds to items 24 and 25 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-DatePronouncedDead.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead">DatePronouncedDeadProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromWorkInjury"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-DeathFromWorkInjury)</b></td></tr>
   <tr><td>Definition</td><td><p>Did death result from injury at work? Corresponds to item 41 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-DeathFromWorkInjury.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury">DeathFromWorkInjuryProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DeathFromTransportInjury"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-DeathFromTransportInjury)</b></td></tr>
   <tr><td>Definition</td><td><p>Injury leading to death associated with transportation event. Corresponds to item 44 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-DeathFromTransportInjury.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury">DeathFromTransportInjuryProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-DetailsOfInjury"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-DetailsOfInjury)</b></td></tr>
   <tr><td>Definition</td><td><p>Injury incident description</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-DetailsOfInjury.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury">DetailsOfInjuryProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MannerOfDeath"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-MannerOfDeath)</b></td></tr>
   <tr><td>Definition</td><td><p>The manner of the decendents demise. Corresponds to item 37 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath">MannerOfDeathProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-MedicalExaminerContacted"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-MedicalExaminerContacted)</b></td></tr>
   <tr><td>Definition</td><td><p>Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted">MedicalExaminerContactedProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath)</b></td></tr>
   <tr><td>Definition</td><td><p>Timing of recent pregnancy in relation to death. Corresponds to item 36 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath">TimingOfRecentPregnancyInRelationToDeathProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.entry:sdr-causeOfDeath-TobaccoUseContributedToDeath"> </a><a name="Composition.section.entry"> </a><b>Composition.section.entry(sdr-causeOfDeath-TobaccoUseContributedToDeath)</b></td></tr>
   <tr><td>Definition</td><td><p>Did tobacco use contribute to death. Corresponds to item 35 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.html" title="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath">TobaccoUseContributedToDeathProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition:sdr-deathRecord-DeathRecordContents.section.emptyReason"> </a><a name="Composition.section.emptyReason"> </a><b>Composition.section.emptyReason</b></td></tr>
   <tr><td>Definition</td><td><p>If the section is empty, why the list is empty. An empty section typically has some text explaining the empty reason.</p>
@@ -806,17 +811,13 @@
 </table>
 
 
+<!-- ==============END CONTENT END CONTENT=================== -->
+
         </div>
-
-      </div>
-      <!-- /inner-wrapper -->
-    </div>
-    <!-- /row -->
-  </div>
-  <!-- /container -->
-
-</div>
-<!-- /segment-content -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /row -->
+  </div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
         </div>
       </div>  <!-- /inner-wrapper -->
@@ -831,7 +832,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Apr 19, 2018 10:10-0400.
+      ; Generated on Wed, Apr 25, 2018 10:05-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->
@@ -856,8 +857,4 @@
 ================================================== -->
 
 </body>
-</html>
-
-</body>
-
 </html>

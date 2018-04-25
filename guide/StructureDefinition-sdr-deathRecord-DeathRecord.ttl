@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-deathRecord-DeathRecord"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathRecord Profile</b></p>\n  <p>A document that details information about the death of an individual. The contents correspond to items included in the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.DeathRecord maps to Bundle:\n  fix type to http://hl7.org/fhir/bundle-type#document\n  DeathRecordContents maps to entry (slice at = entry; slice on = resource; slice on type = profile)\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathRecord Profile</b></p>\n  <p>A document that details information about the death of an individual. The contents correspond to items included in the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.DeathRecord maps to Bundle:\n  fix type to http://hl7.org/fhir/bundle-type#document\n  DeathRecordContents maps to entry.resource (slice at = entry; slice on = resource; slice on type = profile)\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecord"];
   fhir:StructureDefinition.identifier [
@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "DeathRecordProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR DeathRecord Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-19T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-25T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -485,8 +485,8 @@
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-DeathRecordContents" ];
        fhir:ElementDefinition.short [ fhir:value "DeathRecordContents" ];
        fhir:ElementDefinition.definition [ fhir:value "Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
@@ -636,11 +636,12 @@
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "A resource in the bundle" ];
        fhir:ElementDefinition.definition [ fhir:value "The Resources for the entry." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Resource" ]
+         fhir:ElementDefinition.type.code [ fhir:value "Resource" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents" ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
@@ -1244,9 +1245,18 @@
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "sdr-deathRecord-DeathRecordContents" ];
        fhir:ElementDefinition.short [ fhir:value "DeathRecordContents" ];
-       fhir:ElementDefinition.definition [ fhir:value "Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ];
+       fhir:ElementDefinition.definition [ fhir:value "Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)." ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents.resource" ];
+       fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ]
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Resource" ];
+         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents" ]
+       ]
      ]
   ] .
 

@@ -41,7 +41,7 @@
   <name value="DeathRecordContentsProfile"/>
   <title value="SDR DeathRecordContents Profile"/>
   <status value="draft"/>
-  <date value="2018-04-19T00:00:00-04:00"/>
+  <date value="2018-04-25T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -1993,8 +1993,8 @@
       <sliceName value="sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
       <short value="ActualOrPresumedDateOfDeath"/>
       <definition value="Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
@@ -2014,8 +2014,8 @@
       <sliceName value="sdr-causeOfDeath-AutopsyPerformed"/>
       <short value="AutopsyPerformed"/>
       <definition value="Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed"/>
@@ -2035,8 +2035,8 @@
       <sliceName value="sdr-causeOfDeath-AutopsyResultsAvailable"/>
       <short value="AutopsyResultsAvailable"/>
       <definition value="Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable"/>
@@ -2056,7 +2056,7 @@
       <sliceName value="sdr-causeOfDeath-CauseOfDeathCondition"/>
       <short value="CauseOfDeathCondition"/>
       <definition value="A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
       <type>
         <code value="Reference"/>
@@ -2098,8 +2098,8 @@
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
       <short value="DatePronouncedDead"/>
       <definition value="Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead"/>
@@ -2119,8 +2119,8 @@
       <sliceName value="sdr-causeOfDeath-DeathFromWorkInjury"/>
       <short value="DeathFromWorkInjury"/>
       <definition value="Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury"/>
@@ -2140,8 +2140,8 @@
       <sliceName value="sdr-causeOfDeath-DeathFromTransportInjury"/>
       <short value="DeathFromTransportInjury"/>
       <definition value="Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury"/>
@@ -2162,7 +2162,7 @@
       <short value="DetailsOfInjury"/>
       <definition value="Injury incident description"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury"/>
@@ -2182,8 +2182,8 @@
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
       <short value="MannerOfDeath"/>
       <definition value="The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath"/>
@@ -2203,8 +2203,8 @@
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
       <short value="MedicalExaminerContacted"/>
       <definition value="Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted"/>
@@ -2224,8 +2224,8 @@
       <sliceName value="sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
       <short value="TimingOfRecentPregnancyInRelationToDeath"/>
       <definition value="Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
@@ -2245,8 +2245,8 @@
       <sliceName value="sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
       <short value="TobaccoUseContributedToDeath"/>
       <definition value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
@@ -2434,8 +2434,6 @@
       <sliceName value="sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
       <short value="ActualOrPresumedDateOfDeath"/>
       <definition value="Actual or presumed date of death. Corresponds to item 29 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath"/>
@@ -2446,8 +2444,6 @@
       <sliceName value="sdr-causeOfDeath-AutopsyPerformed"/>
       <short value="AutopsyPerformed"/>
       <definition value="Whether an autopsy was performed (true) or not (false). Corresponds to item 33 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed"/>
@@ -2458,8 +2454,6 @@
       <sliceName value="sdr-causeOfDeath-AutopsyResultsAvailable"/>
       <short value="AutopsyResultsAvailable"/>
       <definition value="Were autopsy findings available to complete the cause of death? Corresponds to item 34 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable"/>
@@ -2470,8 +2464,6 @@
       <sliceName value="sdr-causeOfDeath-CauseOfDeathCondition"/>
       <short value="CauseOfDeathCondition"/>
       <definition value="A condition that resulted in the underlying cause of death. Corresponds to part 1 of item 32 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Other significant conditions that contributed to death but did not lead to the underlying cause of death should be captured using a `ContributedToDeathCondition`."/>
-      <min value="1"/>
-      <max value="*"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-CauseOfDeathCondition"/>
@@ -2492,8 +2484,6 @@
       <sliceName value="sdr-causeOfDeath-DatePronouncedDead"/>
       <short value="DatePronouncedDead"/>
       <definition value="Date pronounced dead. Corresponds to items 24 and 25 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead"/>
@@ -2504,8 +2494,6 @@
       <sliceName value="sdr-causeOfDeath-DeathFromWorkInjury"/>
       <short value="DeathFromWorkInjury"/>
       <definition value="Did death result from injury at work? Corresponds to item 41 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury"/>
@@ -2516,8 +2504,6 @@
       <sliceName value="sdr-causeOfDeath-DeathFromTransportInjury"/>
       <short value="DeathFromTransportInjury"/>
       <definition value="Injury leading to death associated with transportation event. Corresponds to item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromTransportInjury"/>
@@ -2528,8 +2514,6 @@
       <sliceName value="sdr-causeOfDeath-DetailsOfInjury"/>
       <short value="DetailsOfInjury"/>
       <definition value="Injury incident description"/>
-      <min value="0"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DetailsOfInjury"/>
@@ -2540,8 +2524,6 @@
       <sliceName value="sdr-causeOfDeath-MannerOfDeath"/>
       <short value="MannerOfDeath"/>
       <definition value="The manner of the decendents demise. Corresponds to item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath"/>
@@ -2552,8 +2534,6 @@
       <sliceName value="sdr-causeOfDeath-MedicalExaminerContacted"/>
       <short value="MedicalExaminerContacted"/>
       <definition value="Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted"/>
@@ -2564,8 +2544,6 @@
       <sliceName value="sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
       <short value="TimingOfRecentPregnancyInRelationToDeath"/>
       <definition value="Timing of recent pregnancy in relation to death. Corresponds to item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"/>
@@ -2576,8 +2554,6 @@
       <sliceName value="sdr-causeOfDeath-TobaccoUseContributedToDeath"/>
       <short value="TobaccoUseContributedToDeath"/>
       <definition value="Did tobacco use contribute to death. Corresponds to item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
-      <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath"/>

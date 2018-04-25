@@ -3,7 +3,7 @@
   "id": "sdr-deathRecord-DeathRecord",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathRecord Profile</b></p>\n  <p>A document that details information about the death of an individual. The contents correspond to items included in the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.DeathRecord maps to Bundle:\n  fix type to http://hl7.org/fhir/bundle-type#document\n  DeathRecordContents maps to entry (slice at = entry; slice on = resource; slice on type = profile)\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DeathRecord Profile</b></p>\n  <p>A document that details information about the death of an individual. The contents correspond to items included in the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.deathRecord.DeathRecord maps to Bundle:\n  fix type to http://hl7.org/fhir/bundle-type#document\n  DeathRecordContents maps to entry.resource (slice at = entry; slice on = resource; slice on type = profile)\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecord",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "DeathRecordProfile",
   "title": "SDR DeathRecord Profile",
   "status": "draft",
-  "date": "2018-04-19T00:00:00-04:00",
+  "date": "2018-04-25T00:00:00-04:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -495,8 +495,8 @@
         "sliceName": "sdr-deathRecord-DeathRecordContents",
         "short": "DeathRecordContents",
         "definition": "Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
-        "min": 1,
-        "max": "1",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "BackboneElement"
@@ -646,11 +646,12 @@
         "path": "Bundle.entry.resource",
         "short": "A resource in the bundle",
         "definition": "The Resources for the entry.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "Resource"
+            "code": "Resource",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"
           }
         ],
         "isSummary": true
@@ -1265,9 +1266,19 @@
         "path": "Bundle.entry",
         "sliceName": "sdr-deathRecord-DeathRecordContents",
         "short": "DeathRecordContents",
-        "definition": "Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
+        "definition": "Defines the contents of a death record document. The content is mapped from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
+      },
+      {
+        "id": "Bundle:sdr-deathRecord-DeathRecord.entry:sdr-deathRecord-DeathRecordContents.resource",
+        "path": "Bundle.entry.resource",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Resource",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"
+          }
+        ]
       }
     ]
   }

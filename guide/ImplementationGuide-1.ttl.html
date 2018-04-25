@@ -102,6 +102,8 @@
     <!-- container -->
     <ul class="breadcrumb">
       <li title="home"><a href="index.html"><b>Home</b></a></li>
+
+
       <li><b>Standard Death Record FHIR Profiles</b></li>
     </ul>
   </div>
@@ -120,11 +122,17 @@
 
 <!-- ============CONTENT CONTENT=============== -->
 
+
 <ul class="nav nav-tabs">
+
   <li><a href="ImplementationGuide-1.html">Content</a></li>
+
   <li><a href="ImplementationGuide-1.xml.html">XML</a></li>
+
   <li><a href="ImplementationGuide-1.json.html">JSON</a></li>
-  <li><a href="ImplementationGuide-1.ttl.html">Turtle</a></li>
+
+  <li class="active"><a href="#">Turtle</a></li>
+
 </ul>
 
 <h2>Standard Death Record FHIR Profiles</h2>
@@ -611,7 +619,15 @@
        <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">fhir:ImplementationGuide.package.resource.example</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ];
        <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">fhir:ImplementationGuide.package.resource.sourceReference</a> [
          <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;CodeSystem/sdr-causeOfDeath-PregnancyStatusCS&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;SDR PregnancyStatusCS CodeSystem&quot; ]       ]     ]
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;SDR PregnancyStatusCS CodeSystem&quot; ]       ]     ], [
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 51;
+       <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot; ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueUri</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Observation-ActualOrPresumedDateOfDeath.html&quot; ]       ];
+       <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.example">fhir:ImplementationGuide.package.resource.example</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
+       <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.package.resource.source[x]">fhir:ImplementationGuide.package.resource.sourceReference</a> [
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Observation/ActualOrPresumedDateOfDeath&quot; ]       ]     ]
   ];
   <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page">fhir:ImplementationGuide.page</a> [
      <a href="http://hl7.org/fhir/STU3/implementationguide.html#ImplementationGuide.page.source">fhir:ImplementationGuide.page.source</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;index.html&quot; ];
@@ -649,7 +665,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Apr 19, 2018 10:10-0400.
+      ; Generated on Wed, Apr 25, 2018 10:05-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

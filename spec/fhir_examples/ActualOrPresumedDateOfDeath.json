@@ -1,0 +1,25 @@
+{
+	"resourceType": "Observation",
+	"id": "ActualOrPresumedDateOfDeath",
+	"meta": {
+		"profile": [
+			"http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-ActualOrPresumedDateOfDeath"
+		]
+	},
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "81956-5",
+				"display": "Date and time of death"
+			}
+		],
+		"text": "Date and time of death"
+	},
+	"subject": {
+		"reference": "Patient/patient-example",
+		"display": "Amy Shaw"
+	},
+	"valueDateTime": "1999-07-02"
+}

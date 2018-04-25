@@ -33,4 +33,4 @@ FuneralDirector maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-
 
 DeathRecord maps to Bundle:
   fix type to http://hl7.org/fhir/bundle-type#document
-  DeathRecordContents maps to entry (slice at = entry; slice on = resource; slice on type = profile)
+  DeathRecordContents maps to entry.resource (slice at = entry; slice on = resource; slice on type = profile)

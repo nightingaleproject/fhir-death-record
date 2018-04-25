@@ -4,3 +4,9 @@ Target: FHIR_STU_3
 
 DetailsOfInjury maps to Observation:
   InjuryDateTime maps to effective[x]
+  
+CauseOfDeathCondition maps to Condition:
+  fix clinicalStatus to http://hl7.org/fhir/ValueSet/condition-clinical#active
+
+ContributedToDeathCondition maps to Condition:
+  fix clinicalStatus to http://hl7.org/fhir/ValueSet/condition-clinical#active

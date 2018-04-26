@@ -41,7 +41,7 @@ Value: 1..1 CodeableConcept
   
 Element: FuneralDirector
 Based on: Practitioner
-Concept: TBD
+Concept: MTH#C0438990
 Description: "Funeral Director. Corresponds to items 22 and 23 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 
 Element: Certifier

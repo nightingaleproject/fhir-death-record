@@ -32,95 +32,95 @@ Description: "The subject of the death record (the decedent). Extensions are use
 0..1 Occupation // Items 54, 55 on the U.S. Standard Certificate of Death
 
 Element: LegalName
-Concept: TBD
+Concept: MTH#C4321416
 Description: "The decedent's legal name plus any akas. Corresponds to item 1 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 string
 
 Element: Sex
-Concept: TBD
+Concept: MTH#C4086849
 Description: "The birth sex of the decedent. Corresponds to item 2 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 CodeableConcept from http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex
 
 Element: SocialSecurityNumber
-Concept: TBD
+Concept: MTH#C1301821
 Description: "The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 string
 
 Element: Age
-Concept: TBD
+Concept: MTH#C1546180
 Description: "The decedent's age in years at last birthday. Corresponds to item 4a of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 unsignedInt
 
 Element: DateOfBirth
-Concept: TBD
+Concept: MTH#C0421451
 Description: "Decedents date of birth. Corresponds to item 5 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 date
 
 Element: Birthplace
-Concept: TBD
+Concept: MTH#C0032040
 Description: "Decedents place of birth. Corresponds to item 6 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 PostalAddress
 
 Element: ServedInArmedForces
-Concept: TBD
+Concept: MTH#C0557344
 Description: "Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 boolean
 
 Element: MaritalStatusAtDeath
-Concept: TBD
+Concept: MTH#C0024819
 Description: "The marital status of the decedent at the time of death. Corresponds to item 9 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 CodeableConcept from http://hl7.org/fhir/ValueSet/marital-status
 
 Element: DecedentRelative
-Concept: TBD
+Concept: MTH#C0080103
 Description: "A relative of the decedent. Used as a basis for surviving spouse, father and mother profiles."
 1..1 LegalName
 1..1 RelationshipType from http://hl7.org/fhir/ValueSet/v2-0131
 0..1 PostalAddress
 
 Element: RelationshipType
-Concept: TBD
+Concept: MTH#C2826982
 Description: "A code that represents the type of relationship."
 Value: 1..1 CodeableConcept
 
 Element: SurvivingSpouse
 Based on: DecedentRelative
-Concept: TBD
+Concept: MTH#C0162409
 Description: "The surviving spouse of the decedent. Corresponds to item 10 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 RelationshipType is RLN#N
 
 Element: Father
 Based on: DecedentRelative
-Concept: TBD
+Concept: MTH#C0015671
 Description: "The father of the decedent. Corresponds to item 11 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 RelationshipType is RLN#N
 
 Element: Mother
 Based on: DecedentRelative
-Concept: TBD
+Concept: MTH#C0026591
 Description: "The mother of the decedent. Corresponds to item 12 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 RelationshipType is RLN#N
 
 Element: Informant
 Based on: DecedentRelative
-Concept: TBD
+Concept: MTH#C1550484
 Description: "The decedent's informant. Corresponds to item 13 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 RelationshipType is RLN#CP
 
 Element: PlaceOfDeath
-Concept: TBD
+Concept: MTH#C0421611
 Description: "The location where death occurred. Corresponds to items 14, 15, 16 and 17 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 PlaceOfDeathType
 0..1 FacilityName
 1..1 PostalAddress
 
   Element: PlaceOfDeathType
-  Concept: TBD
+  Concept: MTH#C2986192
   Description: "The type of location at which death occurred."
   Value: 1..1 CodeableConcept from PlaceOfDeathTypeVS
 
   Element: FacilityName
-  Concept: TBD
+  Concept: MTH#C3261404
   Description: "The name of a facility or institution"
   Value: 1..1 string
   
@@ -132,7 +132,7 @@ Description: "Disposition of the decedent's body. Corresponds to items 18, 19, 2
 0..1 FuneralFacility // Item 21 on the U.S. Standard Certificate of Death
 
   Element: DispositionType
-  Concept: TBD
+  Concept: MTH#C4263627
   Description: "The method of disposition of the decedent's remains. Corresponds to item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
   Value: 1..1 CodeableConcept from DispositionTypeVS
 
@@ -143,37 +143,37 @@ Description: "Disposition of the decedent's body. Corresponds to items 18, 19, 2
   1..1 PostalAddress
   
   Element: FuneralFacility
-  Concept: TBD
+  Concept: MTH#C3698320
   Description: "Name and address of the funeral facility. Corresponds to item 21 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
   1..1 FacilityName
   1..1 PostalAddress
   
 Element: Education
-Concept: TBD
+Concept: MTH#C0013658
 Description: "Decedent's level of education. Corresponds to item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 CodeableConcept from EducationVS
 
 Element: Ethnicity
-Concept: TBD
+Concept: MTH#C0015031
 Description: "Decedent of hispanic origin? Corresponds to item 52 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 
 Element: Race
-Concept: TBD
+Concept: MTH#C0034510
 Description: "Decedent's race. Corresponds to item 53 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 
 Element: Occupation
-Concept: TBD
+Concept: MTH#C0421456
 Description: "Decedent's usual occupation. Corresponds to items 54 and 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 1..1 Job
 1..1 Industry
 
   Element: Job
-  Concept: TBD
+  Concept: MTH#C0557350
   Description: "Type of work done during most of decedent's working life. Corresponds to item 54 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
   Value: 1..1 string
 
   Element: Industry
-  Concept: TBD
+  Concept: MTH#C4297156
   Description: "Kind of industry or business in which the decedent worked. Corresponds to item 55 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
   Value: 1..1 string
 

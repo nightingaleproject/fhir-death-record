@@ -111,11 +111,11 @@ ObservationCode is LNC#11374-6 "Injury incident description"
 1..1 PostalAddress
 
   Element: PlaceOfInjury
-  Concept: TBD
+  Concept: MTH#C3258048
   Description: "Description of the place of injury, e.g. decedent's home, restaurant, wooded area"
   Value: 1..1 string
 
   Element: InjuryDateTime
-  Concept: TBD
+  Concept: MTH#C3263272
   Description: "Date and time of injury"
   Value: 1..1 dateTime

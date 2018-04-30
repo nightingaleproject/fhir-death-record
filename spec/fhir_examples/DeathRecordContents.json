@@ -1,0 +1,72 @@
+{
+  "id": "DeathRecordContents",
+  "status": "final",
+  "title": "Record of Death",
+  "date": "2018-04-30",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "64297-5",
+        "display": "Death certificate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "author": [
+    {
+      "reference": "Practitioner/Certifier"
+    }
+  ],
+  "section": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "69453-9",
+            "display": "Cause of death"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/ActualOrPresumedDateOfDeath"
+        },
+        {
+          "reference": "Observation/AutopsyPerformed"
+        },
+        {
+          "reference": "Observation/AutopsyResultsAvailable"
+        },
+        {
+          "reference": "Condition/CauseOfDeathCondition"
+        },
+        {
+          "reference": "Observation/DatePronouncedDead"
+        },
+        {
+          "reference": "Observation/DeathFromWorkInjury"
+        },
+        {
+          "reference": "Observation/MannerOfDeath"
+        },
+        {
+          "reference": "Observation/MedicalExaminerContacted"
+        },
+        {
+          "reference": "Observation/TimingOfRecentPregnancyInRelationToDeath"
+        },
+        {
+          "reference": "Observation/TobaccoUseContributedToDeath"
+        }
+      ]
+    }
+  ],
+  "resourceType": "Composition"
+}

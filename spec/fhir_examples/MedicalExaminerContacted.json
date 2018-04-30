@@ -1,0 +1,21 @@
+{
+  "id": "MedicalExaminerContacted",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74497-9",
+        "display": "Medical examiner or coroner was contacted"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueBoolean": false,
+  "resourceType": "Observation"
+}

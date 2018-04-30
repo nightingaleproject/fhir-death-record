@@ -1,0 +1,29 @@
+{
+  "id": "TobaccoUseContributedToDeath",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69443-0",
+        "display": "Did tobacco use contribute to death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "UNK",
+        "display": "Unknown"
+      }
+    ]
+  },
+  "resourceType": "Observation"
+}

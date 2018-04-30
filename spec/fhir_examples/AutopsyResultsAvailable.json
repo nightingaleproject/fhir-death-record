@@ -1,0 +1,21 @@
+{
+  "id": "AutopsyResultsAvailable",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyResultsAvailable"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69436-4",
+        "display": "Autopsy results available"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueBoolean": false,
+  "resourceType": "Observation"
+}

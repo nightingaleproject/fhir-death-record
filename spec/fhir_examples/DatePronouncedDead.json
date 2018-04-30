@@ -1,0 +1,21 @@
+{
+  "id": "DatePronouncedDead",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DatePronouncedDead"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "80616-6",
+        "display": "Date and time pronounced dead"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueDateTime": "2003-06-20T00:00:00+00:00",
+  "resourceType": "Observation"
+}

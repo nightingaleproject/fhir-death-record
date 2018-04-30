@@ -1,0 +1,21 @@
+{
+  "id": "DeathFromWorkInjury",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-DeathFromWorkInjury"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69444-8",
+        "display": "Did death result from injury at work"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueBoolean": false,
+  "resourceType": "Observation"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "TimingOfRecentPregnancyInRelationToDeath",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69442-2",
+        "display": "Timing of recent pregnancy in relation to death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "PHC1260",
+        "display": "Not pregnant within past year"
+      }
+    ]
+  },
+  "resourceType": "Observation"
+}

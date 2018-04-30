@@ -1,0 +1,64 @@
+{
+  "id": "Certifier",
+  "meta": {
+    "profile": [
+      "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier",
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "434651000124107",
+            "display": "Physician (Pronouncer and Certifier)"
+          }
+        ]
+      }
+    }
+  ],
+  "name": [
+    {
+      "family": "Stone",
+      "given": [
+        "Edward",
+        "M."
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.acme.com/identifiers/certifiers",
+      "value": "10231"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "23 Porter Drive"
+      ],
+      "city": "Frederick",
+      "state": "Maryland",
+      "postalCode": "21701"
+    }
+  ],
+  "qualification": 
+  [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0360/2.7",
+            "code": "MD",
+            "display": "Doctor of Medicine"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType": "Practitioner"
+}

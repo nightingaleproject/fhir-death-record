@@ -42,7 +42,7 @@ Value: ref(Patient)
 Element: Onset
 Concept: MTH#C0277793
 Description: "The beginning or first appearance of a mental or physical disorder."
-Value: dateTime or TimePeriod
+Value: dateTime or TimePeriod or string
 
 EntryElement: Condition
 Concept: MTH#C0348080

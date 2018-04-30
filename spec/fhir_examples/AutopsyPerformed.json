@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "AutopsyPerformed",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85699-7",
+        "display": "Autopsy was performed"
+      }
+    ]
+  },
+	"subject": {
+		"reference": "Patient/Decedent",
+		"display": "Amy Shaw"
+	},
+  "valueBoolean": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "MannerOfDeath",
+  "meta": {
+    "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69449-7",
+        "display": "Manner of death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "38605008",
+        "display": "Natural"
+      }
+    ]
+  },
+  "resourceType": "Observation"
+}

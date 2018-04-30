@@ -14,12 +14,11 @@
 				"code": "81956-5",
 				"display": "Date and time of death"
 			}
-		],
-		"text": "Date and time of death"
+		]
 	},
 	"subject": {
-		"reference": "Patient/patient-example",
-		"display": "Amy Shaw"
+		"reference": "Patient/Decedent",
+		"display": "John Leonard Palmer"
 	},
-	"valueDateTime": "1999-07-02"
+	"valueDateTime": "2003-06-20T00:00:00+00:00"
 }

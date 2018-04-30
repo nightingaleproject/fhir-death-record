@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/Observation/AutopsyPerformed> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "AutopsyPerformed"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-AutopsyPerformed";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: AutopsyPerformed</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Autopsy was performed <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '85699-7' = 'Autopsy was performed', given as 'Autopsy was performed'})</span></p><p><b>subject</b>: <a href=\"Patient/Decedent\">Amy Shaw</a></p><p><b>value</b>: false</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:85699-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "85699-7" ];
+       fhir:Coding.display [ fhir:value "Autopsy was performed" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Patient/Decedent>;
+     fhir:Reference.reference [ fhir:value "Patient/Decedent" ];
+     fhir:Reference.display [ fhir:value "Amy Shaw" ]
+  ];
+  fhir:Observation.valueBoolean [ fhir:value "false"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/Observation/AutopsyPerformed.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

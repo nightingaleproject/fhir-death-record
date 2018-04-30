@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/Practitioner/Certifier> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Certifier"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-Certifier";
+       fhir:index 0
+     ], [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner";
+       fhir:index 1
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Certifier</p><p><b>meta</b>: </p><p><b>identifier</b>: 10231 (OFFICIAL)</p><p><b>name</b>: Edward M. Stone </p><p><b>address</b>: 23 Porter Drive Frederick Maryland 21701 </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Doctor of Medicine <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v2/0360/2.7 code 'MD' = 'Doctor of Medicine', given as 'Doctor of Medicine'})</span></td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-CertifierType-extension" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:434651000124107;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "434651000124107" ];
+         fhir:Coding.display [ fhir:value "Physician (Pronouncer and Certifier)" ]
+       ]
+     ]
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://www.acme.com/identifiers/certifiers" ];
+     fhir:Identifier.value [ fhir:value "10231" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Stone" ];
+     fhir:HumanName.given [
+       fhir:value "Edward";
+       fhir:index 0
+     ], [
+       fhir:value "M.";
+       fhir:index 1
+     ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "23 Porter Drive";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Frederick" ];
+     fhir:Address.state [ fhir:value "Maryland" ];
+     fhir:Address.postalCode [ fhir:value "21701" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0360/2.7" ];
+         fhir:Coding.code [ fhir:value "MD" ];
+         fhir:Coding.display [ fhir:value "Doctor of Medicine" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/Practitioner/Certifier.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

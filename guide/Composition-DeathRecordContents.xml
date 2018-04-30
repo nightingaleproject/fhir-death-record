@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="DeathRecordContents"/>
+  <meta>
+    <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: DeathRecordContents</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style="background: LightGoldenRodYellow">(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})</span></p><p><b>date</b>: Apr 30, 2018</p><p><b>author</b>: <a href="Practitioner-Certifier.html">Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone </a></p><p><b>title</b>: Record of Death</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="64297-5"/>
+      <display value="Death certificate"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/Decedent"/>
+  </subject>
+  <date value="2018-04-30"/>
+  <author>
+    <reference value="Practitioner/Certifier"/>
+  </author>
+  <title value="Record of Death"/>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="69453-9"/>
+        <display value="Cause of death"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/ActualOrPresumedDateOfDeath"/>
+    </entry>
+    <entry>
+      <reference value="Observation/AutopsyPerformed"/>
+    </entry>
+    <entry>
+      <reference value="Observation/AutopsyResultsAvailable"/>
+    </entry>
+    <entry>
+      <reference value="Condition/CauseOfDeathCondition"/>
+    </entry>
+    <entry>
+      <reference value="Observation/DatePronouncedDead"/>
+    </entry>
+    <entry>
+      <reference value="Observation/DeathFromWorkInjury"/>
+    </entry>
+    <entry>
+      <reference value="Observation/MannerOfDeath"/>
+    </entry>
+    <entry>
+      <reference value="Observation/MedicalExaminerContacted"/>
+    </entry>
+    <entry>
+      <reference value="Observation/TimingOfRecentPregnancyInRelationToDeath"/>
+    </entry>
+    <entry>
+      <reference value="Observation/TobaccoUseContributedToDeath"/>
+    </entry>
+  </section>
+</Composition>

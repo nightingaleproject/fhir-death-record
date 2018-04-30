@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "TobaccoUseContributedToDeath",
+  "meta": {
+    "profile": [
+      "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-TobaccoUseContributedToDeath"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: TobaccoUseContributedToDeath</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Did tobacco use contribute to death <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '69443-0' = 'Did tobacco use contribute to death', given as 'Did tobacco use contribute to death'})</span></p><p><b>subject</b>: <a href=\"Patient/Decedent\">Patient/Decedent</a></p><p><b>value</b>: Unknown <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/NullFlavor code 'UNK' = 'unknown', given as 'Unknown'})</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69443-0",
+        "display": "Did tobacco use contribute to death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Decedent"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/NullFlavor",
+        "code": "UNK",
+        "display": "Unknown"
+      }
+    ]
+  }
+}

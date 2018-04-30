@@ -154,7 +154,7 @@
   ];
   <a href="http://hl7.org/fhir/STU3/observation.html#Observation.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: ActualOrPresumedDateOfDeath&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Date and time of death &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '81956-5' = 'Date and time of death [TimeStamp]', given as 'Date and time of death'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/patient-example\&quot;&gt;Amy Shaw&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Jul 2, 1999&lt;/p&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: ActualOrPresumedDateOfDeath&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Date and time of death &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '81956-5' = 'Date and time of death [TimeStamp]', given as 'Date and time of death'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Decedent\&quot;&gt;John Leonard Palmer&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Jun 20, 2003 12:00:00 AM&lt;/p&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/STU3/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;final&quot;];
   <a href="http://hl7.org/fhir/STU3/observation.html#Observation.code">fhir:Observation.code</a> [
@@ -163,14 +163,13 @@
        a loinc:81956-5;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;81956-5&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Date and time of death&quot; ]     ];
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Date and time of death&quot; ]
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Date and time of death&quot; ]     ]
   ];
   <a href="http://hl7.org/fhir/STU3/observation.html#Observation.subject">fhir:Observation.subject</a> [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Patient/patient-example&quot; ];
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Amy Shaw&quot; ]
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Patient/Decedent&quot; ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;John Leonard Palmer&quot; ]
   ];
-  <a href="http://hl7.org/fhir/STU3/observation.html#Observation.value[x]">fhir:Observation.valueDateTime</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;1999-07-02&quot;^^xsd:date].
+  <a href="http://hl7.org/fhir/STU3/observation.html#Observation.value[x]">fhir:Observation.valueDateTime</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2003-06-20T00:00:00+00:00&quot;^^xsd:dateTime].
 
 # - ontology header ------------------------------------------------------------
 
@@ -202,7 +201,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Wed, Apr 25, 2018 12:03-0400.
+      ; Generated on Mon, Apr 30, 2018 15:38-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

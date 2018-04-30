@@ -688,6 +688,138 @@
           "sourceReference": {
             "reference": "Observation/ActualOrPresumedDateOfDeath"
           }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-AutopsyPerformed.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/AutopsyPerformed"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-AutopsyResultsAvailable.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/AutopsyResultsAvailable"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Condition-CauseOfDeathCondition.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Condition/CauseOfDeathCondition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Practitioner-Certifier.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Practitioner/Certifier"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-DatePronouncedDead.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/DatePronouncedDead"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-DeathFromWorkInjury.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/DeathFromWorkInjury"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Composition-DeathRecordContents.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Composition/DeathRecordContents"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-MannerOfDeath.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/MannerOfDeath"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-MedicalExaminerContacted.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/MedicalExaminerContacted"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-TimingOfRecentPregnancyInRelationToDeath.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/TimingOfRecentPregnancyInRelationToDeath"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-TobaccoUseContributedToDeath.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/TobaccoUseContributedToDeath"
+          }
         }
       ]
     }

@@ -24,7 +24,7 @@
   <name value="ConditionProfile"/>
   <title value="SDR Condition Profile"/>
   <status value="draft"/>
-  <date value="2018-04-25T00:00:00-04:00"/>
+  <date value="2018-04-30T00:00:00-04:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -646,6 +646,9 @@
       <type>
         <code value="Period"/>
       </type>
+      <type>
+        <code value="string"/>
+      </type>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -1104,6 +1107,9 @@
       </type>
       <type>
         <code value="Period"/>
+      </type>
+      <type>
+        <code value="string"/>
       </type>
     </element>
   </differential>

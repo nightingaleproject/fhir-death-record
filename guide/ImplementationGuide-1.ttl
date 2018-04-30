@@ -695,6 +695,138 @@
          fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/ActualOrPresumedDateOfDeath>;
          fhir:Reference.reference [ fhir:value "Observation/ActualOrPresumedDateOfDeath" ]
        ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-AutopsyPerformed.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/AutopsyPerformed>;
+         fhir:Reference.reference [ fhir:value "Observation/AutopsyPerformed" ]
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-AutopsyResultsAvailable.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/AutopsyResultsAvailable>;
+         fhir:Reference.reference [ fhir:value "Observation/AutopsyResultsAvailable" ]
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Condition-CauseOfDeathCondition.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Condition/CauseOfDeathCondition>;
+         fhir:Reference.reference [ fhir:value "Condition/CauseOfDeathCondition" ]
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Certifier.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Practitioner/Certifier>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Certifier" ]
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-DatePronouncedDead.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/DatePronouncedDead>;
+         fhir:Reference.reference [ fhir:value "Observation/DatePronouncedDead" ]
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-DeathFromWorkInjury.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/DeathFromWorkInjury>;
+         fhir:Reference.reference [ fhir:value "Observation/DeathFromWorkInjury" ]
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Composition-DeathRecordContents.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Composition/DeathRecordContents>;
+         fhir:Reference.reference [ fhir:value "Composition/DeathRecordContents" ]
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-MannerOfDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/MannerOfDeath>;
+         fhir:Reference.reference [ fhir:value "Observation/MannerOfDeath" ]
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-MedicalExaminerContacted.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/MedicalExaminerContacted>;
+         fhir:Reference.reference [ fhir:value "Observation/MedicalExaminerContacted" ]
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-TimingOfRecentPregnancyInRelationToDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/TimingOfRecentPregnancyInRelationToDeath>;
+         fhir:Reference.reference [ fhir:value "Observation/TimingOfRecentPregnancyInRelationToDeath" ]
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-TobaccoUseContributedToDeath.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Observation/TobaccoUseContributedToDeath>;
+         fhir:Reference.reference [ fhir:value "Observation/TobaccoUseContributedToDeath" ]
+       ]
      ]
   ];
   fhir:ImplementationGuide.page [

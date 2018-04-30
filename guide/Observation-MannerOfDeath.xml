@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MannerOfDeath"/>
+  <meta>
+    <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MannerOfDeath"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: MannerOfDeath</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Manner of death <span style="background: LightGoldenRodYellow">(Details : {LOINC code '69449-7' = 'Manner of death', given as 'Manner of death'})</span></p><p><b>subject</b>: <a href="Patient/Decedent">Patient/Decedent</a></p><p><b>value</b>: Natural <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '38605008' = 'Natural death (event)', given as 'Natural'})</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="69449-7"/>
+      <display value="Manner of death"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Decedent"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="38605008"/>
+      <display value="Natural"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

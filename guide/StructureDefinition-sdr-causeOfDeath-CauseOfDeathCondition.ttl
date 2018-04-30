@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "CauseOfDeathConditionProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR CauseOfDeathCondition Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-04-25T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-04-30T00:00:00-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -770,6 +770,9 @@
        ], [
          fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1346,6 +1349,9 @@
        ], [
          fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ]
      ]
   ] .

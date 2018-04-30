@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="MedicalExaminerContacted"/>
+  <meta>
+    <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-causeOfDeath-MedicalExaminerContacted"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: MedicalExaminerContacted</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Medical examiner or coroner was contacted <span style="background: LightGoldenRodYellow">(Details : {LOINC code '74497-9' = 'Medical examiner or coroner was contacted [US Standard Certificate of Death]', given as 'Medical examiner or coroner was contacted'})</span></p><p><b>subject</b>: <a href="Patient/Decedent">Patient/Decedent</a></p><p><b>value</b>: false</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="74497-9"/>
+      <display value="Medical examiner or coroner was contacted"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Decedent"/>
+  </subject>
+  <valueBoolean value="false"/>
+</Observation>

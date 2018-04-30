@@ -1,11 +1,22 @@
 ﻿Standard Death Record FHIR Profiles : Validation Results
 =========================================
 
-err = 14, warn = 0, info = 0
-Generated Wed Apr 25 12:04:23 EDT 2018. FHIR version 3.3.0 for 3.0.1
+err = 54, warn = 0, info = 24
+Generated Mon Apr 30 15:39:18 EDT 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 4 / 0
+ Build Errors : 12 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyPerformed : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyResultsAvailable : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/CauseOfDeathCondition : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/Certifier : 0 / 12
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DatePronouncedDead : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathFromWorkInjury : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathRecordContents : 11 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MannerOfDeath : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MedicalExaminerContacted : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TimingOfRecentPregnancyInRelationToDeath : 1 / 0
+ /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TobaccoUseContributedToDeath : 1 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS : 0 / 0
  /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig : 0 / 0
@@ -61,11 +72,62 @@ Generated Wed Apr 25 12:04:23 EDT 2018. FHIR version 3.3.0 for 3.0.1
 </table>
 == n/a ==
 ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html: Unable to read attribute on <g> at line 159 column 105
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-TimingOfRecentPregnancyInRelationToDeath.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 482: The link 'Patient/Decedent' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-AutopsyResultsAvailable.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 399: The link 'Patient/Decedent' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-AutopsyPerformed.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 380: The link 'Patient/Decedent' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-TobaccoUseContributedToDeath.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 434: The link 'Patient/Decedent' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-DatePronouncedDead.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 441: The link 'Patient/Decedent' cannot be resolved
 ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 188, column 232: The link '' cannot be resolved
-ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-ActualOrPresumedDateOfDeath.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 406: The link 'Patient/patient-example' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-ActualOrPresumedDateOfDeath.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 406: The link 'Patient/Decedent' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-DeathFromWorkInjury.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 428: The link 'Patient/Decedent' cannot be resolved
 ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/downloads.html#/html/head/link/body/div/div/div/div/div/ul/li/a at Line 126, column 9: The link 'full-ig.zip' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-MedicalExaminerContacted.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 483: The link 'Patient/Decedent' cannot be resolved
+ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/Observation-MannerOfDeath.html#/html/head/link/body/div/div/div/div/div/div/p/a at Line 138, column 359: The link 'Patient/Decedent' cannot be resolved
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath.json ==
-ERROR: Observation/ActualOrPresumedDateOfDeath: Observation.subject: Unable to resolve resource 'Patient/patient-example'
+ERROR: Observation/ActualOrPresumedDateOfDeath: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyPerformed.json ==
+ERROR: Observation/AutopsyPerformed: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyResultsAvailable.json ==
+ERROR: Observation/AutopsyResultsAvailable: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/CauseOfDeathCondition.json ==
+ERROR: Condition/CauseOfDeathCondition: Condition.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/Certifier.json ==
+INFORMATION: Practitioner/Certifier: Practitioner.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.extension[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.extension[1].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.extension[1].valueCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.identifier[1].use[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.name[1].given[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.name[1].given[2]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.address[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.qualification[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Practitioner/Certifier: Practitioner.qualification[1].code[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DatePronouncedDead.json ==
+ERROR: Observation/DatePronouncedDead: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathFromWorkInjury.json ==
+ERROR: Observation/DeathFromWorkInjury: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathRecordContents.json ==
+ERROR: Composition/DeathRecordContents: Composition.subject: Unable to resolve resource 'Patient/Decedent'
+ERROR: Composition/DeathRecordContents: Composition.section.entry[1]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[2]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[3]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[4]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[5]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[6]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[7]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[8]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[9]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+ERROR: Composition/DeathRecordContents: Composition.section.entry[10]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MannerOfDeath.json ==
+ERROR: Observation/MannerOfDeath: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MedicalExaminerContacted.json ==
+ERROR: Observation/MedicalExaminerContacted: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TimingOfRecentPregnancyInRelationToDeath.json ==
+ERROR: Observation/TimingOfRecentPregnancyInRelationToDeath: Observation.subject: Unable to resolve resource 'Patient/Decedent'
+== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TobaccoUseContributedToDeath.json ==
+ERROR: Observation/TobaccoUseContributedToDeath: Observation.subject: Unable to resolve resource 'Patient/Decedent'
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS.json ==
 == /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig.xml ==

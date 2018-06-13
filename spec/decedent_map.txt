@@ -2,7 +2,12 @@ Grammar: Map 5.0
 Namespace: sdr.decedent
 Target: FHIR_STU_3
 
-Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
+DecedentID maps to Identifier:
+  IDValue maps to value
+  IDType maps to type
+
+Decedent maps to Patient:
+// Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
   constrain deceased[x] to 1..1
   fix deceased[x] to true
   constrain name to 1..1
@@ -10,11 +15,12 @@ Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
   fix name.use to http://hl7.org/fhir/codesystem-name-use#official
   Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
   DateOfBirth maps to birthDate
-  SocialSecurityNumber maps to identifier.value (slice at = identifier; slice on = identifier.value)
-  fix identifier.use to http://hl7.org/fhir/identifier-use#official
-  fix identifier.type to http://hl7.org/fhir/identifier-type#SB
-  PostalAddress maps to address
-  SurvivingSpouse maps to contact (slice on = relationship)
+  constrain identifier to 1..*
+  DecedentID maps to identifier (slice on = identifier.type)
+//  SocialSecurityNumber maps to identifier // TBD put back in when cardinality issue with identifier is fixed.
+  PostalAddress maps to address (slice on = address.use)
+  constrain address.use to 1..1
+  SurvivingSpouse maps to contact (slice on = contact.relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text

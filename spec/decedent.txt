@@ -6,14 +6,16 @@ Uses: shr.base, shr.core, shr.entity
 CodeSystem: LNC = http://loinc.org
 CodeSystem: MTH = http://ncimeta.nci.nih.gov
 CodeSystem: RLN = http://hl7.org/fhir/v2/0131
+CodeSystem: IDT = http://hl7.org/fhir/ValueSet/identifier-type
 
 EntryElement: Decedent
 Based on: Patient
 Concept: MTH#C3274946
 Description: "The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property."
 1..1 LegalName // Item 1 on the U.S. Standard Certificate of Death
-1..1 Sex // Item 2 on the U.S. Standard Certificate of Death
-0..1 SocialSecurityNumber // Item 3 on the U.S. Standard Certificate of Death
+0..1 Sex // Item 2 on the U.S. Standard Certificate of Death
+1..* DecedentID
+// 1..1 SocialSecurityNumber // Item 3 on the U.S. Standard Certificate of Death TBD figure out why this can't be 0..1 since the prior item should take care of there being at least one identifier
 0..1 Age // Item 4a on the U.S. Standard Certificate of Death
 0..1 DateOfBirth // Item 5 on the U.S. Standard Certificate of Death
 0..1 Birthplace // Item 6 on the U.S. Standard Certificate of Death
@@ -24,11 +26,11 @@ Description: "The subject of the death record (the decedent). Extensions are use
 0..1 Father // Item 11 on the U.S. Standard Certificate of Death
 0..1 Mother // Item 12 on the U.S. Standard Certificate of Death
 0..1 Informant // Item 13 on the U.S. Standard Certificate of Death
-1..1 PlaceOfDeath // Items 14, 15, 16, 17 on the U.S. Standard Certificate of Death
-1..1 Disposition // Items 18, 19, 20, 21, 22, 23 on the U.S. Standard Certificate of Death
-1..1 Education // Item 51 on the U.S. Standard Certificate of Death
-1..1 Ethnicity // Item 52 on the U.S. Standard Certificate of Death
-1..1 Race // Item 53 on the U.S. Standard Certificate of Death
+0..1 PlaceOfDeath // Items 14, 15, 16, 17 on the U.S. Standard Certificate of Death
+0..1 Disposition // Items 18, 19, 20, 21, 22, 23 on the U.S. Standard Certificate of Death
+0..1 Education // Item 51 on the U.S. Standard Certificate of Death
+0..1 Ethnicity // Item 52 on the U.S. Standard Certificate of Death
+0..1 Race // Item 53 on the U.S. Standard Certificate of Death
 0..1 Occupation // Items 54, 55 on the U.S. Standard Certificate of Death
 
 Element: LegalName
@@ -41,10 +43,25 @@ Concept: MTH#C4086849
 Description: "The birth sex of the decedent. Corresponds to item 2 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
 Value: 1..1 CodeableConcept from http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex
 
+Element: DecedentID
+Concept: TBD
+Description: "An identifier for the decedent."
+1..1 IDValue
+1..1 IDType from http://hl7.org/fhir/ValueSet/identifier-type
+
+  Element: IDValue
+  Description: "The value of an identifier for a decedent"
+  Value: 1..1 string
+
+  Element: IDType
+  Description: "The type of identifier for a decedent"
+  Value: 1..1 CodeableConcept
+
 Element: SocialSecurityNumber
+Based on: DecedentID
 Concept: MTH#C1301821
 Description: "The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-Value: 1..1 string
+1..1 IDType is IDT#SB
 
 Element: Age
 Concept: MTH#C1546180

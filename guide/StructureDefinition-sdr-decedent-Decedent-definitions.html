@@ -129,6 +129,8 @@
   <li><a href="StructureDefinition-sdr-decedent-Decedent.html">Content</a></li>
   <li class="active"><a href="#">Detailed Descriptions</a></li>
 
+  <li><a href="StructureDefinition-sdr-decedent-Decedent-examples.html">Examples</a></li>
+
   <li><a href="StructureDefinition-sdr-decedent-Decedent.xml.html">XML</a></li>
   <li><a href="StructureDefinition-sdr-decedent-Decedent.json.html">JSON</a></li>
   <li><a href="StructureDefinition-sdr-decedent-Decedent.ttl.html">Turtle</a></li>
@@ -192,15 +194,20 @@
   <tr><td>Comments</td><td><p>This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension"> </a><a name="Patient.extension"> </a><b>Patient.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>An Extension</p>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:race"> </a><b>Patient.extension (<a href="http://hl7.org/fhir/us/core/1.0.1/StructureDefinition-us-core-race.html">[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race]]</a>)</b></td></tr>
-  <tr><td>Definition</td><td><p>Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the <a href="http://www.cdc.gov/phin/resources/vocabulary/index.html">CDC Race and Ethnicity Code Set Version 1.0</a> which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories: - American Indian or Alaska Native - Asian - Black or African American - Native Hawaiian or Other Pacific Islander - White.</p>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:sex"> </a><b>Patient.extension (<a href="http://hl7.org/fhir/us/core/1.0.1/StructureDefinition-us-core-birthsex.html">[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>A code classifying the person's sex assigned at birth  as specified by the <a href="https://www.healthit.gov/newsroom/about-onc">Office of the National Coordinator for Health IT (ONC)</a>.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Meta">Meta</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a>)</td></tr>
+  <tr><td>Comments</td><td><p>The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.</p>
+</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:ethnicity"> </a><b>Patient.extension (<a href="http://hl7.org/fhir/us/core/1.0.1/StructureDefinition-us-core-ethnicity.html">[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity]]</a>)</b></td></tr>
@@ -210,13 +217,11 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Meta">Meta</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:sex"> </a><b>Patient.extension (<a href="http://hl7.org/fhir/us/core/1.0.1/StructureDefinition-us-core-birthsex.html">[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex]]</a>)</b></td></tr>
-  <tr><td>Definition</td><td><p>A code classifying the person's sex assigned at birth  as specified by the <a href="https://www.healthit.gov/newsroom/about-onc">Office of the National Coordinator for Health IT (ONC)</a>.</p>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:race"> </a><b>Patient.extension (<a href="http://hl7.org/fhir/us/core/1.0.1/StructureDefinition-us-core-race.html">[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the <a href="http://www.cdc.gov/phin/resources/vocabulary/index.html">CDC Race and Ethnicity Code Set Version 1.0</a> which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories: - American Indian or Alaska Native - Asian - Black or African American - Native Hawaiian or Other Pacific Islander - White.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a>)</td></tr>
-  <tr><td>Comments</td><td><p>The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.</p>
-</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Meta">Meta</a>)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:age"> </a><b>Patient.extension (<a href="StructureDefinition-sdr-decedent-Age-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Age-extension]]</a>)</b></td></tr>
@@ -290,291 +295,14 @@
   <tr><td>Note</td><td>This is a business identifer, not a resource identifier (see <a href="http://hl7.org/fhir/STU3/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Patients are almost always assigned specific numerical identifiers.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.extension"> </a><a name="Patient.identifier.extension"> </a><b>Patient.identifier.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.use"> </a><a name="Patient.identifier.use"> </a><b>Patient.identifier.use</b></td></tr>
-  <tr><td>Definition</td><td><p>The purpose of this identifier.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identifies the purpose for this identifier, if known .<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-identifier-use.html">IdentifierUse</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td>Requirements</td><td><p>Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.</p>
-</td></tr>
-  <tr><td>Fixed Value</td><td>official</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.extension"> </a><a name="Patient.identifier.type.extension"> </a><b>Patient.identifier.type.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding"> </a><a name="Patient.identifier.type.coding"> </a><b>Patient.identifier.type.coding</b></td></tr>
-  <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB"> </a><a name="Patient.identifier.type.coding"> </a><b>Patient.identifier.type.coding(Fixed_SB)</b></td></tr>
-  <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.id"> </a><a name="Patient.identifier.type.coding.id"> </a><b>Patient.identifier.type.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.extension"> </a><a name="Patient.identifier.type.coding.extension"> </a><b>Patient.identifier.type.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.system"> </a><a name="Patient.identifier.type.coding.system"> </a><b>Patient.identifier.type.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Fixed Value</td><td>http://hl7.org/fhir/identifier-type</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.version"> </a><a name="Patient.identifier.type.coding.version"> </a><b>Patient.identifier.type.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.code"> </a><a name="Patient.identifier.type.coding.code"> </a><b>Patient.identifier.type.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Fixed Value</td><td>SB</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.display"> </a><a name="Patient.identifier.type.coding.display"> </a><b>Patient.identifier.type.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.coding:Fixed_SB.userSelected"> </a><a name="Patient.identifier.type.coding.userSelected"> </a><b>Patient.identifier.type.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.type.text"> </a><a name="Patient.identifier.type.text"> </a><b>Patient.identifier.type.text</b></td></tr>
-  <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Very often the text is the same as a displayName of one of the codings.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier.system"> </a><a name="Patient.identifier.system"> </a><b>Patient.identifier.system</b></td></tr>
-  <tr><td>Definition</td><td><p>Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td>Requirements</td><td><p>There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
-</td></tr>
-  <tr><td>Example</td><td><br/><b>General</b>:http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber"> </a><a name="Patient.identifier"> </a><b>Patient.identifier(sdr-decedent-SocialSecurityNumber)</b></td></tr>
-  <tr><td>Definition</td><td><p>The decedent's social security number. Corresponds to item 3 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-DecedentID"> </a><a name="Patient.identifier"> </a><b>Patient.identifier(sdr-decedent-DecedentID)</b></td></tr>
+  <tr><td>Definition</td><td><p>An identifier for the decedent.</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business identifer, not a resource identifier (see <a href="http://hl7.org/fhir/STU3/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.id"> </a><a name="Patient.identifier.id"> </a><b>Patient.identifier.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.extension"> </a><a name="Patient.identifier.extension"> </a><b>Patient.identifier.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.use"> </a><a name="Patient.identifier.use"> </a><b>Patient.identifier.use</b></td></tr>
-  <tr><td>Definition</td><td><p>The purpose of this identifier.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identifies the purpose for this identifier, if known .<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-identifier-use.html">IdentifierUse</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
-  <tr><td>Requirements</td><td><p>Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one. Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.</p>
-</td></tr>
-  <tr><td>Fixed Value</td><td>official</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type"> </a><a name="Patient.identifier.type"> </a><b>Patient.identifier.type</b></td></tr>
-  <tr><td>Definition</td><td><p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td>Requirements</td><td><p>Allows users to make use of identifiers when the identifier system is not known.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.</p>
-<p>Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.id"> </a><a name="Patient.identifier.type.id"> </a><b>Patient.identifier.type.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.extension"> </a><a name="Patient.identifier.type.extension"> </a><b>Patient.identifier.type.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding"> </a><a name="Patient.identifier.type.coding"> </a><b>Patient.identifier.type.coding</b></td></tr>
-  <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB"> </a><a name="Patient.identifier.type.coding"> </a><b>Patient.identifier.type.coding(Fixed_SB)</b></td></tr>
-  <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.id"> </a><a name="Patient.identifier.type.coding.id"> </a><b>Patient.identifier.type.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.extension"> </a><a name="Patient.identifier.type.coding.extension"> </a><b>Patient.identifier.type.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.system"> </a><a name="Patient.identifier.type.coding.system"> </a><b>Patient.identifier.type.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Fixed Value</td><td>http://hl7.org/fhir/identifier-type</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.version"> </a><a name="Patient.identifier.type.coding.version"> </a><b>Patient.identifier.type.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.code"> </a><a name="Patient.identifier.type.coding.code"> </a><b>Patient.identifier.type.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Fixed Value</td><td>SB</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.display"> </a><a name="Patient.identifier.type.coding.display"> </a><b>Patient.identifier.type.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.coding:Fixed_SB.userSelected"> </a><a name="Patient.identifier.type.coding.userSelected"> </a><b>Patient.identifier.type.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.type.text"> </a><a name="Patient.identifier.type.text"> </a><b>Patient.identifier.type.text</b></td></tr>
-  <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Very often the text is the same as a displayName of one of the codings.</p>
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.system"> </a><a name="Patient.identifier.system"> </a><b>Patient.identifier.system</b></td></tr>
-  <tr><td>Definition</td><td><p>Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td>Requirements</td><td><p>There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
-</td></tr>
-  <tr><td>Example</td><td><br/><b>General</b>:http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.value"> </a><a name="Patient.identifier.value"> </a><b>Patient.identifier.value</b></td></tr>
-  <tr><td>Definition</td><td><p>The portion of the identifier typically relevant to the user and which is unique within the context of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td>Comments</td><td><p>If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the <a href="http://hl7.org/fhir/STU3/extension-rendered-value.html">Rendered Value extension</a>.</p>
-</td></tr>
-  <tr><td>Example</td><td><br/><b>General</b>:123456
-</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.period"> </a><a name="Patient.identifier.period"> </a><b>Patient.identifier.period</b></td></tr>
-  <tr><td>Definition</td><td><p>Time period during which identifier is/was valid for use.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.identifier:sdr-decedent-SocialSecurityNumber.assigner"> </a><a name="Patient.identifier.assigner"> </a><b>Patient.identifier.assigner</b></td></tr>
-  <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
-  <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
-</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>(<a href="StructureDefinition-sdr-decedent-DecedentID.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-DecedentID]]">DecedentIDProfile</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.active"> </a><a name="Patient.active"> </a><b>Patient.active</b></td></tr>
   <tr><td>Definition</td><td><p>Whether this patient record is in active use.</p>
 </td></tr>
@@ -592,7 +320,6 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName">HumanName</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to track the patient by multiple names. Examples are your official name and a partner name.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns.</p>
@@ -634,18 +361,16 @@
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.name.family"> </a><a name="Patient.name.family"> </a><b>Patient.name.family</b></td></tr>
   <tr><td>Definition</td><td><p>The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>surname</td></tr>
   <tr><td>Comments</td><td><p>Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.name.given"> </a><a name="Patient.name.given"> </a><b>Patient.name.given</b></td></tr>
   <tr><td>Definition</td><td><p>Given name.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>first name, middle name</td></tr>
   <tr><td>Comments</td><td><p>If only initials are recorded, they may be used in place of the full name.  Not called &quot;first name&quot; since given names do not always come first.</p>
 </td></tr>
@@ -678,10 +403,9 @@
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.gender"> </a><a name="Patient.gender"> </a><b>Patient.gender</b></td></tr>
   <tr><td>Definition</td><td><p>Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-administrative-gender.html">AdministrativeGender</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The gender of a person used for administrative purposes.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-administrative-gender.html">AdministrativeGender</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Needed for identification of the individual, in combination with (at least) name and birth date. Gender of individual drives many clinical processes.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error.</p>
@@ -691,13 +415,12 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#date">date</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Age of the individual drives many clinical processes.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension &quot;patient-birthTime&quot; available that should be used where Time is required (such as in maternaty/infant care systems).</p>
 </td></tr>
   <tr><td>LOINC Code</td><td>21112-8</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.deceasedBoolean"> </a><a name="Patient:sdr-decedent-Decedent.deceased[x]"> </a><a name="Patient:sdr-decedent-Decedent.deceased[x]"> </a><b>Patient.deceasedBoolean</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.deceasedBoolean"> </a><a name="Patient.deceasedBoolean"> </a><b>Patient.deceasedBoolean</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates if the individual is deceased or not.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
@@ -712,11 +435,139 @@
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address"> </a><a name="Patient.address"> </a><b>Patient.address</b></td></tr>
   <tr><td>Definition</td><td><p>Addresses for the individual.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a></td></tr>
   <tr><td>Requirements</td><td><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Patient may have multiple addresses with different uses or applicable periods.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address.extension"> </a><a name="Patient.address.extension"> </a><b>Patient.address.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address.use"> </a><a name="Patient.address.use"> </a><b>Patient.address.use</b></td></tr>
+  <tr><td>Definition</td><td><p>The purpose of this address.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The use of an address<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-address-use.html">AddressUse</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Allows an appropriate address to be chosen from a list of many.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:home
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress"> </a><a name="Patient.address"> </a><b>Patient.address(shr-core-PostalAddress)</b></td></tr>
+  <tr><td>Definition</td><td><p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>)</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.id"> </a><a name="Patient.address.id"> </a><b>Patient.address.id</b></td></tr>
+  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.extension"> </a><a name="Patient.address.extension"> </a><b>Patient.address.extension</b></td></tr>
+  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
+  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.use"> </a><a name="Patient.address.use"> </a><b>Patient.address.use</b></td></tr>
+  <tr><td>Definition</td><td><p>The purpose of this address.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The use of an address<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-address-use.html">AddressUse</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>Allows an appropriate address to be chosen from a list of many.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:home
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.type"> </a><a name="Patient.address.type"> </a><b>Patient.address.type</b></td></tr>
+  <tr><td>Definition</td><td><p>Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The type of an address (physical / postal)<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-address-type.html">AddressType</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:both
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.text"> </a><a name="Patient.address.text"> </a><b>Patient.address.text</b></td></tr>
+  <tr><td>Definition</td><td><p>A full text representation of the address.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>A renderable, unencoded form.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>Can provide both a text representation and parts.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:137 Nowhere Street, Erewhon 9132
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.line"> </a><a name="Patient.address.line"> </a><b>Patient.address.line</b></td></tr>
+  <tr><td>Definition</td><td><p>This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td>Requirements</td><td><p>home | work | temp | old - purpose of this address.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:137 Nowhere Street
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.city"> </a><a name="Patient.address.city"> </a><b>Patient.address.city</b></td></tr>
+  <tr><td>Definition</td><td><p>The name of the city, town, village or other community or delivery center.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Municpality</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:Erewhon
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.district"> </a><a name="Patient.address.district"> </a><b>Patient.address.district</b></td></tr>
+  <tr><td>Definition</td><td><p>The name of the administrative area (county).</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>County</td></tr>
+  <tr><td>Comments</td><td><p>District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:Madison
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.state"> </a><a name="Patient.address.state"> </a><b>Patient.address.state</b></td></tr>
+  <tr><td>Definition</td><td><p>Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Province, Territory</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.postalCode"> </a><a name="Patient.address.postalCode"> </a><b>Patient.address.postalCode</b></td></tr>
+  <tr><td>Definition</td><td><p>A postal code designating a region defined by the postal service.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Zip</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:9132
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.country"> </a><a name="Patient.address.country"> </a><b>Patient.address.country</b></td></tr>
+  <tr><td>Definition</td><td><p>Country - a nation as commonly understood or generally accepted.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td>Comments</td><td><p>ISO 3166 3 letter codes can be used in place of a full country name.</p>
+</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.address:shr-core-PostalAddress.period"> </a><a name="Patient.address.period"> </a><b>Patient.address.period</b></td></tr>
+  <tr><td>Definition</td><td><p>Time period when address was/is in use.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a></td></tr>
+  <tr><td>Requirements</td><td><p>Allows addresses to be placed in historical context.</p>
+</td></tr>
+  <tr><td>Example</td><td><br/><b>General</b>:&lt;valuePeriod&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;start&nbsp;value=&quot;2010-03-23T00:00:00-04:00&quot;/&gt;<br/>&nbsp;&nbsp;&lt;end&nbsp;value=&quot;2010-07-01T00:00:00-04:00&quot;/&gt;<br/>&lt;/valuePeriod&gt;<br/>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.maritalStatus"> </a><a name="Patient.maritalStatus"> </a><b>Patient.maritalStatus</b></td></tr>
   <tr><td>Definition</td><td><p>This field contains a patient's most recent marital (civil) status.</p>
@@ -1726,7 +1577,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.animal"> </a><a name="Patient.animal"> </a><b>Patient.animal</b></td></tr>
   <tr><td>Definition</td><td><p>This patient is known to be an animal.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Many clinical systems are extended to care for animal patients as well as human.</p>
@@ -1790,7 +1641,6 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>If a patient does not speak the local language, interpreters may be required, so languages spoken and proficiency is an important things to keep track of both for patient and other persons of interest.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>If no language is specified, this <em>implies</em> that the default local language is spoken.  If you need to convey proficiency for multiple modes then you need multiple Patient.Communication associations.   For animals, language is not a relevant field, and should be absent from the instance. If the Patient does not speak the default local language, then the Interpreter Required Standard can be used to explicitly declare that an interpreter is required.</p>
@@ -1823,9 +1673,8 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/us/core/1.0.1/ValueSet-simple-language.html">Language codes with language and optionally a region modifier</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A human language.<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-languages.html">Common Languages</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems actually code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.</p>
@@ -1932,7 +1781,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Mon, Apr 30, 2018 15:38-0400.
+      ; Generated on Thu, Jun 14, 2018 15:34-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

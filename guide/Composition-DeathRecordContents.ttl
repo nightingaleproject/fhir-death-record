@@ -17,9 +17,9 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: DeathRecordContents</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})</span></p><p><b>date</b>: Apr 30, 2018</p><p><b>author</b>: <a href=\"Practitioner-Certifier.html\">Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone </a></p><p><b>title</b>: Record of Death</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: DeathRecordContents</p><p><b>meta</b>: </p><p><b>status</b>: amended</p><p><b>type</b>: Death certificate <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})</span></p><p><b>date</b>: Apr 30, 2018 10:11:05 AM</p><p><b>author</b>: <a href=\"Practitioner-Certifier.html\">Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone </a></p><p><b>title</b>: Record of Death</p></div>"
   ];
-  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.status [ fhir:value "amended"];
   fhir:Composition.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -33,7 +33,7 @@
      fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Patient/Decedent>;
      fhir:Reference.reference [ fhir:value "Patient/Decedent" ]
   ];
-  fhir:Composition.date [ fhir:value "2018-04-30"^^xsd:date];
+  fhir:Composition.date [ fhir:value "2018-04-30T10:11:05-05:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
      fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Practitioner/Certifier>;

@@ -133,6 +133,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-DecedentID.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-DecedentID"/>
+        <display value="SDR DecedentID Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-decedent-Decedent.html"/>
       </extension>
       <example value="false"/>
@@ -209,6 +219,16 @@
       <sourceReference>
         <reference value="StructureDefinition/shr-core-PostalAddress"/>
         <display value="SDR PostalAddress Profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-SocialSecurityNumber.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-SocialSecurityNumber"/>
+        <display value="SDR SocialSecurityNumber Profile"/>
       </sourceReference>
     </resource>
     <resource>
@@ -591,6 +611,15 @@
       <example value="true"/>
       <sourceReference>
         <reference value="Composition/DeathRecordContents"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-Decedent.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Patient/Decedent"/>
       </sourceReference>
     </resource>
     <resource>

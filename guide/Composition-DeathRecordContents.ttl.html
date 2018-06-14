@@ -154,9 +154,9 @@
   ];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: DeathRecordContents&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Death certificate &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Apr 30, 2018&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-Certifier.html\&quot;&gt;Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Record of Death&lt;/p&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: DeathRecordContents&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: amended&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Death certificate &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Apr 30, 2018 10:11:05 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner-Certifier.html\&quot;&gt;Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Record of Death&lt;/p&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/STU3/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  <a href="http://hl7.org/fhir/STU3/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;amended&quot;];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.type">fhir:Composition.type</a> [
      <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
@@ -168,7 +168,7 @@
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.subject">fhir:Composition.subject</a> [
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Patient/Decedent&quot; ]
   ];
-  <a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-04-30&quot;^^xsd:date];
+  <a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-04-30T10:11:05-05:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">fhir:Composition.author</a> [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Practitioner/Certifier&quot; ]
@@ -236,7 +236,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Mon, Apr 30, 2018 15:38-0400.
+      ; Generated on Thu, Jun 14, 2018 15:34-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

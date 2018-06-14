@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/Patient/Decedent> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Decedent"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212-1234 (HOME)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SB" ];
+         fhir:Coding.display [ fhir:value "Social Beneficiary Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-ssn" ];
+     fhir:Identifier.value [ fhir:value "123-45-6789" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "John L. Palmer" ];
+     fhir:HumanName.family [ fhir:value "Palmer" ];
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ], [
+       fhir:value "Leonard";
+       fhir:index 1
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1911-04-23"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.line [
+       fhir:value "245 Lone View Road";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Thurmont" ];
+     fhir:Address.state [ fhir:value "Maryland" ];
+     fhir:Address.postalCode [ fhir:value "20212-1234" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://nightingaleproject.github.io/fhirDeathRecord/Patient/Decedent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

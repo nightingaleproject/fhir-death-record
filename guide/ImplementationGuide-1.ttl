@@ -181,6 +181,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-decedent-DecedentID.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-DecedentID>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-decedent-DecedentID" ];
+         fhir:Reference.display [ fhir:value "SDR DecedentID Profile" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-decedent-Decedent.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -190,7 +203,7 @@
          fhir:Reference.display [ fhir:value "SDR Decedent Profile" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -203,7 +216,7 @@
          fhir:Reference.display [ fhir:value "SDR DetailsOfInjury Profile" ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -216,7 +229,7 @@
          fhir:Reference.display [ fhir:value "SDR Entry Profile" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -229,7 +242,7 @@
          fhir:Reference.display [ fhir:value "SDR FuneralDirector Profile" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -242,7 +255,7 @@
          fhir:Reference.display [ fhir:value "SDR MannerOfDeath Profile" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -255,7 +268,7 @@
          fhir:Reference.display [ fhir:value "SDR MedicalExaminerContacted Profile" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -268,7 +281,7 @@
          fhir:Reference.display [ fhir:value "SDR Observation Profile" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -281,7 +294,20 @@
          fhir:Reference.display [ fhir:value "SDR PostalAddress Profile" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-decedent-SocialSecurityNumber.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-SocialSecurityNumber>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-decedent-SocialSecurityNumber" ];
+         fhir:Reference.display [ fhir:value "SDR SocialSecurityNumber Profile" ]
+       ]
+     ], [
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -294,7 +320,7 @@
          fhir:Reference.display [ fhir:value "SDR TimingOfRecentPregnancyInRelationToDeath Profile" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -307,7 +333,7 @@
          fhir:Reference.display [ fhir:value "SDR TobaccoUseContributedToDeath Profile" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -320,7 +346,7 @@
          fhir:Reference.display [ fhir:value "SDR Age Extension" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -333,7 +359,7 @@
          fhir:Reference.display [ fhir:value "SDR Birthplace Extension" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -346,7 +372,7 @@
          fhir:Reference.display [ fhir:value "SDR CertifierType Extension" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -359,7 +385,7 @@
          fhir:Reference.display [ fhir:value "SDR Disposition Extension" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -372,7 +398,7 @@
          fhir:Reference.display [ fhir:value "SDR DispositionFacility Extension" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -385,7 +411,7 @@
          fhir:Reference.display [ fhir:value "SDR DispositionType Extension" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -398,7 +424,7 @@
          fhir:Reference.display [ fhir:value "SDR Education Extension" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -411,7 +437,7 @@
          fhir:Reference.display [ fhir:value "SDR FacilityName Extension" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -424,7 +450,7 @@
          fhir:Reference.display [ fhir:value "SDR FuneralFacility Extension" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -437,7 +463,7 @@
          fhir:Reference.display [ fhir:value "SDR Industry Extension" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -450,7 +476,7 @@
          fhir:Reference.display [ fhir:value "SDR InsideCityLimits Extension" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -463,7 +489,7 @@
          fhir:Reference.display [ fhir:value "SDR Job Extension" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -476,7 +502,7 @@
          fhir:Reference.display [ fhir:value "SDR MaritalStatusAtDeath Extension" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -489,7 +515,7 @@
          fhir:Reference.display [ fhir:value "SDR Occupation Extension" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -502,7 +528,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfDeath Extension" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -515,7 +541,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfDeathType Extension" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -528,7 +554,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfInjury Extension" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -541,7 +567,7 @@
          fhir:Reference.display [ fhir:value "SDR PostalAddress Extension" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -554,7 +580,7 @@
          fhir:Reference.display [ fhir:value "SDR ServedInArmedForces Extension" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -567,7 +593,7 @@
          fhir:Reference.display [ fhir:value "SDR CertifierTypeVS ValueSet" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -580,7 +606,7 @@
          fhir:Reference.display [ fhir:value "SDR ContributoryTobaccoUseVS ValueSet" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -593,7 +619,7 @@
          fhir:Reference.display [ fhir:value "SDR DispositionTypeVS ValueSet" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -606,7 +632,7 @@
          fhir:Reference.display [ fhir:value "SDR EducationVS ValueSet" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -619,7 +645,7 @@
          fhir:Reference.display [ fhir:value "SDR MannerOfDeathVS ValueSet" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -632,7 +658,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfDeathTypeVS ValueSet" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -645,7 +671,7 @@
          fhir:Reference.display [ fhir:value "SDR PregnancyStatusVS ValueSet" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -658,7 +684,7 @@
          fhir:Reference.display [ fhir:value "SDR TransportRelationshipsVS ValueSet" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -671,7 +697,7 @@
          fhir:Reference.display [ fhir:value "SDR EducationCS CodeSystem" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -684,7 +710,7 @@
          fhir:Reference.display [ fhir:value "SDR PregnancyStatusCS CodeSystem" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -696,7 +722,7 @@
          fhir:Reference.reference [ fhir:value "Observation/ActualOrPresumedDateOfDeath" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -708,7 +734,7 @@
          fhir:Reference.reference [ fhir:value "Observation/AutopsyPerformed" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -720,7 +746,7 @@
          fhir:Reference.reference [ fhir:value "Observation/AutopsyResultsAvailable" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -732,7 +758,7 @@
          fhir:Reference.reference [ fhir:value "Condition/CauseOfDeathCondition" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -744,7 +770,7 @@
          fhir:Reference.reference [ fhir:value "Practitioner/Certifier" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -756,7 +782,7 @@
          fhir:Reference.reference [ fhir:value "Observation/DatePronouncedDead" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -768,7 +794,7 @@
          fhir:Reference.reference [ fhir:value "Observation/DeathFromWorkInjury" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -780,7 +806,19 @@
          fhir:Reference.reference [ fhir:value "Composition/DeathRecordContents" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Patient-Decedent.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/Patient/Decedent>;
+         fhir:Reference.reference [ fhir:value "Patient/Decedent" ]
+       ]
+     ], [
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -792,7 +830,7 @@
          fhir:Reference.reference [ fhir:value "Observation/MannerOfDeath" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -804,7 +842,7 @@
          fhir:Reference.reference [ fhir:value "Observation/MedicalExaminerContacted" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -816,7 +854,7 @@
          fhir:Reference.reference [ fhir:value "Observation/TimingOfRecentPregnancyInRelationToDeath" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];

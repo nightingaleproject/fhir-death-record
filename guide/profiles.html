@@ -206,6 +206,12 @@
 </td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-sdr-decedent-DecedentID.html">DecedentID</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td><p>An identifier for the decedent.</p>
+</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-sdr-decedent-Decedent.html">Decedent</a></td>
       <td><a href="http://hl7.org/fhir/STU3/patient.html">Patient</a></td>
       <td><p>The subject of the death record (the decedent). Extensions are used to capture additional information from the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a> where the Patient resource does not include an equivalent property.</p>
@@ -233,6 +239,12 @@
       <td><a href="StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html">MedicalExaminerContacted</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td><p>Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-sdr-decedent-SocialSecurityNumber.html">SocialSecurityNumber</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td><p>The decedent’s social security number. Corresponds to item 3 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td>
     </tr>
     <tr>
@@ -318,7 +330,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Mon, Apr 30, 2018 15:38-0400.
+      ; Generated on Thu, Jun 14, 2018 15:34-0400.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

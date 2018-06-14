@@ -6,9 +6,9 @@
     <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: DeathRecordContents</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>type</b>: Death certificate <span style="background: LightGoldenRodYellow">(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})</span></p><p><b>date</b>: Apr 30, 2018</p><p><b>author</b>: <a href="Practitioner-Certifier.html">Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone </a></p><p><b>title</b>: Record of Death</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: DeathRecordContents</p><p><b>meta</b>: </p><p><b>status</b>: amended</p><p><b>type</b>: Death certificate <span style="background: LightGoldenRodYellow">(Details : {LOINC code '64297-5' = 'Death certificate', given as 'Death certificate'})</span></p><p><b>date</b>: Apr 30, 2018 10:11:05 AM</p><p><b>author</b>: <a href="Practitioner-Certifier.html">Generated Summary: id: Certifier; 10231 (OFFICIAL); Edward M. Stone </a></p><p><b>title</b>: Record of Death</p></div>
   </text>
-  <status value="final"/>
+  <status value="amended"/>
   <type>
     <coding>
       <system value="http://loinc.org"/>
@@ -19,7 +19,7 @@
   <subject>
     <reference value="Patient/Decedent"/>
   </subject>
-  <date value="2018-04-30"/>
+  <date value="2018-04-30T10:11:05-05:00"/>
   <author>
     <reference value="Practitioner/Certifier"/>
   </author>

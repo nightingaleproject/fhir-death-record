@@ -1,10 +1,10 @@
 ﻿{
   "url" : "http://nightingaleproject.github.io/fhirDeathRecord/ImplementationGuide/1",
   "name" : "Standard Death Record FHIR Profiles",
-  "date" : "Mon, 30 Apr, 2018 15:38:34 -0400",
-  "errs" : "54",
-  "warnings" : "0",
-  "hints" : "24",
+  "date" : "Thu, 14 Jun, 2018 15:34:09 -0400",
+  "errs" : "36",
+  "warnings" : "6",
+  "hints" : "34",
   "version" : "3.0.1",
   "tool" : "3.3.0-13659"
 }

@@ -1,8 +1,8 @@
 {
   "resourceType": "Bundle",
-  "id": "4e43f771-1afe-41c7-b67d-3749155de067",
+  "id": "5b636e2b-9ba3-40a1-8903-6def642c7224",
   "meta": {
-    "lastUpdated": "2018-04-30T15:38:34.086-04:00"
+    "lastUpdated": "2018-06-14T15:34:09.882-04:00"
   },
   "type": "collection",
   "entry": [
@@ -26,7 +26,7 @@
         "name": "CertifierTypeVS",
         "title": "SDR CertifierTypeVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -40,8 +40,8 @@
         ],
         "description": "Type of certifier for a death record. Corresponds to the allowed values for item 45 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "expansion": {
-          "identifier": "urn:uuid:6282ecb8-b439-46a5-8f68-517a6f487d02",
-          "timestamp": "2018-04-18T15:50:40-04:00",
+          "identifier": "urn:uuid:a7602af1-6be7-4dd5-bf8c-670c030e53cb",
+          "timestamp": "2018-04-19T10:10:51-04:00",
           "total": 5,
           "parameter": [
             {
@@ -115,7 +115,7 @@
         "name": "ContributoryTobaccoUseVS",
         "title": "SDR ContributoryTobaccoUseVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -129,8 +129,8 @@
         ],
         "description": "The extent to which tobacco use contributed to the person's death. Corresponds to the allowed values for item 35 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "expansion": {
-          "identifier": "urn:uuid:09a6daa8-a701-4dfb-b536-ff18e4bfcaec",
-          "timestamp": "2018-04-18T15:50:40-04:00",
+          "identifier": "urn:uuid:36a3b203-8794-4ebc-a0cd-50761fadb9a8",
+          "timestamp": "2018-04-19T10:10:51-04:00",
           "total": 5,
           "parameter": [
             {
@@ -204,7 +204,7 @@
         "name": "DispositionTypeVS",
         "title": "SDR DispositionTypeVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -218,8 +218,8 @@
         ],
         "description": "Method of disposition of decedent's remains. Corresponds to the allowed values for item 18 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "expansion": {
-          "identifier": "urn:uuid:39d0ae6f-b5b0-4ad0-b066-52ae57bb8441",
-          "timestamp": "2018-04-18T15:50:41-04:00",
+          "identifier": "urn:uuid:4dea5d18-8001-4b1a-9487-2e7493f56110",
+          "timestamp": "2018-04-19T10:10:52-04:00",
           "total": 8,
           "parameter": [
             {
@@ -308,7 +308,7 @@
         "name": "EducationVS",
         "title": "SDR EducationVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -322,8 +322,8 @@
         ],
         "description": "Decedent's education. Corresponds to the allowed values for item 51 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).",
         "expansion": {
-          "identifier": "urn:uuid:36b83b06-abcf-4b00-a592-395f9e2a7c7d",
-          "timestamp": "2018-04-18T15:50:41-04:00",
+          "identifier": "urn:uuid:d6ecd722-5954-4b6e-a86e-f5787d4954a9",
+          "timestamp": "2018-04-19T10:10:52-04:00",
           "total": 9,
           "parameter": [
             {
@@ -409,7 +409,7 @@
         "name": "MannerOfDeathVS",
         "title": "SDR MannerOfDeathVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -423,8 +423,8 @@
         ],
         "description": "Manner of death. Corresponds to the allowed values for item 37 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "expansion": {
-          "identifier": "urn:uuid:18856740-9500-4e2b-8311-bb9ddf5d4419",
-          "timestamp": "2018-04-18T15:50:41-04:00",
+          "identifier": "urn:uuid:7cd271e8-1b93-493d-80db-7e28208be088",
+          "timestamp": "2018-04-19T10:10:52-04:00",
           "total": 6,
           "parameter": [
             {
@@ -499,7 +499,7 @@
         "name": "PlaceOfDeathTypeVS",
         "title": "SDR PlaceOfDeathTypeVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -513,8 +513,8 @@
         ],
         "description": "Place of decedent's demise. Corresponds to the allowed values for item 14 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "expansion": {
-          "identifier": "urn:uuid:27305329-ce9a-4716-9422-5aa6276bb400",
-          "timestamp": "2018-04-18T15:50:42-04:00",
+          "identifier": "urn:uuid:df95e39a-838a-4f2f-9277-3be4624cd010",
+          "timestamp": "2018-04-19T10:10:53-04:00",
           "total": 8,
           "parameter": [
             {
@@ -603,7 +603,7 @@
         "name": "PregnancyStatusVS",
         "title": "SDR PregnancyStatusVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -617,8 +617,8 @@
         ],
         "description": "Whether the decedent was pregnant at or around the time of death. Corresponds to the allowed values for item 36 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf). Most of the codes in this value set belong to the [PHIN VS code system](http://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.114222.4.5.274) but this is not currently supported as a [standard FHIR code system](https://www.hl7.org/fhir/terminologies-systems.html).",
         "expansion": {
-          "identifier": "urn:uuid:825ba7cf-44f0-4727-9271-c1dcb90dd280",
-          "timestamp": "2018-04-18T15:50:42-04:00",
+          "identifier": "urn:uuid:3424b2ba-c03d-49fd-81de-42fa8d42e6a3",
+          "timestamp": "2018-04-19T10:10:53-04:00",
           "total": 6,
           "parameter": [
             {
@@ -689,7 +689,7 @@
         "name": "TransportRelationshipsVS",
         "title": "SDR TransportRelationshipsVS ValueSet",
         "status": "draft",
-        "date": "2018-04-30T00:00:00-04:00",
+        "date": "2018-06-14T00:00:00-04:00",
         "publisher": "The MITRE Corporation: Nightingale Project",
         "contact": [
           {
@@ -703,8 +703,8 @@
         ],
         "description": "Transportation Relationships (NCHS). Corresponds to the allowed values for item 44 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
         "expansion": {
-          "identifier": "urn:uuid:a4a77678-7cd8-4bb8-b8b3-16e2a8532bc2",
-          "timestamp": "2018-04-18T15:50:42-04:00",
+          "identifier": "urn:uuid:1ed16fb0-fa51-49df-aaab-a474ebdaa727",
+          "timestamp": "2018-04-19T10:10:54-04:00",
           "total": 4,
           "parameter": [
             {

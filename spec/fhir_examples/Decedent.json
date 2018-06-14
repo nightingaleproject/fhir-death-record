@@ -16,7 +16,7 @@
         ]
       },
       "system": "http://hl7.org/fhir/sid/us-ssn",
-      "value": "123456789"
+      "value": "123-45-6789"
     }
   ],
   "name": [

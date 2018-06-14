@@ -1,8 +1,8 @@
 {
   "id": "DeathRecordContents",
-  "status": "final",
+  "status": "amended",
   "title": "Record of Death",
-  "date": "2018-04-30",
+  "date": "2018-04-30T10:11:05-05:00",
   "meta": {
     "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-deathRecord-DeathRecordContents"
   },

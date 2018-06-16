@@ -10,19 +10,26 @@ The guide uses tooling and builds on content developed by the [Standard Health R
 
 Install the [`shr-cli`](https://github.com/standardhealth/shr-cli) tool. The current version of the guide should be built with [`shr-cli` version 5.7.0](https://github.com/standardhealth/shr-cli/releases/tag/v5.7.0) or later.
 
-Compile the CIMPL definitions
+Set the `SHR_CLI_HOME` environment variable
 
-    cd /path/to/shr-cli
-    node . /path/to/fhir-death-record/spec -o /path/to/output/dir
+    export SHR_CLI_HOME=/path/to/shr-cli
 
 Configure Java proxies (if needed)
 
     export JAVA_OPTS="-Dhttp.proxyHost=my.proxy.org -Dhttp.proxyPort=80 -Dhttps.proxyHost=my.proxy.org -Dhttps.proxyPort=80 -DsocksProxyHost=my.proxy.org -DsocksProxyPort=80"
 
+Compile the CIMPL definitions
+
+    cd /path/to/fhir-death-record
+    make fhir
+
 Build the FHIR IG
 
-    java $JAVA_OPTS -Xms4g -Xmx8g -jar /path/to/output/dir/fhir/guide/org.hl7.fhir.igpublisher.jar \\
-         -ig /path/to/output/dir/fhir/guide/data.json
+    make ig
+    
+You can perform both final steps (compiling the CIMPL definitions and building the FHIR IG) with
+
+    make
 
 The FHIR IG can be viewed at
 

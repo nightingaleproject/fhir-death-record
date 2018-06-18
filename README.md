@@ -33,7 +33,7 @@ You can perform both final steps (compiling the CIMPL definitions and building t
 
 The FHIR IG can be viewed at
 
-    /path/to/output/dir/fhir/guide/output/index.html
+    out/fhir/guide/output/index.html
          
 ## License
 

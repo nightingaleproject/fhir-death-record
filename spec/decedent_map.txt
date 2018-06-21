@@ -16,9 +16,9 @@ Decedent maps to Patient:
   Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
   DateOfBirth maps to birthDate
   constrain identifier to 1..*
-  DecedentID maps to identifier (slice on = identifier.type)
+  DecedentID maps to identifier (slice on = type)
 //  SocialSecurityNumber maps to identifier // TBD put back in when cardinality issue with identifier is fixed.
-  PostalAddress maps to address (slice on = address.use)
+  PostalAddress maps to address (slice on = use)
   constrain address.use to 1..1
   SurvivingSpouse maps to contact (slice on = contact.relationship)
   constrain contact.name to 1..1

@@ -57,11 +57,11 @@ Description: "An identifier for the decedent."
   Description: "The type of identifier for a decedent"
   Value: 1..1 CodeableConcept
 
-Element: SocialSecurityNumber
-Based on: DecedentID
-Concept: MTH#C1301821
-Description: "The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-1..1 IDType is IDT#SB
+// Element: SocialSecurityNumber
+// Based on: DecedentID
+// Concept: MTH#C1301821
+// Description: "The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
+// 1..1 IDType is IDT#SB
 
 Element: Age
 Concept: MTH#C1546180

@@ -58,7 +58,7 @@ Description:    "An address expressed using postal conventions (as opposed to GP
 0..1    		District
 0..1    		State
 0..1    		PostalCode
-1..1    		Country
+0..1    		Country
 0..1        InsideCityLimits
 
 	Element:    	AddressLine

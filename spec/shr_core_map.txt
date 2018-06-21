@@ -17,7 +17,6 @@ TimePeriod maps to Period:
   TimePeriodEnd maps to end
 
 PostalAddress maps to Address:
-	constrain use to 0..0
 	fix type to http://hl7.org/fhir/ValueSet/address-type#postal
 	DisplayText maps to text
 	AddressLine maps to line
@@ -26,4 +25,3 @@ PostalAddress maps to Address:
 	State maps to state
 	PostalCode maps to postalCode
 	Country maps to country
-

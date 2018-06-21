@@ -41,7 +41,8 @@
       ],
       "city": "Thurmont",
       "state": "Maryland",
-      "postalCode": "20212-1234"
+      "postalCode": "20212-1234",
+      "country": "US"
     }
   ],
   "resourceType": "Patient"

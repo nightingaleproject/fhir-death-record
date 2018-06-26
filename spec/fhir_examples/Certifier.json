@@ -38,6 +38,7 @@
   ],
   "address": [
     {
+      "type": "postal",
       "line": [
         "23 Porter Drive"
       ],

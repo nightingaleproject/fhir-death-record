@@ -59,7 +59,6 @@ Description:    "An address expressed using postal conventions (as opposed to GP
 0..1    		State
 0..1    		PostalCode
 0..1    		Country
-// 0..1        InsideCityLimits
 
 	Element:    	AddressLine
 	Concept:		TBD
@@ -90,8 +89,3 @@ Description:    "An address expressed using postal conventions (as opposed to GP
 	Concept:		MTH#C0454664
 	Description:    "Country - a nation as commonly understood or generally accepted, expressed in ISO 3166 Alpha-2 (2-letter) codes."
 	Value:         	string
-
-//	Element:    	InsideCityLimits
-//	Concept:		TBD
-//	Description:    "Whether the address is within city limits (true) or not (false)."
-//	Value:         	boolean

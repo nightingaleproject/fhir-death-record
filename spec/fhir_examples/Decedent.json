@@ -3,7 +3,39 @@
   "meta": {
     "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent"
   },
+  "extension": [
+    {
+      "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/MaritalStatus",
+            "code": "M",
+            "display": "Married"
+          }
+        ]
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "valueCode" : "M"
+    }
+  ],
   "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "system": "http://example.org/mrn",
+      "value": "01010101"
+    },
     {
       "use": "official",
       "type": {
@@ -36,13 +68,13 @@
   "address": [
     {
       "use": "home",
+      "type": "postal",
       "line": [
         "245 Lone View Road"
       ],
       "city": "Thurmont",
       "state": "Maryland",
-      "postalCode": "20212-1234",
-      "country": "US"
+      "postalCode": "20212"
     }
   ],
   "resourceType": "Patient"

@@ -3,10 +3,11 @@ Namespace: sdr.decedent
 Target: FHIR_STU_3
 
 DecedentID maps to Identifier:
-  IDValue maps to value
+  constrain type to 1..1
   IDType maps to type
+  IDValue maps to value
 
-Decedent maps to Patient:
+Decedent maps to Patient: // TBD use us-core instead once issue with FHOR pub tools is fixed
 // Decedent maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient:
   constrain deceased[x] to 1..1
   fix deceased[x] to true
@@ -17,10 +18,10 @@ Decedent maps to Patient:
   DateOfBirth maps to birthDate
   constrain identifier to 1..*
   DecedentID maps to identifier (slice on = type)
-//  SocialSecurityNumber maps to identifier // TBD put back in when cardinality issue with identifier is fixed.
+//  SocialSecurityNumber maps to identifier
   PostalAddress maps to address (slice on = use)
   constrain address.use to 1..1
-  SurvivingSpouse maps to contact (slice on = contact.relationship)
+  SurvivingSpouse maps to contact (slice on = relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text

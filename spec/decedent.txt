@@ -98,7 +98,7 @@ Element: DecedentRelative
 Concept: MTH#C0080103
 Description: "A relative of the decedent. Used as a basis for surviving spouse, father and mother profiles."
 1..1 LegalName
-1..1 RelationshipType from http://hl7.org/fhir/ValueSet/v2-0131
+1..1 RelationshipType from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
 0..1 PostalAddress
 
 Element: RelationshipType
@@ -110,19 +110,19 @@ Element: SurvivingSpouse
 Based on: DecedentRelative
 Concept: MTH#C0162409
 Description: "The surviving spouse of the decedent. Corresponds to item 10 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-1..1 RelationshipType is RLN#N
+1..1 RelationshipType is RLN#SPS
 
 Element: Father
 Based on: DecedentRelative
 Concept: MTH#C0015671
 Description: "The father of the decedent. Corresponds to item 11 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-1..1 RelationshipType is RLN#N
+1..1 RelationshipType is RLN#FTH
 
 Element: Mother
 Based on: DecedentRelative
 Concept: MTH#C0026591
 Description: "The mother of the decedent. Corresponds to item 12 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."
-1..1 RelationshipType is RLN#N
+1..1 RelationshipType is RLN#MTH
 
 Element: Informant
 Based on: DecedentRelative

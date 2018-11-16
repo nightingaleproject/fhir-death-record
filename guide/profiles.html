@@ -164,12 +164,6 @@
 </td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-sdr-deathRecord-Certifier.html">Certifier</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/practitioner.html">Practitioner</a></td>
-      <td><p>The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
-</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-sdr-causeOfDeath-ContributedToDeathCondition.html">ContributedToDeathCondition</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td><p>A significant condition that contributed to death but did not result in the underlying cause captured by a <code class="highlighter-rouge">CauseOfDeathCondition</code>. Corresponds to part 2 of item 32 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
@@ -206,12 +200,6 @@
 </td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-sdr-decedent-DecedentID.html">DecedentID</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
-      <td><p>An identifier for the decedent.</p>
-</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-sdr-decedent-Decedent.html">Decedent</a></td>
       <td><a href="http://hl7.org/fhir/STU3/patient.html">Patient</a></td>
       <td><p>The subject of the death record (the decedent). Extensions are used to capture additional information from the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a> where the Patient resource does not include an equivalent property.</p>
@@ -224,12 +212,6 @@
 </td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-sdr-deathRecord-FuneralDirector.html">FuneralDirector</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/practitioner.html">Practitioner</a></td>
-      <td><p>Funeral Director. Corresponds to items 22 and 23 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
-</td>
-    </tr>
-    <tr>
       <td><a href="StructureDefinition-sdr-causeOfDeath-MannerOfDeath.html">MannerOfDeath</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td><p>The manner of the decendents demise. Corresponds to item 37 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
@@ -239,12 +221,6 @@
       <td><a href="StructureDefinition-sdr-causeOfDeath-MedicalExaminerContacted.html">MedicalExaminerContacted</a></td>
       <td><a href="http://hl7.org/fhir/STU3/observation.html">Observation</a></td>
       <td><p>Whether a medical examiner or coroner was contacted. Corresponds to item 31 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
-</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-sdr-decedent-SocialSecurityNumber.html">SocialSecurityNumber</a></td>
-      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
-      <td><p>The decedent’s social security number. Corresponds to item 3 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td>
     </tr>
     <tr>
@@ -282,15 +258,33 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="StructureDefinition-sdr-deathRecord-Certifier.html">Certifier</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/practitioner.html">Practitioner</a></td>
+      <td><p>The certifier of the death record. Corresponds to items 45, 46, 47, 48 and 49 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
+</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-shr-base-Condition.html">Condition</a></td>
       <td><a href="http://hl7.org/fhir/STU3/condition.html">Condition</a></td>
       <td><p>A disorder, abnormality, problem, injury, complaint, risk, functionality, concern, illness, disease, ailment, sickness, affliction, upset, difficulty, disorder, symptom, worry, or trouble. A ConditionPresent finding implies the existence of a condition as an entity. ‘Condition’ is interpreted broadly to cover states of existence - things the patient is or has.</p>
 </td>
     </tr>
     <tr>
+      <td><a href="StructureDefinition-sdr-decedent-DecedentID.html">DecedentID</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td><p>An identifier for the decedent.</p>
+</td>
+    </tr>
+    <tr>
       <td><a href="StructureDefinition-shr-base-Entry.html">Entry</a></td>
       <td><a href="http://hl7.org/fhir/STU3/domainresource.html">DomainResource</a></td>
       <td><p>Metadata attributes that apply to any item represented in the standard health record. An Entry may not belong exclusively to a single person’s health record, but could represent an entity that surfaces in multiple records, such as organizations or practitioners. If the entry belongs to a single person’s record, then the identity of the person of record must be recorded.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-sdr-deathRecord-FuneralDirector.html">FuneralDirector</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/practitioner.html">Practitioner</a></td>
+      <td><p>Funeral Director. Corresponds to items 22 and 23 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td>
     </tr>
     <tr>
@@ -303,6 +297,12 @@
       <td><a href="StructureDefinition-shr-core-PostalAddress.html">PostalAddress</a></td>
       <td><a href="http://hl7.org/fhir/STU3/datatypes.html#address">Address</a></td>
       <td><p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>
+</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-sdr-decedent-SocialSecurityNumber.html">SocialSecurityNumber</a></td>
+      <td><a href="http://hl7.org/fhir/STU3/datatypes.html#identifier">Identifier</a></td>
+      <td><p>The decedent’s social security number. Corresponds to item 3 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td>
     </tr>
     
@@ -330,7 +330,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Jun 14, 2018 15:34-0400.
+      ; Generated on Fri, Nov 16, 2018 13:33-0500.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

@@ -16,10 +16,39 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212-1234 (HOME)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Medical record number = 01010101 (SECONDARY), Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212 (HOME)</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/MaritalStatus" ];
+         fhir:Coding.code [ fhir:value "M" ];
+         fhir:Coding.display [ fhir:value "Married" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex" ];
+     fhir:Extension.valueCode [ fhir:value "M" ]
   ];
   fhir:Patient.identifier [
      fhir:index 0;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "MR" ];
+         fhir:Coding.display [ fhir:value "Medical record number" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://example.org/mrn" ];
+     fhir:Identifier.value [ fhir:value "01010101" ]
+  ], [
+     fhir:index 1;
      fhir:Identifier.use [ fhir:value "official" ];
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
@@ -51,13 +80,14 @@
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "postal" ];
      fhir:Address.line [
        fhir:value "245 Lone View Road";
        fhir:index 0
      ];
      fhir:Address.city [ fhir:value "Thurmont" ];
      fhir:Address.state [ fhir:value "Maryland" ];
-     fhir:Address.postalCode [ fhir:value "20212-1234" ]
+     fhir:Address.postalCode [ fhir:value "20212" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

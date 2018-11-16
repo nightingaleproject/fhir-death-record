@@ -22,7 +22,7 @@
   fhir:ValueSet.name [ fhir:value "EducationVS"];
   fhir:ValueSet.title [ fhir:value "SDR EducationVS ValueSet"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2018-06-14T00:00:00-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2018-11-16T00:00:00-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:ValueSet.contact [
      fhir:index 0;

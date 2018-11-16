@@ -16,10 +16,10 @@
   Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
   DateOfBirth maps to birthDate
   constrain identifier to 1..*
-  DecedentID maps to identifier (slice on = identifier.type)
-  PostalAddress maps to address (slice on = address.use)
+  DecedentID maps to identifier (slice on = type)
+  PostalAddress maps to address (slice on = use)
   constrain address.use to 1..1
-  SurvivingSpouse maps to contact (slice on = contact.relationship)
+  SurvivingSpouse maps to contact (slice on = relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text
@@ -51,7 +51,7 @@
   <name value="DecedentProfile"/>
   <title value="SDR Decedent Profile"/>
   <status value="draft"/>
-  <date value="2018-06-14T00:00:00-04:00"/>
+  <date value="2018-11-16T00:00:00-05:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -367,6 +367,17 @@
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace-extension"/>
       </type>
     </element>
+    <element id="Patient:sdr-decedent-Decedent.extension:resideswithincitylimits">
+      <path value="Patient.extension"/>
+      <sliceName value="resideswithincitylimits"/>
+      <definition value="Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension"/>
+      </type>
+    </element>
     <element id="Patient:sdr-decedent-Decedent.extension:servedinarmedforces">
       <path value="Patient.extension"/>
       <sliceName value="servedinarmedforces"/>
@@ -461,7 +472,7 @@
       <slicing id="7">
         <discriminator>
           <type value="value"/>
-          <path value="identifier.type"/>
+          <path value="type"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -925,7 +936,7 @@
       <slicing id="1">
         <discriminator>
           <type value="value"/>
-          <path value="address.use"/>
+          <path value="use"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -1508,7 +1519,7 @@
       <slicing id="2">
         <discriminator>
           <type value="value"/>
-          <path value="contact.relationship"/>
+          <path value="relationship"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -1832,9 +1843,9 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS">
       <path value="Patient.contact.relationship.coding"/>
-      <sliceName value="Fixed_N"/>
+      <sliceName value="Fixed_SPS"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
       <max value="1"/>
@@ -1843,7 +1854,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.id">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.id">
       <path value="Patient.contact.relationship.coding.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -1863,7 +1874,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.extension">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.extension">
       <path value="Patient.contact.relationship.coding.extension"/>
       <slicing>
         <discriminator>
@@ -1893,7 +1904,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system">
       <path value="Patient.contact.relationship.coding.system"/>
       <short value="Identity of the terminology system"/>
       <definition value="The identification of the code system that defines the meaning of the symbol in the code."/>
@@ -1919,7 +1930,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.version">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.version">
       <path value="Patient.contact.relationship.coding.version"/>
       <short value="Version of the system - if relevant"/>
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged."/>
@@ -1943,7 +1954,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code">
       <path value="Patient.contact.relationship.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
@@ -1953,7 +1964,7 @@
       <type>
         <code value="code"/>
       </type>
-      <fixedCode value="N"/>
+      <fixedCode value="SPS"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -1968,7 +1979,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.display">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true"/>
       </extension>
@@ -1995,7 +2006,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.userSelected">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.userSelected">
       <path value="Patient.contact.relationship.coding.userSelected"/>
       <short value="If this coding was chosen directly by the user"/>
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)."/>
@@ -2645,9 +2656,9 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH">
       <path value="Patient.contact.relationship.coding"/>
-      <sliceName value="Fixed_N"/>
+      <sliceName value="Fixed_FTH"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
       <max value="1"/>
@@ -2656,7 +2667,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.id">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.id">
       <path value="Patient.contact.relationship.coding.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -2676,7 +2687,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.extension">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.extension">
       <path value="Patient.contact.relationship.coding.extension"/>
       <slicing>
         <discriminator>
@@ -2706,7 +2717,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system">
       <path value="Patient.contact.relationship.coding.system"/>
       <short value="Identity of the terminology system"/>
       <definition value="The identification of the code system that defines the meaning of the symbol in the code."/>
@@ -2732,7 +2743,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.version">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.version">
       <path value="Patient.contact.relationship.coding.version"/>
       <short value="Version of the system - if relevant"/>
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged."/>
@@ -2756,7 +2767,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code">
       <path value="Patient.contact.relationship.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
@@ -2766,7 +2777,7 @@
       <type>
         <code value="code"/>
       </type>
-      <fixedCode value="N"/>
+      <fixedCode value="FTH"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -2781,7 +2792,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.display">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true"/>
       </extension>
@@ -2808,7 +2819,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.userSelected">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.userSelected">
       <path value="Patient.contact.relationship.coding.userSelected"/>
       <short value="If this coding was chosen directly by the user"/>
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)."/>
@@ -3458,9 +3469,9 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH">
       <path value="Patient.contact.relationship.coding"/>
-      <sliceName value="Fixed_N"/>
+      <sliceName value="Fixed_MTH"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
       <max value="1"/>
@@ -3469,7 +3480,7 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.id">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.id">
       <path value="Patient.contact.relationship.coding.id"/>
       <representation value="xmlAttr"/>
       <short value="xml:id (or equivalent in JSON)"/>
@@ -3489,7 +3500,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.extension">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.extension">
       <path value="Patient.contact.relationship.coding.extension"/>
       <slicing>
         <discriminator>
@@ -3519,7 +3530,7 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system">
       <path value="Patient.contact.relationship.coding.system"/>
       <short value="Identity of the terminology system"/>
       <definition value="The identification of the code system that defines the meaning of the symbol in the code."/>
@@ -3545,7 +3556,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.version">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.version">
       <path value="Patient.contact.relationship.coding.version"/>
       <short value="Version of the system - if relevant"/>
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged."/>
@@ -3569,7 +3580,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code">
       <path value="Patient.contact.relationship.coding.code"/>
       <short value="Symbol in syntax defined by the system"/>
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)."/>
@@ -3579,7 +3590,7 @@
       <type>
         <code value="code"/>
       </type>
-      <fixedCode value="N"/>
+      <fixedCode value="MTH"/>
       <isSummary value="true"/>
       <mapping>
         <identity value="v2"/>
@@ -3594,7 +3605,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.display">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true"/>
       </extension>
@@ -3621,7 +3632,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"/>
       </mapping>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.userSelected">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.userSelected">
       <path value="Patient.contact.relationship.coding.userSelected"/>
       <short value="If this coding was chosen directly by the user"/>
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)."/>
@@ -5497,6 +5508,17 @@
         <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace-extension"/>
       </type>
     </element>
+    <element id="Patient:sdr-decedent-Decedent.extension:resideswithincitylimits">
+      <path value="Patient.extension"/>
+      <sliceName value="resideswithincitylimits"/>
+      <definition value="Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension"/>
+      </type>
+    </element>
     <element id="Patient:sdr-decedent-Decedent.extension:servedinarmedforces">
       <path value="Patient.extension"/>
       <sliceName value="servedinarmedforces"/>
@@ -5568,7 +5590,7 @@
       <slicing id="7">
         <discriminator>
           <type value="value"/>
-          <path value="identifier.type"/>
+          <path value="type"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -5616,7 +5638,7 @@
       <slicing id="1">
         <discriminator>
           <type value="value"/>
-          <path value="address.use"/>
+          <path value="use"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -5649,7 +5671,7 @@
       <slicing id="2">
         <discriminator>
           <type value="value"/>
-          <path value="contact.relationship"/>
+          <path value="relationship"/>
         </discriminator>
         <ordered value="false"/>
         <rules value="open"/>
@@ -5679,9 +5701,9 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS">
       <path value="Patient.contact.relationship.coding"/>
-      <sliceName value="Fixed_N"/>
+      <sliceName value="Fixed_SPS"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
       <max value="1"/>
@@ -5690,13 +5712,13 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system">
       <path value="Patient.contact.relationship.coding.system"/>
       <fixedUri value="http://hl7.org/fhir/v2/0131"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code">
       <path value="Patient.contact.relationship.coding.code"/>
-      <fixedCode value="N"/>
+      <fixedCode value="SPS"/>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.name">
       <path value="Patient.contact.name"/>
@@ -5739,9 +5761,9 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH">
       <path value="Patient.contact.relationship.coding"/>
-      <sliceName value="Fixed_N"/>
+      <sliceName value="Fixed_FTH"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
       <max value="1"/>
@@ -5750,13 +5772,13 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system">
       <path value="Patient.contact.relationship.coding.system"/>
       <fixedUri value="http://hl7.org/fhir/v2/0131"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code">
       <path value="Patient.contact.relationship.coding.code"/>
-      <fixedCode value="N"/>
+      <fixedCode value="FTH"/>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.name">
       <path value="Patient.contact.name"/>
@@ -5799,9 +5821,9 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH">
       <path value="Patient.contact.relationship.coding"/>
-      <sliceName value="Fixed_N"/>
+      <sliceName value="Fixed_MTH"/>
       <definition value="A reference to a code defined by a terminology system."/>
       <min value="1"/>
       <max value="1"/>
@@ -5810,13 +5832,13 @@
       </type>
       <isSummary value="true"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system">
       <path value="Patient.contact.relationship.coding.system"/>
       <fixedUri value="http://hl7.org/fhir/v2/0131"/>
     </element>
-    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code">
+    <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code">
       <path value="Patient.contact.relationship.coding.code"/>
-      <fixedCode value="N"/>
+      <fixedCode value="MTH"/>
     </element>
     <element id="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.name">
       <path value="Patient.contact.name"/>

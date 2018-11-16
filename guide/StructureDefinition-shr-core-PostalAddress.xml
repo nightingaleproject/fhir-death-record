@@ -8,7 +8,6 @@
   <p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>shr.core.PostalAddress maps to Address:
-  constrain use to 0..0
   fix type to http://hl7.org/fhir/ValueSet/address-type#postal
   DisplayText maps to text
   AddressLine maps to line
@@ -29,7 +28,7 @@
   <name value="PostalAddressProfile"/>
   <title value="SDR PostalAddress Profile"/>
   <status value="draft"/>
-  <date value="2018-06-14T00:00:00-04:00"/>
+  <date value="2018-11-16T00:00:00-05:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>
@@ -149,25 +148,6 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Address:shr-core-PostalAddress.extension:insidecitylimits">
-      <path value="Address.extension"/>
-      <sliceName value="insidecitylimits"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
-      <definition value="Whether the address is within city limits (true) or not (false)."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
-      </type>
-    </element>
     <element id="Address:shr-core-PostalAddress.use">
       <path value="Address.use"/>
       <short value="home | work | temp | old - purpose of this address"/>
@@ -175,7 +155,7 @@
       <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old."/>
       <requirements value="Allows an appropriate address to be chosen from a list of many."/>
       <min value="0"/>
-      <max value="0"/>
+      <max value="1"/>
       <type>
         <code value="code"/>
       </type>
@@ -431,7 +411,7 @@
       <short value="Country (e.g. can be ISO 3166 2 or 3 letter code)"/>
       <definition value="Country - a nation as commonly understood or generally accepted."/>
       <comment value="ISO 3166 3 letter codes can be used in place of a full country name."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="string"/>
@@ -492,30 +472,6 @@
       <short value="SDR PostalAddress Profile"/>
       <definition value="An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)."/>
     </element>
-    <element id="Address:shr-core-PostalAddress.extension:insidecitylimits">
-      <path value="Address.extension"/>
-      <sliceName value="insidecitylimits"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url"/>
-        <rules value="open"/>
-      </slicing>
-      <definition value="Whether the address is within city limits (true) or not (false)."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"/>
-      </type>
-    </element>
-    <element id="Address:shr-core-PostalAddress.use">
-      <path value="Address.use"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
     <element id="Address:shr-core-PostalAddress.type">
       <path value="Address.type"/>
       <fixedCode value="postal"/>
@@ -524,11 +480,6 @@
       <path value="Address.line"/>
       <min value="0"/>
       <max value="2"/>
-    </element>
-    <element id="Address:shr-core-PostalAddress.country">
-      <path value="Address.country"/>
-      <min value="1"/>
-      <max value="1"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -158,17 +158,10 @@
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Address:shr-core-PostalAddress.extension:insidecitylimits"> </a><b>Address.extension (<a href="StructureDefinition-shr-core-InsideCityLimits-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension]]</a>)</b></td></tr>
-  <tr><td>Definition</td><td><p>Whether the address is within city limits (true) or not (false).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a>)</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Address:shr-core-PostalAddress.use"> </a><a name="Address.use"> </a><b>Address.use</b></td></tr>
   <tr><td>Definition</td><td><p>The purpose of this address.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The use of an address<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-address-use.html">AddressUse</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
@@ -242,7 +235,7 @@
   <tr><td colspan="2" class="structure"><a name="Address:shr-core-PostalAddress.country"> </a><a name="Address.country"> </a><b>Address.country</b></td></tr>
   <tr><td>Definition</td><td><p>Country - a nation as commonly understood or generally accepted.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Comments</td><td><p>ISO 3166 3 letter codes can be used in place of a full country name.</p>
 </td></tr>
@@ -279,7 +272,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Jun 14, 2018 15:34-0400.
+      ; Generated on Fri, Nov 16, 2018 13:33-0500.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

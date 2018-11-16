@@ -29,6 +29,7 @@
     <given value="M."/>
   </name>
   <address>
+    <type value="postal"/>
     <line value="23 Porter Drive"/>
     <city value="Frederick"/>
     <state value="Maryland"/>

@@ -460,19 +460,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-shr-core-InsideCityLimits-extension.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/shr-core-InsideCityLimits-extension",
-            "display": "SDR InsideCityLimits Extension"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-sdr-decedent-Job-extension.html"
             }
           ],
@@ -558,6 +545,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/shr-core-PostalAddress-extension",
             "display": "SDR PostalAddress Extension"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-sdr-decedent-ResidesWithinCityLimits-extension.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension",
+            "display": "SDR ResidesWithinCityLimits Extension"
           }
         },
         {

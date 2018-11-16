@@ -152,7 +152,7 @@
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;shr-core-PostalAddress&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n  &lt;p&gt;&lt;b&gt;SDR PostalAddress Profile&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).&lt;/p&gt;\n  &lt;p&gt;&lt;b&gt;SDR Mapping Summary&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;&lt;pre&gt;shr.core.PostalAddress maps to Address:\n  constrain use to 0..0\n  fix type to http://hl7.org/fhir/ValueSet/address-type#postal\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n&lt;/pre&gt;&lt;/p&gt;\n&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n  &lt;p&gt;&lt;b&gt;SDR PostalAddress Profile&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).&lt;/p&gt;\n  &lt;p&gt;&lt;b&gt;SDR Mapping Summary&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;&lt;pre&gt;shr.core.PostalAddress maps to Address:\n  fix type to http://hl7.org/fhir/ValueSet/address-type#postal\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n&lt;/pre&gt;&lt;/p&gt;\n&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.url">fhir:StructureDefinition.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.identifier">fhir:StructureDefinition.identifier</a> [
@@ -164,7 +164,7 @@
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;PostalAddressProfile&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;SDR PostalAddress Profile&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-06-14T00:00:00-04:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-11-16T00:00:00-05:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">fhir:StructureDefinition.publisher</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;The MITRE Corporation: Nightingale Project&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">fhir:StructureDefinition.contact</a> [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
@@ -289,24 +289,6 @@
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;n/a&quot; ]       ]     ], [
        <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.extension:insidecitylimits&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.extension&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;insidecitylimits&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">fhir:ElementDefinition.slicing</a> [
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">fhir:ElementDefinition.slicing.discriminator</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">fhir:ElementDefinition.slicing.discriminator.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;value&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">fhir:ElementDefinition.slicing.discriminator.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;url&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">fhir:ElementDefinition.slicing.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Extensions are always sliced by (at least) url&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">fhir:ElementDefinition.slicing.rules</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;open&quot; ]       ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;Whether the address is within city limits (true) or not (false).&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Extension&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">fhir:ElementDefinition.type.profile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 4;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.use&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.use&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;home | work | temp | old - purpose of this address&quot; ];
@@ -314,7 +296,7 @@
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">fhir:ElementDefinition.comment</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;This is labeled as \&quot;Is Modifier\&quot; because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">fhir:ElementDefinition.requirements</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;Allows an appropriate address to be chosen from a list of many.&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;0&quot; ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;code&quot; ]       ];
@@ -344,7 +326,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;servd&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;./AddressPurpose&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 5;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 4;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.type&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.type&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;postal | physical | both&quot; ];
@@ -380,7 +362,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;vcard&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;address type parameter&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 6;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 5;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.text&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.text&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Text representation of the address&quot; ];
@@ -407,7 +389,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;vcard&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;address label parameter&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 7;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 6;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.line&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.line&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Street name, number, direction &amp; P.O. Box etc.&quot; ];
@@ -437,7 +419,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;servd&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;./StreetAddress (newline delimitted)&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 8;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 7;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.city&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.city&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Name of city, town etc.&quot; ];
@@ -468,7 +450,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;servd&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;./Jurisdiction&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 9;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 8;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.district&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.district&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;District name (aka county)&quot; ];
@@ -494,7 +476,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;rim&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;AD.part[parttype = CNT | CPA]&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 10;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 9;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.state&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.state&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Sub-unit of country (abbreviations ok)&quot; ];
@@ -523,7 +505,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;servd&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;./Region&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 11;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 10;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.postalCode&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.postalCode&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Postal code for area&quot; ];
@@ -554,13 +536,13 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;servd&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;./PostalIdentificationCode&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 12;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 11;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.country&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.country&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Country (e.g. can be ISO 3166 2 or 3 letter code)&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;Country - a nation as commonly understood or generally accepted.&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">fhir:ElementDefinition.comment</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;ISO 3166 3 letter codes can be used in place of a full country name.&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ];
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
@@ -579,7 +561,7 @@
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;servd&quot; ];
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;./Country&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 13;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 12;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.period&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.period&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Time period when address was/is in use&quot; ];
@@ -616,42 +598,14 @@
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;SDR PostalAddress Profile&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).&quot; ]     ], [
        <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.extension:insidecitylimits&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.extension&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;insidecitylimits&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">fhir:ElementDefinition.slicing</a> [
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">fhir:ElementDefinition.slicing.discriminator</a> [
-           <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">fhir:ElementDefinition.slicing.discriminator.type</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;value&quot; ];
-           <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">fhir:ElementDefinition.slicing.discriminator.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;url&quot; ]         ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.description">fhir:ElementDefinition.slicing.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Extensions are always sliced by (at least) url&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">fhir:ElementDefinition.slicing.rules</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;open&quot; ]       ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;Whether the address is within city limits (true) or not (false).&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
-         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Extension&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">fhir:ElementDefinition.type.profile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.use&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.use&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;0&quot; ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.type&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.type&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fhir:ElementDefinition.fixedCode</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;postal&quot; ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 4;
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.line&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.line&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;2&quot; ]     ], [
-       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 5;
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address:shr-core-PostalAddress.country&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Address.country&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot; ]     ]
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;2&quot; ]     ]
   ].
 
 &lt;http://hl7.org/fhir/ValueSet/address-use&gt; a fhir:ValueSet.
@@ -688,7 +642,7 @@
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Jun 14, 2018 15:34-0400.
+      ; Generated on Fri, Nov 16, 2018 13:33-0500.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

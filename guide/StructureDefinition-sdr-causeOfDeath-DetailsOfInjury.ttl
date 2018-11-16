@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "DetailsOfInjuryProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR DetailsOfInjury Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-06-14T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-11-16T00:00:00-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

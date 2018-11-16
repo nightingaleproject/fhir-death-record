@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sdr-decedent-SocialSecurityNumber"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR SocialSecurityNumber Profile</b></p>\n  <p>The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.SocialSecurityNumber maps to Identifier:\n  IDValue maps to value\n  IDType maps to type\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR SocialSecurityNumber Profile</b></p>\n  <p>The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.SocialSecurityNumber maps to Identifier:\n  constrain type to 1..1\n  IDType maps to type\n  IDValue maps to value\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-SocialSecurityNumber"];
   fhir:StructureDefinition.identifier [
@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "SocialSecurityNumberProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR SocialSecurityNumber Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-06-14T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-11-16T00:00:00-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

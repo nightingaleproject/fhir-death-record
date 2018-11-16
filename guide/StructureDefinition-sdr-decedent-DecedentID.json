@@ -3,7 +3,7 @@
   "id": "sdr-decedent-DecedentID",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DecedentID Profile</b></p>\n  <p>An identifier for the decedent.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.DecedentID maps to Identifier:\n  IDValue maps to value\n  IDType maps to type\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR DecedentID Profile</b></p>\n  <p>An identifier for the decedent.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.DecedentID maps to Identifier:\n  constrain type to 1..1\n  IDType maps to type\n  IDValue maps to value\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-DecedentID",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "DecedentIDProfile",
   "title": "SDR DecedentID Profile",
   "status": "draft",
-  "date": "2018-06-14T00:00:00-04:00",
+  "date": "2018-11-16T00:00:00-05:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {

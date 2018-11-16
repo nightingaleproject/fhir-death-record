@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "shr-core-PostalAddress"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PostalAddress Profile</b></p>\n  <p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.core.PostalAddress maps to Address:\n  constrain use to 0..0\n  fix type to http://hl7.org/fhir/ValueSet/address-type#postal\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PostalAddress Profile</b></p>\n  <p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.core.PostalAddress maps to Address:\n  fix type to http://hl7.org/fhir/ValueSet/address-type#postal\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress"];
   fhir:StructureDefinition.identifier [
@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "PostalAddressProfile"];
   fhir:StructureDefinition.title [ fhir:value "SDR PostalAddress Profile"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-06-14T00:00:00-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-11-16T00:00:00-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation: Nightingale Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -168,28 +168,6 @@
        ]
      ], [
        fhir:index 3;
-       fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.extension:insidecitylimits" ];
-       fhir:ElementDefinition.path [ fhir:value "Address.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "insidecitylimits" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
-       fhir:ElementDefinition.definition [ fhir:value "Whether the address is within city limits (true) or not (false)." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension" ]
-       ]
-     ], [
-       fhir:index 4;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.use" ];
        fhir:ElementDefinition.path [ fhir:value "Address.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old - purpose of this address" ];
@@ -197,7 +175,7 @@
        fhir:ElementDefinition.comment [ fhir:value "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old." ];
        fhir:ElementDefinition.requirements [ fhir:value "Allows an appropriate address to be chosen from a list of many." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
@@ -236,7 +214,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 4;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.type" ];
        fhir:ElementDefinition.path [ fhir:value "Address.type" ];
        fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
@@ -281,7 +259,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.text" ];
        fhir:ElementDefinition.path [ fhir:value "Address.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
@@ -314,7 +292,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.line" ];
        fhir:ElementDefinition.path [ fhir:value "Address.line" ];
        fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
@@ -351,7 +329,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.city" ];
        fhir:ElementDefinition.path [ fhir:value "Address.city" ];
        fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
@@ -390,7 +368,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 8;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.district" ];
        fhir:ElementDefinition.path [ fhir:value "Address.district" ];
        fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
@@ -422,7 +400,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 9;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.state" ];
        fhir:ElementDefinition.path [ fhir:value "Address.state" ];
        fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
@@ -459,7 +437,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 10;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.postalCode" ];
        fhir:ElementDefinition.path [ fhir:value "Address.postalCode" ];
        fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
@@ -498,13 +476,13 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 11;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.country" ];
        fhir:ElementDefinition.path [ fhir:value "Address.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
        fhir:ElementDefinition.definition [ fhir:value "Country - a nation as commonly understood or generally accepted." ];
        fhir:ElementDefinition.comment [ fhir:value "ISO 3166 3 letter codes can be used in place of a full country name." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
          fhir:index 0;
@@ -529,7 +507,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 12;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.period" ];
        fhir:ElementDefinition.path [ fhir:value "Address.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
@@ -574,49 +552,15 @@
        fhir:ElementDefinition.definition [ fhir:value "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)." ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.extension:insidecitylimits" ];
-       fhir:ElementDefinition.path [ fhir:value "Address.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "insidecitylimits" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
-       fhir:ElementDefinition.definition [ fhir:value "Whether the address is within city limits (true) or not (false)." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension" ]
-       ]
-     ], [
-       fhir:index 2;
-       fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.use" ];
-       fhir:ElementDefinition.path [ fhir:value "Address.use" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
-     ], [
-       fhir:index 3;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.type" ];
        fhir:ElementDefinition.path [ fhir:value "Address.type" ];
        fhir:ElementDefinition.fixedCode [ fhir:value "postal" ]
      ], [
-       fhir:index 4;
+       fhir:index 2;
        fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.line" ];
        fhir:ElementDefinition.path [ fhir:value "Address.line" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "2" ]
-     ], [
-       fhir:index 5;
-       fhir:Element.id [ fhir:value "Address:shr-core-PostalAddress.country" ];
-       fhir:ElementDefinition.path [ fhir:value "Address.country" ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ]
      ]
   ] .
 

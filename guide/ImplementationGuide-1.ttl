@@ -467,19 +467,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-shr-core-InsideCityLimits-extension.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/shr-core-InsideCityLimits-extension" ];
-         fhir:Reference.display [ fhir:value "SDR InsideCityLimits Extension" ]
-       ]
-     ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-decedent-Job-extension.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -489,7 +476,7 @@
          fhir:Reference.display [ fhir:value "SDR Job Extension" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -502,7 +489,7 @@
          fhir:Reference.display [ fhir:value "SDR MaritalStatusAtDeath Extension" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -515,7 +502,7 @@
          fhir:Reference.display [ fhir:value "SDR Occupation Extension" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -528,7 +515,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfDeath Extension" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -541,7 +528,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfDeathType Extension" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -554,7 +541,7 @@
          fhir:Reference.display [ fhir:value "SDR PlaceOfInjury Extension" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -565,6 +552,19 @@
          fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress-extension>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shr-core-PostalAddress-extension" ];
          fhir:Reference.display [ fhir:value "SDR PostalAddress Extension" ]
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-sdr-decedent-ResidesWithinCityLimits-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension" ];
+         fhir:Reference.display [ fhir:value "SDR ResidesWithinCityLimits Extension" ]
        ]
      ], [
        fhir:index 42;

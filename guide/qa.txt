@@ -1,88 +1,88 @@
 ﻿Standard Death Record FHIR Profiles : Validation Results
 =========================================
 
-err = 36, warn = 6, info = 34
-Generated Thu Jun 14 15:35:30 EDT 2018. FHIR version 3.3.0 for 3.0.1
+err = 36, warn = 6, info = 26
+Generated Fri Nov 16 13:33:57 EST 2018. FHIR version 3.3.0 for 3.0.1
 
- Build Errors : 3 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyPerformed : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyResultsAvailable : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/CauseOfDeathCondition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/Certifier : 0 / 13
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DatePronouncedDead : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathFromWorkInjury : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathRecordContents : 10 / 1
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/Decedent : 2 / 5
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MannerOfDeath : 0 / 1
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MedicalExaminerContacted : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TimingOfRecentPregnancyInRelationToDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TobaccoUseContributedToDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyPerformed : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyResultsAvailable : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-CauseOfDeathCondition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ContributedToDeathCondition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DatePronouncedDead : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromTransportInjury : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromWorkInjury : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DetailsOfInjury : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MannerOfDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MedicalExaminerContacted : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-PlaceOfInjury-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-Certifier : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-CertifierType-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecord : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecordContents : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-FuneralDirector : 2 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Age-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Decedent : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DecedentID : 1 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Disposition-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionFacility-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionType-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Education-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FacilityName-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FuneralFacility-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Industry-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Job-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-MaritalStatusAtDeath-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Occupation-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeath-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeathType-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ServedInArmedForces-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-SocialSecurityNumber : 1 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Condition : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Entry : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Observation : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-InsideCityLimits-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress-extension : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-ContributoryTobaccoUseVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-MannerOfDeathVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-PregnancyStatusVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-TransportRelationshipsVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-deathRecord-CertifierTypeVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-DispositionTypeVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-EducationVS : 0 / 0
- /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-PlaceOfDeathTypeVS : 0 / 0
+ Build Errors : 2 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/AutopsyPerformed : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/AutopsyResultsAvailable : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/CauseOfDeathCondition : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/Certifier : 1 / 13
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/DatePronouncedDead : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/DeathFromWorkInjury : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/DeathRecordContents : 10 / 1
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/Decedent : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/MannerOfDeath : 1 / 1
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/MedicalExaminerContacted : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/TimingOfRecentPregnancyInRelationToDeath : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/TobaccoUseContributedToDeath : 0 / 1
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/ig : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyPerformed : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyResultsAvailable : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-CauseOfDeathCondition : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ContributedToDeathCondition : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DatePronouncedDead : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromTransportInjury : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromWorkInjury : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DetailsOfInjury : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MannerOfDeath : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MedicalExaminerContacted : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-PlaceOfInjury-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-Certifier : 2 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-CertifierType-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecord : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecordContents : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-FuneralDirector : 2 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Age-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Decedent : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DecedentID : 1 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Disposition-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionFacility-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionType-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Education-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FacilityName-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FuneralFacility-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Industry-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Job-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-MaritalStatusAtDeath-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Occupation-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeath-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeathType-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ResidesWithinCityLimits-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ServedInArmedForces-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-SocialSecurityNumber : 1 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Condition : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Entry : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Observation : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress-extension : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-ContributoryTobaccoUseVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-MannerOfDeathVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-PregnancyStatusVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-TransportRelationshipsVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-deathRecord-CertifierTypeVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-DispositionTypeVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-EducationVS : 0 / 0
+ /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-PlaceOfDeathTypeVS : 0 / 0
 </table>
 == n/a ==
-ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/index.html: Unable to read attribute on <g> at line 159 column 105
-ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 188, column 232: The link '' cannot be resolved
-ERROR: /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/output/downloads.html#/html/head/link/body/div/div/div/div/div/ul/li/a at Line 126, column 9: The link 'full-ig.zip' cannot be resolved
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyPerformed.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/AutopsyResultsAvailable.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/CauseOfDeathCondition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/Certifier.json ==
-WARNING: Practitioner/Certifier: Practitioner.extension.valueCodeableConcept.coding: The display "Physician (Pronouncer and Certifier)" is not a valid display for the code {http://snomed.info/sct}434651000124107
+ERROR: /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/output/StructureDefinition-shr-base-Entry-definitions.html#/html/head/link/body/div/div/div/div/div/table/tr/td/p/a at Line 188, column 232: The link '' cannot be resolved
+ERROR: /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/output/downloads.html#/html/head/link/body/div/div/div/div/div/ul/li/a at Line 126, column 9: The link 'full-ig.zip' cannot be resolved
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/ActualOrPresumedDateOfDeath.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/AutopsyPerformed.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/AutopsyResultsAvailable.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/CauseOfDeathCondition.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/Certifier.json ==
+ERROR: Practitioner/Certifier: Practitioner.extension.valueCodeableConcept.coding: Error validating code "434651000124107" in system "http://snomed.info/sct": Error unmarshalling resource: Error: the element ExpansionProfile is not recognised as a valid resource name
+WARNING: Practitioner/Certifier: Practitioner.extension.valueCodeableConcept: Could not confirm that the codes provided are in the value set http://github.com/nightingaleproject/fhirDeathRecord/sdr/deathRecord/vs/CertifierTypeVS and a code from this value set is required (class = SERVER_ERROR)
 INFORMATION: Practitioner/Certifier: Practitioner.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Practitioner/Certifier: Practitioner.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Practitioner/Certifier: Practitioner.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -95,10 +95,10 @@ INFORMATION: Practitioner/Certifier: Practitioner.name[1].given[2]: Instance inc
 INFORMATION: Practitioner/Certifier: Practitioner.address[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Practitioner/Certifier: Practitioner.qualification[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Practitioner/Certifier: Practitioner.qualification[1].code[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DatePronouncedDead.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathFromWorkInjury.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/DeathRecordContents.json ==
-WARNING: Composition/DeathRecordContents: Composition.type: No Message returned
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/DatePronouncedDead.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/DeathFromWorkInjury.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/DeathRecordContents.json ==
+INFORMATION: Composition/DeathRecordContents: Composition.type: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes and a code is recommended to come from this value set (class = SERVER_ERROR)
 ERROR: Composition/DeathRecordContents: Composition.section.entry[1]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
 ERROR: Composition/DeathRecordContents: Composition.section.entry[2]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
 ERROR: Composition/DeathRecordContents: Composition.section.entry[3]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
@@ -109,76 +109,71 @@ ERROR: Composition/DeathRecordContents: Composition.section.entry[7]: Validating
 ERROR: Composition/DeathRecordContents: Composition.section.entry[8]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
 ERROR: Composition/DeathRecordContents: Composition.section.entry[9]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
 ERROR: Composition/DeathRecordContents: Composition.section.entry[10]: Validating against slices with discriminators based on profiles is not yet supported by the FHIRPath engine: reference.resolve()
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/Decedent.json ==
-ERROR: Patient/Decedent: Patient.identifier: Unable to resolve discriminator
-ERROR: Patient/Decedent: Patient.address: Unable to resolve discriminator
-INFORMATION: Patient/Decedent: Patient: Profile http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent, Element 'Patient.identifier[sdr-decedent-DecedentID]'': Unable to check minimum required (1) due to lack of slicing validation
-INFORMATION: Patient/Decedent: Patient.address.line: Could not verify slice for profile http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent
-INFORMATION: Patient/Decedent: Patient.address.city: Could not verify slice for profile http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent
-INFORMATION: Patient/Decedent: Patient.address.state: Could not verify slice for profile http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent
-INFORMATION: Patient/Decedent: Patient.address.postalCode: Could not verify slice for profile http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MannerOfDeath.json ==
-WARNING: Observation/MannerOfDeath: Observation.valueCodeableConcept.coding: The display "Natural" is not a valid display for the code {http://snomed.info/sct}38605008
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/MedicalExaminerContacted.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TimingOfRecentPregnancyInRelationToDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/examples/TobaccoUseContributedToDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/ig.xml ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyPerformed.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyResultsAvailable.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-CauseOfDeathCondition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ContributedToDeathCondition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DatePronouncedDead.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromTransportInjury.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromWorkInjury.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DetailsOfInjury.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MannerOfDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MedicalExaminerContacted.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-PlaceOfInjury-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-Certifier.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/Decedent.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/MannerOfDeath.json ==
+WARNING: Observation/MannerOfDeath: Observation.valueCodeableConcept: Could not confirm that the codes provided are in the value set http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/MannerOfDeathVS and a code from this value set is required (class = SERVER_ERROR)
+ERROR: Observation/MannerOfDeath: Observation.valueCodeableConcept.coding: Error validating code "38605008" in system "http://snomed.info/sct": Error unmarshalling resource: Error: the element ExpansionProfile is not recognised as a valid resource name
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/MedicalExaminerContacted.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/TimingOfRecentPregnancyInRelationToDeath.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/examples/TobaccoUseContributedToDeath.json ==
+WARNING: Observation/TobaccoUseContributedToDeath: Observation.valueCodeableConcept: Could not confirm that the codes provided are in the value set http://github.com/nightingaleproject/fhirDeathRecord/sdr/causeOfDeath/vs/ContributoryTobaccoUseVS and a code from this value set is required (class = SERVER_ERROR)
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-causeOfDeath-PregnancyStatusCS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/codesystem-sdr-decedent-EducationCS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/ig.xml ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ActualOrPresumedDateOfDeath.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyPerformed.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-AutopsyResultsAvailable.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-CauseOfDeathCondition.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-ContributedToDeathCondition.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DatePronouncedDead.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromTransportInjury.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DeathFromWorkInjury.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-DetailsOfInjury.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MannerOfDeath.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-MedicalExaminerContacted.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-PlaceOfInjury-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TimingOfRecentPregnancyInRelationToDeath.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-causeOfDeath-TobaccoUseContributedToDeath.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-Certifier.json ==
 ERROR: StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.snapshot.element[20].example[1].valueUri: URI values cannot have whitespace
 ERROR: StructureDefinition/sdr-deathRecord-Certifier: StructureDefinition.snapshot.element[20].example[2].valueUri: URI values cannot have whitespace
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-CertifierType-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecord.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecordContents.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-FuneralDirector.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-CertifierType-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecord.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-DeathRecordContents.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-deathRecord-FuneralDirector.json ==
 ERROR: StructureDefinition/sdr-deathRecord-FuneralDirector: StructureDefinition.snapshot.element[15].example[1].valueUri: URI values cannot have whitespace
 ERROR: StructureDefinition/sdr-deathRecord-FuneralDirector: StructureDefinition.snapshot.element[15].example[2].valueUri: URI values cannot have whitespace
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Age-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Decedent.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DecedentID.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Age-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Birthplace-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Decedent.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DecedentID.json ==
 ERROR: StructureDefinition/sdr-decedent-DecedentID: StructureDefinition.snapshot.element[6].example.valueUri: URI values cannot have whitespace
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Disposition-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionFacility-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionType-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Education-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FacilityName-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FuneralFacility-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Industry-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Job-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-MaritalStatusAtDeath-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Occupation-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeath-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeathType-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ServedInArmedForces-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-SocialSecurityNumber.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Disposition-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionFacility-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-DispositionType-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Education-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FacilityName-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-FuneralFacility-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Industry-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Job-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-MaritalStatusAtDeath-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-Occupation-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeath-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-PlaceOfDeathType-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ResidesWithinCityLimits-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-ServedInArmedForces-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-sdr-decedent-SocialSecurityNumber.json ==
 ERROR: StructureDefinition/sdr-decedent-SocialSecurityNumber: StructureDefinition.snapshot.element[18].example.valueUri: URI values cannot have whitespace
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Condition.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Entry.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Observation.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-InsideCityLimits-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress-extension.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-ContributoryTobaccoUseVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-MannerOfDeathVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-PregnancyStatusVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-TransportRelationshipsVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-deathRecord-CertifierTypeVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-DispositionTypeVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-EducationVS.json ==
-== /Users/mhadley/Development/nvss/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-PlaceOfDeathTypeVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Condition.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Entry.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-base-Observation.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/structuredefinition-shr-core-PostalAddress-extension.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-ContributoryTobaccoUseVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-MannerOfDeathVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-PregnancyStatusVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-causeOfDeath-TransportRelationshipsVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-deathRecord-CertifierTypeVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-DispositionTypeVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-EducationVS.json ==
+== /Users/aholmes/Developer/fhir-death-record/out/fhir/guide/resources/valueset-sdr-decedent-PlaceOfDeathTypeVS.json ==

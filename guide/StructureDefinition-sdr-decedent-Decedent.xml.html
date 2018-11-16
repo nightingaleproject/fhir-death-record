@@ -162,10 +162,10 @@
   Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
   DateOfBirth maps to birthDate
   constrain identifier to 1..*
-  DecedentID maps to identifier (slice on = identifier.type)
-  PostalAddress maps to address (slice on = address.use)
+  DecedentID maps to identifier (slice on = type)
+  PostalAddress maps to address (slice on = use)
   constrain address.use to 1..1
-  SurvivingSpouse maps to contact (slice on = contact.relationship)
+  SurvivingSpouse maps to contact (slice on = relationship)
   constrain contact.name to 1..1
   constrain contact.name.text to 1..1
   SurvivingSpouse.LegalName maps to contact.name.text
@@ -198,7 +198,7 @@
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DecedentProfile&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;SDR Decedent Profile&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-06-14T00:00:00-04:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-11-16T00:00:00-05:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;The MITRE Corporation: Nightingale Project&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -551,6 +551,20 @@ This element is labelled as a modifier because the implicit rules may provide ad
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace-extension&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.extension:resideswithincitylimits&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.extension&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;resideswithincitylimits&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension&quot;/&gt;
+      &lt;/type&gt;
+    &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.extension:servedinarmedforces&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;servedinarmedforces&quot;/&gt;
@@ -659,7 +673,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;7&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;identifier.type&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
         &lt;/discriminator&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
@@ -1168,7 +1182,7 @@ This element is labeled as a modifier because once a patient is marked as deceas
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;1&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;address.use&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;use&quot;/&gt;
         &lt;/discriminator&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
@@ -1800,7 +1814,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;2&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;contact.relationship&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;relationship&quot;/&gt;
         &lt;/discriminator&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
@@ -2167,9 +2181,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_SPS&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A reference to a code defined by a terminology system.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -2179,7 +2193,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.id&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.id&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
@@ -2201,7 +2215,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.extension&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.extension&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
@@ -2234,7 +2248,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Identity of the terminology system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -2265,7 +2279,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.version&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.version&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Version of the system - if relevant&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -2293,7 +2307,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.code&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Symbol in syntax defined by the system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -2304,7 +2318,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;SPS&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -2320,7 +2334,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.display&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.display&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
@@ -2352,7 +2366,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.userSelected&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.userSelected&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.userSelected&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;If this coding was chosen directly by the user&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -3088,9 +3102,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_FTH&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A reference to a code defined by a terminology system.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -3100,7 +3114,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.id&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.id&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
@@ -3122,7 +3136,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.extension&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.extension&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
@@ -3155,7 +3169,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Identity of the terminology system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -3186,7 +3200,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.version&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.version&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Version of the system - if relevant&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -3214,7 +3228,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.code&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Symbol in syntax defined by the system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -3225,7 +3239,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;FTH&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -3241,7 +3255,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.display&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.display&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
@@ -3273,7 +3287,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.userSelected&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.userSelected&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.userSelected&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;If this coding was chosen directly by the user&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -4008,9 +4022,9 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_MTH&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A reference to a code defined by a terminology system.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -4020,7 +4034,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.id&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.id&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.representation">representation</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;xmlAttr&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
@@ -4042,7 +4056,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.extension&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.extension&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
@@ -4075,7 +4089,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Identity of the terminology system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -4106,7 +4120,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.version&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.version&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Version of the system - if relevant&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -4134,7 +4148,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.code&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Symbol in syntax defined by the system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -4145,7 +4159,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;code&quot;/&gt;
       &lt;/type&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;MTH&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -4161,7 +4175,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.display&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.display&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.extension">extension</a>
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
@@ -4193,7 +4207,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       &lt;/mapping&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.snapshot.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.userSelected&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.userSelected&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.userSelected&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;If this coding was chosen directly by the user&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
@@ -6314,6 +6328,20 @@ This element is labelled as a modifier because it may not be the main Patient re
                  <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Birthplace-extension&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.extension:resideswithincitylimits&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.extension&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;resideswithincitylimits&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Extension&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.profile">profile</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension&quot;/&gt;
+      &lt;/type&gt;
+    &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.extension:servedinarmedforces&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.extension&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;servedinarmedforces&quot;/&gt;
@@ -6397,7 +6425,7 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;7&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;identifier.type&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
         &lt;/discriminator&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
@@ -6447,7 +6475,7 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;1&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;address.use&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;use&quot;/&gt;
         &lt;/discriminator&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
@@ -6483,7 +6511,7 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing">slicing</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;2&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator">discriminator</a>&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.type">type</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;value&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;contact.relationship&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;relationship&quot;/&gt;
         &lt;/discriminator&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">ordered</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">rules</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;open&quot;/&gt;
@@ -6518,9 +6546,9 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;/slicing&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_SPS&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A reference to a code defined by a terminology system.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -6530,14 +6558,14 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/v2/0131&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.code&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;SPS&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
              <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.name&quot;&gt;
@@ -6588,9 +6616,9 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;/slicing&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_FTH&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A reference to a code defined by a terminology system.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -6600,14 +6628,14 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/v2/0131&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.code&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;FTH&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.name&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.name&quot;/&gt;
@@ -6657,9 +6685,9 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;/slicing&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Fixed_MTH&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A reference to a code defined by a terminology system.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -6669,14 +6697,14 @@ This element is labelled as a modifier because it may not be the main Patient re
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.isSummary">isSummary</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.system&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedUri</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/v2/0131&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code&quot;&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.relationship.coding.code&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.fixed[x]">fixedCode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;MTH&quot;/&gt;
     &lt;/element&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">id</a>=&quot;Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.name&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient.contact.name&quot;/&gt;
@@ -6793,7 +6821,7 @@ This element is labelled as a modifier because it may not be the main Patient re
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Jun 14, 2018 15:34-0400.
+      ; Generated on Fri, Nov 16, 2018 13:33-0500.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

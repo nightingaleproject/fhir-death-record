@@ -8,9 +8,41 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212-1234 (HOME)</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Medical record number = 01010101 (SECONDARY), Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212 (HOME)</p></div>"
   },
+  "extension": [
+    {
+      "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/MaritalStatus",
+            "code": "M",
+            "display": "Married"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "valueCode": "M"
+    }
+  ],
   "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "system": "http://example.org/mrn",
+      "value": "01010101"
+    },
     {
       "use": "official",
       "type": {
@@ -43,12 +75,13 @@
   "address": [
     {
       "use": "home",
+      "type": "postal",
       "line": [
         "245 Lone View Road"
       ],
       "city": "Thurmont",
       "state": "Maryland",
-      "postalCode": "20212-1234"
+      "postalCode": "20212"
     }
   ]
 }

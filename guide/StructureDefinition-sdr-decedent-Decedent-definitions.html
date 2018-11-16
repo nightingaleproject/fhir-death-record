@@ -238,6 +238,13 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>(<a href="StructureDefinition-shr-core-PostalAddress.html" title="[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress]]">PostalAddressProfile</a>))</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:resideswithincitylimits"> </a><b>Patient.extension (<a href="StructureDefinition-sdr-decedent-ResidesWithinCityLimits-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension]]</a>)</b></td></tr>
+  <tr><td>Definition</td><td><p>Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a>)</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: children().count() &gt; id.count())<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.extension:servedinarmedforces"> </a><b>Patient.extension (<a href="StructureDefinition-sdr-decedent-ServedInArmedForces-extension.html">[CanonicalType[http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ServedInArmedForces-extension]]</a>)</b></td></tr>
   <tr><td>Definition</td><td><p>Whether the decedent ever served in the US armed forces. Corresponds to item 8 of the <a href="https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf">U.S. Standard Certificate of Death</a>.</p>
 </td></tr>
@@ -685,17 +692,17 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N"> </a><a name="Patient.contact.relationship.coding"> </a><b>Patient.contact.relationship.coding(Fixed_N)</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS"> </a><a name="Patient.contact.relationship.coding"> </a><b>Patient.contact.relationship.coding(Fixed_SPS)</b></td></tr>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.id"> </a><a name="Patient.contact.relationship.coding.id"> </a><b>Patient.contact.relationship.coding.id</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.id"> </a><a name="Patient.contact.relationship.coding.id"> </a><b>Patient.contact.relationship.coding.id</b></td></tr>
   <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.extension"> </a><a name="Patient.contact.relationship.coding.extension"> </a><b>Patient.contact.relationship.coding.extension</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.extension"> </a><a name="Patient.contact.relationship.coding.extension"> </a><b>Patient.contact.relationship.coding.extension</b></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
@@ -703,7 +710,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system"> </a><a name="Patient.contact.relationship.coding.system"> </a><b>Patient.contact.relationship.coding.system</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system"> </a><a name="Patient.contact.relationship.coding.system"> </a><b>Patient.contact.relationship.coding.system</b></td></tr>
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -713,7 +720,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
 </td></tr>
   <tr><td>Fixed Value</td><td>http://hl7.org/fhir/v2/0131</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.version"> </a><a name="Patient.contact.relationship.coding.version"> </a><b>Patient.contact.relationship.coding.version</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.version"> </a><a name="Patient.contact.relationship.coding.version"> </a><b>Patient.contact.relationship.coding.version</b></td></tr>
   <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
@@ -721,22 +728,22 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code"> </a><a name="Patient.contact.relationship.coding.code"> </a><b>Patient.contact.relationship.coding.code</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code"> </a><a name="Patient.contact.relationship.coding.code"> </a><b>Patient.contact.relationship.coding.code</b></td></tr>
   <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
 </td></tr>
-  <tr><td>Fixed Value</td><td>N</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.display"> </a><a name="Patient.contact.relationship.coding.display"> </a><b>Patient.contact.relationship.coding.display</b></td></tr>
+  <tr><td>Fixed Value</td><td>SPS</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.display"> </a><a name="Patient.contact.relationship.coding.display"> </a><b>Patient.contact.relationship.coding.display</b></td></tr>
   <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.userSelected"> </a><a name="Patient.contact.relationship.coding.userSelected"> </a><b>Patient.contact.relationship.coding.userSelected</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.userSelected"> </a><a name="Patient.contact.relationship.coding.userSelected"> </a><b>Patient.contact.relationship.coding.userSelected</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -922,17 +929,17 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N"> </a><a name="Patient.contact.relationship.coding"> </a><b>Patient.contact.relationship.coding(Fixed_N)</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH"> </a><a name="Patient.contact.relationship.coding"> </a><b>Patient.contact.relationship.coding(Fixed_FTH)</b></td></tr>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.id"> </a><a name="Patient.contact.relationship.coding.id"> </a><b>Patient.contact.relationship.coding.id</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.id"> </a><a name="Patient.contact.relationship.coding.id"> </a><b>Patient.contact.relationship.coding.id</b></td></tr>
   <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.extension"> </a><a name="Patient.contact.relationship.coding.extension"> </a><b>Patient.contact.relationship.coding.extension</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.extension"> </a><a name="Patient.contact.relationship.coding.extension"> </a><b>Patient.contact.relationship.coding.extension</b></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
@@ -940,7 +947,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system"> </a><a name="Patient.contact.relationship.coding.system"> </a><b>Patient.contact.relationship.coding.system</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system"> </a><a name="Patient.contact.relationship.coding.system"> </a><b>Patient.contact.relationship.coding.system</b></td></tr>
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -950,7 +957,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
 </td></tr>
   <tr><td>Fixed Value</td><td>http://hl7.org/fhir/v2/0131</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.version"> </a><a name="Patient.contact.relationship.coding.version"> </a><b>Patient.contact.relationship.coding.version</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.version"> </a><a name="Patient.contact.relationship.coding.version"> </a><b>Patient.contact.relationship.coding.version</b></td></tr>
   <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
@@ -958,22 +965,22 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code"> </a><a name="Patient.contact.relationship.coding.code"> </a><b>Patient.contact.relationship.coding.code</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code"> </a><a name="Patient.contact.relationship.coding.code"> </a><b>Patient.contact.relationship.coding.code</b></td></tr>
   <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
 </td></tr>
-  <tr><td>Fixed Value</td><td>N</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.display"> </a><a name="Patient.contact.relationship.coding.display"> </a><b>Patient.contact.relationship.coding.display</b></td></tr>
+  <tr><td>Fixed Value</td><td>FTH</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.display"> </a><a name="Patient.contact.relationship.coding.display"> </a><b>Patient.contact.relationship.coding.display</b></td></tr>
   <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.userSelected"> </a><a name="Patient.contact.relationship.coding.userSelected"> </a><b>Patient.contact.relationship.coding.userSelected</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.userSelected"> </a><a name="Patient.contact.relationship.coding.userSelected"> </a><b>Patient.contact.relationship.coding.userSelected</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -1159,17 +1166,17 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N"> </a><a name="Patient.contact.relationship.coding"> </a><b>Patient.contact.relationship.coding(Fixed_N)</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH"> </a><a name="Patient.contact.relationship.coding"> </a><b>Patient.contact.relationship.coding(Fixed_MTH)</b></td></tr>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.id"> </a><a name="Patient.contact.relationship.coding.id"> </a><b>Patient.contact.relationship.coding.id</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.id"> </a><a name="Patient.contact.relationship.coding.id"> </a><b>Patient.contact.relationship.coding.id</b></td></tr>
   <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.extension"> </a><a name="Patient.contact.relationship.coding.extension"> </a><b>Patient.contact.relationship.coding.extension</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.extension"> </a><a name="Patient.contact.relationship.coding.extension"> </a><b>Patient.contact.relationship.coding.extension</b></td></tr>
   <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
@@ -1177,7 +1184,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system"> </a><a name="Patient.contact.relationship.coding.system"> </a><b>Patient.contact.relationship.coding.system</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system"> </a><a name="Patient.contact.relationship.coding.system"> </a><b>Patient.contact.relationship.coding.system</b></td></tr>
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -1187,7 +1194,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
 </td></tr>
   <tr><td>Fixed Value</td><td>http://hl7.org/fhir/v2/0131</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.version"> </a><a name="Patient.contact.relationship.coding.version"> </a><b>Patient.contact.relationship.coding.version</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.version"> </a><a name="Patient.contact.relationship.coding.version"> </a><b>Patient.contact.relationship.coding.version</b></td></tr>
   <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
@@ -1195,22 +1202,22 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code"> </a><a name="Patient.contact.relationship.coding.code"> </a><b>Patient.contact.relationship.coding.code</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code"> </a><a name="Patient.contact.relationship.coding.code"> </a><b>Patient.contact.relationship.coding.code</b></td></tr>
   <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
 </td></tr>
-  <tr><td>Fixed Value</td><td>N</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.display"> </a><a name="Patient.contact.relationship.coding.display"> </a><b>Patient.contact.relationship.coding.display</b></td></tr>
+  <tr><td>Fixed Value</td><td>MTH</td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.display"> </a><a name="Patient.contact.relationship.coding.display"> </a><b>Patient.contact.relationship.coding.display</b></td></tr>
   <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
 </td></tr>
-  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.userSelected"> </a><a name="Patient.contact.relationship.coding.userSelected"> </a><b>Patient.contact.relationship.coding.userSelected</b></td></tr>
+  <tr><td colspan="2" class="structure"><a name="Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.userSelected"> </a><a name="Patient.contact.relationship.coding.userSelected"> </a><b>Patient.contact.relationship.coding.userSelected</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
@@ -1781,7 +1788,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Jun 14, 2018 15:34-0400.
+      ; Generated on Fri, Nov 16, 2018 13:33-0500.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

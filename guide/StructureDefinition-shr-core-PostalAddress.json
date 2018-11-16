@@ -3,7 +3,7 @@
   "id": "shr-core-PostalAddress",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PostalAddress Profile</b></p>\n  <p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.core.PostalAddress maps to Address:\n  constrain use to 0..0\n  fix type to http://hl7.org/fhir/ValueSet/address-type#postal\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR PostalAddress Profile</b></p>\n  <p>An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>shr.core.PostalAddress maps to Address:\n  fix type to http://hl7.org/fhir/ValueSet/address-type#postal\n  DisplayText maps to text\n  AddressLine maps to line\n  City maps to city\n  District maps to district\n  State maps to state\n  PostalCode maps to postalCode\n  Country maps to country\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-PostalAddress",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "PostalAddressProfile",
   "title": "SDR PostalAddress Profile",
   "status": "draft",
-  "date": "2018-06-14T00:00:00-04:00",
+  "date": "2018-11-16T00:00:00-05:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -167,30 +167,6 @@
         ]
       },
       {
-        "id": "Address:shr-core-PostalAddress.extension:insidecitylimits",
-        "path": "Address.extension",
-        "sliceName": "insidecitylimits",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "Whether the address is within city limits (true) or not (false).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"
-          }
-        ]
-      },
-      {
         "id": "Address:shr-core-PostalAddress.use",
         "path": "Address.use",
         "short": "home | work | temp | old - purpose of this address",
@@ -198,7 +174,7 @@
         "comment": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.",
         "requirements": "Allows an appropriate address to be chosen from a list of many.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "type": [
           {
             "code": "code"
@@ -522,7 +498,7 @@
         "short": "Country (e.g. can be ISO 3166 2 or 3 letter code)",
         "definition": "Country - a nation as commonly understood or generally accepted.",
         "comment": "ISO 3166 3 letter codes can be used in place of a full country name.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -598,36 +574,6 @@
         "definition": "An address expressed using postal conventions (as opposed to GPS or other location definition formats). This data type may be used to convey addresses for use in delivering mail as well as for visiting locations and which might not be valid for mail delivery. There are a variety of postal address formats defined around the world. (Source: HL7 FHIR)."
       },
       {
-        "id": "Address:shr-core-PostalAddress.extension:insidecitylimits",
-        "path": "Address.extension",
-        "sliceName": "insidecitylimits",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "definition": "Whether the address is within city limits (true) or not (false).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension"
-          }
-        ]
-      },
-      {
-        "id": "Address:shr-core-PostalAddress.use",
-        "path": "Address.use",
-        "min": 0,
-        "max": "0"
-      },
-      {
         "id": "Address:shr-core-PostalAddress.type",
         "path": "Address.type",
         "fixedCode": "postal"
@@ -637,12 +583,6 @@
         "path": "Address.line",
         "min": 0,
         "max": "2"
-      },
-      {
-        "id": "Address:shr-core-PostalAddress.country",
-        "path": "Address.country",
-        "min": 1,
-        "max": "1"
       }
     ]
   }

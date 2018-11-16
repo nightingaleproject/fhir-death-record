@@ -150,19 +150,8 @@ Downloads: <a href="ValueSet-sdr-decedent-DispositionTypeVS.xml" download>XML</a
 
 <h3>Expansion</h3>
 
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 8 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/v3/NullFlavor version 2016-11-11</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-449951000124101"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449951000124101">449951000124101</a></td><td>http://snomed.info/sct</td><td>Donation</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-449971000124106"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449971000124106">449971000124106</a></td><td>http://snomed.info/sct</td><td>Burial</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-449961000124104"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449961000124104">449961000124104</a></td><td>http://snomed.info/sct</td><td>Cremation</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-449931000124108"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449931000124108">449931000124108</a></td><td>http://snomed.info/sct</td><td>Entombment</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-449941000124103"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=449941000124103">449941000124103</a></td><td>http://snomed.info/sct</td><td>Removal from state</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-455401000124109"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=455401000124109">455401000124109</a></td><td>http://snomed.info/sct</td><td>Hospital Disposition</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-NullFlavor-UNK"> </a><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-UNK">UNK</a></td><td>http://hl7.org/fhir/v3/NullFlavor</td><td>Unknown</td><td>Description:A proper value is applicable, but not known.
+<p style="color: maroon; font-weight: bold">Error expanding ValueSet &quot;http://github.com/nightingaleproject/fhirDeathRecord/sdr/decedent/vs/DispositionTypeVS: Error unmarshalling resource: Error: the element ExpansionProfile is not recognised as a valid resource name</p>
 
-                        
-                           Usage Notes: This means the actual value is not known.  If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used.  No properties should be included for a datatype with this property unless:
-
-                        
-                           Those properties themselves directly translate to a semantic of &quot;unknown&quot;.  (E.g. a local code sent as a translation that conveys 'unknown')
-                           Those properties further qualify the nature of what is unknown.  (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-NullFlavor-OTH"> </a><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>http://hl7.org/fhir/v3/NullFlavor</td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
-
-                        
-                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
-
-                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td></tr></table></div>
 
 <h3>References</h3>
 
@@ -194,7 +183,7 @@ This value set is used by the following logical models, profiles and extensions:
       
       Standard Death Record, Version: 0.1.0 &copy;
       ; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917)
-      ; Generated on Thu, Jun 14, 2018 15:34-0400.
+      ; Generated on Fri, Nov 16, 2018 13:33-0500.
     </p>
    </div>  <!-- /inner-wrapper -->
   </div>  <!-- /container -->

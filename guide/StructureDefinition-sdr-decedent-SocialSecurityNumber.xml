@@ -8,8 +8,9 @@
   <p>The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.decedent.SocialSecurityNumber maps to Identifier:
-  IDValue maps to value
+  constrain type to 1..1
   IDType maps to type
+  IDValue maps to value
 </pre></p>
 </div>
   </text>
@@ -22,7 +23,7 @@
   <name value="SocialSecurityNumberProfile"/>
   <title value="SDR SocialSecurityNumber Profile"/>
   <status value="draft"/>
-  <date value="2018-06-14T00:00:00-04:00"/>
+  <date value="2018-11-16T00:00:00-05:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>

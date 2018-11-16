@@ -54,6 +54,7 @@
   ];
   fhir:Practitioner.address [
      fhir:index 0;
+     fhir:Address.type [ fhir:value "postal" ];
      fhir:Address.line [
        fhir:value "23 Porter Drive";
        fhir:index 0

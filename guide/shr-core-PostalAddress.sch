@@ -12,10 +12,7 @@
   <sch:pattern>
     <sch:title>f:Address</sch:title>
     <sch:rule context="f:Address">
-      <sch:assert test="count(f:extension[@url = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension']) &lt;= 1">extension with URL = 'http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/shr-core-InsideCityLimits-extension': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:use) &lt;= 0">use: maximum cardinality of 'use' is 0</sch:assert>
       <sch:assert test="count(f:line) &lt;= 2">line: maximum cardinality of 'line' is 2</sch:assert>
-      <sch:assert test="count(f:country) &gt;= 1">country: minimum cardinality of 'country' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

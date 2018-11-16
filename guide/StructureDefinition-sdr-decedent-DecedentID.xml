@@ -8,8 +8,9 @@
   <p>An identifier for the decedent.</p>
   <p><b>SDR Mapping Summary</b></p>
   <p><pre>sdr.decedent.DecedentID maps to Identifier:
-  IDValue maps to value
+  constrain type to 1..1
   IDType maps to type
+  IDValue maps to value
 </pre></p>
 </div>
   </text>
@@ -22,7 +23,7 @@
   <name value="DecedentIDProfile"/>
   <title value="SDR DecedentID Profile"/>
   <status value="draft"/>
-  <date value="2018-06-14T00:00:00-04:00"/>
+  <date value="2018-11-16T00:00:00-05:00"/>
   <publisher value="The MITRE Corporation: Nightingale Project"/>
   <contact>
     <telecom>

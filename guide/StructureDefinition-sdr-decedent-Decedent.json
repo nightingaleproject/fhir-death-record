@@ -3,7 +3,7 @@
   "id": "sdr-decedent-Decedent",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Decedent maps to Patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  constrain identifier to 1..*\n  DecedentID maps to identifier (slice on = identifier.type)\n  PostalAddress maps to address (slice on = address.use)\n  constrain address.use to 1..1\n  SurvivingSpouse maps to contact (slice on = contact.relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.PostalAddress maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.PostalAddress maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.PostalAddress maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.PostalAddress maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR Decedent Profile</b></p>\n  <p>The subject of the death record (the decedent). Extensions are used to capture additional information from the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf) where the Patient resource does not include an equivalent property.</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.Decedent maps to Patient:\n  constrain deceased[x] to 1..1\n  fix deceased[x] to true\n  constrain name to 1..1\n  LegalName maps to name.text\n  fix name.use to http://hl7.org/fhir/codesystem-name-use#official\n  Sex maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex\n  DateOfBirth maps to birthDate\n  constrain identifier to 1..*\n  DecedentID maps to identifier (slice on = type)\n  PostalAddress maps to address (slice on = use)\n  constrain address.use to 1..1\n  SurvivingSpouse maps to contact (slice on = relationship)\n  constrain contact.name to 1..1\n  constrain contact.name.text to 1..1\n  SurvivingSpouse.LegalName maps to contact.name.text\n  SurvivingSpouse.RelationshipType maps to contact.relationship\n  SurvivingSpouse.PostalAddress maps to contact.address\n  Father maps to contact\n  Father.LegalName maps to contact.name.text\n  Father.RelationshipType maps to contact.relationship\n  Father.PostalAddress maps to contact.address\n  Mother maps to contact\n  Mother.LegalName maps to contact.name.text\n  Mother.RelationshipType maps to contact.relationship\n  Mother.PostalAddress maps to contact.address\n  Informant maps to contact\n  Informant.LegalName maps to contact.name.text\n  Informant.RelationshipType maps to contact.relationship\n  Informant.PostalAddress maps to contact.address\n  Ethnicity maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity\n  Race maps to http://hl7.org/fhir/us/core/StructureDefinition/us-core-race\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "DecedentProfile",
   "title": "SDR Decedent Profile",
   "status": "draft",
-  "date": "2018-06-14T00:00:00-04:00",
+  "date": "2018-11-16T00:00:00-05:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {
@@ -405,6 +405,20 @@
         ]
       },
       {
+        "id": "Patient:sdr-decedent-Decedent.extension:resideswithincitylimits",
+        "path": "Patient.extension",
+        "sliceName": "resideswithincitylimits",
+        "definition": "Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension"
+          }
+        ]
+      },
+      {
         "id": "Patient:sdr-decedent-Decedent.extension:servedinarmedforces",
         "path": "Patient.extension",
         "sliceName": "servedinarmedforces",
@@ -526,7 +540,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "identifier.type"
+              "path": "type"
             }
           ],
           "ordered": false,
@@ -1095,7 +1109,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "address.use"
+              "path": "use"
             }
           ],
           "ordered": false,
@@ -1828,7 +1842,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "contact.relationship"
+              "path": "relationship"
             }
           ],
           "ordered": false,
@@ -2240,9 +2254,9 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS",
         "path": "Patient.contact.relationship.coding",
-        "sliceName": "Fixed_N",
+        "sliceName": "Fixed_SPS",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 1,
         "max": "1",
@@ -2254,7 +2268,7 @@
         "isSummary": true
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.id",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.id",
         "path": "Patient.contact.relationship.coding.id",
         "representation": [
           "xmlAttr"
@@ -2281,7 +2295,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.extension",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.extension",
         "path": "Patient.contact.relationship.coding.extension",
         "slicing": {
           "discriminator": [
@@ -2320,7 +2334,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system",
         "path": "Patient.contact.relationship.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -2351,7 +2365,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.version",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.version",
         "path": "Patient.contact.relationship.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -2380,7 +2394,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code",
         "path": "Patient.contact.relationship.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -2392,7 +2406,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "N",
+        "fixedCode": "SPS",
         "isSummary": true,
         "mapping": [
           {
@@ -2410,7 +2424,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.display",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -2445,7 +2459,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.userSelected",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.userSelected",
         "path": "Patient.contact.relationship.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -3265,9 +3279,9 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH",
         "path": "Patient.contact.relationship.coding",
-        "sliceName": "Fixed_N",
+        "sliceName": "Fixed_FTH",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 1,
         "max": "1",
@@ -3279,7 +3293,7 @@
         "isSummary": true
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.id",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.id",
         "path": "Patient.contact.relationship.coding.id",
         "representation": [
           "xmlAttr"
@@ -3306,7 +3320,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.extension",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.extension",
         "path": "Patient.contact.relationship.coding.extension",
         "slicing": {
           "discriminator": [
@@ -3345,7 +3359,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system",
         "path": "Patient.contact.relationship.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -3376,7 +3390,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.version",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.version",
         "path": "Patient.contact.relationship.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -3405,7 +3419,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code",
         "path": "Patient.contact.relationship.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -3417,7 +3431,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "N",
+        "fixedCode": "FTH",
         "isSummary": true,
         "mapping": [
           {
@@ -3435,7 +3449,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.display",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -3470,7 +3484,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.userSelected",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.userSelected",
         "path": "Patient.contact.relationship.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -4290,9 +4304,9 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH",
         "path": "Patient.contact.relationship.coding",
-        "sliceName": "Fixed_N",
+        "sliceName": "Fixed_MTH",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 1,
         "max": "1",
@@ -4304,7 +4318,7 @@
         "isSummary": true
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.id",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.id",
         "path": "Patient.contact.relationship.coding.id",
         "representation": [
           "xmlAttr"
@@ -4331,7 +4345,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.extension",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.extension",
         "path": "Patient.contact.relationship.coding.extension",
         "slicing": {
           "discriminator": [
@@ -4370,7 +4384,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system",
         "path": "Patient.contact.relationship.coding.system",
         "short": "Identity of the terminology system",
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -4401,7 +4415,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.version",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.version",
         "path": "Patient.contact.relationship.coding.version",
         "short": "Version of the system - if relevant",
         "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -4430,7 +4444,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code",
         "path": "Patient.contact.relationship.coding.code",
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -4442,7 +4456,7 @@
             "code": "code"
           }
         ],
-        "fixedCode": "N",
+        "fixedCode": "MTH",
         "isSummary": true,
         "mapping": [
           {
@@ -4460,7 +4474,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.display",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -4495,7 +4509,7 @@
         ]
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.userSelected",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.userSelected",
         "path": "Patient.contact.relationship.coding.userSelected",
         "short": "If this coding was chosen directly by the user",
         "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
@@ -6859,6 +6873,20 @@
         ]
       },
       {
+        "id": "Patient:sdr-decedent-Decedent.extension:resideswithincitylimits",
+        "path": "Patient.extension",
+        "sliceName": "resideswithincitylimits",
+        "definition": "Whether the decedent resides within city limits (true) or not (false). Corresponds to item 7g of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension"
+          }
+        ]
+      },
+      {
         "id": "Patient:sdr-decedent-Decedent.extension:servedinarmedforces",
         "path": "Patient.extension",
         "sliceName": "servedinarmedforces",
@@ -6950,7 +6978,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "identifier.type"
+              "path": "type"
             }
           ],
           "ordered": false,
@@ -7011,7 +7039,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "address.use"
+              "path": "use"
             }
           ],
           "ordered": false,
@@ -7053,7 +7081,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "contact.relationship"
+              "path": "relationship"
             }
           ],
           "ordered": false,
@@ -7091,9 +7119,9 @@
         }
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS",
         "path": "Patient.contact.relationship.coding",
-        "sliceName": "Fixed_N",
+        "sliceName": "Fixed_SPS",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 1,
         "max": "1",
@@ -7105,14 +7133,14 @@
         "isSummary": true
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.system",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.system",
         "path": "Patient.contact.relationship.coding.system",
         "fixedUri": "http://hl7.org/fhir/v2/0131"
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_N.code",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.relationship.coding:Fixed_SPS.code",
         "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "N"
+        "fixedCode": "SPS"
       },
       {
         "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-SurvivingSpouse.name",
@@ -7167,9 +7195,9 @@
         }
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH",
         "path": "Patient.contact.relationship.coding",
-        "sliceName": "Fixed_N",
+        "sliceName": "Fixed_FTH",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 1,
         "max": "1",
@@ -7181,14 +7209,14 @@
         "isSummary": true
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.system",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.system",
         "path": "Patient.contact.relationship.coding.system",
         "fixedUri": "http://hl7.org/fhir/v2/0131"
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_N.code",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.relationship.coding:Fixed_FTH.code",
         "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "N"
+        "fixedCode": "FTH"
       },
       {
         "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Father.name",
@@ -7243,9 +7271,9 @@
         }
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH",
         "path": "Patient.contact.relationship.coding",
-        "sliceName": "Fixed_N",
+        "sliceName": "Fixed_MTH",
         "definition": "A reference to a code defined by a terminology system.",
         "min": 1,
         "max": "1",
@@ -7257,14 +7285,14 @@
         "isSummary": true
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.system",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.system",
         "path": "Patient.contact.relationship.coding.system",
         "fixedUri": "http://hl7.org/fhir/v2/0131"
       },
       {
-        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_N.code",
+        "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.relationship.coding:Fixed_MTH.code",
         "path": "Patient.contact.relationship.coding.code",
-        "fixedCode": "N"
+        "fixedCode": "MTH"
       },
       {
         "id": "Patient:sdr-decedent-Decedent.contact:sdr-decedent-Mother.name",

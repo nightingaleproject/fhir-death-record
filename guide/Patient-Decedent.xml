@@ -6,8 +6,32 @@
     <profile value="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-Decedent"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212-1234 (HOME)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Decedent</p><p><b>meta</b>: </p><p><b>identifier</b>: Medical record number = 01010101 (SECONDARY), Social Beneficiary Identifier = 123-45-6789 (OFFICIAL)</p><p><b>name</b>: John L. Palmer(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Apr 23, 1911</p><p><b>deceased</b>: true</p><p><b>address</b>: 245 Lone View Road Thurmont Maryland 20212 (HOME)</p></div>
   </text>
+  <extension url="http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-MaritalStatusAtDeath-extension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+        <code value="M"/>
+        <display value="Married"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+    <valueCode value="M"/>
+  </extension>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+      </coding>
+    </type>
+    <system value="http://example.org/mrn"/>
+    <value value="01010101"/>
+  </identifier>
   <identifier>
     <use value="official"/>
     <type>
@@ -32,9 +56,10 @@
   <deceasedBoolean value="true"/>
   <address>
     <use value="home"/>
+    <type value="postal"/>
     <line value="245 Lone View Road"/>
     <city value="Thurmont"/>
     <state value="Maryland"/>
-    <postalCode value="20212-1234"/>
+    <postalCode value="20212"/>
   </address>
 </Patient>

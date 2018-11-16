@@ -353,16 +353,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-shr-core-InsideCityLimits-extension.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/shr-core-InsideCityLimits-extension"/>
-        <display value="SDR InsideCityLimits Extension"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-sdr-decedent-Job-extension.html"/>
       </extension>
       <example value="false"/>
@@ -429,6 +419,16 @@
       <sourceReference>
         <reference value="StructureDefinition/shr-core-PostalAddress-extension"/>
         <display value="SDR PostalAddress Extension"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-sdr-decedent-ResidesWithinCityLimits-extension.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/sdr-decedent-ResidesWithinCityLimits-extension"/>
+        <display value="SDR ResidesWithinCityLimits Extension"/>
       </sourceReference>
     </resource>
     <resource>

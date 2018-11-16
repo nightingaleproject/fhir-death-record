@@ -3,7 +3,7 @@
   "id": "sdr-decedent-SocialSecurityNumber",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR SocialSecurityNumber Profile</b></p>\n  <p>The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.SocialSecurityNumber maps to Identifier:\n  IDValue maps to value\n  IDType maps to type\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>SDR SocialSecurityNumber Profile</b></p>\n  <p>The decedent's social security number. Corresponds to item 3 of the [U.S. Standard Certificate of Death](https://www.cdc.gov/nchs/data/dvs/DEATH11-03final-ACC.pdf).</p>\n  <p><b>SDR Mapping Summary</b></p>\n  <p><pre>sdr.decedent.SocialSecurityNumber maps to Identifier:\n  constrain type to 1..1\n  IDType maps to type\n  IDValue maps to value\n</pre></p>\n</div>"
   },
   "url": "http://nightingaleproject.github.io/fhirDeathRecord/StructureDefinition/sdr-decedent-SocialSecurityNumber",
   "identifier": [
@@ -16,7 +16,7 @@
   "name": "SocialSecurityNumberProfile",
   "title": "SDR SocialSecurityNumber Profile",
   "status": "draft",
-  "date": "2018-06-14T00:00:00-04:00",
+  "date": "2018-11-16T00:00:00-05:00",
   "publisher": "The MITRE Corporation: Nightingale Project",
   "contact": [
     {

@@ -5,7 +5,7 @@ Uses: shr.base, shr.core, shr.entity
 
 CodeSystem: LNC = http://loinc.org
 CodeSystem: MTH = http://ncimeta.nci.nih.gov
-CodeSystem: RLN = http://hl7.org/fhir/v2/0131
+CodeSystem: RLN = http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
 CodeSystem: IDT = http://hl7.org/fhir/ValueSet/identifier-type
 
 EntryElement: Decedent

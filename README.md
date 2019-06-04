@@ -1,3 +1,5 @@
+# NOTE: These profiles are no longer in development, please refer to: http://hl7.org/fhir/us/vrdr/2019May for the latest FHIR IG.
+
 # Standard Death Record FHIR Profiles
 
 This repository contain the source definitions for a preliminary version of the Standard Death Record (SDR) Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) Implementation Guide. [Click here to view the generated FHIR IG](https://nightingaleproject.github.io/fhir-death-record).
